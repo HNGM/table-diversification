@@ -2,18 +2,13 @@
     {
         "index": "Retail_Sales_Orders_Normal_0_0",
         "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
-        "answer": [
-            "West",
-            "East",
-            "South",
-            "North"
-        ],
+        "answer": "{'West': '₹11,625.25', 'East': '₹2,617.50', 'South': '₹1,209.00', 'North': '₹600.00'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "list"
+        "dtype": "pd.Series"
     },
     {
         "index": "Retail_Sales_Orders_Normal_0_1",
@@ -29,43 +24,35 @@
     {
         "index": "Retail_Sales_Orders_Normal_0_2",
         "query": "What is the average discount rate applied to orders shipped via Express compared to those shipped via Standard?",
-        "answer": {
-            "Express": "5.9%",
-            "Standard": "5.8%"
-        },
+        "answer": "{'Express': '5.9%', 'Standard': '5.8%'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Retail_Sales_Orders_Normal_0_3",
-        "query": "What proportion of orders were delivered within two days of the order date?",
-        "answer": "62.5%",
+        "query": "What percentage of orders were delivered within two days of the order date?",
+        "answer": 62.5,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "string"
+        "dtype": "float"
     },
     {
         "index": "Retail_Sales_Orders_Normal_1_0",
         "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
-        "answer": [
-            "West",
-            "East",
-            "South",
-            "North"
-        ],
+        "answer": "{'West': '₹11,625.25', 'East': '₹2,617.50', 'South': '₹1,209.00', 'North': '₹600.00'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "list"
+        "dtype": "pd.Series"
     },
     {
         "index": "Retail_Sales_Orders_Normal_1_1",
@@ -81,43 +68,35 @@
     {
         "index": "Retail_Sales_Orders_Normal_1_2",
         "query": "What is the average discount rate applied to orders shipped via Express compared to those shipped via Standard?",
-        "answer": {
-            "Express": "5.9%",
-            "Standard": "5.8%"
-        },
+        "answer": "{'Express': '5.9%', 'Standard': '5.8%'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Retail_Sales_Orders_Normal_1_3",
-        "query": "What proportion of orders were delivered within two days of the order date?",
-        "answer": "62.5%",
+        "query": "What percentage of orders were delivered within two days of the order date?",
+        "answer": 62.5,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "string"
+        "dtype": "float"
     },
     {
         "index": "Retail_Sales_Orders_Normal_3_0",
         "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
-        "answer": [
-            "West",
-            "East",
-            "South",
-            "North"
-        ],
+        "answer": "{'West': '₹11,625.25', 'East': '₹2,617.50', 'South': '₹1,209.00', 'North': '₹600.00'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "list"
+        "dtype": "pd.Series"
     },
     {
         "index": "Retail_Sales_Orders_Normal_3_1",
@@ -133,43 +112,35 @@
     {
         "index": "Retail_Sales_Orders_Normal_3_2",
         "query": "What is the average discount rate applied to orders shipped via Express compared to those shipped via Standard?",
-        "answer": {
-            "Express": "5.9%",
-            "Standard": "5.8%"
-        },
+        "answer": "{'Express': '5.9%', 'Standard': '5.8%'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Retail_Sales_Orders_Normal_3_3",
-        "query": "What proportion of orders were delivered within two days of the order date?",
-        "answer": "62.5%",
+        "query": "What percentage of orders were delivered within two days of the order date?",
+        "answer": 62.5,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "string"
+        "dtype": "float"
     },
     {
         "index": "Retail_Sales_Orders_Normal_4_0",
         "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
-        "answer": [
-            "West",
-            "East",
-            "South",
-            "North"
-        ],
+        "answer": "{'West': '₹11,625.25', 'East': '₹2,617.50', 'South': '₹1,209.00', 'North': '₹600.00'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "list"
+        "dtype": "pd.Series"
     },
     {
         "index": "Retail_Sales_Orders_Normal_4_1",
@@ -185,51 +156,35 @@
     {
         "index": "Retail_Sales_Orders_Normal_4_2",
         "query": "What is the average discount rate applied to orders shipped via Express compared to those shipped via Standard?",
-        "answer": {
-            "Express": "5.9%",
-            "Standard": "5.8%"
-        },
+        "answer": "{'Express': '5.9%', 'Standard': '5.8%'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Retail_Sales_Orders_Normal_4_3",
-        "query": "What proportion of orders were delivered within two days of the order date?",
-        "answer": "62.5%",
+        "query": "What percentage of orders were delivered within two days of the order date?",
+        "answer": 62.5,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "string"
+        "dtype": "float"
     },
     {
         "index": "HR_Timesheets_Normal_0_0",
-        "query": "For all billable entries, what is the total revenue generated grouped by project and role?",
-        "answer": {
-            "Apollo": {
-                "Analysts": "₹1,300",
-                "Engineers": "₹1,040"
-            },
-            "Hermes": {
-                "Engineers": "₹390"
-            },
-            "Zephyr": {
-                "Analysts": "₹1,175",
-                "Designers": "₹550",
-                "Engineers": "₹1,885"
-            }
-        },
+        "query": "For all billable entries, what is the total revenue generated grouped by project?",
+        "answer": "{'Apollo': '₹2340', 'Hermes': '₹390', 'Zephyr': '₹3610'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "HR_Timesheets_Normal_0_1",
@@ -245,40 +200,24 @@
     {
         "index": "HR_Timesheets_Normal_0_2",
         "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
-        "answer": {
-            "Remote": 8.36,
-            "Onsite": 7.85
-        },
+        "answer": "{'Remote': 8.36, 'Onsite': 7.85}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "HR_Timesheets_Normal_1_0",
-        "query": "For all billable entries, what is the total revenue generated grouped by project and role?",
-        "answer": {
-            "Apollo": {
-                "Analysts": "₹1,300",
-                "Engineers": "₹1,040"
-            },
-            "Hermes": {
-                "Engineers": "₹390"
-            },
-            "Zephyr": {
-                "Analysts": "₹1,175",
-                "Designers": "₹550",
-                "Engineers": "₹1,885"
-            }
-        },
+        "query": "For all billable entries, what is the total revenue generated grouped by project?",
+        "answer": "{'Apollo': '₹2340', 'Hermes': '₹390', 'Zephyr': '₹3610'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "HR_Timesheets_Normal_1_1",
@@ -294,40 +233,24 @@
     {
         "index": "HR_Timesheets_Normal_1_2",
         "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
-        "answer": {
-            "Remote": 8.36,
-            "Onsite": 7.85
-        },
+        "answer": "{'Remote': 8.36, 'Onsite': 7.85}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "HR_Timesheets_Normal_3_0",
-        "query": "For all billable entries, what is the total revenue generated grouped by project and role?",
-        "answer": {
-            "Apollo": {
-                "Analysts": "₹1,300",
-                "Engineers": "₹1,040"
-            },
-            "Hermes": {
-                "Engineers": "₹390"
-            },
-            "Zephyr": {
-                "Analysts": "₹1,175",
-                "Designers": "₹550",
-                "Engineers": "₹1,885"
-            }
-        },
+        "query": "For all billable entries, what is the total revenue generated grouped by project?",
+        "answer": "{'Apollo': '₹2340', 'Hermes': '₹390', 'Zephyr': '₹3610'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "HR_Timesheets_Normal_3_1",
@@ -343,40 +266,24 @@
     {
         "index": "HR_Timesheets_Normal_3_2",
         "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
-        "answer": {
-            "Remote": 8.36,
-            "Onsite": 7.85
-        },
+        "answer": "{'Remote': 8.36, 'Onsite': 7.85}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "HR_Timesheets_Normal_4_0",
-        "query": "For all billable entries, what is the total revenue generated grouped by project and role?",
-        "answer": {
-            "Apollo": {
-                "Analysts": "₹1,300",
-                "Engineers": "₹1,040"
-            },
-            "Hermes": {
-                "Engineers": "₹390"
-            },
-            "Zephyr": {
-                "Analysts": "₹1,175",
-                "Designers": "₹550",
-                "Engineers": "₹1,885"
-            }
-        },
+        "query": "For all billable entries, what is the total revenue generated grouped by project?",
+        "answer": "{'Apollo': '₹2340', 'Hermes': '₹390', 'Zephyr': '₹3610'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "HR_Timesheets_Normal_4_1",
@@ -392,40 +299,24 @@
     {
         "index": "HR_Timesheets_Normal_4_2",
         "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
-        "answer": {
-            "Remote": 8.36,
-            "Onsite": 7.85
-        },
+        "answer": "{'Remote': 8.36, 'Onsite': 7.85}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Logistics_Shipments_Normal_0_0",
-        "query": "What is the average number of transit days for each carrier broken down by priority level?",
-        "answer": {
-            "DHL": {
-                "Priority": 2.5,
-                "Standard": 6.0
-            },
-            "FedEx": {
-                "Priority": 3.5,
-                "Standard": 6.25
-            },
-            "UPS": {
-                "Priority": 2.12,
-                "Standard": 5.75
-            }
-        },
+        "query": "What is the average number of transit days for each carrier for Standard priority level?",
+        "answer": "{'DHL': 6.0, 'FedEx': 6.25, 'UPS': 5.75}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Logistics_Shipments_Normal_0_1",
@@ -444,38 +335,25 @@
     },
     {
         "index": "Logistics_Shipments_Normal_0_2",
-        "query": "What percentage of shipments met the on-time delivery rule (Priority ≤ 4 days, Standard ≤ 6 days)?",
-        "answer": "88%",
+        "query": "What percentage of shipments met the on-time delivery rule (Priority ≤ 4 days, Standard ≤ 6 days), rounded to nearest integer?",
+        "answer": 88,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "string"
+        "dtype": "int"
     },
     {
         "index": "Logistics_Shipments_Normal_1_0",
-        "query": "What is the average number of transit days for each carrier broken down by priority level?",
-        "answer": {
-            "DHL": {
-                "Priority": 2.5,
-                "Standard": 6.0
-            },
-            "FedEx": {
-                "Priority": 3.5,
-                "Standard": 6.25
-            },
-            "UPS": {
-                "Priority": 2.12,
-                "Standard": 5.75
-            }
-        },
+        "query": "What is the average number of transit days for each carrier for Standard priority level?",
+        "answer": "{'DHL': 6.0, 'FedEx': 6.25, 'UPS': 5.75}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Logistics_Shipments_Normal_1_1",
@@ -494,38 +372,25 @@
     },
     {
         "index": "Logistics_Shipments_Normal_1_2",
-        "query": "What percentage of shipments met the on-time delivery rule (Priority ≤ 4 days, Standard ≤ 6 days)?",
-        "answer": "88%",
+        "query": "What percentage of shipments met the on-time delivery rule (Priority ≤ 4 days, Standard ≤ 6 days), rounded to nearest integer?",
+        "answer": 88,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "string"
+        "dtype": "int"
     },
     {
         "index": "Logistics_Shipments_Normal_3_0",
-        "query": "What is the average number of transit days for each carrier broken down by priority level?",
-        "answer": {
-            "DHL": {
-                "Priority": 2.5,
-                "Standard": 6.0
-            },
-            "FedEx": {
-                "Priority": 3.5,
-                "Standard": 6.25
-            },
-            "UPS": {
-                "Priority": 2.12,
-                "Standard": 5.75
-            }
-        },
+        "query": "What is the average number of transit days for each carrier for Standard priority level?",
+        "answer": "{'DHL': 6.0, 'FedEx': 6.25, 'UPS': 5.75}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Logistics_Shipments_Normal_3_1",
@@ -544,38 +409,25 @@
     },
     {
         "index": "Logistics_Shipments_Normal_3_2",
-        "query": "What percentage of shipments met the on-time delivery rule (Priority ≤ 4 days, Standard ≤ 6 days)?",
-        "answer": "88%",
+        "query": "What percentage of shipments met the on-time delivery rule (Priority ≤ 4 days, Standard ≤ 6 days), rounded to nearest integer?",
+        "answer": 88,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "string"
+        "dtype": "int"
     },
     {
         "index": "Logistics_Shipments_Normal_4_0",
-        "query": "What is the average number of transit days for each carrier broken down by priority level?",
-        "answer": {
-            "DHL": {
-                "Priority": 2.5,
-                "Standard": 6.0
-            },
-            "FedEx": {
-                "Priority": 3.5,
-                "Standard": 6.25
-            },
-            "UPS": {
-                "Priority": 2.12,
-                "Standard": 5.75
-            }
-        },
+        "query": "What is the average number of transit days for each carrier for Standard priority level?",
+        "answer": "{'DHL': 6.0, 'FedEx': 6.25, 'UPS': 5.75}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Logistics_Shipments_Normal_4_1",
@@ -594,270 +446,157 @@
     },
     {
         "index": "Logistics_Shipments_Normal_4_2",
-        "query": "What percentage of shipments met the on-time delivery rule (Priority ≤ 4 days, Standard ≤ 6 days)?",
-        "answer": "88%",
+        "query": "What percentage of shipments met the on-time delivery rule (Priority ≤ 4 days, Standard ≤ 6 days), rounded to nearest integer?",
+        "answer": 88,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "string"
+        "dtype": "int"
     },
     {
         "index": "Clinic_Visits_Normal_0_0",
         "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
-        "answer": {
-            "Allergy": 156,
-            "Back Pain": 136,
-            "Diabetes": 145,
-            "Flu": 129.5,
-            "Hypertension": 150
-        },
+        "answer": "{'Allergy': 156, 'Back Pain': 136, 'Diabetes': 145, 'Flu': 129.5, 'Hypertension': 150}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_0_1",
         "query": "For each doctor, what proportion of their visits required a follow-up?",
-        "answer": {
-            "Dr. Iyer": "25%",
-            "Dr. Singh": "25%",
-            "Dr. Rao": "10%"
-        },
+        "answer": "{'Dr. Iyer': '25%', 'Dr. Singh': '25%', 'Dr. Rao': '10%'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_0_2",
-        "query": "What is the average consultation fee grouped by gender and condition?",
-        "answer": {
-            "Females": {
-                "Allergy": "₹700",
-                "Back Pain": "₹600",
-                "Diabetes": "₹600",
-                "Hypertension": "₹500"
-            },
-            "Males": {
-                "Allergy": "₹550",
-                "Back Pain": "₹533.33",
-                "Diabetes": "₹525",
-                "Flu": "₹650",
-                "Hypertension": "₹600"
-            }
-        },
+        "query": "What is the average consultation fee for females grouped by condition?",
+        "answer": "{'Allergy': '₹700', 'Back Pain': '₹600', 'Diabetes': '₹600', 'Hypertension': '₹500'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_1_0",
         "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
-        "answer": {
-            "Allergy": 156,
-            "Back Pain": 136,
-            "Diabetes": 145,
-            "Flu": 129.5,
-            "Hypertension": 150
-        },
+        "answer": "{'Allergy': 156, 'Back Pain': 136, 'Diabetes': 145, 'Flu': 129.5, 'Hypertension': 150}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_1_1",
         "query": "For each doctor, what proportion of their visits required a follow-up?",
-        "answer": {
-            "Dr. Iyer": "25%",
-            "Dr. Singh": "25%",
-            "Dr. Rao": "10%"
-        },
+        "answer": "{'Dr. Iyer': '25%', 'Dr. Singh': '25%', 'Dr. Rao': '10%'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_1_2",
-        "query": "What is the average consultation fee grouped by gender and condition?",
-        "answer": {
-            "Females": {
-                "Allergy": "₹700",
-                "Back Pain": "₹600",
-                "Diabetes": "₹600",
-                "Hypertension": "₹500"
-            },
-            "Males": {
-                "Allergy": "₹550",
-                "Back Pain": "₹533.33",
-                "Diabetes": "₹525",
-                "Flu": "₹650",
-                "Hypertension": "₹600"
-            }
-        },
+        "query": "What is the average consultation fee for females grouped by condition?",
+        "answer": "{'Allergy': '₹700', 'Back Pain': '₹600', 'Diabetes': '₹600', 'Hypertension': '₹500'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_3_0",
         "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
-        "answer": {
-            "Allergy": 156,
-            "Back Pain": 136,
-            "Diabetes": 145,
-            "Flu": 129.5,
-            "Hypertension": 150
-        },
+        "answer": "{'Allergy': 156, 'Back Pain': 136, 'Diabetes': 145, 'Flu': 129.5, 'Hypertension': 150}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_3_1",
         "query": "For each doctor, what proportion of their visits required a follow-up?",
-        "answer": {
-            "Dr. Iyer": "25%",
-            "Dr. Singh": "25%",
-            "Dr. Rao": "10%"
-        },
+        "answer": "{'Dr. Iyer': '25%', 'Dr. Singh': '25%', 'Dr. Rao': '10%'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_3_2",
-        "query": "What is the average consultation fee grouped by gender and condition?",
-        "answer": {
-            "Females": {
-                "Allergy": "₹700",
-                "Back Pain": "₹600",
-                "Diabetes": "₹600",
-                "Hypertension": "₹500"
-            },
-            "Males": {
-                "Allergy": "₹550",
-                "Back Pain": "₹533.33",
-                "Diabetes": "₹525",
-                "Flu": "₹650",
-                "Hypertension": "₹600"
-            }
-        },
+        "query": "What is the average consultation fee for females grouped by condition?",
+        "answer": "{'Allergy': '₹700', 'Back Pain': '₹600', 'Diabetes': '₹600', 'Hypertension': '₹500'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_4_0",
         "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
-        "answer": {
-            "Allergy": 156,
-            "Back Pain": 136,
-            "Diabetes": 145,
-            "Flu": 129.5,
-            "Hypertension": 150
-        },
+        "answer": "{'Allergy': 156, 'Back Pain': 136, 'Diabetes': 145, 'Flu': 129.5, 'Hypertension': 150}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_4_1",
         "query": "For each doctor, what proportion of their visits required a follow-up?",
-        "answer": {
-            "Dr. Iyer": "25%",
-            "Dr. Singh": "25%",
-            "Dr. Rao": "10%"
-        },
+        "answer": "{'Dr. Iyer': '25%', 'Dr. Singh': '25%', 'Dr. Rao': '10%'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Clinic_Visits_Normal_4_2",
-        "query": "What is the average consultation fee grouped by gender and condition?",
-        "answer": {
-            "Females": {
-                "Allergy": "₹700",
-                "Back Pain": "₹600",
-                "Diabetes": "₹600",
-                "Hypertension": "₹500"
-            },
-            "Males": {
-                "Allergy": "₹550",
-                "Back Pain": "₹533.33",
-                "Diabetes": "₹525",
-                "Flu": "₹650",
-                "Hypertension": "₹600"
-            }
-        },
+        "query": "What is the average consultation fee for females grouped by condition?",
+        "answer": "{'Allergy': '₹700', 'Back Pain': '₹600', 'Diabetes': '₹600', 'Hypertension': '₹500'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Personal_Finance_Transactions_Normal_0_0",
-        "query": "What is the total monthly spending for each category?",
-        "answer": {
-            "June": {
-                "Entertainment": "₹3,729.44",
-                "Groceries": "₹8,116.73",
-                "Health": "₹1,007.58",
-                "Rent": "₹1,641.20",
-                "Utilities": "₹2,249.63"
-            },
-            "July": {
-                "Dining": "₹1,276.08",
-                "Entertainment": "₹2,331.50",
-                "Groceries": "₹488.17",
-                "Health": "₹1,002.26",
-                "Rent": "₹5,490.13",
-                "Transport": "₹5,814.82",
-                "Utilities": "₹7,467.94"
-            }
-        },
+        "query": "What is the total spending for each category in the month of June?",
+        "answer": "{'Entertainment': '₹3,729.44', 'Groceries': '₹8,116.73', 'Health': '₹1,007.58', 'Rent': '₹1,641.20', 'Utilities': '₹2,249.63'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Personal_Finance_Transactions_Normal_0_1",
@@ -872,42 +611,25 @@
     },
     {
         "index": "Personal_Finance_Transactions_Normal_0_2",
-        "query": "What fraction of total spending was on recurring expenses?",
-        "answer": "31.4%",
+        "query": "What percent of total spending was on recurring expenses?",
+        "answer": 31.4,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "string"
+        "dtype": "float"
     },
     {
         "index": "Personal_Finance_Transactions_Normal_1_0",
-        "query": "What is the total monthly spending for each category?",
-        "answer": {
-            "June": {
-                "Entertainment": "₹3,729.44",
-                "Groceries": "₹8,116.73",
-                "Health": "₹1,007.58",
-                "Rent": "₹1,641.20",
-                "Utilities": "₹2,249.63"
-            },
-            "July": {
-                "Dining": "₹1,276.08",
-                "Entertainment": "₹2,331.50",
-                "Groceries": "₹488.17",
-                "Health": "₹1,002.26",
-                "Rent": "₹5,490.13",
-                "Transport": "₹5,814.82",
-                "Utilities": "₹7,467.94"
-            }
-        },
+        "query": "What is the total spending for each category in the month of June?",
+        "answer": "{'Entertainment': '₹3,729.44', 'Groceries': '₹8,116.73', 'Health': '₹1,007.58', 'Rent': '₹1,641.20', 'Utilities': '₹2,249.63'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Personal_Finance_Transactions_Normal_1_1",
@@ -922,42 +644,25 @@
     },
     {
         "index": "Personal_Finance_Transactions_Normal_1_2",
-        "query": "What fraction of total spending was on recurring expenses?",
-        "answer": "31.4%",
+        "query": "What percent of total spending was on recurring expenses?",
+        "answer": 31.4,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "string"
+        "dtype": "float"
     },
     {
         "index": "Personal_Finance_Transactions_Normal_3_0",
-        "query": "What is the total monthly spending for each category?",
-        "answer": {
-            "June": {
-                "Entertainment": "₹3,729.44",
-                "Groceries": "₹8,116.73",
-                "Health": "₹1,007.58",
-                "Rent": "₹1,641.20",
-                "Utilities": "₹2,249.63"
-            },
-            "July": {
-                "Dining": "₹1,276.08",
-                "Entertainment": "₹2,331.50",
-                "Groceries": "₹488.17",
-                "Health": "₹1,002.26",
-                "Rent": "₹5,490.13",
-                "Transport": "₹5,814.82",
-                "Utilities": "₹7,467.94"
-            }
-        },
+        "query": "What is the total spending for each category in the month of June?",
+        "answer": "{'Entertainment': '₹3,729.44', 'Groceries': '₹8,116.73', 'Health': '₹1,007.58', 'Rent': '₹1,641.20', 'Utilities': '₹2,249.63'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Personal_Finance_Transactions_Normal_3_1",
@@ -972,42 +677,25 @@
     },
     {
         "index": "Personal_Finance_Transactions_Normal_3_2",
-        "query": "What fraction of total spending was on recurring expenses?",
-        "answer": "31.4%",
+        "query": "What percent of total spending was on recurring expenses?",
+        "answer": 31.4,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "string"
+        "dtype": "float"
     },
     {
         "index": "Personal_Finance_Transactions_Normal_4_0",
-        "query": "What is the total monthly spending for each category?",
-        "answer": {
-            "June": {
-                "Entertainment": "₹3,729.44",
-                "Groceries": "₹8,116.73",
-                "Health": "₹1,007.58",
-                "Rent": "₹1,641.20",
-                "Utilities": "₹2,249.63"
-            },
-            "July": {
-                "Dining": "₹1,276.08",
-                "Entertainment": "₹2,331.50",
-                "Groceries": "₹488.17",
-                "Health": "₹1,002.26",
-                "Rent": "₹5,490.13",
-                "Transport": "₹5,814.82",
-                "Utilities": "₹7,467.94"
-            }
-        },
+        "query": "What is the total spending for each category in the month of June?",
+        "answer": "{'Entertainment': '₹3,729.44', 'Groceries': '₹8,116.73', 'Health': '₹1,007.58', 'Rent': '₹1,641.20', 'Utilities': '₹2,249.63'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "Personal_Finance_Transactions_Normal_4_1",
@@ -1022,61 +710,36 @@
     },
     {
         "index": "Personal_Finance_Transactions_Normal_4_2",
-        "query": "What fraction of total spending was on recurring expenses?",
-        "answer": "31.4%",
+        "query": "What percent of total spending was on recurring expenses?",
+        "answer": 31.4,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "string"
+        "dtype": "float"
     },
     {
         "index": "University_Grades_Normal_0_0",
-        "query": "What is the average total score and pass rate for each course?",
-        "answer": {
-            "CV": {
-                "Avg": 118.1,
-                "PassRate": "100%"
-            },
-            "DBMS": {
-                "Avg": 108.5,
-                "PassRate": "100%"
-            },
-            "DSA": {
-                "Avg": 119.0,
-                "PassRate": "100%"
-            },
-            "ML": {
-                "Avg": 118.33,
-                "PassRate": "100%"
-            },
-            "NLP": {
-                "Avg": 103.0,
-                "PassRate": "100%"
-            },
-            "OS": {
-                "Avg": 98.0,
-                "PassRate": "100%"
-            }
-        },
+        "query": "What is the average total score for each course with a 100% pass rate?",
+        "answer": "{'CV' 118.1, 'DBMS': 108.5, 'DSA': 119.0, 'ML': 118.33, 'NLP': 103.0, 'OS': 98.0}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "University_Grades_Normal_0_1",
-        "query": "What is the distribution of letter grades across all students?",
-        "answer": "All 22 students received grade A.",
+        "query": "How many students received grade A?",
+        "answer": 22,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "string"
+        "dtype": "int"
     },
     {
         "index": "University_Grades_Normal_0_2",
@@ -1092,64 +755,35 @@
     {
         "index": "University_Grades_Normal_0_3",
         "query": "Among all students, which individual achieved the highest overall score, and what was their total marks along with the corresponding letter grade?",
-        "answer": {
-            "Student": "S104",
-            "Marks": 131,
-            "Grade": "A"
-        },
+        "answer": "{'Student': 'S104', 'Marks': 131, 'Grade': 'A'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx"
         ],
         "diversification_type": "hierarchical_column_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "University_Grades_Normal_1_0",
-        "query": "What is the average total score and pass rate for each course?",
-        "answer": {
-            "CV": {
-                "Avg": 118.1,
-                "PassRate": "100%"
-            },
-            "DBMS": {
-                "Avg": 108.5,
-                "PassRate": "100%"
-            },
-            "DSA": {
-                "Avg": 119.0,
-                "PassRate": "100%"
-            },
-            "ML": {
-                "Avg": 118.33,
-                "PassRate": "100%"
-            },
-            "NLP": {
-                "Avg": 103.0,
-                "PassRate": "100%"
-            },
-            "OS": {
-                "Avg": 98.0,
-                "PassRate": "100%"
-            }
-        },
+        "query": "What is the average total score for each course with a 100% pass rate?",
+        "answer": "{'CV' 118.1, 'DBMS': 108.5, 'DSA': 119.0, 'ML': 118.33, 'NLP': 103.0, 'OS': 98.0}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "University_Grades_Normal_1_1",
-        "query": "What is the distribution of letter grades across all students?",
-        "answer": "All 22 students received grade A.",
+        "query": "How many students received grade A?",
+        "answer": 22,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "string"
+        "dtype": "int"
     },
     {
         "index": "University_Grades_Normal_1_2",
@@ -1165,64 +799,35 @@
     {
         "index": "University_Grades_Normal_1_3",
         "query": "Among all students, which individual achieved the highest overall score, and what was their total marks along with the corresponding letter grade?",
-        "answer": {
-            "Student": "S104",
-            "Marks": 131,
-            "Grade": "A"
-        },
+        "answer": "{'Student': 'S104', 'Marks': 131, 'Grade': 'A'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx"
         ],
         "diversification_type": "merge_similar_columns",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "University_Grades_Normal_3_0",
-        "query": "What is the average total score and pass rate for each course?",
-        "answer": {
-            "CV": {
-                "Avg": 118.1,
-                "PassRate": "100%"
-            },
-            "DBMS": {
-                "Avg": 108.5,
-                "PassRate": "100%"
-            },
-            "DSA": {
-                "Avg": 119.0,
-                "PassRate": "100%"
-            },
-            "ML": {
-                "Avg": 118.33,
-                "PassRate": "100%"
-            },
-            "NLP": {
-                "Avg": 103.0,
-                "PassRate": "100%"
-            },
-            "OS": {
-                "Avg": 98.0,
-                "PassRate": "100%"
-            }
-        },
+        "query": "What is the average total score for each course with a 100% pass rate?",
+        "answer": "{'CV' 118.1, 'DBMS': 108.5, 'DSA': 119.0, 'ML': 118.33, 'NLP': 103.0, 'OS': 98.0}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "University_Grades_Normal_3_1",
-        "query": "What is the distribution of letter grades across all students?",
-        "answer": "All 22 students received grade A.",
+        "query": "How many students received grade A?",
+        "answer": 22,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "string"
+        "dtype": "int"
     },
     {
         "index": "University_Grades_Normal_3_2",
@@ -1238,64 +843,35 @@
     {
         "index": "University_Grades_Normal_3_3",
         "query": "Among all students, which individual achieved the highest overall score, and what was their total marks along with the corresponding letter grade?",
-        "answer": {
-            "Student": "S104",
-            "Marks": 131,
-            "Grade": "A"
-        },
+        "answer": "{'Student': 'S104', 'Marks': 131, 'Grade': 'A'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx"
         ],
         "diversification_type": "single_hierarchical_row_header",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "University_Grades_Normal_4_0",
-        "query": "What is the average total score and pass rate for each course?",
-        "answer": {
-            "CV": {
-                "Avg": 118.1,
-                "PassRate": "100%"
-            },
-            "DBMS": {
-                "Avg": 108.5,
-                "PassRate": "100%"
-            },
-            "DSA": {
-                "Avg": 119.0,
-                "PassRate": "100%"
-            },
-            "ML": {
-                "Avg": 118.33,
-                "PassRate": "100%"
-            },
-            "NLP": {
-                "Avg": 103.0,
-                "PassRate": "100%"
-            },
-            "OS": {
-                "Avg": 98.0,
-                "PassRate": "100%"
-            }
-        },
+        "query": "What is the average total score for each course with a 100% pass rate?",
+        "answer": "{'CV' 118.1, 'DBMS': 108.5, 'DSA': 119.0, 'ML': 118.33, 'NLP': 103.0, 'OS': 98.0}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     },
     {
         "index": "University_Grades_Normal_4_1",
-        "query": "What is the distribution of letter grades across all students?",
-        "answer": "All 22 students received grade A.",
+        "query": "How many students received grade A?",
+        "answer": 22,
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "string"
+        "dtype": "int"
     },
     {
         "index": "University_Grades_Normal_4_2",
@@ -1311,16 +887,12 @@
     {
         "index": "University_Grades_Normal_4_3",
         "query": "Among all students, which individual achieved the highest overall score, and what was their total marks along with the corresponding letter grade?",
-        "answer": {
-            "Student": "S104",
-            "Marks": 131,
-            "Grade": "A"
-        },
+        "answer": "{'Student': 'S104', 'Marks': 131, 'Grade': 'A'}",
         "type": "Normal",
         "data_file": [
             "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_transpose_table.xlsx"
         ],
         "diversification_type": "transpose_table",
-        "dtype": "dict"
+        "dtype": "pd.Series"
     }
 ]

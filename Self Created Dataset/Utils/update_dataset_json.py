@@ -12,6 +12,8 @@ final_data = []
 for sample in data:
     for qa_pairs in qa["_".join(sample["index"][:-4].split("_")[:-1])+".xlsx"]:
         if sample["query"] == qa_pairs["question"]:
+            if "reworked_question" in qa_pairs:
+                sample["query"] = qa_pairs["reworked_question"]
             sample["answer"] = qa_pairs["answer"]
             sample["dtype"] = qa_pairs["dtype"]
             final_data.append(sample)
