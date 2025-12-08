@@ -1,0 +1,15 @@
+# Ensure Dockerfile always uses LF line endings
+research/agents/Dockerfile text eol=lf
+
+# Ensure all Dockerfiles use LF
+**/Dockerfile text eol=lf
+
+# Shell scripts should use LF
+*.sh text eol=lf
+
+# Python files - let Git handle line endings based on platform
+*.py text
+
+# JSON, Markdown - use auto line endings
+*.json text
+*.md text

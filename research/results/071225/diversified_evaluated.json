@@ -1,0 +1,1387 @@
+[
+  {
+    "index": "Retail_Sales_Orders_original_0__hierarchical_column_header__diversified",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "pd.Series",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "West": 11625.25,
+        "East": 2617.5,
+        "South": 1209.0,
+        "North": 600.0
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"West\": 11625.25,\n        \"East\": 2617.5,\n        \"South\": 1209.0,\n        \"North\": 600.0\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Retail_Sales_Orders_original_0__merge_similar_columns__diversified",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "pd.Series",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "East": 0.0,
+        "North": 0.0,
+        "South": 0.0,
+        "West": 0.0
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"East\": 0.0, \"North\": 0.0, \"South\": 0.0, \"West\": 0.0},\n    \"dtype\": \"dict\"\n}\n```\n\nIt appears all NetAmount values are zero. This could indicate formatting or data issues in the 'NetAmount' column. If you need to investigate the raw column data or require total revenue from another related amount column, please specify!",
+    "eval": false
+  },
+  {
+    "index": "Retail_Sales_Orders_original_0__single_hierarchical_row_header__diversified",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "pd.Series",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "West": 11625.25,
+        "East": 2617.5,
+        "South": 1209.0,
+        "North": 600.0
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"West\": 11625.25,\n        \"East\": 2617.50,\n        \"South\": 1209.00,\n        \"North\": 600.00\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Retail_Sales_Orders_original_0__transpose_table__diversified",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "pd.Series",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "West": 11625.25,
+        "East": 2617.5,
+        "South": 1209.0,
+        "North": 600.0
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"West\": 11625.25, \"East\": 2617.5, \"South\": 1209.0, \"North\": 600.0},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Retail_Sales_Orders_original_1__hierarchical_column_header__diversified",
+    "query": "Which product sold the most units overall across all orders? (mention only the product name)",
+    "answer": "Coffee Beans",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "ProductDetails",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"ProductDetails\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Retail_Sales_Orders_original_1__merge_similar_columns__diversified",
+    "query": "Which product sold the most units overall across all orders? (mention only the product name)",
+    "answer": "Coffee Beans",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "Laptop",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"Laptop\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Retail_Sales_Orders_original_1__single_hierarchical_row_header__diversified",
+    "query": "Which product sold the most units overall across all orders? (mention only the product name)",
+    "answer": "Coffee Beans",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "P400",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"P400\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Retail_Sales_Orders_original_1__transpose_table__diversified",
+    "query": "Which product sold the most units overall across all orders? (mention only the product name)",
+    "answer": "Coffee Beans",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "Coffee Beans",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"Coffee Beans\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Retail_Sales_Orders_original_2__hierarchical_column_header__diversified",
+    "query": "What is the average discount rate (rounded to 3 decimals) applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "{'Express': 0.059, 'Standard': 0.058}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Express": 0.059,
+        "Standard": 0.058
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Express\": 0.059, \"Standard\": 0.058},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Retail_Sales_Orders_original_2__merge_similar_columns__diversified",
+    "query": "What is the average discount rate (rounded to 3 decimals) applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "{'Express': 0.059, 'Standard': 0.058}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Express": 0.059,
+        "Standard": 0.058
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Express\": 0.059, \"Standard\": 0.058},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Retail_Sales_Orders_original_2__single_hierarchical_row_header__diversified",
+    "query": "What is the average discount rate (rounded to 3 decimals) applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "{'Express': 0.059, 'Standard': 0.058}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Express": 0.1,
+        "Standard": 0.0
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Express\": 0.1, \"Standard\": 0.0},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Retail_Sales_Orders_original_2__transpose_table__diversified",
+    "query": "What is the average discount rate (rounded to 3 decimals) applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "{'Express': 0.059, 'Standard': 0.058}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Express": 0.059,
+        "Standard": 0.058
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Express\": 0.059, \"Standard\": 0.058},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Retail_Sales_Orders_original_3__hierarchical_column_header__diversified",
+    "query": "What percentage of orders were delivered within two days of the order date?",
+    "answer": "62.5",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "float",
+    "type": null,
+    "agent_response": {
+      "answer": 62.5,
+      "dtype": "float"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 62.5,\n    \"dtype\": \"float\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Retail_Sales_Orders_original_3__merge_similar_columns__diversified",
+    "query": "What percentage of orders were delivered within two days of the order date?",
+    "answer": "62.5",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "float",
+    "type": null,
+    "agent_response": {
+      "answer": 62.5,
+      "dtype": "float"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 62.5,\n    \"dtype\": \"float\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Retail_Sales_Orders_original_3__single_hierarchical_row_header__diversified",
+    "query": "What percentage of orders were delivered within two days of the order date?",
+    "answer": "62.5",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "float",
+    "type": null,
+    "agent_response": {
+      "answer": 62.5,
+      "dtype": "float"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 62.5,\n    \"dtype\": \"float\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Retail_Sales_Orders_original_3__transpose_table__diversified",
+    "query": "What percentage of orders were delivered within two days of the order date?",
+    "answer": "62.5",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "float",
+    "type": null,
+    "agent_response": {
+      "answer": "Order/Delivery date columns not found.",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"Order/Delivery date columns not found.\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "HR_Timesheets_original_0__hierarchical_column_header__diversified",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Apollo": 2370.0,
+        "Hermes": 2375.0,
+        "Zephyr": 450.0
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Apollo\": 2370.0,\n        \"Hermes\": 2375.0,\n        \"Zephyr\": 450.0\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "HR_Timesheets_original_0__merge_similar_columns__diversified",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Apollo": 2370.0,
+        "Hermes": 2375.0,
+        "Zephyr": 450.0
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Apollo\": 2370.0,\n        \"Hermes\": 2375.0,\n        \"Zephyr\": 450.0\n    },\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "HR_Timesheets_original_0__single_hierarchical_row_header__diversified",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Apollo": 650.0
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Apollo\": 650.0},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "HR_Timesheets_original_0__transpose_table__diversified",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": "The Billable column needs cleaning because it contains non-string values. I will check and convert all values in the Billable column to string, then proceed with the calculation.",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"The Billable column needs cleaning because it contains non-string values. I will check and convert all values in the Billable column to string, then proceed with the calculation.\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "HR_Timesheets_original_1__hierarchical_column_header__diversified",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 8,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 8,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "HR_Timesheets_original_1__merge_similar_columns__diversified",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 8,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 8,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "HR_Timesheets_original_1__single_hierarchical_row_header__diversified",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 8,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 8,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "HR_Timesheets_original_1__transpose_table__diversified",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 8,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 8,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "HR_Timesheets_original_2__hierarchical_column_header__diversified",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Onsite": 8.071428571428571,
+        "Remote": 7.423076923076923
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Onsite\": 8.071428571428571, \"Remote\": 7.423076923076923},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "HR_Timesheets_original_2__merge_similar_columns__diversified",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "remote": 7.42,
+        "onsite": 8.07
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"remote\": 7.42,\n        \"onsite\": 8.07\n    },\n    \"dtype\": \"dict\"\n}\n```\n*Rounded to two decimal places for readability:*\n- Average hours worked remotely: 7.42\n- Average hours worked onsite: 8.07",
+    "eval": false
+  },
+  {
+    "index": "HR_Timesheets_original_2__single_hierarchical_row_header__diversified",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Onsite": 8.07,
+        "Remote": 7.42
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Onsite\": 8.07, \"Remote\": 7.42},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "HR_Timesheets_original_2__transpose_table__diversified",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Onsite": 8.071428571428571,
+        "Remote": 7.423076923076923
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Onsite\": 8.071428571428571, \"Remote\": 7.423076923076923},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Logistics_Shipments_original_0__hierarchical_column_header__diversified",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "DHL": 5.6,
+        "FedEx": 5.5,
+        "UPS": 4.83
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"DHL\": 5.60,\n        \"FedEx\": 5.50,\n        \"UPS\": 4.83\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Logistics_Shipments_original_0__merge_similar_columns__diversified",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "DHL": 5.6,
+        "FedEx": 5.5,
+        "UPS": 4.83
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Logistics_Shipments_original_0__single_hierarchical_row_header__diversified",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "DHL": 5.6,
+        "FedEx": 5.5,
+        "UPS": 4.83
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"DHL\": 5.60,\n        \"FedEx\": 5.50,\n        \"UPS\": 4.83\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Logistics_Shipments_original_0__transpose_table__diversified",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "DHL": 5.6,
+        "FedEx": 5.5,
+        "UPS": 4.833333
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"DHL\": 5.6,\n        \"FedEx\": 5.5,\n        \"UPS\": 4.833333\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Logistics_Shipments_original_1__hierarchical_column_header__diversified",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "['SIN', 'SYD', 'LHR']",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "list",
+    "type": null,
+    "agent_response": {
+      "answer": [
+        "SIN",
+        "SYD",
+        "LHR"
+      ],
+      "dtype": "list"
+    },
+    "raw_response": "```json\n{\n    \"answer\": [\"SIN\", \"SYD\", \"LHR\"],\n    \"dtype\": \"list\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Logistics_Shipments_original_1__merge_similar_columns__diversified",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "['SIN', 'SYD', 'LHR']",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "list",
+    "type": null,
+    "agent_response": {
+      "answer": [
+        "Origin, Destination\nBOM, SIN",
+        "DEL, SYD",
+        "BLR, SIN"
+      ],
+      "dtype": "list"
+    },
+    "raw_response": "```json\n{\n    \"answer\": [\"Origin, Destination\\nBOM, SIN\", \"DEL, SYD\", \"BLR, SIN\"],\n    \"dtype\": \"list\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Logistics_Shipments_original_1__single_hierarchical_row_header__diversified",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "['SIN', 'SYD', 'LHR']",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "list",
+    "type": null,
+    "agent_response": {
+      "answer": [
+        "SIN",
+        "SYD",
+        "LHR"
+      ],
+      "dtype": "list"
+    },
+    "raw_response": "```json\n{\n    \"answer\": [\"SIN\", \"SYD\", \"LHR\"],\n    \"dtype\": \"list\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Logistics_Shipments_original_1__transpose_table__diversified",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "['SIN', 'SYD', 'LHR']",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "list",
+    "type": null,
+    "agent_response": {
+      "answer": [
+        "SIN",
+        "SYD",
+        "LHR"
+      ],
+      "dtype": "list"
+    },
+    "raw_response": "```json\n{\n    \"answer\": [\"SIN\", \"SYD\", \"LHR\"],\n    \"dtype\": \"list\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Logistics_Shipments_original_2__hierarchical_column_header__diversified",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days), rounded to nearest integer?",
+    "answer": "80",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 80,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 80,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Logistics_Shipments_original_2__merge_similar_columns__diversified",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days), rounded to nearest integer?",
+    "answer": "80",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": "The relevant columns for checking the on-time delivery rule (Service Level and Delivery Days) are not explicitly named in the dataset. Please specify which columns correspond to the service level (Priority/Standard) and the actual delivery days, or clarify if these need to be inferred from available data.",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"The relevant columns for checking the on-time delivery rule (Service Level and Delivery Days) are not explicitly named in the dataset. Please specify which columns correspond to the service level (Priority/Standard) and the actual delivery days, or clarify if these need to be inferred from available data.\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Logistics_Shipments_original_2__single_hierarchical_row_header__diversified",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days), rounded to nearest integer?",
+    "answer": "80",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 100,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 100,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Logistics_Shipments_original_2__transpose_table__diversified",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days), rounded to nearest integer?",
+    "answer": "80",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 80,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 80,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Clinic_Visits_original_0__hierarchical_column_header__diversified",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Allergy": 142.0,
+        "Back Pain": 146.0,
+        "Diabetes": 111.0,
+        "Flu": 132.5,
+        "Hypertension": 136.0
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Allergy\": 142.0,\n        \"Back Pain\": 146.0,\n        \"Diabetes\": 111.0,\n        \"Flu\": 132.5,\n        \"Hypertension\": 136.0\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Clinic_Visits_original_0__merge_similar_columns__diversified",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Allergy": 142.0,
+        "Back Pain": 146.0,
+        "Diabetes": 111.0,
+        "Flu": 132.5,
+        "Hypertension": 136.0
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Clinic_Visits_original_0__single_hierarchical_row_header__diversified",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Allergy": 142.0,
+        "Back Pain": 146.0,
+        "Diabetes": 111.0,
+        "Flu": 132.5,
+        "Hypertension": 136.0
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Clinic_Visits_original_0__transpose_table__diversified",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Allergy": 142.0,
+        "Back Pain": 146.0,
+        "Diabetes": 111.0,
+        "Flu": 132.5,
+        "Hypertension": 136.0
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Allergy\": 142.0,\n        \"Back Pain\": 146.0,\n        \"Diabetes\": 111.0,\n        \"Flu\": 132.5,\n        \"Hypertension\": 136.0\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Clinic_Visits_original_1__hierarchical_column_header__diversified",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{'Dr. Iyer': 0.5, 'Dr. Rao': 0.5, 'Dr. Singh': 0.3333333333333333}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Dr. Iyer": 0.5,
+        "Dr. Rao": 0.5,
+        "Dr. Singh": 0.3333
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Dr. Iyer\": 0.5,\n        \"Dr. Rao\": 0.5,\n        \"Dr. Singh\": 0.3333\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Clinic_Visits_original_1__merge_similar_columns__diversified",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{'Dr. Iyer': 0.5, 'Dr. Rao': 0.5, 'Dr. Singh': 0.3333333333333333}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Dr. Iyer": 0.5,
+        "Dr. Rao": 0.5,
+        "Dr. Singh": 0.3333
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Dr. Iyer\": 0.5,\n        \"Dr. Rao\": 0.5,\n        \"Dr. Singh\": 0.3333\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Clinic_Visits_original_1__single_hierarchical_row_header__diversified",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{'Dr. Iyer': 0.5, 'Dr. Rao': 0.5, 'Dr. Singh': 0.3333333333333333}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Dr. Iyer": 0.5,
+        "Dr. Rao": 0.5,
+        "Dr. Singh": 0.3333
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Dr. Iyer\": 0.5,\n        \"Dr. Rao\": 0.5,\n        \"Dr. Singh\": 0.3333\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Clinic_Visits_original_1__transpose_table__diversified",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{'Dr. Iyer': 0.5, 'Dr. Rao': 0.5, 'Dr. Singh': 0.3333333333333333}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Dr. Iyer": 0.5,
+        "Dr. Rao": 0.5,
+        "Dr. Singh": 0.3333
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Dr. Iyer\": 0.5, \"Dr. Rao\": 0.5, \"Dr. Singh\": 0.3333},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Clinic_Visits_original_2__hierarchical_column_header__diversified",
+    "query": "What is the average consultation fee for females grouped by condition?",
+    "answer": "{'Allergy': 700, 'Back Pain': 600, 'Diabetes': 600, 'Hypertension': 500}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {},
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {},\n    \"dtype\": \"pd.Series\"\n}\n```\n",
+    "eval": false
+  },
+  {
+    "index": "Clinic_Visits_original_2__merge_similar_columns__diversified",
+    "query": "What is the average consultation fee for females grouped by condition?",
+    "answer": "{'Allergy': 700, 'Back Pain': 600, 'Diabetes': 600, 'Hypertension': 500}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {},
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {},\n    \"dtype\": \"dict\"\n}\n```\n\nThe result is an empty dictionary, indicating that there are no records for females in the dataset. If you meant a different way of selecting or grouping, please clarify.",
+    "eval": false
+  },
+  {
+    "index": "Clinic_Visits_original_2__single_hierarchical_row_header__diversified",
+    "query": "What is the average consultation fee for females grouped by condition?",
+    "answer": "{'Allergy': 700, 'Back Pain': 600, 'Diabetes': 600, 'Hypertension': 500}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": "Series([], Name: ConsultationFeeINR, dtype: float64)",
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"Series([], Name: ConsultationFeeINR, dtype: float64)\",\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Clinic_Visits_original_2__transpose_table__diversified",
+    "query": "What is the average consultation fee for females grouped by condition?",
+    "answer": "{'Allergy': 700, 'Back Pain': 600, 'Diabetes': 600, 'Hypertension': 500}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Allergy": 700.0,
+        "Back Pain": 400.0,
+        "Flu": 625.0,
+        "Hypertension": 466.6666666666667
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Allergy\": 700.0,\n        \"Back Pain\": 400.0,\n        \"Flu\": 625.0,\n        \"Hypertension\": 466.6666666666667\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_0__hierarchical_column_header__diversified",
+    "query": "What is the total spending for each category in the month of June?",
+    "answer": "{\"Dining\": 4047.98, \"Entertainment\": 5579.33, \"Groceries\": 4395.02, \"Health\": 5803.54, \"Rent\": 2397.77, \"Transport\": 6838.02, \"Utilities\": 3106.98}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Dining": 4047.98,
+        "Entertainment": 5579.33,
+        "Groceries": 4395.02,
+        "Health": 5803.54,
+        "Rent": 2397.77,
+        "Transport": 6838.02,
+        "Utilities": 3106.98
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Dining\": 4047.98,\n        \"Entertainment\": 5579.33,\n        \"Groceries\": 4395.02,\n        \"Health\": 5803.54,\n        \"Rent\": 2397.77,\n        \"Transport\": 6838.02,\n        \"Utilities\": 3106.98\n    },\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_0__merge_similar_columns__diversified",
+    "query": "What is the total spending for each category in the month of June?",
+    "answer": "{\"Dining\": 4047.98, \"Entertainment\": 5579.33, \"Groceries\": 4395.02, \"Health\": 5803.54, \"Rent\": 2397.77, \"Transport\": 6838.02, \"Utilities\": 3106.98}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": "The dataset uses a combined column name for amounts: 'AmountINR, CashbackINR, NetAmountINR'. I need to inspect and possibly split this column before calculating spending per category for June.",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"The dataset uses a combined column name for amounts: 'AmountINR, CashbackINR, NetAmountINR'. I need to inspect and possibly split this column before calculating spending per category for June.\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_0__single_hierarchical_row_header__diversified",
+    "query": "What is the total spending for each category in the month of June?",
+    "answer": "{\"Dining\": 4047.98, \"Entertainment\": 5579.33, \"Groceries\": 4395.02, \"Health\": 5803.54, \"Rent\": 2397.77, \"Transport\": 6838.02, \"Utilities\": 3106.98}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Dining": 4047.98,
+        "Entertainment": 5579.33,
+        "Groceries": 4395.02,
+        "Health": 5803.54,
+        "Rent": 2397.77,
+        "Transport": 6838.02,
+        "Utilities": 3106.98
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Dining\": 4047.98,\n        \"Entertainment\": 5579.33,\n        \"Groceries\": 4395.02,\n        \"Health\": 5803.54,\n        \"Rent\": 2397.77,\n        \"Transport\": 6838.02,\n        \"Utilities\": 3106.98\n    },\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_0__transpose_table__diversified",
+    "query": "What is the total spending for each category in the month of June?",
+    "answer": "{\"Dining\": 4047.98, \"Entertainment\": 5579.33, \"Groceries\": 4395.02, \"Health\": 5803.54, \"Rent\": 2397.77, \"Transport\": 6838.02, \"Utilities\": 3106.98}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Transport": 6838.02,
+        "Health": 5803.54,
+        "Entertainment": 5579.33,
+        "Groceries": 4395.02,
+        "Dining": 4047.98,
+        "Utilities": 3106.98,
+        "Rent": 2397.77
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Transport\": 6838.02,\n        \"Health\": 5803.54,\n        \"Entertainment\": 5579.33,\n        \"Groceries\": 4395.02,\n        \"Dining\": 4047.98,\n        \"Utilities\": 3106.98,\n        \"Rent\": 2397.77\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_1__hierarchical_column_header__diversified",
+    "query": "Which payment method (mention only name) earned the highest total cashback?",
+    "answer": "UPI",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "UPI",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"UPI\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_1__merge_similar_columns__diversified",
+    "query": "Which payment method (mention only name) earned the highest total cashback?",
+    "answer": "UPI",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "Debit Card",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"Debit Card\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_1__single_hierarchical_row_header__diversified",
+    "query": "Which payment method (mention only name) earned the highest total cashback?",
+    "answer": "UPI",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "UPI",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"UPI\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_1__transpose_table__diversified",
+    "query": "Which payment method (mention only name) earned the highest total cashback?",
+    "answer": "UPI",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "The data is organized with transaction attributes in rows and transaction IDs as columns. I need to transpose and extract total cashback by payment method before answering.",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"The data is organized with transaction attributes in rows and transaction IDs as columns. I need to transpose and extract total cashback by payment method before answering.\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_2__hierarchical_column_header__diversified",
+    "query": "What percent of total spending was on recurring expenses?",
+    "answer": "36.30",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "float",
+    "type": null,
+    "agent_response": {
+      "answer": 36.3,
+      "dtype": "float"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 36.3,\n    \"dtype\": \"float\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_2__merge_similar_columns__diversified",
+    "query": "What percent of total spending was on recurring expenses?",
+    "answer": "36.30",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "float",
+    "type": null,
+    "agent_response": {
+      "answer": 36.3,
+      "dtype": "float"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 36.3,\n    \"dtype\": \"float\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_2__single_hierarchical_row_header__diversified",
+    "query": "What percent of total spending was on recurring expenses?",
+    "answer": "36.30",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "float",
+    "type": null,
+    "agent_response": {
+      "answer": 5.82,
+      "dtype": "float"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 5.82,\n    \"dtype\": \"float\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_2__transpose_table__diversified",
+    "query": "What percent of total spending was on recurring expenses?",
+    "answer": "36.30",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "float",
+    "type": null,
+    "agent_response": {
+      "answer": 11.62,
+      "dtype": "float"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 11.62,\n    \"dtype\": \"float\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "University_Grades_original_0__hierarchical_column_header__diversified",
+    "query": "What is the average total score for each course with a 100% pass rate?",
+    "answer": "{\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {},
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {},\n    \"dtype\": \"dict\"\n}\n```\n\nThere are no courses with a 100% pass rate in the uploaded dataset, so no average total scores can be reported for such courses.",
+    "eval": false
+  },
+  {
+    "index": "University_Grades_original_0__merge_similar_columns__diversified",
+    "query": "What is the average total score for each course with a 100% pass rate?",
+    "answer": "{\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "CV": 113.0,
+        "DBMS": 113.57142857142857,
+        "DSA": 106.25,
+        "ML": 118.5,
+        "NLP": 109.66666666666667,
+        "OS": 114.8
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"CV\": 113.0,\n        \"DBMS\": 113.57142857142857,\n        \"DSA\": 106.25,\n        \"ML\": 118.5,\n        \"NLP\": 109.66666666666667,\n        \"OS\": 114.8\n    },\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_0__single_hierarchical_row_header__diversified",
+    "query": "What is the average total score for each course with a 100% pass rate?",
+    "answer": "{\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "CV": 113.0,
+        "DBMS": 113.57142857142857,
+        "DSA": 106.25,
+        "ML": 118.5,
+        "NLP": 109.66666666666667,
+        "OS": 114.8
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"CV\": 113.0, \"DBMS\": 113.57142857142857, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.66666666666667, \"OS\": 114.8},\n    \"dtype\": \"pd.Series\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_0__transpose_table__diversified",
+    "query": "What is the average total score for each course with a 100% pass rate?",
+    "answer": "{\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": "There was an error due to column naming mismatch after transposing and cleaning the dataframe. Let me inspect the columns after transposing and fixing the data structure to identify the correct label for 'Total(100)' and proceed with the calculation.",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"There was an error due to column naming mismatch after transposing and cleaning the dataframe. Let me inspect the columns after transposing and fixing the data structure to identify the correct label for 'Total(100)' and proceed with the calculation.\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "University_Grades_original_1__hierarchical_column_header__diversified",
+    "query": "How many students received grade A?",
+    "answer": "22",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 22,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 22,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_1__merge_similar_columns__diversified",
+    "query": "How many students received grade A?",
+    "answer": "22",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 22,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 22,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_1__single_hierarchical_row_header__diversified",
+    "query": "How many students received grade A?",
+    "answer": "22",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 22,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 22,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_1__transpose_table__diversified",
+    "query": "How many students received grade A?",
+    "answer": "22",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 0,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 0,\n    \"dtype\": \"int\"\n}\n```",
+    "eval": false
+  },
+  {
+    "index": "University_Grades_original_2__hierarchical_column_header__diversified",
+    "query": "Which professor (only name) achieved the highest average project score?",
+    "answer": "Prof. Mehta",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": null,
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": null,\n    \"dtype\": \"str\"\n}\n```\n\nIt appears that either the project score columns or professor column could not be located, or all the relevant values are missing in the dataset. Please ensure the file contains valid 'Professor' and 'Project Score' information. Let me know if you'd like to examine the file structure or details further.",
+    "eval": false
+  },
+  {
+    "index": "University_Grades_original_2__merge_similar_columns__diversified",
+    "query": "Which professor (only name) achieved the highest average project score?",
+    "answer": "Prof. Mehta",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "Prof. Mehta",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"Prof. Mehta\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_2__single_hierarchical_row_header__diversified",
+    "query": "Which professor (only name) achieved the highest average project score?",
+    "answer": "Prof. Mehta",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "Prof. Mehta",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"Prof. Mehta\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_2__transpose_table__diversified",
+    "query": "Which professor (only name) achieved the highest average project score?",
+    "answer": "Prof. Mehta",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "Prof. Mehta",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"Prof. Mehta\",\n    \"dtype\": \"str\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_3__hierarchical_column_header__diversified",
+    "query": "Among all students, which student achieved the highest overall score, and what was their total marks along with the corresponding letter grade? Mention as a dictionary with keys 'StudentID', 'Marks', and 'Grade'.",
+    "answer": "{\"StudentID\": \"S117\", \"Marks\": 125.0, \"Grade\": \"A\"}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx",
+    "diversification_type": "hierarchical_column_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "StudentID": "S117",
+        "Marks": 125,
+        "Grade": "A"
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"StudentID\": \"S117\", \"Marks\": 125, \"Grade\": \"A\"},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_3__merge_similar_columns__diversified",
+    "query": "Among all students, which student achieved the highest overall score, and what was their total marks along with the corresponding letter grade? Mention as a dictionary with keys 'StudentID', 'Marks', and 'Grade'.",
+    "answer": "{\"StudentID\": \"S117\", \"Marks\": 125.0, \"Grade\": \"A\"}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx",
+    "diversification_type": "merge_similar_columns",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "StudentID": "S117",
+        "Marks": 125,
+        "Grade": "A"
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"StudentID\": \"S117\", \"Marks\": 125, \"Grade\": \"A\"},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_3__single_hierarchical_row_header__diversified",
+    "query": "Among all students, which student achieved the highest overall score, and what was their total marks along with the corresponding letter grade? Mention as a dictionary with keys 'StudentID', 'Marks', and 'Grade'.",
+    "answer": "{\"StudentID\": \"S117\", \"Marks\": 125.0, \"Grade\": \"A\"}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx",
+    "diversification_type": "single_hierarchical_row_header",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "StudentID": "S117",
+        "Marks": 125,
+        "Grade": "A"
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"StudentID\": \"S117\",\n        \"Marks\": 125,\n        \"Grade\": \"A\"\n    },\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  },
+  {
+    "index": "University_Grades_original_3__transpose_table__diversified",
+    "query": "Among all students, which student achieved the highest overall score, and what was their total marks along with the corresponding letter grade? Mention as a dictionary with keys 'StudentID', 'Marks', and 'Grade'.",
+    "answer": "{\"StudentID\": \"S117\", \"Marks\": 125.0, \"Grade\": \"A\"}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_transpose_table.xlsx",
+    "diversification_type": "transpose_table",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "StudentID": "S117",
+        "Marks": 125,
+        "Grade": "A"
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"StudentID\": \"S117\", \"Marks\": 125, \"Grade\": \"A\"},\n    \"dtype\": \"dict\"\n}\n```",
+    "eval": true
+  }
+]

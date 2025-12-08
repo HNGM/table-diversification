@@ -1,0 +1,32 @@
+[
+    {
+        "endpoint_mode": "azure_ml",
+        "endpoint": "https://condabench-llama-3-3-70b.swedencentral.inference.ml.azure.com/",
+        "model": "llama-3.3-70b-instruct",
+        "api_key": "<API_KEY>"
+    },
+    {
+        "endpoint_mode": "azure_ml",
+        "endpoint": "https://Chre-command-r-plus-08-2024-cb.swedencentral.models.ai.azure.com",
+        "model": "Cohere-r-plus-09-2024",
+        "api_key": "<API_KEY>"
+    },
+    {
+        "endpoint_mode" : "gemini",
+        "model": "gemini-2.0-flash-exp",
+        "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
+        "api_key": "<API_KEY>"
+    },
+    {
+        "endpoint_mode": "azure_ml",
+        "endpoint": "https://ai-proseaihub806169615620.openai.azure.com",
+        "model": "o1-mini",
+        "api_key": "<API_KEY>"
+    },
+    {
+        "endpoint_mode": "azure_ml",
+        "endpoint": "https://Codestral-2501-condabench.swedencentral.models.ai.azure.com",
+        "model": "codestral-2501",
+        "api_key": "<API_KEY>"
+    }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "index": "Retail_Sales_Orders_original_0",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "pd.Series",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "West": 11625.25,
+        "East": 2617.5,
+        "South": 1209.0,
+        "North": 600.0
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"West\": 11625.25,\n        \"East\": 2617.5,\n        \"South\": 1209.0,\n        \"North\": 600.0\n    },\n    \"dtype\": \"pd.Series\"\n}\n```"
+  },
+  {
+    "index": "Retail_Sales_Orders_original_1",
+    "query": "Which product sold the most units overall across all orders? (mention only the product name)",
+    "answer": "Coffee Beans",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "Coffee Beans",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"Coffee Beans\",\n    \"dtype\": \"str\"\n}\n```"
+  },
+  {
+    "index": "Retail_Sales_Orders_original_2",
+    "query": "What is the average discount rate (rounded to 3 decimals) applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "{'Express': 0.059, 'Standard': 0.058}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Express": 0.059,
+        "Standard": 0.058
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"Express\": 0.059, \"Standard\": 0.058},\n    \"dtype\": \"dict\"\n}\n```"
+  },
+  {
+    "index": "Retail_Sales_Orders_original_3",
+    "query": "What percentage of orders were delivered within two days of the order date?",
+    "answer": "62.5",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "float",
+    "type": null,
+    "agent_response": {
+      "answer": 62.5,
+      "dtype": "float"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 62.5,\n    \"dtype\": \"float\"\n}\n```"
+  },
+  {
+    "index": "HR_Timesheets_original_0",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Hermes": 2375.0,
+        "Apollo": 2370.0,
+        "Zephyr": 450.0
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Hermes\": 2375.0,\n        \"Apollo\": 2370.0,\n        \"Zephyr\": 450.0\n    },\n    \"dtype\": \"pd.Series\"\n}\n```"
+  },
+  {
+    "index": "HR_Timesheets_original_1",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 8,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 8,\n    \"dtype\": \"int\"\n}\n```"
+  },
+  {
+    "index": "HR_Timesheets_original_2",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Onsite": 8.071428571428571,
+        "Remote": 7.423076923076923
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Onsite\": 8.071428571428571,\n        \"Remote\": 7.423076923076923\n    },\n    \"dtype\": \"dict\"\n}\n```"
+  },
+  {
+    "index": "Logistics_Shipments_original_0",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "DHL": 5.6,
+        "FedEx": 5.5,
+        "UPS": 4.833333
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"DHL\": 5.6,\n        \"FedEx\": 5.5,\n        \"UPS\": 4.833333\n    },\n    \"dtype\": \"pd.Series\"\n}\n```"
+  },
+  {
+    "index": "Logistics_Shipments_original_1",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "['SIN', 'SYD', 'LHR']",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "list",
+    "type": null,
+    "agent_response": {
+      "answer": [
+        "SIN",
+        "SYD",
+        "LHR"
+      ],
+      "dtype": "list"
+    },
+    "raw_response": "```json\n{\n    \"answer\": [\"SIN\", \"SYD\", \"LHR\"],\n    \"dtype\": \"list\"\n}\n```"
+  },
+  {
+    "index": "Logistics_Shipments_original_2",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days), rounded to nearest integer?",
+    "answer": "80",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 80,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 80,\n    \"dtype\": \"int\"\n}\n```"
+  },
+  {
+    "index": "Clinic_Visits_original_0",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Allergy": 142.0,
+        "Back Pain": 146.0,
+        "Diabetes": 111.0,
+        "Flu": 132.5,
+        "Hypertension": 136.0
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Allergy\": 142.0,\n        \"Back Pain\": 146.0,\n        \"Diabetes\": 111.0,\n        \"Flu\": 132.5,\n        \"Hypertension\": 136.0\n    },\n    \"dtype\": \"pd.Series\"\n}\n```"
+  },
+  {
+    "index": "Clinic_Visits_original_1",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{'Dr. Iyer': 0.5, 'Dr. Rao': 0.5, 'Dr. Singh': 0.3333333333333333}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Dr. Iyer": 0.5,
+        "Dr. Rao": 0.5,
+        "Dr. Singh": 0.333
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Dr. Iyer\": 0.5,\n        \"Dr. Rao\": 0.5,\n        \"Dr. Singh\": 0.333\n    },\n    \"dtype\": \"pd.Series\"\n}\n```"
+  },
+  {
+    "index": "Clinic_Visits_original_2",
+    "query": "What is the average consultation fee for females grouped by condition?",
+    "answer": "{'Allergy': 700, 'Back Pain': 600, 'Diabetes': 600, 'Hypertension': 500}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {},
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {},\n    \"dtype\": \"dict\"\n}\n```\n\nThere are no records of consultation fees for females grouped by condition in the provided data."
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_0",
+    "query": "What is the total spending for each category in the month of June?",
+    "answer": "{\"Dining\": 4047.98, \"Entertainment\": 5579.33, \"Groceries\": 4395.02, \"Health\": 5803.54, \"Rent\": 2397.77, \"Transport\": 6838.02, \"Utilities\": 3106.98}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "Dining": 4047.98,
+        "Entertainment": 5579.33,
+        "Groceries": 4395.02,
+        "Health": 5803.54,
+        "Rent": 2397.77,
+        "Transport": 6838.02,
+        "Utilities": 3106.98
+      },
+      "dtype": "pd.Series"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\n        \"Dining\": 4047.98,\n        \"Entertainment\": 5579.33,\n        \"Groceries\": 4395.02,\n        \"Health\": 5803.54,\n        \"Rent\": 2397.77,\n        \"Transport\": 6838.02,\n        \"Utilities\": 3106.98\n    },\n    \"dtype\": \"pd.Series\"\n}\n```"
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_1",
+    "query": "Which payment method (mention only name) earned the highest total cashback?",
+    "answer": "UPI",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "UPI",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"UPI\",\n    \"dtype\": \"str\"\n}\n```"
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_2",
+    "query": "What percent of total spending was on recurring expenses?",
+    "answer": "36.30",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "float",
+    "type": null,
+    "agent_response": {
+      "answer": 36.3,
+      "dtype": "float"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 36.3,\n    \"dtype\": \"float\"\n}\n```"
+  },
+  {
+    "index": "University_Grades_original_0",
+    "query": "What is the average total score for each course with a 100% pass rate?",
+    "answer": "{\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {},
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {},\n    \"dtype\": \"dict\"\n}\n```\n"
+  },
+  {
+    "index": "University_Grades_original_1",
+    "query": "How many students received grade A?",
+    "answer": "22",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "agent_response": {
+      "answer": 22,
+      "dtype": "int"
+    },
+    "raw_response": "```json\n{\n    \"answer\": 22,\n    \"dtype\": \"int\"\n}\n```"
+  },
+  {
+    "index": "University_Grades_original_2",
+    "query": "Which professor (only name) achieved the highest average project score?",
+    "answer": "Prof. Mehta",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "str",
+    "type": null,
+    "agent_response": {
+      "answer": "Prof. Mehta",
+      "dtype": "str"
+    },
+    "raw_response": "```json\n{\n    \"answer\": \"Prof. Mehta\",\n    \"dtype\": \"str\"\n}\n```"
+  },
+  {
+    "index": "University_Grades_original_3",
+    "query": "Among all students, which student achieved the highest overall score, and what was their total marks along with the corresponding letter grade? Mention as a dictionary with keys 'StudentID', 'Marks', and 'Grade'.",
+    "answer": "{\"StudentID\": \"S117\", \"Marks\": 125.0, \"Grade\": \"A\"}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "agent_response": {
+      "answer": {
+        "StudentID": "S117",
+        "Marks": 125,
+        "Grade": "A"
+      },
+      "dtype": "dict"
+    },
+    "raw_response": "```json\n{\n    \"answer\": {\"StudentID\": \"S117\", \"Marks\": 125, \"Grade\": \"A\"},\n    \"dtype\": \"dict\"\n}\n```"
+  }
+]

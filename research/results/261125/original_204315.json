@@ -1,0 +1,194 @@
+[
+  {
+    "index": "Retail_Sales_Orders_Normal_2_3",
+    "query": "What proportion of orders were delivered within two days of the order date?",
+    "answer": "62.5% of all orders were delivered within two days.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "62.5% of all orders were delivered within two days.",
+      "dazza_response": "Approximately **62.5% of orders** were delivered within two days of the order date.",
+      "verdict": true,
+      "reason": "Dazza's response accurately matches the actual solution both in terms of percentage and context, stating that approximately 62.5% of orders were delivered within two days, which is exactly what the question asked."
+    }
+  },
+  {
+    "index": "Retail_Sales_Orders_Normal_2_2",
+    "query": "What is the average discount rate applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "Express shipments had an average discount rate of 5.9%, while Standard shipments averaged 5.8%.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "Express shipments had an average discount rate of 5.9%, while Standard shipments averaged 5.8%.",
+      "dazza_response": "The average discount rates are:\n\n- **Express Shipping:** 5.91%  \n- **Standard Shipping:** 5.77%\n\nThe difference is minimal, with Express orders having a slightly higher average discount rate.",
+      "verdict": true,
+      "reason": "Dazza's response provides discount rates for both Express (5.91%) and Standard (5.77%), which closely match the reference values (5.9% and 5.8%). The interpretation about Express being slightly higher is also correct. The small difference in rounding is acceptable for qualitative matching."
+    }
+  },
+  {
+    "index": "Retail_Sales_Orders_Normal_2_0",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "The West region contributed the highest revenue with \u20b911,625.25, followed by East with \u20b92,617.50, South with \u20b91,209.00, and North with \u20b9600.00.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "The West region contributed the highest revenue with \u20b911,625.25, followed by East with \u20b92,617.50, South with \u20b91,209.00, and North with \u20b9600.00.",
+      "dazza_response": "The total revenue (NetAmount) generated in each region, listed in descending order, is:\n\n- **West:** 11,625.25  \n- **East:** 2,617.50  \n- **South:** 1,209.00  \n- **North:** 600.00  \n\nThe **West** region generated the highest revenue, followed by East, South, and North.",
+      "verdict": true,
+      "reason": "Dazza's response exactly matches the actual solution in terms of the values, order, and interpretation of which region contributed the highest revenue. Both responses provide the total revenues for all four regions in descending order, as requested by the question."
+    }
+  },
+  {
+    "index": "Logistics_Shipments_Normal_2_0",
+    "query": "What is the average number of transit days for each carrier broken down by priority level?",
+    "answer": "DHL shipments averaged 2.5 days for Priority and 6.0 days for Standard. FedEx averaged 3.5 days for Priority and 6.25 days for Standard. UPS averaged 2.12 days for Priority and 5.75 days for Standard.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "DHL shipments averaged 2.5 days for Priority and 6.0 days for Standard. FedEx averaged 3.5 days for Priority and 6.25 days for Standard. UPS averaged 2.12 days for Priority and 5.75 days for Standard.",
+      "dazza_response": "Here are the average transit days for each carrier by priority level: DHL Priority 4.00 days, DHL Standard 5.60 days, FedEx Priority 2.33 days, FedEx Standard 5.50 days, UPS Priority 1.50 days, UPS Standard 4.83 days.",
+      "verdict": false,
+      "reason": "The values provided by Dazza do not match the actual solution values. Both solutions present averages for each carrier broken down by priority, but Dazza\u2019s numbers are significantly different from the correct values, indicating a mismatch in calculations or source data. Therefore, the qualitative match does not exist."
+    }
+  },
+  {
+    "index": "Logistics_Shipments_Normal_2_1",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "Sydney topped the list with 171.7 kg, followed by New York City with 116.2 kg, and Singapore with 74.8 kg.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "Sydney topped the list with 171.7 kg, followed by New York City with 116.2 kg, and Singapore with 74.8 kg.",
+      "dazza_response": "The three destinations that received the highest total shipment weight are:\n\n1. SIN (Singapore) \u2013 183.1 kg  \n2. SYD (Sydney) \u2013 123.7 kg  \n3. LHR (London Heathrow) \u2013 69.0 kg",
+      "verdict": false,
+      "reason": "The destinations and their weights do not match the actual solution. The actual top three are Sydney, New York City, and Singapore, whereas Dazza lists Singapore, Sydney, and London Heathrow (excludes New York City and incorrectly includes London Heathrow). This is not a qualitative match."
+    }
+  },
+  {
+    "index": "Logistics_Shipments_Normal_2_2",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days)?",
+    "answer": "88% of shipments were delivered on time according to the defined rule.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "88% of shipments were delivered on time according to the defined rule.",
+      "dazza_response": "The dataset contains two shipping priorities: Standard and Priority. Based on the rule (Priority \u2264 4 days, Standard \u2264 6 days), 80% of shipments met the on-time delivery requirement.",
+      "verdict": false,
+      "reason": "Although Dazza applied the correct rule and provided a relevant percentage, the value (80%) is different from the actual solution (88%). Since the key component of the answer is the exact percentage, the mismatch makes the response incorrect."
+    }
+  },
+  {
+    "index": "HR_Timesheets_Normal_2_2",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "Remote employees averaged 8.36 hours per day, while onsite employees averaged 7.85 hours.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "Remote employees averaged 8.36 hours per day, while onsite employees averaged 7.85 hours.",
+      "dazza_response": "The average number of hours worked by employees is:\n\n- Onsite: approximately 8.07 hours\n- Remote: approximately 7.42 hours\n\nSo onsite employees work slightly longer hours on average compared to remote employees.",
+      "verdict": false,
+      "reason": "The values provided by Dazza are reversed in their trend and do not match the actual solution. The actual data shows remote employees work more hours than onsite, but Dazza claims the opposite and provides significantly different numbers (8.07 vs. 7.85 and 7.42 vs. 8.36). Thus, there is no qualitative match."
+    }
+  },
+  {
+    "index": "Clinic_Visits_Normal_2_1",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "Dr. Iyer had 25% of visits requiring follow-up, Dr. Singh had 25%, and Dr. Rao had 10%.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "Dr. Iyer had 25% of visits requiring follow-up, Dr. Singh had 25%, and Dr. Rao had 10%.",
+      "dazza_response": "Dr. Iyer: 50%, Dr. Rao: 50%, Dr. Singh: 33.33%.",
+      "verdict": false,
+      "reason": "Dazza's response provides proportions for the same doctors but the values are significantly different from the actual solution. The qualitative match fails because none of the provided percentages align closely with the expected ones."
+    }
+  },
+  {
+    "index": "Personal_Finance_Transactions_Normal_2_1",
+    "query": "Which payment method earned the highest total cashback?",
+    "answer": "Credit Card provided the highest cashback, totaling \u20b9367.99.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "Credit Card provided the highest cashback, totaling \u20b9367.99.",
+      "dazza_response": "The payment method that earned the highest total cashback is **UPI**, with a total cashback amount of **\u20b9365.21**.",
+      "verdict": false,
+      "reason": "There is a direct conflict between the actual solution and Dazza's response. The correct answer is Credit Card with \u20b9367.99, whereas Dazza claims it is UPI with \u20b9365.21. This is not a qualitative match as Dazza identifies the wrong payment method."
+    }
+  },
+  {
+    "index": "University_Grades_Normal_2_1",
+    "query": "What is the distribution of letter grades across all students?",
+    "answer": "All 22 students received grade A.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "All 22 students received grade A.",
+      "dazza_response": "The distribution of letter grades across all students shows that:\n\n- **Grade A:** 22 students\n\nIt appears that all students in the dataset have received an \"A\" grade. There are no other letter grades present in this dataset.",
+      "verdict": true,
+      "reason": "Dazza's response matches the actual solution perfectly. It correctly states that all 22 students received grade A and mentions explicitly that there are no other grades, which aligns exactly with the provided solution."
+    }
+  },
+  {
+    "index": "University_Grades_Normal_2_3",
+    "query": "Among all students, which individual achieved the highest overall score, and what was their total marks along with the corresponding letter grade?",
+    "answer": "The student with the highest overall score is S104, who achieved a total of 131 marks out of 140, earning an 'A' grade.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "The student with the highest overall score is S104, who achieved a total of 131 marks out of 140, earning an 'A' grade.",
+      "dazza_response": "The student who achieved the highest overall score is **Student ID: S117**, with a total of **125 marks** out of 140. Their corresponding letter grade is **A**.",
+      "verdict": false,
+      "reason": "Dazza identified a different student (S117) with 125 marks as the top scorer, while the correct answer was S104 with 131 marks. The question asked specifically for the individual with the highest overall score, so this mismatch in both student ID and score means the response is incorrect."
+    }
+  },
+  {
+    "index": "University_Grades_Normal_2_2",
+    "query": "Which professor achieved the highest average project score?",
+    "answer": "Prof. Krishnan had the highest average project score at 18.71.",
+    "data_file": [
+      "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx"
+    ],
+    "diversification_type": "original",
+    "type": "Normal",
+    "evaluation": {
+      "actual_solution": "Prof. Krishnan had the highest average project score at 18.71.",
+      "dazza_response": "The professor who achieved the highest average project score is **Prof. Mehta**, with an average score of **21.3** out of 25.",
+      "verdict": false,
+      "reason": "Dazza's response identifies a completely different professor (Prof. Mehta) as having the highest average score, while the correct answer is Prof. Krishnan. This is not a qualitative match as the core fact (which professor had the highest score) is incorrect."
+    }
+  }
+]
