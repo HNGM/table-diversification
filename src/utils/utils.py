@@ -4,8 +4,14 @@ import pandas as pd
 import json
 
 root_dir = Path(__file__).parent.resolve()
-while root_dir.name != "TableDiversification":
+max_iterations = 20
+iterations = 0
+while root_dir.name != "table-diversification" and iterations < max_iterations:
     root_dir = root_dir.parent
+    iterations += 1
+
+if root_dir.name != "table-diversification":
+    raise FileNotFoundError(f"Could not find 'table-diversification' directory within {max_iterations} parent levels")
 ROOT_DIR = root_dir
 
 def read_json(filepath: Union[Path, str]):

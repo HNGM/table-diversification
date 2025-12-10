@@ -17,7 +17,7 @@
       "dtype": "pd.Series"
     },
     "raw_response": "```json\n{\n    \"answer\": {\n        \"West\": 11625.25,\n        \"East\": 2617.5,\n        \"South\": 1209.0,\n        \"North\": 600.0\n    },\n    \"dtype\": \"pd.Series\"\n}\n```",
-    "eval": false
+    "eval": true
   },
   {
     "index": "Retail_Sales_Orders_original_1",
