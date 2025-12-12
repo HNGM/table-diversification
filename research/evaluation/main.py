@@ -37,7 +37,7 @@ class EvaluationWorkflow(Workflow):
         info_dict = info.model_dump(mode="json")
         info_dict['agent_response'] = agent_response
         info_dict['raw_response'] = agent_output.RawResponse
-        info_dict['evaluation'] = eval
+        info_dict['eval'] = eval
         return info_dict
     
     def load_data(self) -> List['Info']:

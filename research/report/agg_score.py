@@ -62,15 +62,15 @@ def get_result_matrix(original_results: List[dict], diversified_results: List[di
     other_columns = [col for col in df.columns if col not in base_columns]
     df = df[base_columns + other_columns]
 
-    df.to_excel(ROOT_DIR / "research" / "results" / "071225" / "summary_eval.xlsx", index=False, engine='openpyxl')
+    df.to_excel(ROOT_DIR / "research" / "results" / "121225" / "summary_eval.xlsx", index=False, engine='openpyxl')
     
     
 
 
 if __name__ == "__main__":
-    original_results = read_json(ROOT_DIR / "research" / "results" / "071225" / "original_evaluated.json")
-    diversified_results = read_json(ROOT_DIR / "research" / "results" / "071225" / "diversified_evaluated.json")
-    disturbed_results = read_json(ROOT_DIR / "research" / "results" / "071225" / "disturbed_evaluated.json")
+    original_results = read_json(ROOT_DIR / "research" / "results" / "121225" / "original.json")
+    diversified_results = read_json(ROOT_DIR / "research" / "results" / "121225" / "diversified.json")
+    disturbed_results = read_json(ROOT_DIR / "research" / "results" / "121225" / "disturbed.json")
 
     get_agg_score(original_results)
     get_agg_score(diversified_results)

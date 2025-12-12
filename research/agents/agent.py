@@ -9,6 +9,13 @@ from typing import Optional, Type, Union
 from research.agents.utils.model_response import JsonResponseParser
 from src.interfaces import AgentResponse
 
+class FunctionCallAdaAgentResponse(AgentResponse):
+    
+    @classmethod
+    def _parse_raw_response(cls, raw_response):
+        raw_response = json.loads(raw_response)
+        return JsonResponseParser._parse_raw_response(raw_response["response"])
+
 class FunctionCallADAConfig(AdaAgentConfig):
     
     def __init__(self, model: str, llm_config_path: Path):
@@ -27,7 +34,7 @@ class FunctionCallAdaAgent(ChatAgent, AdaAgent):
         prompt: str
     ):
         self.sandbox = CodeTool()
-        AdaAgent.__init__(self, response_type=JsonResponseParser)
+        AdaAgent.__init__(self, response_type=FunctionCallAdaAgentResponse)
         ChatAgent.__init__(self,
             llm_config=llm_config,
             config=ChatAgentConfig(
@@ -50,7 +57,7 @@ class FunctionCallAdaAgent(ChatAgent, AdaAgent):
             }],
                 tool_map= {"CodeTool": lambda code_str: self.sandbox.run_code(code_str).log}
             ),
-            response_type=JsonResponseParser
+            response_type=FunctionCallAdaAgentResponse
         )
     
     def _get_init_message_content(self):
@@ -73,6 +80,9 @@ class FunctionCallAdaAgent(ChatAgent, AdaAgent):
     
     def _run(self, messages: Optional[list[Union[str, Message]]]) -> str:
         response = ChatAgent._run(self, messages)
-        return response
+        return json.dumps({
+            "monologue": self._get_monologues(),
+            "response": response
+        })
     
 
