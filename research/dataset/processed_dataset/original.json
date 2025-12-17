@@ -110,7 +110,7 @@
   {
     "index": "Clinic_Visits_original_2",
     "query": "What is the average consultation fee for females grouped by condition?",
-    "answer": "{'Allergy': 700, 'Back Pain': 600, 'Diabetes': 600, 'Hypertension': 500}",
+    "answer": "{\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667}",
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
     "dtype": "dict",
     "mode": "original",

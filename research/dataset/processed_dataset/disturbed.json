@@ -434,7 +434,7 @@
   {
     "index": "Clinic_Visits_original_2__hierarchical_column_header__disturbed",
     "query": "What is the average consultation fee for females grouped by condition?",
-    "answer": "{'Allergy': 700, 'Back Pain': 600, 'Diabetes': 600, 'Hypertension': 500}",
+    "answer": "{\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667}",
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
@@ -443,7 +443,7 @@
   {
     "index": "Clinic_Visits_original_2__merge_similar_columns__disturbed",
     "query": "What is the average consultation fee for females grouped by condition?",
-    "answer": "{'Allergy': 700, 'Back Pain': 600, 'Diabetes': 600, 'Hypertension': 500}",
+    "answer": "{\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667}",
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
@@ -452,7 +452,7 @@
   {
     "index": "Clinic_Visits_original_2__single_hierarchical_row_header__disturbed",
     "query": "What is the average consultation fee for females grouped by condition?",
-    "answer": "{'Allergy': 700, 'Back Pain': 600, 'Diabetes': 600, 'Hypertension': 500}",
+    "answer": "{\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667}",
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
@@ -461,7 +461,7 @@
   {
     "index": "Clinic_Visits_original_2__transpose_table__disturbed",
     "query": "What is the average consultation fee for females grouped by condition?",
-    "answer": "{'Allergy': 700, 'Back Pain': 600, 'Diabetes': 600, 'Hypertension': 500}",
+    "answer": "{\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667}",
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
