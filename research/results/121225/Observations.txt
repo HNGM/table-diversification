@@ -1,0 +1,21 @@
+These are some observations on the error analysis of diversified and disturbed dataset evaluation -:
+
+- In majority of samples, the primary failure case is the incorrect assumptions made by the LLM regarding the supposed column header names, making even a correct code give wrong output.
+
+- There are errors that are only affecting a particular diversification, for example stopping the conversation before reaching an answer is plaging the transpose diversification or pandas issue with merge cells affecting single hierarchical row header diversification.
+
+- After observing each sample, I can say that whenever the LLM printed a subset of the dataset to observe the structure, it almost everytime came up with the correct deduction and wrote the correct program. (Adding this as a mandatory step in our pipeline can increase the success rate)
+
+- Diversification that directly seems to affect the LLM's output in cases is merge similar columns diversification, the only type of diversification where the data values within the row cells changes from the original.
+
+- Transpose diversification has the highest error rate amongst all the diversifications and also the longest conversation length and the most number of turns with the tool call, showcasing the LLM's understanding of the data. The error rate might be highest but it also have the most reasoning and if the conversation haven't terminated in between calls then this could have been a great example of LLM's understanding of tabular data.
+
+- Error in code is the most straight forward failure case where the LLM straight up fails to come up with the corret code even though it had the right idea. This can be a good example of LLM's own parametric knowledge and lack of overturning it's priors.
+
+- In hierarchical column header diversification, the LLM seems to already know that the table has multi header layout, this was hinted in one of the sample conversation where the LLM guessed this using the name of the file (i.e. HR_Timesheets_original_2__hierarchical_column_header) and from the get go using multi-index to load the file. Either the LLM is reading the data before writing the code or it's using the file's name to guess the layout (which it doesn't do for other diversifications except maybe few times for transpose).
+
+- Pandas library has some flaws that become very prominent in this analysis like the inability to parse and understand merged cell which is a very important part of the hierarchical column/row header diversification. There doesn't seem to be a fix for this issue other than using openpyxl for the loading and writing of the file. We can prompt the LLM to identify merged cells and try to fix or account for them before evaluating further, this could be part of our diversification and disturbance mitigation prompt.
+
+- Disturbances that we introduced didn't affect the final output that much as the non-disturbed diversified success rate is just a little higher than the disturbed dataset. Almost all of the observed errors in the disturbed dataset are due to either the LLM's mistake or the diversifications, suggesting that the LLM is capable of overcoming these obstacles on it's own without specific prompting however as previously mentioned there are instances where prompting even sparingly will help mitigate some of the errors.
+
+- I think in the current scenario we can still improve the results by focusing the non-red coloured errors as they are not inherently due to the LLM's parametric knowledge but can be fixed with prompt tuning. As for the red coloured errors, we can still try to make sure that the LLM is understanding the data and it's structure before trying to answer the query, this way any changes introduced by the diversification or disturbance can be known to the LLM and the final code can have these edge cases in context.
