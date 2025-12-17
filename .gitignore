@@ -1,3 +1,10 @@
 .vscode
 .tmp_code
 .tmp_output
+
+# Python cache files
+*.pyc
+*.pyo
+__pycache__/
+*.py[cod]
+*$py.class
