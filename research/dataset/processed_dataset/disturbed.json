@@ -6,7 +6,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx",
     "dtype": "pd.Series",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.png"
   },
   {
     "index": "Retail_Sales_Orders_original_0__merge_similar_columns__disturbed",
@@ -15,7 +16,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx",
     "dtype": "pd.Series",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.png"
   },
   {
     "index": "Retail_Sales_Orders_original_0__single_hierarchical_row_header__disturbed",
@@ -24,7 +26,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx",
     "dtype": "pd.Series",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.png"
   },
   {
     "index": "Retail_Sales_Orders_original_0__transpose_table__disturbed",
@@ -33,7 +36,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx",
     "dtype": "pd.Series",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.png"
   },
   {
     "index": "Retail_Sales_Orders_original_1__hierarchical_column_header__disturbed",
@@ -42,7 +46,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.png"
   },
   {
     "index": "Retail_Sales_Orders_original_1__merge_similar_columns__disturbed",
@@ -51,7 +56,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.png"
   },
   {
     "index": "Retail_Sales_Orders_original_1__single_hierarchical_row_header__disturbed",
@@ -60,7 +66,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.png"
   },
   {
     "index": "Retail_Sales_Orders_original_1__transpose_table__disturbed",
@@ -69,7 +76,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.png"
   },
   {
     "index": "Retail_Sales_Orders_original_2__hierarchical_column_header__disturbed",
@@ -78,7 +86,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.png"
   },
   {
     "index": "Retail_Sales_Orders_original_2__merge_similar_columns__disturbed",
@@ -87,7 +96,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.png"
   },
   {
     "index": "Retail_Sales_Orders_original_2__single_hierarchical_row_header__disturbed",
@@ -96,7 +106,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.png"
   },
   {
     "index": "Retail_Sales_Orders_original_2__transpose_table__disturbed",
@@ -105,7 +116,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.png"
   },
   {
     "index": "Retail_Sales_Orders_original_3__hierarchical_column_header__disturbed",
@@ -114,7 +126,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.xlsx",
     "dtype": "float",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_hierarchical_column_header.png"
   },
   {
     "index": "Retail_Sales_Orders_original_3__merge_similar_columns__disturbed",
@@ -123,7 +136,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.xlsx",
     "dtype": "float",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_merge_similar_columns.png"
   },
   {
     "index": "Retail_Sales_Orders_original_3__single_hierarchical_row_header__disturbed",
@@ -132,7 +146,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.xlsx",
     "dtype": "float",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_single_hierarchical_row_header.png"
   },
   {
     "index": "Retail_Sales_Orders_original_3__transpose_table__disturbed",
@@ -141,7 +156,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.xlsx",
     "dtype": "float",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_transpose_table.png"
   },
   {
     "index": "HR_Timesheets_original_0__hierarchical_column_header__disturbed",
@@ -150,7 +166,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.png"
   },
   {
     "index": "HR_Timesheets_original_0__merge_similar_columns__disturbed",
@@ -159,7 +176,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.png"
   },
   {
     "index": "HR_Timesheets_original_0__single_hierarchical_row_header__disturbed",
@@ -168,7 +186,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.png"
   },
   {
     "index": "HR_Timesheets_original_0__transpose_table__disturbed",
@@ -177,7 +196,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.png"
   },
   {
     "index": "HR_Timesheets_original_1__hierarchical_column_header__disturbed",
@@ -186,7 +206,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.png"
   },
   {
     "index": "HR_Timesheets_original_1__merge_similar_columns__disturbed",
@@ -195,7 +216,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.png"
   },
   {
     "index": "HR_Timesheets_original_1__single_hierarchical_row_header__disturbed",
@@ -204,7 +226,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.png"
   },
   {
     "index": "HR_Timesheets_original_1__transpose_table__disturbed",
@@ -213,7 +236,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.png"
   },
   {
     "index": "HR_Timesheets_original_2__hierarchical_column_header__disturbed",
@@ -222,7 +246,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_hierarchical_column_header.png"
   },
   {
     "index": "HR_Timesheets_original_2__merge_similar_columns__disturbed",
@@ -231,7 +256,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_merge_similar_columns.png"
   },
   {
     "index": "HR_Timesheets_original_2__single_hierarchical_row_header__disturbed",
@@ -240,7 +266,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_single_hierarchical_row_header.png"
   },
   {
     "index": "HR_Timesheets_original_2__transpose_table__disturbed",
@@ -249,7 +276,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_transpose_table.png"
   },
   {
     "index": "Logistics_Shipments_original_0__hierarchical_column_header__disturbed",
@@ -258,7 +286,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.png"
   },
   {
     "index": "Logistics_Shipments_original_0__merge_similar_columns__disturbed",
@@ -267,7 +296,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.png"
   },
   {
     "index": "Logistics_Shipments_original_0__single_hierarchical_row_header__disturbed",
@@ -276,7 +306,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.png"
   },
   {
     "index": "Logistics_Shipments_original_0__transpose_table__disturbed",
@@ -285,7 +316,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.png"
   },
   {
     "index": "Logistics_Shipments_original_1__hierarchical_column_header__disturbed",
@@ -294,7 +326,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.xlsx",
     "dtype": "list",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.png"
   },
   {
     "index": "Logistics_Shipments_original_1__merge_similar_columns__disturbed",
@@ -303,7 +336,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.xlsx",
     "dtype": "list",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.png"
   },
   {
     "index": "Logistics_Shipments_original_1__single_hierarchical_row_header__disturbed",
@@ -312,7 +346,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.xlsx",
     "dtype": "list",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.png"
   },
   {
     "index": "Logistics_Shipments_original_1__transpose_table__disturbed",
@@ -321,7 +356,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.xlsx",
     "dtype": "list",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.png"
   },
   {
     "index": "Logistics_Shipments_original_2__hierarchical_column_header__disturbed",
@@ -330,7 +366,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_hierarchical_column_header.png"
   },
   {
     "index": "Logistics_Shipments_original_2__merge_similar_columns__disturbed",
@@ -339,7 +376,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_merge_similar_columns.png"
   },
   {
     "index": "Logistics_Shipments_original_2__single_hierarchical_row_header__disturbed",
@@ -348,7 +386,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_single_hierarchical_row_header.png"
   },
   {
     "index": "Logistics_Shipments_original_2__transpose_table__disturbed",
@@ -357,7 +396,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_transpose_table.png"
   },
   {
     "index": "Clinic_Visits_original_0__hierarchical_column_header__disturbed",
@@ -366,7 +406,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.png"
   },
   {
     "index": "Clinic_Visits_original_0__merge_similar_columns__disturbed",
@@ -375,7 +416,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.png"
   },
   {
     "index": "Clinic_Visits_original_0__single_hierarchical_row_header__disturbed",
@@ -384,7 +426,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.png"
   },
   {
     "index": "Clinic_Visits_original_0__transpose_table__disturbed",
@@ -393,7 +436,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.png"
   },
   {
     "index": "Clinic_Visits_original_1__hierarchical_column_header__disturbed",
@@ -402,7 +446,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.png"
   },
   {
     "index": "Clinic_Visits_original_1__merge_similar_columns__disturbed",
@@ -411,7 +456,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.png"
   },
   {
     "index": "Clinic_Visits_original_1__single_hierarchical_row_header__disturbed",
@@ -420,7 +466,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.png"
   },
   {
     "index": "Clinic_Visits_original_1__transpose_table__disturbed",
@@ -429,7 +476,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.png"
   },
   {
     "index": "Clinic_Visits_original_2__hierarchical_column_header__disturbed",
@@ -438,7 +486,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_hierarchical_column_header.png"
   },
   {
     "index": "Clinic_Visits_original_2__merge_similar_columns__disturbed",
@@ -447,7 +496,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_merge_similar_columns.png"
   },
   {
     "index": "Clinic_Visits_original_2__single_hierarchical_row_header__disturbed",
@@ -456,7 +506,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_single_hierarchical_row_header.png"
   },
   {
     "index": "Clinic_Visits_original_2__transpose_table__disturbed",
@@ -465,7 +516,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_transpose_table.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_0__hierarchical_column_header__disturbed",
@@ -474,7 +526,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_0__merge_similar_columns__disturbed",
@@ -483,7 +536,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_0__single_hierarchical_row_header__disturbed",
@@ -492,7 +546,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_0__transpose_table__disturbed",
@@ -501,7 +556,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_1__hierarchical_column_header__disturbed",
@@ -510,7 +566,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_1__merge_similar_columns__disturbed",
@@ -519,7 +576,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_1__single_hierarchical_row_header__disturbed",
@@ -528,7 +586,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_1__transpose_table__disturbed",
@@ -537,7 +596,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_2__hierarchical_column_header__disturbed",
@@ -546,7 +606,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.xlsx",
     "dtype": "float",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_hierarchical_column_header.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_2__merge_similar_columns__disturbed",
@@ -555,7 +616,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.xlsx",
     "dtype": "float",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_merge_similar_columns.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_2__single_hierarchical_row_header__disturbed",
@@ -564,7 +626,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.xlsx",
     "dtype": "float",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_single_hierarchical_row_header.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_2__transpose_table__disturbed",
@@ -573,7 +636,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.xlsx",
     "dtype": "float",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_transpose_table.png"
   },
   {
     "index": "University_Grades_original_0__hierarchical_column_header__disturbed",
@@ -582,7 +646,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_hierarchical_column_header.png"
   },
   {
     "index": "University_Grades_original_0__merge_similar_columns__disturbed",
@@ -591,7 +656,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_merge_similar_columns.png"
   },
   {
     "index": "University_Grades_original_0__single_hierarchical_row_header__disturbed",
@@ -600,7 +666,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.png"
   },
   {
     "index": "University_Grades_original_0__transpose_table__disturbed",
@@ -609,7 +676,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_transpose_table.png"
   },
   {
     "index": "University_Grades_original_1__hierarchical_column_header__disturbed",
@@ -618,7 +686,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_hierarchical_column_header.png"
   },
   {
     "index": "University_Grades_original_1__merge_similar_columns__disturbed",
@@ -627,7 +696,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_merge_similar_columns.png"
   },
   {
     "index": "University_Grades_original_1__single_hierarchical_row_header__disturbed",
@@ -636,7 +706,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.png"
   },
   {
     "index": "University_Grades_original_1__transpose_table__disturbed",
@@ -645,7 +716,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_transpose_table.xlsx",
     "dtype": "int",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_transpose_table.png"
   },
   {
     "index": "University_Grades_original_2__hierarchical_column_header__disturbed",
@@ -654,7 +726,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_hierarchical_column_header.png"
   },
   {
     "index": "University_Grades_original_2__merge_similar_columns__disturbed",
@@ -663,7 +736,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_merge_similar_columns.png"
   },
   {
     "index": "University_Grades_original_2__single_hierarchical_row_header__disturbed",
@@ -672,7 +746,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.png"
   },
   {
     "index": "University_Grades_original_2__transpose_table__disturbed",
@@ -681,7 +756,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_transpose_table.xlsx",
     "dtype": "str",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_transpose_table.png"
   },
   {
     "index": "University_Grades_original_3__hierarchical_column_header__disturbed",
@@ -690,7 +766,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_hierarchical_column_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "hierarchical_column_header"
+    "diversification_type": "hierarchical_column_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_hierarchical_column_header.png"
   },
   {
     "index": "University_Grades_original_3__merge_similar_columns__disturbed",
@@ -699,7 +776,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_merge_similar_columns.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "merge_similar_columns"
+    "diversification_type": "merge_similar_columns",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_merge_similar_columns.png"
   },
   {
     "index": "University_Grades_original_3__single_hierarchical_row_header__disturbed",
@@ -708,7 +786,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "single_hierarchical_row_header"
+    "diversification_type": "single_hierarchical_row_header",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_single_hierarchical_row_header.png"
   },
   {
     "index": "University_Grades_original_3__transpose_table__disturbed",
@@ -717,6 +796,7 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_transpose_table.xlsx",
     "dtype": "dict",
     "mode": "disturbed",
-    "diversification_type": "transpose_table"
+    "diversification_type": "transpose_table",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Disturbed Diversifications/University_Grades/University_Grades_transpose_table.png"
   }
 ]

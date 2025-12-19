@@ -11,33 +11,62 @@ import datetime
 import sys
 from research.agents.agent import FunctionCallAdaAgent
 from research.evaluation.utils import get_prompt
-from typing import List, Any
+from typing import List, Any, Union, Optional
 import pandas as pd
 import traceback
 from research.agents.output_format import get_response_format
 from research.evaluation.evaluate import evaluate
 
 ARTIFACT_DIR_SOURCE = ROOT_DIR / "research" / "dataset" / "processed_dataset"
-
+MODE = "disturbed"
 
 
 class EvaluationWorkflow(Workflow):
-    def workflow(self, llm_config: LLMConfig, info: Info) -> dict:
-        agent = FunctionCallAdaAgent(llm_config, prompt=get_prompt("default") + "\n" + get_response_format())
-        # Assuming that each query is based on a single file
-        upload_file_msg = agent.upload_files(files=[info.data_file], metadata=f"Answer the user's query based on the uploaded file name: {info.data_file.name}")
-        agent_output = agent.run([upload_file_msg, UserMessage(content=info.query)])
-        agent_response = agent_output.ParsedResponse
-        eval = evaluate(
-            gt_answer=info.answer,
-            gt_dtype=info.dtype,
-            pred_answer=agent_response['answer'],
-            pred_dtype=agent_response['dtype']
+    def __init__(
+        self,
+        llm_config_path: Union[Path, str],
+        input_file: Union[Path, str],
+        output_file: Union[Path, str],
+        model: str,
+        name: str = "EvaluationWorkflow",
+        nproc: int = 1,
+        resume: bool = False,
+        pass_rate: int = 3
+    ):
+        super().__init__(
+            llm_config_path=llm_config_path,
+            input_file=input_file,
+            output_file=output_file,
+            model=model,
+            name=name,
+            nproc=nproc,
+            resume=resume
         )
+        self.pass_rate = pass_rate
+
+
+    def workflow(self, llm_config: LLMConfig, info: Info) -> dict:
+        eval_result = []
+        # Assuming that each query is based on a single file
+        for i in range(self.pass_rate):
+            agent = FunctionCallAdaAgent(llm_config, prompt=get_prompt("default_screenshot") + "\n" + get_response_format())
+            upload_file_msg = agent.upload_files(files=[info.data_file], metadata=f"Answer the user's query based on the uploaded file name: {info.data_file.name}")
+            upload_imgfile_msg = agent.upload_image_files(image_files=[info.image_file] if info.image_file else [], metadata=f"Answer the user's query based on the uploaded image of the data.")
+            agent_output = agent.run([upload_file_msg, upload_imgfile_msg, UserMessage(content=info.query)])
+            agent_response = agent_output.ParsedResponse
+            eval = evaluate(
+                gt_answer=info.answer,
+                gt_dtype=info.dtype,
+                pred_answer=agent_response['answer'],
+                pred_dtype=agent_response['dtype']
+            )
+            eval_result.append({
+                'agent_response': agent_response,
+                'raw_response': agent_output.RawResponse,
+                'eval': eval
+            })
         info_dict = info.model_dump(mode="json")
-        info_dict['agent_response'] = agent_response
-        info_dict['raw_response'] = agent_output.RawResponse
-        info_dict['eval'] = eval
+        info_dict['eval'] = eval_result
         return info_dict
     
     def load_data(self) -> List['Info']:
@@ -49,12 +78,13 @@ class EvaluationWorkflow(Workflow):
 def get_config(args):
     # Define parser
     parser = argparse.ArgumentParser(description='Run evaluation on model')
-    parser.add_argument('--input-file', default= ARTIFACT_DIR_SOURCE / "disturbed.json")
-    parser.add_argument('--output-file', default=ROOT_DIR / "research" / "results" / datetime.datetime.now().strftime('%d%m%y') / f"disturbed.json")
+    parser.add_argument('--input-file', default= ARTIFACT_DIR_SOURCE / f"{MODE}.json")
+    parser.add_argument('--output-file', default=ROOT_DIR / "research" / "results" / datetime.datetime.now().strftime('%d%m%y') / f"{MODE}.json")
     parser.add_argument('--llm-config-path', default=ROOT_DIR / "config" / "default_llm_config.json", help='Path to the LLM config file for running user-proxy')
     parser.add_argument('--nproc', type=int, default=1, help='Number of parallel processes')
     parser.add_argument('--model', type=str, default="dev-gpt-41-shortco-2025-04-14", help='model to run the process on')
     parser.add_argument('--resume', action="store_true", help='Resume from the last checkpoint')
+    parser.add_argument('--pass-rate', type=int, default=3, help='Set the pass@k rate for evaluation')
     config = parser.parse_args(args)
 
     config.input_file = Path(config.input_file)
@@ -66,15 +96,7 @@ def get_config(args):
 
 def main(args):
     config = get_config(args)
-    workflow = EvaluationWorkflow(
-        llm_config_path=config.llm_config_path,
-        input_file=config.input_file,
-        output_file=config.output_file,
-        model=config.model,
-        name="EvaluationWorkflow",
-        nproc=config.nproc,
-        resume=config.resume,
-    )
+    workflow = EvaluationWorkflow(**vars(config))
     workflow.run()
 
 if __name__ == "__main__":

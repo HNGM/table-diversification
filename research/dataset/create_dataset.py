@@ -58,6 +58,27 @@ def refactor_dataset():
     write_json(div_dataset, ROOT_DIR / "research" / "dataset" / "processed_dataset" / "diversified.json")
     write_json(dist_dataset, ROOT_DIR / "research" / "dataset" / "processed_dataset" / "disturbed.json")
 
+def add_screenshot_info():
+    original = read_json(ROOT_DIR / "research" / "dataset" / "processed_dataset" / "original.json")
+    diversified = read_json(ROOT_DIR / "research" / "dataset" / "processed_dataset" / "diversified.json")
+    disturbed = read_json(ROOT_DIR / "research" / "dataset" / "processed_dataset" / "disturbed.json")
+    for data in original:
+        data_file = Path(data['data_file'])
+        image_file = data_file.with_suffix('.png')
+        data['image_file'] = image_file.as_posix()
+    for data in diversified:
+        data_file = Path(data['data_file'])
+        image_file = data_file.with_suffix('.png')
+        data['image_file'] = image_file.as_posix()
+    for data in disturbed:
+        data_file = Path(data['data_file'])
+        image_file = data_file.with_suffix('.png')
+        data['image_file'] = image_file.as_posix()
+    write_json(original, ROOT_DIR / "research" / "dataset" / "processed_dataset" / "original.json")
+    write_json(diversified, ROOT_DIR / "research" / "dataset" / "processed_dataset" / "diversified.json")
+    write_json(disturbed, ROOT_DIR / "research" / "dataset" / "processed_dataset" / "disturbed.json")
+
+
 
 def add_original():
     original = read_json(ROOT_DIR / "research" / "dataset" / "processed_dataset" / "reworked_original.json")
@@ -69,4 +90,4 @@ def add_original():
 
 
 if __name__ == "__main__":
-    refactor_dataset()
+    add_screenshot_info()

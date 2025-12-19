@@ -14,6 +14,7 @@ class Info(BaseModel):
     query: str
     answer: Any
     data_file: PosixPath
+    image_file: Optional[PosixPath] = None
     diversification_type: str
     dtype: str
     type: Optional[str] = None

@@ -6,7 +6,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
     "dtype": "pd.Series",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png"
   },
   {
     "index": "Retail_Sales_Orders_original_1",
@@ -15,7 +16,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
     "dtype": "str",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png"
   },
   {
     "index": "Retail_Sales_Orders_original_2",
@@ -24,7 +26,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
     "dtype": "dict",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png"
   },
   {
     "index": "Retail_Sales_Orders_original_3",
@@ -33,7 +36,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
     "dtype": "float",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png"
   },
   {
     "index": "HR_Timesheets_original_0",
@@ -42,7 +46,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
     "dtype": "dict",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png"
   },
   {
     "index": "HR_Timesheets_original_1",
@@ -51,7 +56,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
     "dtype": "int",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png"
   },
   {
     "index": "HR_Timesheets_original_2",
@@ -60,7 +66,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
     "dtype": "dict",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png"
   },
   {
     "index": "Logistics_Shipments_original_0",
@@ -69,7 +76,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
     "dtype": "dict",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.png"
   },
   {
     "index": "Logistics_Shipments_original_1",
@@ -78,7 +86,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
     "dtype": "list",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.png"
   },
   {
     "index": "Logistics_Shipments_original_2",
@@ -87,7 +96,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
     "dtype": "int",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.png"
   },
   {
     "index": "Clinic_Visits_original_0",
@@ -96,16 +106,18 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
     "dtype": "dict",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png"
   },
   {
     "index": "Clinic_Visits_original_1",
     "query": "For each doctor, what proportion of their visits required a follow-up?",
-    "answer": "{'Dr. Iyer': 0.5, 'Dr. Rao': 0.5, 'Dr. Singh': 0.3333333333333333}",
+    "answer": "{\"Dr. Iyer\": 0.5, \"Dr. Rao\": 0.5, \"Dr. Singh\": 0.3333333333333333}",
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
     "dtype": "dict",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png"
   },
   {
     "index": "Clinic_Visits_original_2",
@@ -114,7 +126,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
     "dtype": "dict",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_0",
@@ -123,7 +136,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
     "dtype": "dict",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_1",
@@ -132,7 +146,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
     "dtype": "str",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.png"
   },
   {
     "index": "Personal_Finance_Transactions_original_2",
@@ -141,7 +156,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
     "dtype": "float",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.png"
   },
   {
     "index": "University_Grades_original_0",
@@ -150,7 +166,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
     "dtype": "dict",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.png"
   },
   {
     "index": "University_Grades_original_1",
@@ -159,7 +176,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
     "dtype": "int",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.png"
   },
   {
     "index": "University_Grades_original_2",
@@ -168,7 +186,8 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
     "dtype": "str",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.png"
   },
   {
     "index": "University_Grades_original_3",
@@ -177,6 +196,7 @@
     "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
     "dtype": "dict",
     "mode": "original",
-    "diversification_type": "original"
+    "diversification_type": "original",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Dataset/Normal Diversifications/University_Grades/University_Grades_original.png"
   }
 ]

@@ -67,6 +67,9 @@ class FunctionCallAdaAgent(ChatAgent, AdaAgent):
         self.sandbox.upload_files(files)
         return UserMessage(content=metadata)
     
+    def upload_image_files(self, image_files, metadata):
+        return ChatAgent.upload_files(self, image_files, metadata)
+    
     def download_generated_images(self, save_dir):
         return self.sandbox.download_generated_images(save_dir)
     
