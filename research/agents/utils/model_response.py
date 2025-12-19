@@ -5,14 +5,18 @@ import ast
 
 class JsonResponseParser(AgentResponse):
     def _parse_raw_response(raw_response:str)->str:
-        pattern = r"```json\n(.*?)```"
-        matches = re.findall(pattern, raw_response, re.DOTALL)
-        if len(matches) == 0:
-            raise Exception("Incorrect response format from the agent") 
+        if "```json" not in raw_response:
+            match = raw_response
+        else:
+            pattern = r"```json\n(.*?)```"
+            matches = re.findall(pattern, raw_response, re.DOTALL)
+            if len(matches) == 0:
+                raise Exception(f"Incorrect response format from the agent: {raw_response}") 
+            match = matches[0]
         try:
-            return json.loads(matches[0])  
+            return json.loads(match)  
         except json.JSONDecodeError:
             try:
-                return ast.literal_eval(matches[0])
+                return ast.literal_eval(match)
             except ValueError:
-                raise Exception("Failed to parse the response as JSON or Python literal")
+                raise Exception(f"Failed to parse the response as JSON or Python literal: {raw_response}")

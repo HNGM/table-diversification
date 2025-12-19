@@ -119,9 +119,15 @@ def get_result_matrix(original_results: List[dict], diversified_results: List[di
 
 
 if __name__ == "__main__":
-    original_results = read_json(ROOT_DIR / "research" / "results" / "171225" / "original.json")
-    diversified_results = read_json(ROOT_DIR / "research" / "results" / "171225" / "diversified.json")
-    disturbed_results = read_json(ROOT_DIR / "research" / "results" / "171225" / "disturbed.json")
+    original_results = read_json(ROOT_DIR / "research" / "results" / "191225" / "original.json")
+    try:
+        diversified_results = read_json(ROOT_DIR / "research" / "results" / "191225" / "diversified.json")
+    except AssertionError:
+        diversified_results = []
+    try:
+        disturbed_results = read_json(ROOT_DIR / "research" / "results" / "191225" / "disturbed.json")
+    except AssertionError:
+        disturbed_results = []
 
     get_agg_score(original_results)
     get_agg_score(diversified_results)

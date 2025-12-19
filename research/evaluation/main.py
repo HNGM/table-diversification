@@ -17,8 +17,9 @@ import traceback
 from research.agents.output_format import get_response_format
 from research.evaluation.evaluate import evaluate
 
-ARTIFACT_DIR_SOURCE = ROOT_DIR / "research" / "dataset" / "processed_dataset"
+ARTIFACT_DIR_SOURCE = ROOT_DIR / "research" / "dataset" / "19122025_processed_dataset"
 MODE = "disturbed"
+MODEL = "dev-gpt-5-reasoning"
 
 
 class EvaluationWorkflow(Workflow):
@@ -82,7 +83,7 @@ def get_config(args):
     parser.add_argument('--output-file', default=ROOT_DIR / "research" / "results" / datetime.datetime.now().strftime('%d%m%y') / f"{MODE}.json")
     parser.add_argument('--llm-config-path', default=ROOT_DIR / "config" / "default_llm_config.json", help='Path to the LLM config file for running user-proxy')
     parser.add_argument('--nproc', type=int, default=1, help='Number of parallel processes')
-    parser.add_argument('--model', type=str, default="dev-gpt-41-shortco-2025-04-14", help='model to run the process on')
+    parser.add_argument('--model', type=str, default=MODEL, help='model to run the process on')
     parser.add_argument('--resume', action="store_true", help='Resume from the last checkpoint')
     parser.add_argument('--pass-rate', type=int, default=3, help='Set the pass@k rate for evaluation')
     config = parser.parse_args(args)

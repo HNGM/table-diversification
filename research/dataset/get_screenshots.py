@@ -40,6 +40,9 @@ def take_excel_screenshot(excel_path: Path, output_path: Path):
         last_column = used_range.Columns(used_range.Columns.Count).Column
         last_row = used_range.Rows(used_range.Rows.Count).Row
         
+        # Auto-fit all column widths to ensure full column names are visible
+        used_range.Columns.AutoFit()
+        
         # Maximize the Excel window
         excel.WindowState = -4137  # xlMaximized
         
