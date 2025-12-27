@@ -3,3 +3,4 @@
 .tmp_output
 
 **/__pycache__/**
+research/agents/huggingface_models/**
