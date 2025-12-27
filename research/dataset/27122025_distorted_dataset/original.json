@@ -1,0 +1,302 @@
+[
+    {
+        "index": "Automobile_1",
+        "query": "Of all the cars manufactured in the 70's, list the car with the highest acceleration for each region of origin.",
+        "answer": "{'usa': 'ford maverick', 'japan': 'toyota corona mark ii', 'europe': 'volkswagen 1131 deluxe sedan'}",
+        "dtype": "pd.Series",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/Automobile/Automobile.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/Automobile/Automobile.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "Automobile_2",
+        "query": "What's the heaviest car manufactured in USA?",
+        "answer": "hi 1200d",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/Automobile/Automobile.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/Automobile/Automobile.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "polling_data_1",
+        "query": "Mention all the candidates who appeared in every poll.",
+        "answer": "Rahm Emanuel",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/polling_data/polling_data.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/polling_data/polling_data.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "ship_fate_1",
+        "query": "Which ships over 5000tons were sank?",
+        "answer": "['MV Tudor', 'SS British Monarch', 'MV Moerdrecht', 'SS La Brea', 'SS Empire Merlin', 'MV Athelcrest']",
+        "dtype": "list",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/ship_fate.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/ship_fate.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "ship_fate_2",
+        "query": "How many ships that sank in the month of June belongs to United Kingdom?",
+        "answer": "4",
+        "dtype": "int",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/ship_fate.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/ship_fate.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "military_bases_1",
+        "query": "What is the total number of shelters in each governorate?",
+        "answer": "{'Aleppo': 43, 'Homs': 116, 'Damascus': 162, 'Hama': 20, 'As-Suwayda': 46}",
+        "dtype": "pd.Series",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/military_bases/military_bases.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/military_bases/military_bases.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "military_bases_2",
+        "query": "Which military base having more than 1 runway has the most helipads?",
+        "answer": "Khalkhalah Military Airbase",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/military_bases/military_bases.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/military_bases/military_bases.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "points_table_1",
+        "query": "Which country has the most number of medals?",
+        "answer": "Italy",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/points_table/points_table.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/points_table/points_table.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "points_table_2",
+        "query": "Which country won the most bronze medals without winning any gold medal?",
+        "answer": "Germany",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/points_table/points_table.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/points_table/points_table.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "accidents_1",
+        "query": "What is the average of the deaths per accidents per year in the decade 2000s (2000-2009), rounded to 3 decimals?",
+        "answer": "8.437",
+        "dtype": "float",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/accidents/accidents.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/accidents/accidents.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "accidents_2",
+        "query": "Which year has the biggest drop in the number of accidents compared to the previous year?",
+        "answer": "2009",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/accidents/accidents.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/accidents/accidents.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "awards_1",
+        "query": "Which nominee(s) received the most number of nominations+awards?",
+        "answer": "['Gene Hackman', 'Ernest Tidyman']",
+        "dtype": "list",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/awards/awards.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/awards/awards.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "awards_2",
+        "query": "Which award ceremonies did not result in a single win?",
+        "answer": "['American Cinema Editors, 1972', 'National Society of Film Critics, 1972', 'Writers Guild of America, 1972']",
+        "dtype": "list",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/awards/awards.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/awards/awards.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "radio_1",
+        "query": "Which service had the highest total cost in the year 2011/12?",
+        "answer": "BBC Local Radio",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/radio/radio.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/radio/radio.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "radio_2",
+        "query": "What is the average total cost for all the services whose cost increased by less than 1 million?",
+        "answer": "13.9875",
+        "dtype": "float",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/radio/radio.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/radio/radio.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "voters_1",
+        "query": "What percentage(%) of total voters are unaffiliated and active?",
+        "answer": "26.7576",
+        "dtype": "float",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/voters/voters.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/voters/voters.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "voters_2",
+        "query": "Which party have the highest active to inactive voter ratio?",
+        "answer": "Democratic",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/voters/voters.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/voters/voters.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "horses_1",
+        "query": "Which winner's owner is not their breeder?",
+        "answer": "['Seattle Slew']",
+        "dtype": "list",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/horses/horses.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/horses/horses.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "horses_2",
+        "query": "List all the jockeys for the most successful owner.",
+        "answer": "['Earl Sande', 'Willie Saunders']",
+        "dtype": "list",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/horses/horses.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/horses/horses.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "climate_1",
+        "query": "What is the average of the Average High for the first 6 months of the year in \u00c2\u00b0C?",
+        "answer": "23.63",
+        "dtype": "float",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/climate/climate.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/climate/climate.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "climate_2",
+        "query": "Which month had the highest variation between high and low average?",
+        "answer": "Dec",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/climate/climate.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/climate/climate.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "tenure_1",
+        "query": "Who have the longest tenure?",
+        "answer": "Aldo Remondino",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/tenure/tenure.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/tenure/tenure.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "tenure_2",
+        "query": "Who had the most number of tenures?",
+        "answer": "Giuseppe Valle",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/tenure/tenure.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/tenure/tenure.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "population_1",
+        "query": "Which region has the highest population density?",
+        "answer": "Danish Capital Region",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/population/population.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/population/population.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "population_2",
+        "query": "What percentage(%) of the Grand Total population does Danish Capital Region account for?",
+        "answer": "50.87",
+        "dtype": "float",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/population/population.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/population/population.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "census_1",
+        "query": "What are the top 3 cities in terms of population growth, sort in ascending order?",
+        "answer": "['Beloit', 'Baraboo', 'Appleton']",
+        "dtype": "list",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/census/census.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/census/census.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "census_2",
+        "query": "What is the 2010 population of the oldest incorporated city?",
+        "answer": "16243",
+        "dtype": "int",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/census/census.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/census/census.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "census_3",
+        "query": "List all the cities not rated 4th class along with their 2010 population.",
+        "answer": "{'Appleton': 72623, 'Baraboo': 12048, 'Beloit': 36966}",
+        "dtype": "pd.Series",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/census/census.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/census/census.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "structures_1",
+        "query": "Name the tallest structure and it's height in meters. Mention as a dictionary with keys: 'Name, and 'height'.",
+        "answer": "{'Name': 'High Roller', 'height': 168}",
+        "dtype": "pd.Series",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/structures/structures.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/structures/structures.png",
+        "diversification_type": "original"
+    },
+    {
+        "index": "structures_2",
+        "query": "Which country have the most number of structures taller than 390 feet?",
+        "answer": "China",
+        "dtype": "str",
+        "type": null,
+        "data_file": "dev_test/Diversification/External_Source/workbooks/structures/structures.xlsx",
+        "image_file": "dev_test/Diversification/External_Source/workbooks/structures/structures.png",
+        "diversification_type": "original"
+    }
+]
