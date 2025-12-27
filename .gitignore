@@ -1,5 +1,7 @@
 .vscode
 .tmp_code
 .tmp_output
+TD_venv
+Local Self Created Dataset
 
 **/__pycache__/**
