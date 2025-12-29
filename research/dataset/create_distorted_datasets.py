@@ -14,7 +14,7 @@ original = []
 disturbed = []
 for qa in qa_pairs:
     workbook_name = qa["index"][:-2]
-
+    query_number = qa["index"][-1]
     og_temp = copy.deepcopy(qa)
     og_temp["data_file"] = f"{dataset_dir}/{workbook_name}/{workbook_name}.xlsx"
     og_temp["image_file"] = f"{dataset_dir}/{workbook_name}/{workbook_name}.png"
@@ -23,12 +23,12 @@ for qa in qa_pairs:
 
     for file in listdir(root_dir/dataset_dir/workbook_name/"disturbed"):
         file_path = f"{dataset_dir}/{workbook_name}/disturbed/{file}".replace("\\", "/")
-
-        dis_temp = copy.deepcopy(qa)
-        dis_temp["data_file"] = file_path
-        dis_temp["image_file"] = file_path[:-5]+".png"
-        dis_temp["diversification_type"] = "disturbed"
-        disturbed.append(dis_temp)
+        if query_number in file:
+            dis_temp = copy.deepcopy(qa)
+            dis_temp["data_file"] = file_path
+            dis_temp["image_file"] = file_path[:-5]+".png"
+            dis_temp["diversification_type"] = "disturbed"
+            disturbed.append(dis_temp)
 
 with open("27122025_distorted_dataset/original.json", 'w') as fw:
     json.dump(original, fw, indent=4)
