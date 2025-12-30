@@ -86,8 +86,32 @@ def add_original():
         data['diversification_type'] = "original"
     write_json(original, ROOT_DIR / "research" / "dataset" / "processed_dataset" / "reworked_original.json")
 
+def create_overall_distorted_dataset():
+    prev = read_json(ROOT_DIR / "research" / "dataset" / "19122025_processed_dataset" / "original.json")
+    curr = read_json(ROOT_DIR / "research" / "dataset" / "27122025_distorted_dataset" / "original.json")
 
+    prev_dist = read_json(ROOT_DIR / "research" / "dataset" / "19122025_processed_dataset" / "disturbed.json")
+    curr_dist = read_json(ROOT_DIR / "research" / "dataset" / "27122025_distorted_dataset" / "disturbed.json")
+
+    dist_ann = read_json(ROOT_DIR / "research" / "report" / "analysis" / "disturbance_annotation.json")
+    for dist in prev_dist:
+        index = dist['index']
+        annotation = [d for d in dist_ann if d['index'] == index]
+        dist['distortion_type'] = annotation[0]['disturbance_annotation'] if annotation else "unknown"
+    
+    for dist in curr_dist:
+        data_file = dist['data_file']
+        if "semantic" in Path(data_file).name.lower():
+            dist['distortion_type'] = "semantic"
+        else:
+            dist['distortion_type'] = "structural"
+
+    combined = prev + curr
+    combined_dist = prev_dist + curr_dist
+
+    write_json(combined, ROOT_DIR / "research" / "dataset" / "overall_distorted_dataset" / "original.json")
+    write_json(combined_dist, ROOT_DIR / "research" / "dataset" / "overall_distorted_dataset" / "disturbed.json")
 
 
 if __name__ == "__main__":
-    add_screenshot_info()
+    create_overall_distorted_dataset()

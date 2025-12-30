@@ -205,7 +205,7 @@ def main(data_dir: Path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Take screenshots of Excel files')
     parser.add_argument('--data_dir', type=str, 
-                       default=r"C:\repo\table-diversification\dev_test\Diversification\Self Created Dataset\Manual Created Dataset",
+                       default=r"C:\repo\table-diversification\dev_test\Diversification\External_Source\workbooks",
                        help='Directory containing Excel files')
     
     args = parser.parse_args()

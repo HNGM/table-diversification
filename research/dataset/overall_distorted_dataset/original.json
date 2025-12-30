@@ -1,0 +1,502 @@
+[
+  {
+    "index": "Clinic_Visits_original_0",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Clinic_Visits_original_1",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{\"Dr. Iyer\": 0.5, \"Dr. Rao\": 0.5, \"Dr. Singh\": 0.3333333333333333}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Clinic_Visits_original_2",
+    "query": "What is the average consultation fee for females grouped by condition?",
+    "answer": "{\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "HR_Timesheets_original_0",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "HR_Timesheets_original_1",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "dtype": "int",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "HR_Timesheets_original_2",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Logistics_Shipments_original_0",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Logistics_Shipments_original_1",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "['SIN', 'SYD', 'LHR']",
+    "dtype": "list",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Logistics_Shipments_original_2",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days), rounded to nearest integer?",
+    "answer": "80",
+    "dtype": "int",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_0",
+    "query": "What is the total spending for each category in the month of June?",
+    "answer": "{\"Dining\": 4047.98, \"Entertainment\": 5579.33, \"Groceries\": 4395.02, \"Health\": 5803.54, \"Rent\": 2397.77, \"Transport\": 6838.02, \"Utilities\": 3106.98}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_1",
+    "query": "Which payment method (mention only name) earned the highest total cashback?",
+    "answer": "UPI",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_2",
+    "query": "What percent of total spending was on recurring expenses?",
+    "answer": "36.30",
+    "dtype": "float",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Retail_Sales_Orders_original_0",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
+    "dtype": "pd.Series",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Retail_Sales_Orders_original_1",
+    "query": "Which product sold the most units overall across all orders? (mention only the product name)",
+    "answer": "Coffee Beans",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Retail_Sales_Orders_original_2",
+    "query": "What is the average discount rate (rounded to 3 decimals) applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "{'Express': 0.059, 'Standard': 0.058}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Retail_Sales_Orders_original_3",
+    "query": "What percentage of orders were delivered within two days of the order date?",
+    "answer": "62.5",
+    "dtype": "float",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "University_Grades_original_0",
+    "query": "What is the average total score for each course with a 100% pass rate?",
+    "answer": "{\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "University_Grades_original_1",
+    "query": "How many students received grade A?",
+    "answer": "22",
+    "dtype": "int",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "University_Grades_original_2",
+    "query": "Which professor (only name) achieved the highest average project score?",
+    "answer": "Prof. Mehta",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "University_Grades_original_3",
+    "query": "Among all students, which student achieved the highest overall score, and what was their total marks along with the corresponding letter grade? Mention as a dictionary with keys 'StudentID', 'Marks', and 'Grade'.",
+    "answer": "{\"StudentID\": \"S117\", \"Marks\": 125.0, \"Grade\": \"A\"}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Automobile_1",
+    "query": "Of all the cars manufactured in the 70's, list the car with the highest acceleration for each region of origin.",
+    "answer": "{'usa': 'ford maverick', 'japan': 'toyota corona mark ii', 'europe': 'volkswagen 1131 deluxe sedan'}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/Automobile/Automobile.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/Automobile/Automobile.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "Automobile_2",
+    "query": "What's the heaviest car manufactured in USA?",
+    "answer": "hi 1200d",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/Automobile/Automobile.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/Automobile/Automobile.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "polling_data_1",
+    "query": "Mention the candidate who appeared in every poll.",
+    "answer": "Rahm Emanuel",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/polling_data/polling_data.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/polling_data/polling_data.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "ship_fate_1",
+    "query": "Which ships over 5000tons were sank?",
+    "answer": "['MV Tudor', 'SS British Monarch', 'MV Moerdrecht', 'SS La Brea', 'SS Empire Merlin', 'MV Athelcrest']",
+    "dtype": "list",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/ship_fate.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/ship_fate.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "ship_fate_2",
+    "query": "How many ships that sank in the month of June belongs to United Kingdom?",
+    "answer": "4",
+    "dtype": "int",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/ship_fate.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/ship_fate.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "military_bases_1",
+    "query": "What is the total number of shelters in each governorate?",
+    "answer": "{'Aleppo': 43, 'Homs': 116, 'Damascus': 162, 'Hama': 20, 'As-Suwayda': 46}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/military_bases/military_bases.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/military_bases/military_bases.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "military_bases_2",
+    "query": "Which military base having more than 1 runway has the most helipads?",
+    "answer": "Khalkhalah Military Airbase",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/military_bases/military_bases.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/military_bases/military_bases.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "points_table_1",
+    "query": "Which country has the most number of medals?",
+    "answer": "Italy",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/points_table/points_table.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/points_table/points_table.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "points_table_2",
+    "query": "Which country won the most bronze medals without winning any gold medal?",
+    "answer": "Germany",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/points_table/points_table.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/points_table/points_table.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "accidents_1",
+    "query": "What is the average of the deaths per accidents per year in the decade 2000s (2000-2009), rounded to 3 decimals?",
+    "answer": "8.437",
+    "dtype": "float",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/accidents/accidents.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/accidents/accidents.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "accidents_2",
+    "query": "Which year has the biggest drop in the number of accidents compared to the previous year?",
+    "answer": 2009,
+    "dtype": "int",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/accidents/accidents.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/accidents/accidents.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "awards_1",
+    "query": "Which nominee(s) received the most number of nominations+awards?",
+    "answer": "['Gene Hackman', 'Ernest Tidyman']",
+    "dtype": "list",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/awards/awards.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/awards/awards.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "awards_2",
+    "query": "Which award ceremonies did not result in a single win?",
+    "answer": "['American Cinema Editors, 1972', 'National Society of Film Critics, 1972', 'Writers Guild of America, 1972']",
+    "dtype": "list",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/awards/awards.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/awards/awards.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "radio_1",
+    "query": "Which service had the highest total cost in the year 2011/12?",
+    "answer": "BBC Local Radio",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/radio/radio.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/radio/radio.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "radio_2",
+    "query": "List all the services where the yearly cost difference is more than 3 million.",
+    "answer": "['BBC Radio 1', 'BBC Radio 4', 'BBC Radio 5 Live', 'BBC Local Radio']",
+    "dtype": "list",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/radio/radio.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/radio/radio.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "voters_1",
+    "query": "What percentage(%) of total voters are unaffiliated and active?",
+    "answer": "26.7576",
+    "dtype": "float",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/voters/voters.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/voters/voters.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "voters_2",
+    "query": "Which party have the highest active to inactive voter ratio?",
+    "answer": "Democratic",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/voters/voters.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/voters/voters.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "horses_1",
+    "query": "Which winner's owner is not their breeder?",
+    "answer": "['Secretariat', 'Seattle Slew']",
+    "dtype": "list",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/horses/horses.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/horses/horses.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "horses_2",
+    "query": "List all the jockeys for the most successful owner(s). Answer as a dictionary with owner as key and list of jockeys as value.",
+    "answer": "{'Belair Stud': ['Earl Sande', 'Willie Saunders'], 'Calumet Farm': ['Eddie Arcaro']}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/horses/horses.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/horses/horses.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "climate_1",
+    "query": "What is the average of the Average High for the first 6 months of the year in \u00b0C?",
+    "answer": "23.63",
+    "dtype": "float",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/climate/climate.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/climate/climate.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "climate_2",
+    "query": "Which month had the highest variation between high and low average?",
+    "answer": "Dec",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/climate/climate.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/climate/climate.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "tenure_1",
+    "query": "Who have the shortest tenure?",
+    "answer": "Antonio Bosio",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/tenure/tenure.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/tenure/tenure.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "tenure_2",
+    "query": "Who had the most number of tenures?",
+    "answer": "Giuseppe Valle",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/tenure/tenure.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/tenure/tenure.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "population_1",
+    "query": "Which region has the highest population density?",
+    "answer": "Danish Capital Region",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/population/population.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/population/population.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "population_2",
+    "query": "What percentage(%) of the Grand Total population does Danish Capital Region account for?",
+    "answer": "50.87",
+    "dtype": "float",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/population/population.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/population/population.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "census_1",
+    "query": "What are the top 3 cities in terms of population growth, sort in ascending order?",
+    "answer": "['Beloit', 'Baraboo', 'Appleton']",
+    "dtype": "list",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/census/census.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/census/census.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "census_2",
+    "query": "What is the 2010 population of the oldest incorporated city?",
+    "answer": "16243",
+    "dtype": "int",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/census/census.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/census/census.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "census_3",
+    "query": "List all the cities not rated 4th class along with their 2010 population.",
+    "answer": "{'Appleton': 72623, 'Baraboo': 12048, 'Beloit': 36966}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/census/census.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/census/census.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "structures_1",
+    "query": "Name the tallest structure and it's height in meters. Mention as a dictionary with keys: 'Name, and 'height'.",
+    "answer": "{'Name': 'High Roller', 'height': 168}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/structures/structures.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/structures/structures.png",
+    "diversification_type": "original"
+  },
+  {
+    "index": "structures_2",
+    "query": "Which country have the most number of structures taller than 390 feet?",
+    "answer": "China",
+    "dtype": "str",
+    "type": null,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/structures/structures.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/structures/structures.png",
+    "diversification_type": "original"
+  }
+]

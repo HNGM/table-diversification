@@ -21,9 +21,9 @@
     },
     {
         "index": "polling_data_1",
-        "query": "List all the candidates who appeared in every poll.",
-        "answer": "['Rahm Emanuel']",
-        "dtype": "list",
+        "query": "Mention the candidate who appeared in every poll.",
+        "answer": "Rahm Emanuel",
+        "dtype": "str",
         "type": null,
         "data_file": "dev_test/Diversification/External_Source/workbooks/polling_data/disturbed/polling_data_structural_1.xlsx",
         "image_file": "dev_test/Diversification/External_Source/workbooks/polling_data/disturbed/polling_data_structural_1.png",
