@@ -7,7 +7,7 @@ import copy
 root_dir = Path(__file__).parent.parent.parent.resolve()
 dataset_dir = "dev_test/Diversification/External_Source/workbooks"
 
-with open(root_dir/"dev_test/Diversification/External_Source/queries_and_answer.json", 'r') as fr:
+with open(root_dir/"dev_test/Diversification/External_Source/queries_and_answer.json", 'r', encoding="utf-8") as fr:
     qa_pairs = json.load(fr)
 
 original = []
@@ -30,8 +30,8 @@ for qa in qa_pairs:
             dis_temp["diversification_type"] = "disturbed"
             disturbed.append(dis_temp)
 
-with open("27122025_distorted_dataset/original.json", 'w') as fw:
+with open("27122025_distorted_dataset/original.json", 'w', encoding="utf-8") as fw:
     json.dump(original, fw, indent=4)
 
-with open("27122025_distorted_dataset/disturbed.json", 'w') as fw:
+with open("27122025_distorted_dataset/disturbed.json", 'w', encoding="utf-8") as fw:
     json.dump(disturbed, fw, indent=4)

@@ -3,7 +3,7 @@
   "index": "Automobile_1",
   "query": "Of all the cars manufactured in the 70's, list the car with the highest acceleration for each region of origin.",
   "answer": "{'usa': 'ford maverick', 'japan': 'toyota corona mark ii', 'europe': 'volkswagen 1131 deluxe sedan'}",
-  "dtype": "pd.Series",
+  "dtype": "dict",
   "type": null
   },
   {
@@ -15,9 +15,9 @@
   },
   {
     "index": "polling_data_1",
-    "query": "Mention all the candidates who appeared in every poll.",
-    "answer": "Rahm Emanuel",
-    "dtype": "str",
+    "query": "List all the candidates who appeared in every poll.",
+    "answer": "['Rahm Emanuel']",
+    "dtype": "list",
     "type": null
   },
   {
@@ -38,7 +38,7 @@
     "index": "military_bases_1",
     "query": "What is the total number of shelters in each governorate?",
     "answer": "{'Aleppo': 43, 'Homs': 116, 'Damascus': 162, 'Hama': 20, 'As-Suwayda': 46}",
-    "dtype": "pd.Series",
+    "dtype": "dict",
     "type": null
   },
   {
@@ -72,8 +72,8 @@
   {
     "index": "accidents_2",
     "query": "Which year has the biggest drop in the number of accidents compared to the previous year?",
-    "answer": "2009",
-    "dtype": "str",
+    "answer": 2009,
+    "dtype": "int",
     "type": null
   },
   {
@@ -99,9 +99,9 @@
   },
   {
     "index": "radio_2",
-    "query": "What is the average total cost for all the services whose cost increased by less than 1 million?",
-    "answer": "13.9875",
-    "dtype": "float",
+    "query": "List all the services where the yearly cost difference is more than 3 million.",
+    "answer": "['BBC Radio 1', 'BBC Radio 4', 'BBC Radio 5 Live', 'BBC Local Radio']",
+    "dtype": "list",
     "type": null
   },
   {
@@ -121,15 +121,15 @@
   {
     "index": "horses_1",
     "query": "Which winner's owner is not their breeder?",
-    "answer": "['Seattle Slew']",
+    "answer": "['Secretariat', 'Seattle Slew']",
     "dtype": "list",
     "type": null
   },
   {
     "index": "horses_2",
-    "query": "List all the jockeys for the most successful owner.",
-    "answer": "['Earl Sande', 'Willie Saunders']",
-    "dtype": "list",
+    "query": "List all the jockeys for the most successful owner(s). Answer as a dictionary with owner as key and list of jockeys as value.",
+    "answer": "{'Belair Stud': ['Earl Sande', 'Willie Saunders'], 'Calumet Farm': ['Eddie Arcaro']}",
+    "dtype": "dict",
     "type": null
   },
   {
@@ -148,8 +148,8 @@
   },
   {
     "index": "tenure_1",
-    "query": "Who have the longest tenure?",
-    "answer": "Aldo Remondino",
+    "query": "Who have the shortest tenure?",
+    "answer": "Antonio Bosio",
     "dtype": "str",
     "type": null
   },
@@ -192,14 +192,14 @@
     "index": "census_3",
     "query": "List all the cities not rated 4th class along with their 2010 population.",
     "answer": "{'Appleton': 72623, 'Baraboo': 12048, 'Beloit': 36966}",
-    "dtype": "pd.Series",
+    "dtype": "dict",
     "type": null
   },
   {
     "index": "structures_1",
     "query": "Name the tallest structure and it's height in meters. Mention as a dictionary with keys: 'Name, and 'height'.",
     "answer": "{'Name': 'High Roller', 'height': 168}",
-    "dtype": "pd.Series",
+    "dtype": "dict",
     "type": null
   },
   {
