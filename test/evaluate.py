@@ -22,15 +22,17 @@ def test():
 
 if __name__ == "__main__":
     pred_answer = {
-        "West": 11625.25,
-        "East": 2617.5,
-        "South": 1209.0,
-        "North": 600.0
+        "answer": {
+            "europe": "volkswagen 1131 deluxe sedan",
+            "japan": "toyota corona mark ii",
+            "usa": "ford maverick"
+        },
+        "dtype": "dict"
     }
     result = evaluate(
-        "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
-        "pd.Series",
-        pred_answer,
-        "pd.Series"
+        "{'usa': 'ford maverick', 'japan': 'toyota corona mark ii', 'europe': 'volkswagen 1131 deluxe sedan'}",
+        "dict",
+        pred_answer['answer'],
+        pred_answer['dtype']
     )
     print(result)

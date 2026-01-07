@@ -1,0 +1,12 @@
+[
+    {
+        "index": "Clinic_Visits_original_1__original__disturbed",
+        "query": "For each doctor, what proportion of their visits required a follow-up?",
+        "answer": "{\"Dr. Iyer\": 0.5, \"Dr. Rao\": 0.5, \"Dr. Singh\": 0.3333333333333333}",
+        "dtype": "dict",
+        "type": null,
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_1.xlsx",
+        "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_1.png",
+        "diversification_type": "original_disturbed"
+    }
+]
