@@ -11,3 +11,8 @@ for prompt_file in PROMPT_DIR.glob("*.txt"):
 
 def get_prompt(prompt_name: str) -> str:
     return PROMPT.get(prompt_name, "")
+
+def fix_json_serialization(data):
+    if isinstance(data.get("answer"), set):
+        data["answer"] = list(data["answer"])
+    return data

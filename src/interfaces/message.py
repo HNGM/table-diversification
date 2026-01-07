@@ -16,7 +16,6 @@ class Message(BaseModel):
             "content": self.content
         }
 
-
 class UserMessage(Message):
     role: Literal["user"]
 

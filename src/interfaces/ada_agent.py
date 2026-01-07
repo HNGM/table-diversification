@@ -28,14 +28,3 @@ class AdaAgent(ABC):
     def _run(self, messages: Optional[list[Union[str, Message]]]) -> str:
         pass
 
-class AdaAgentConfig(BaseModel):
-    framework: Type[AdaAgent]
-    model: str
-    llm_config_path: Path
-
-    def load_model(self, index:int):
-        llm_configs = load_llm_configs(self.llm_config_path, self.model)
-        llm_config = llm_configs[index%len(llm_configs)]
-        ada_agent = self.framework(llm_config)
-        return ada_agent 
-

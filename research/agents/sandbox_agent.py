@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 from research.agents.utils.code_tool import CodeTool
-from src.interfaces.ada_agent import AdaAgent, AdaAgentConfig
+from src.interfaces.ada_agent import AdaAgent
 from src.interfaces.chat_agent import ChatAgent, ChatAgentConfig
 from src.interfaces.message import UserMessage, Message
 from src.utils.llm_config import LLMConfig, load_llm_configs
@@ -15,17 +15,6 @@ class FunctionCallAdaAgentResponse(AgentResponse):
     def _parse_raw_response(cls, raw_response):
         raw_response = json.loads(raw_response)
         return JsonResponseParser._parse_raw_response(raw_response["response"])
-
-class FunctionCallADAConfig(AdaAgentConfig):
-    
-    def __init__(self, model: str, llm_config_path: Path):
-        super().__init__(framework=FunctionCallAdaAgent, model=model, llm_config_path=llm_config_path)
-    
-    def load_model(self, index:int):
-        llm_configs = load_llm_configs(self.llm_config_path, self.model)
-        llm_config = llm_configs[index%len(llm_configs)]
-        ada_agent = self.framework(llm_config)
-        return ada_agent
 
 class FunctionCallAdaAgent(ChatAgent, AdaAgent):
     def __init__(

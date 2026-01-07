@@ -1,0 +1,102 @@
+[
+    {
+        "index": "Clinic_Visits_original_0__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_0.xlsx",
+        "disturbance_annotation": "semantic"
+    },
+    {
+        "index": "Clinic_Visits_original_1__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_1.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "Clinic_Visits_original_2__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_2.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "HR_Timesheets_original_0__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "HR_Timesheets_original_1__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "HR_Timesheets_original_2__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_2.xlsx",
+        "disturbance_annotation": "semantic"
+    },
+    {
+        "index": "Logistics_Shipments_original_0__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_0.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "Logistics_Shipments_original_1__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_1.xlsx",
+        "disturbance_annotation": "semantic"
+    },
+    {
+        "index": "Logistics_Shipments_original_2__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_2.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "Personal_Finance_Transactions_original_0__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_0.xlsx",
+        "disturbance_annotation": "semantic"
+    },
+    {
+        "index": "Personal_Finance_Transactions_original_1__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_1.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "Personal_Finance_Transactions_original_2__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_2.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "Retail_Sales_Orders_original_0__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "Retail_Sales_Orders_original_1__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_1.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "Retail_Sales_Orders_original_2__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "Retail_Sales_Orders_original_3__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "University_Grades_original_0__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.xlsx",
+        "disturbance_annotation": "semantic"
+    },
+    {
+        "index": "University_Grades_original_1__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.xlsx",
+        "disturbance_annotation": "semantic"
+    },
+    {
+        "index": "University_Grades_original_2__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_1.xlsx",
+        "disturbance_annotation": "structural"
+    },
+    {
+        "index": "University_Grades_original_3__original__disturbed",
+        "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_2.xlsx",
+        "disturbance_annotation": "semantic"
+    }
+]

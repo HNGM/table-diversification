@@ -2,6 +2,11 @@ import requests
 from msal import PublicClientApplication
 from openai.types.chat import ChatCompletion
 import json
+from msal import PublicClientApplication, SerializableTokenCache
+import threading
+import atexit
+import os
+
 
 DEFAULT_ENDPOINT = 'https://fe-26.qas.bing.net/sdf/'
 DEFAULT_SCOPES = ['https://substrate.office.com/llmapi/LLMAPI.dev']
@@ -12,13 +17,21 @@ class LLMClient:
     _SCOPES = DEFAULT_SCOPES
     _API = DEFAULT_API
 
-    def __init__(self, endpoint):
-        self._app = PublicClientApplication('68df66a4-cad9-4bfd-872b-c6ddde00d6b2',
-                                            authority='https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47',
-                                            enable_broker_on_windows=True)
-        if endpoint != None:
-            LLMClient._ENDPOINT = endpoint
-        LLMClient._ENDPOINT += self._API
+    def __init__(self, scenario_id: str = None):
+        self._scenario_id = scenario_id or "fd004048-ba97-46c8-9b09-6f566bdcd2d7"
+        self._cache = SerializableTokenCache()
+        self._cache_path = ".llmapi-dev.bin"
+        self._app = PublicClientApplication(
+            "545f9f54-6dca-4fce-9c2a-abd65266524f",
+            authority="https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47",
+            token_cache=self._cache,
+        )
+        self._token_lock = threading.Lock()
+        if os.path.exists(self._cache_path):
+            self._cache.deserialize(open(self._cache_path, "r").read())
+
+        self.token = None
+        atexit.register(self._save_token)
     
     def send_request(self, model_name, request):
         # get the token
@@ -37,22 +50,32 @@ class LLMClient:
         return ChatCompletion(**response.json())
     
     def _get_token(self):
-        accounts = self._app.get_accounts()
-        result = None
+        with self._token_lock:
+            # Use cached token if available
+            if self.token:
+                return self.token
+            accounts = self._app.get_accounts()
+            result = None
+            if accounts:
+                # Assuming the end user chose this one
+                chosen = accounts[0]
+                # Now let's try to find a token in cache for this account
+                result = self._app.acquire_token_silent(self._SCOPES, account=chosen)
+            if not result:
+                # So no suitable token exists in cache. Let's get a new one from AAD.
+                flow = self._app.initiate_device_flow(scopes=self._SCOPES)
+                if "user_code" not in flow:
+                    raise ValueError(
+                        "Fail to create device flow. Err: %s"
+                        % json.dumps(flow, indent=4)
+                    )
+                print(flow["message"])
+                result = self._app.acquire_token_by_device_flow(flow)
+                self._save_token()
+            self.token = result.get("access_token", None)
+            return self.token
 
-        if accounts:
-            # Assuming the end user chose this one
-            chosen = accounts[0]
-
-            # Now let's try to find a token in cache for this account
-            result = self._app.acquire_token_silent(LLMClient._SCOPES, account=chosen)
-    
-        if not result:
-            result = self._app.acquire_token_interactive(scopes=LLMClient._SCOPES, parent_window_handle=self._app.CONSOLE_WINDOW_HANDLE)
-
-            if 'error' in result:
-                raise ValueError(
-                    f"Failed to acquire token. Error: {json.dumps(result, indent=4)}"
-                )
-
-        return result["access_token"]
+    def _save_token(self):
+        if self._cache.has_state_changed:
+            with open(self._cache_path, "w") as f:
+                f.write(self._cache.serialize())

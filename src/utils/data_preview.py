@@ -7,6 +7,8 @@ import pandas as pd
 from pandas.api.types import is_string_dtype, is_numeric_dtype
 from scipy.stats import zscore
 from tabulate import tabulate
+from openpyxl import load_workbook
+from typing import List
 
 
 # root_dir = Path(__file__).parent.resolve()
@@ -264,3 +266,65 @@ def get_data_preview(data_dir:Path, num_samples:int = _NUM_SAMPLES)->str:
                 print(_PREVIEW_FAILURE_MESSAGE.format(preview_failure_count, e))
 
     return output
+
+def _expand_merged_cells(ws):
+    """
+    Fill merged cell ranges so every cell contains the top-left value.
+    This preserves visual structure for markdown rendering.
+    """
+    # Collect merged ranges first (to avoid modifying while iterating)
+    merged_ranges = list(ws.merged_cells.ranges)
+    
+    for merged_range in merged_ranges:
+        min_row, min_col, max_row, max_col = merged_range.bounds
+        # Get the value from the top-left cell before unmerging
+        value = ws.cell(row=min_row, column=min_col).value
+        
+        # Unmerge the cells
+        ws.unmerge_cells(str(merged_range))
+        
+        # Now fill all cells with the value
+        for r in range(min_row, max_row + 1):
+            for c in range(min_col, max_col + 1):
+                ws.cell(row=r, column=c).value = value
+
+def _worksheet_to_dataframe(ws) -> pd.DataFrame:
+    rows: List[List[str]] = []
+    for row in ws.iter_rows(values_only=True):
+        rows.append(
+            ["" if cell is None else str(cell) for cell in row]
+        )
+    return pd.DataFrame(rows)
+
+def get_data_preview_markdown(data_file: Path) -> str:
+    if data_file.suffix.lower() == ".csv":
+        df = pd.read_csv(data_file, dtype=str).fillna("")
+    elif data_file.suffix.lower() in {".xls", ".xlsx"}:
+        wb = load_workbook(data_file, data_only=True)
+        ws = wb.active
+
+        df = _worksheet_to_dataframe(ws)
+    else:
+        return _NO_PREVIEW_MESSAGE
+
+    # First row is treated as header row (even if broken)
+    headers = df.iloc[0].tolist()
+    df = df.iloc[1:].reset_index(drop=True)
+
+    # Replace pandas-generated "Unnamed" headers or None
+    headers = [
+        "" if str(h).startswith("Unnamed") else h
+        for h in headers
+    ]
+
+    # --- Manual markdown rendering ---
+    header_row = "| " + " | ".join(headers) + " |"
+    separator_row = "| " + " | ".join(["---"] * len(headers)) + " |"
+
+    body_rows = []
+    for _, row in df.iterrows():
+        body_rows.append(
+            "| " + " | ".join(row.tolist()) + " |"
+        )
+
+    return "\n".join([header_row, separator_row] + body_rows)

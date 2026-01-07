@@ -2,27 +2,25 @@ import json
 import random
 from typing import Literal, Optional
 from openai import AzureOpenAI, OpenAI
-from openai.types.chat import ChatCompletion
+from openai.types.chat import ChatCompletion, ChatCompletionMessage
 from pydantic import BaseModel, model_validator
 from azure.identity import DefaultAzureCredential, get_bearer_token_provider
 import traceback
-try:
-    from prose.substrate import Client
-except:
-    print("Error importing prose.substrate. Run `pip install -e C:\prose\etc\PythonPackages\substrate` to install")
-    print("Importing default substrate client")
-    from .substrate import LLMClient
+from .substrate import LLMClient
+from src.utils.huggingface import HuggingFaceClient
+
 
 _OAI_API_VERSION = "2024-09-01-preview"
 
 class LLMConfig(BaseModel):
-    endpoint_mode: Literal["azure_oai", "openai", "azure_ml", "gemini", "substrate"]
+    endpoint_mode: Literal["azure_oai", "openai", "azure_ml", "gemini", "substrate", "huggingface"]
     model: str
     deployment_name: Optional[str]
-    api_version: str = _OAI_API_VERSION 
+    api_version: str = _OAI_API_VERSION
     ado_auth: Optional[bool] = True
     endpoint: Optional[str] = None
     api_key: Optional[str] = None
+    _client_cache: Optional[object] = None
 
     @model_validator(mode='before')
     @classmethod
@@ -36,6 +34,8 @@ class LLMConfig(BaseModel):
         return data
     
     def get_client(self):
+        if self._client_cache is not None:
+            return self._client_cache
         try:
             if self.endpoint_mode == "azure_oai":
                 aoai_config = {
@@ -50,14 +50,17 @@ class LLMConfig(BaseModel):
                     aoai_config["azure_ad_token_provider"] = token
                 else:
                     aoai_config["api_key"] = self.api_key
-                return AzureOpenAI(**aoai_config)
+                client = AzureOpenAI(**aoai_config)
             elif self.endpoint_mode == "substrate":
-                try:
-                    return Client(None)
-                except:
-                    return LLMClient(self.endpoint)
-            base_url = self.endpoint if self.endpoint else None
-            return OpenAI(api_key=self.api_key, base_url=base_url)
+                client = LLMClient(self.endpoint)
+            elif self.endpoint_mode == "huggingface":
+                client = HuggingFaceClient(self.deployment_name if self.deployment_name else self.model)
+            else:
+                base_url = self.endpoint if self.endpoint else None
+                client = OpenAI(api_key=self.api_key, base_url=base_url)
+            
+            self._client_cache = client
+            return client
             
         except Exception as e:
             print(self.model_dump_json(indent = 4))
@@ -76,11 +79,10 @@ class LLMConfig(BaseModel):
         if "tools" in kwargs and kwargs["tools"]:
             req_args["tools"] = kwargs["tools"]
         if self.endpoint_mode == "substrate":
-            try:
-                response = client.one(req_args["model"], req_args)
-                response = ChatCompletion(**response)
-            except:
-                response = client.send_request(req_args["model"], req_args)
+            response = client.send_request(req_args["model"], req_args)
+        elif self.endpoint_mode == "huggingface":
+            response = client.send_request(req_args)
+            return ChatCompletionMessage(content=response, role="assistant")
         else:        
             response = client.chat.completions.create(
                     **req_args

@@ -18,6 +18,7 @@ class Info(BaseModel):
     diversification_type: str
     dtype: str
     type: Optional[str] = None
+    distortion_type: Optional[str] = None
 
     @classmethod
     def get_info(cls, path: Path)->List['Info']:

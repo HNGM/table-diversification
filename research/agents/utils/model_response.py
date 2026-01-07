@@ -20,3 +20,12 @@ class JsonResponseParser(AgentResponse):
                 return ast.literal_eval(match)
             except ValueError:
                 raise Exception(f"Failed to parse the response as JSON or Python literal: {raw_response}")
+
+class PythonResponseParser(AgentResponse):
+    def _parse_raw_response(raw_response:str)->str:
+        pattern = r"```python\n(.*?)```"
+        matches = re.findall(pattern, raw_response, re.DOTALL)
+        if len(matches) == 0:
+            raise Exception(f"Incorrect response format from the agent: {raw_response}") 
+        code_str = matches[0]
+        return code_str

@@ -3,20 +3,56 @@ sys.path.append(".")
 from src.utils.utils import ROOT_DIR, read_json
 from typing import List
 import pandas as pd
+from research.evaluation.stats import get_tool_call_count, get_tool_call_count_completion_prosellm
+import argparse
+
+
 
 def get_agg_score(dataset: List[dict]):
     total = 0
     success = 0
+    tool = 0
     for data in dataset:
         scores = data.get('eval', [])
+        tl = []
         for score in scores:
             sc = score.get('eval', None)
+            tl.append(score.get('tools', 0))
             if sc is True:
                 success += 1
                 break
         total += 1
+        tool += sum(tl) / len(tl) if tl else 0
     agg_score = success / total if total > 0 else 0
     print(f"Aggregate Score: {agg_score*100:.2f}% ({success}/{total})")
+    print(f"Average Tool Calls: {tool/total:.2f}")
+
+def get_distortion_type_score(dataset: List[dict]):
+    distortion_score = {}
+    for data in dataset:
+        distortion_type = data.get('distortion_type', 'unknown')
+        if distortion_type not in distortion_score:
+            distortion_score[distortion_type] = {'total': 0, 'success': 0, 'tool_calls': 0}
+        scores = data.get('eval', [])
+        tl = []
+        is_success = False
+        for score in scores:
+            sc = score.get('eval', None)
+            tl.append(score.get('tools', 0))
+            if sc is True:
+                is_success = True
+        distortion_score[distortion_type]['total'] += 1
+        if is_success:
+            distortion_score[distortion_type]['success'] += 1
+        distortion_score[distortion_type]['tool_calls'] += sum(tl) / len(tl) if tl else 0
+    
+    print("Distortion Type Analysis:")
+    for dist_type, scores in distortion_score.items():
+        total = scores['total']
+        success = scores['success']
+        avg_tool_calls = scores['tool_calls'] / total if total > 0 else 0
+        agg_score = success / total if total > 0 else 0
+        print(f"- {dist_type.capitalize()}: {agg_score*100:.2f}% ({success}/{total}), Avg Tool Calls: {avg_tool_calls:.2f}")
 
 def get_result_matrix(original_results: List[dict], diversified_results: List[dict], disturbed_results: List[dict]):
     # Determine the maximum number of eval results (for creating sheets)
@@ -113,26 +149,16 @@ def get_result_matrix(original_results: List[dict], diversified_results: List[di
         other_columns = [col for col in summ_df.columns if col not in base_columns]
         summ_df = summ_df[base_columns + other_columns]
         summ_df.to_excel(writer, sheet_name='Summary', index=False)
-    
-    
-    
-
 
 if __name__ == "__main__":
-    original_results = read_json(ROOT_DIR / "research" / "results" / "191225" / "original.json")
-    try:
-        diversified_results = read_json(ROOT_DIR / "research" / "results" / "191225" / "diversified.json")
-    except AssertionError:
-        diversified_results = []
-    try:
-        disturbed_results = read_json(ROOT_DIR / "research" / "results" / "191225" / "disturbed.json")
-    except AssertionError:
-        disturbed_results = []
-
-    get_agg_score(original_results)
-    get_agg_score(diversified_results)
+    parser = argparse.ArgumentParser(description='Get Aggregated score from results')
+    parser.add_argument('--file', type=str, default=r"research\results\231225\disturbed_default_mistake_no_sandbox_markdown_dev-gpt-52-reasoning.json", help='Path to the results JSON file')
+    args = parser.parse_args()
+    
+    disturbed_results = read_json(args.file)
     get_agg_score(disturbed_results)
+    get_distortion_type_score(disturbed_results)
 
-    get_result_matrix(original_results, diversified_results, disturbed_results)
+    # get_result_matrix(original_results, diversified_results, disturbed_results)
 
 

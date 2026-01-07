@@ -42,23 +42,15 @@ class Workflow(ABC):
     def _process_single_item(self, args) -> Tuple[Optional[dict], Optional[str]]:
         i, input_data = args
 
-        worker_index = int(multiprocessing.current_process().name.split('-')[-1]) - 1
-
-        # Dynamically assign LLM config with minimal current load
-        with config_load_lock:
-            cfg_idx = min(config_load_g.keys(), key=lambda k: config_load_g[k])
-            config_load_g[cfg_idx] += 1
+        # Use first config (client is cached, so safe for concurrent access)
+        config = self.llm_configs[i % len(self.llm_configs)]
+        
         try:
-            config = self.llm_configs[cfg_idx]
             result = self.workflow(config, input_data)
             return result, None, None
         except Exception as e:
             error_msg = f"\nError processing item {i}:\n{str(e)}\n{traceback.format_exc()}\n{'-' * 80}"
             return None, error_msg, e
-        finally:
-            # Decrement load count for this config
-            with config_load_lock:
-                config_load_g[cfg_idx] -= 1
 
     def _filter_already_processed_indices(self, input_dataset):
         if not self.output_file.exists():
@@ -89,11 +81,7 @@ class Workflow(ABC):
         print(f"Running {self.name} workflow in parallel with {self.nproc} processes...")
 
         try:
-            # Setup shared load tracker for dynamic config assignment
-            manager = multiprocessing.Manager()
-            config_load = manager.dict({idx: 0 for idx in range(len(self.llm_configs))})
-            lock = manager.Lock()
-            with Pool(processes=self.nproc, initializer=init_worker, initargs=(config_load, lock)) as pool:
+            with Pool(processes=self.nproc, initializer=init_worker) as pool:
                 iterator = pool.imap_unordered(
                     self._process_single_item,
                     enumerate(input_dataset)
@@ -152,8 +140,5 @@ class Workflow(ABC):
     def load_data(self):
        pass
 
-def init_worker(config_load, config_lock):
-    global config_load_g, config_load_lock
-    config_load_g = config_load
-    config_load_lock = config_lock
+def init_worker():
     signal.signal(signal.SIGINT, signal.SIG_IGN)

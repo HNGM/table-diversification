@@ -3,24 +3,32 @@ sys.path.append(".")
 from src.interfaces.workflow import Workflow
 from src.interfaces import UserMessage, Message
 from research.evaluation.info import Info
-from src.utils.llm_config import LLMConfig, load_llm_configs
+from src.utils.llm_config import LLMConfig
 import argparse
 from pathlib import Path
-from src.utils.utils import ROOT_DIR
+from src.utils.utils import ROOT_DIR, write_json
 import datetime
 import sys
-from research.agents.agent import FunctionCallAdaAgent
+from research.agents.sandbox_agent import FunctionCallAdaAgent
+from research.agents.no_function_call_agent import NoFunctionCallAdaAgent
 from research.evaluation.utils import get_prompt
-from typing import List, Any, Union, Optional
-import pandas as pd
-import traceback
+from typing import List, Union, Type
 from research.agents.output_format import get_response_format
 from research.evaluation.evaluate import evaluate
+from src.utils.data_preview import get_data_preview_markdown
+
+# Agent framework mapping
+AGENT_FRAMEWORKS = {
+    "FunctionCallAdaAgent": FunctionCallAdaAgent,
+    "NoFunctionCallAdaAgent": NoFunctionCallAdaAgent
+}
 
 ARTIFACT_DIR_SOURCE = ROOT_DIR / "research" / "dataset" / "19122025_processed_dataset"
-MODE = "disturbed"
-MODEL = "dev-gpt-5-reasoning"
-
+DATA_MODE = "disturbed"
+MODEL = "dev-deepseek-r1-full"
+PROMPT_MODE = "default_mistake_no_sandbox"
+INGEST_MODE = "markdown"
+FRAMEWORK = "NoFunctionCallAdaAgent"
 
 class EvaluationWorkflow(Workflow):
     def __init__(
@@ -32,7 +40,9 @@ class EvaluationWorkflow(Workflow):
         name: str = "EvaluationWorkflow",
         nproc: int = 1,
         resume: bool = False,
-        pass_rate: int = 3
+        pass_rate: int = 3,
+        ingest_mode: str = "none",
+        framework: Union[str, Type] = "FunctionCallAdaAgent"
     ):
         super().__init__(
             llm_config_path=llm_config_path,
@@ -44,16 +54,32 @@ class EvaluationWorkflow(Workflow):
             resume=resume
         )
         self.pass_rate = pass_rate
+        self.ingest_mode = ingest_mode
+        
+        # Convert string framework name to class
+        if isinstance(framework, str):
+            if framework not in AGENT_FRAMEWORKS:
+                raise ValueError(f"Unknown framework: {framework}. Available: {list(AGENT_FRAMEWORKS.keys())}")
+            self.framework = AGENT_FRAMEWORKS[framework]
+        else:
+            self.framework = framework
 
 
     def workflow(self, llm_config: LLMConfig, info: Info) -> dict:
         eval_result = []
         # Assuming that each query is based on a single file
-        for i in range(self.pass_rate):
-            agent = FunctionCallAdaAgent(llm_config, prompt=get_prompt("default_screenshot") + "\n" + get_response_format())
-            upload_file_msg = agent.upload_files(files=[info.data_file], metadata=f"Answer the user's query based on the uploaded file name: {info.data_file.name}")
-            upload_imgfile_msg = agent.upload_image_files(image_files=[info.image_file] if info.image_file else [], metadata=f"Answer the user's query based on the uploaded image of the data.")
-            agent_output = agent.run([upload_file_msg, upload_imgfile_msg, UserMessage(content=info.query)])
+        for _ in range(self.pass_rate):
+            agent = self.framework(llm_config, prompt=get_prompt(PROMPT_MODE) + "\n" + get_response_format())
+            msgs: List[Message] = []
+            if self.framework not in [NoFunctionCallAdaAgent]:
+                msgs.append(agent.upload_files(files=[info.data_file], metadata=f"Answer the user's query based on the uploaded file name: {info.data_file.name}"))
+            if self.ingest_mode == "screenshot":
+                msgs.append(agent.upload_image_files(image_files=[info.image_file] if info.image_file else [], metadata=f"Answer the user's query based on the uploaded image of the data."))
+            elif self.ingest_mode == "markdown":
+                markdown = get_data_preview_markdown(info.data_file)
+                msgs.append(UserMessage(content=f"The data preview is as follows:\n{markdown}"))
+            msgs.append(UserMessage(content=info.query))
+            agent_output = agent.run(msgs)
             agent_response = agent_output.ParsedResponse
             eval = evaluate(
                 gt_answer=info.answer,
@@ -79,13 +105,15 @@ class EvaluationWorkflow(Workflow):
 def get_config(args):
     # Define parser
     parser = argparse.ArgumentParser(description='Run evaluation on model')
-    parser.add_argument('--input-file', default= ARTIFACT_DIR_SOURCE / f"{MODE}.json")
-    parser.add_argument('--output-file', default=ROOT_DIR / "research" / "results" / datetime.datetime.now().strftime('%d%m%y') / f"{MODE}.json")
+    parser.add_argument('--input-file', default= ARTIFACT_DIR_SOURCE / f"{DATA_MODE}.json")
+    parser.add_argument('--output-file', default=ROOT_DIR / "research" / "results" / datetime.datetime.now().strftime('%d%m%y') / f"{DATA_MODE}_{PROMPT_MODE}_{INGEST_MODE}_{MODEL}.json")
     parser.add_argument('--llm-config-path', default=ROOT_DIR / "config" / "default_llm_config.json", help='Path to the LLM config file for running user-proxy')
     parser.add_argument('--nproc', type=int, default=1, help='Number of parallel processes')
     parser.add_argument('--model', type=str, default=MODEL, help='model to run the process on')
     parser.add_argument('--resume', action="store_true", help='Resume from the last checkpoint')
     parser.add_argument('--pass-rate', type=int, default=3, help='Set the pass@k rate for evaluation')
+    parser.add_argument('--ingest-mode', type=str, default=INGEST_MODE, help='Ingest mode for data processing')
+    parser.add_argument('--framework', type=str, default=FRAMEWORK, help='Framework to use for the agent')
     config = parser.parse_args(args)
 
     config.input_file = Path(config.input_file)
