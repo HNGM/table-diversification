@@ -1,0 +1,422 @@
+[
+  {
+    "index": "Clinic_Visits_original_0",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            128.0,
+            136.0,
+            119.0,
+            145.0,
+            152.0,
+            110.0,
+            142.0,
+            164.0,
+            126.0,
+            114.0,
+            147.0,
+            139.0,
+            155.0,
+            111.0,
+            158.0
+          ],
+          "dtype": "list"
+        },
+        "raw_response": " To find the median systolic blood pressure recorded for patients grouped by their medical condition, we first need to group the dataframe by the 'Condition' column and then calculate the median of 'BP_Systolic' for each group.\n\n```json\n{\n    \"answer\": [128.0, 136.0, 119.0, 145.0, 152.0, 110.0, 142.0, 164.0, 126.0, 114.0, 147.0, 139.0, 155.0, 111.0, 158.0],\n    \"dtype\": \"list\"\n}\n```\n\nNow, let's calculate the median of this list:\n\n```python\nimport statistics\nmedian = statistics.median(answer['answer'])\n```\n\nThe median of systolic blood pressures for patients grouped by their medical condition is:\n\n```json\n{\n    \"answer\": 136.0,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            128.0,
+            136.0,
+            119.0,
+            145.0,
+            152.0,
+            110.0,
+            142.0,
+            164.0,
+            126.0,
+            114.0,
+            147.0,
+            139.0,
+            155.0,
+            111.0,
+            158.0
+          ],
+          "dtype": "list"
+        },
+        "raw_response": " To find the median systolic blood pressure recorded for patients grouped by their medical condition, we first need to group the dataframe by the 'Condition' column and then calculate the median of 'BP_Systolic' for each group.\n\n```json\n{\n    \"answer\": [128.0, 136.0, 119.0, 145.0, 152.0, 110.0, 142.0, 164.0, 126.0, 114.0, 147.0, 139.0, 155.0, 111.0, 158.0],\n    \"dtype\": \"list\"\n}\n```\n\nNow, let's calculate the median of this list:\n\n```python\nimport statistics\nmedian = statistics.median(answer['answer'])\n```\n\nThe median of systolic blood pressures for patients grouped by their medical condition is:\n\n```json\n{\n    \"answer\": 136.0,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            128.0,
+            136.0,
+            119.0,
+            145.0,
+            152.0,
+            110.0,
+            142.0,
+            164.0,
+            126.0,
+            114.0,
+            147.0,
+            139.0,
+            155.0,
+            111.0,
+            158.0
+          ],
+          "dtype": "list"
+        },
+        "raw_response": " To find the median systolic blood pressure recorded for patients grouped by their medical condition, we first need to group the dataframe by the 'Condition' column and then calculate the median of 'BP_Systolic' for each group.\n\n```json\n{\n    \"answer\": [128.0, 136.0, 119.0, 145.0, 152.0, 110.0, 142.0, 164.0, 126.0, 114.0, 147.0, 139.0, 155.0, 111.0, 158.0],\n    \"dtype\": \"list\"\n}\n```\n\nNow, let's calculate the median of this list:\n\n```python\nimport statistics\nmedian = statistics.median(answer['answer'])\n```\n\nThe median of systolic blood pressures for patients grouped by their medical condition is:\n\n```json\n{\n    \"answer\": 136.0,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Clinic_Visits_original_1",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{\"Dr. Iyer\": 0.5, \"Dr. Rao\": 0.5, \"Dr. Singh\": 0.3333333333333333}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": null,
+          "dtype": null
+        },
+        "raw_response": " ```json\n{\n    \"answer\": [{\"Dr. Iyer\": 0.5454545454545455}, \"Dr. Rao\": 0.5294117647058824, \"Dr. Singh\": 0.5714285714285714],\n    \"dtype\": \"pd.Series\"\n}\n```\n\nTo calculate the proportion, we first need to count the number of visits for each doctor that required a follow-up and then divide it by the total number of visits for that doctor. The result is a series with doctor names as the index and their follow-up proportion as the value.",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": null,
+          "dtype": null
+        },
+        "raw_response": " ```json\n{\n    \"answer\": [{\"Dr. Iyer\": 0.5454545454545455}, \"Dr. Rao\": 0.5294117647058824, \"Dr. Singh\": 0.5714285714285714],\n    \"dtype\": \"pd.Series\"\n}\n```\n\nTo calculate the proportion, we first need to count the number of visits for each doctor that required a follow-up and then divide it by the total number of visits for that doctor. The result is a series with doctor names as the index and their follow-up proportion as the value.",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": null,
+          "dtype": null
+        },
+        "raw_response": " ```json\n{\n    \"answer\": [{\"Dr. Iyer\": 0.5454545454545455}, \"Dr. Rao\": 0.5294117647058824, \"Dr. Singh\": 0.5714285714285714],\n    \"dtype\": \"pd.Series\"\n}\n```\n\nTo calculate the proportion, we first need to count the number of visits for each doctor that required a follow-up and then divide it by the total number of visits for that doctor. The result is a series with doctor names as the index and their follow-up proportion as the value.",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_0",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Zephyr": 887.5,
+            "Hermes": 2115.0,
+            "Apollo": 3350.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": " ```json\n{\n    \"answer\": {\"Zephyr\": 887.5, \"Hermes\": 2115.0, \"Apollo\": 3350.0},\n    \"dtype\": \"dict\"\n}\n```\n\nTo calculate the total revenue generated for each project, we need to sum the `BillableAmount` for all entries where `Billable` is `True`. We group the entries by the `Project` column to get the total revenue for each project. The answer is provided as a dictionary with project names as keys and the total revenue as values.",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Zephyr": 887.5,
+            "Hermes": 2115.0,
+            "Apollo": 3350.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": " ```json\n{\n    \"answer\": {\"Zephyr\": 887.5, \"Hermes\": 2115.0, \"Apollo\": 3350.0},\n    \"dtype\": \"dict\"\n}\n```\n\nTo calculate the total revenue generated for each project, we need to sum the `BillableAmount` for all entries where `Billable` is `True`. We group the entries by the `Project` column to get the total revenue for each project. The answer is provided as a dictionary with project names as keys and the total revenue as values.",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Zephyr": 887.5,
+            "Hermes": 2115.0,
+            "Apollo": 3350.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": " ```json\n{\n    \"answer\": {\"Zephyr\": 887.5, \"Hermes\": 2115.0, \"Apollo\": 3350.0},\n    \"dtype\": \"dict\"\n}\n```\n\nTo calculate the total revenue generated for each project, we need to sum the `BillableAmount` for all entries where `Billable` is `True`. We group the entries by the `Project` column to get the total revenue for each project. The answer is provided as a dictionary with project names as keys and the total revenue as values.",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_1",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": " ```json\n{\n    \"answer\": 2,\n    \"dtype\": \"int\"\n}\n```\n\nThese two employees, E204 and E205, worked overtime as indicated by the non-zero values in the \"OvertimeHours\" column.",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": " ```json\n{\n    \"answer\": 2,\n    \"dtype\": \"int\"\n}\n```\n\nThese two employees, E204 and E205, worked overtime as indicated by the non-zero values in the \"OvertimeHours\" column.",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": " ```json\n{\n    \"answer\": 2,\n    \"dtype\": \"int\"\n}\n```\n\nThese two employees, E204 and E205, worked overtime as indicated by the non-zero values in the \"OvertimeHours\" column.",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_2",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Remote": [
+              390,
+              390,
+              330,
+              330,
+              330,
+              390,
+              520,
+              487.5,
+              390,
+              330,
+              330,
+              495,
+              500,
+              450,
+              450,
+              390,
+              550,
+              330
+            ],
+            "Onsite": [
+              0,
+              0,
+              0,
+              0,
+              412.5,
+              450,
+              520,
+              300,
+              487.5,
+              0,
+              330,
+              495,
+              500,
+              450,
+              450,
+              300,
+              550
+            ]
+          },
+          "dtype": "dict"
+        },
+        "raw_response": " To find the average number of hours worked for employees working remotely and those onsite, we first need to filter the data based on the WorkLocation column. Then, we can calculate the average hours worked for each group.\n\n```json\n{\n    \"answer\": {\n        \"Remote\": [\n            390, 390, 330, 330, 330, 390, 520, 487.5, 390, 330, 330, 495, 500, 450, 450, 390, 550, 330\n        ],\n        \"Onsite\": [\n            0, 0, 0, 0, 412.5, 450, 520, 300, 487.5, 0, 330, 495, 500, 450, 450, 300, 550\n        ]\n    },\n    \"dtype\": \"dict\"\n}\n```\n\nNow, we can calculate the average hours worked for each group:\n\n```python\n# Calculate the average hours worked for each group\naverage_hours_remote = sum(answer[\"Remote\"]) / len(answer[\"Remote\"])\naverage_hours_onsite = sum(answer[\"Onsite\"]) / len(answer[\"Onsite\"])\n\n# Update the answer\nanswer = {\n    \"answer\": {\n        \"average_hours_remote\": average_hours_remote,\n        \"average_hours_onsite\": average_hours_onsite\n    },\n    \"dtype\": \"dict\"\n}\n```\n\nThe final answer:\n\n```json\n{\n    \"answer\": {\n        \"average_hours_remote\": 455.1818181818182,\n        \"average_hours_onsite\": 325.0\n    },\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Remote": [
+              390,
+              390,
+              330,
+              330,
+              330,
+              390,
+              520,
+              487.5,
+              390,
+              330,
+              330,
+              495,
+              500,
+              450,
+              450,
+              390,
+              550,
+              330
+            ],
+            "Onsite": [
+              0,
+              0,
+              0,
+              0,
+              412.5,
+              450,
+              520,
+              300,
+              487.5,
+              0,
+              330,
+              495,
+              500,
+              450,
+              450,
+              300,
+              550
+            ]
+          },
+          "dtype": "dict"
+        },
+        "raw_response": " To find the average number of hours worked for employees working remotely and those onsite, we first need to filter the data based on the WorkLocation column. Then, we can calculate the average hours worked for each group.\n\n```json\n{\n    \"answer\": {\n        \"Remote\": [\n            390, 390, 330, 330, 330, 390, 520, 487.5, 390, 330, 330, 495, 500, 450, 450, 390, 550, 330\n        ],\n        \"Onsite\": [\n            0, 0, 0, 0, 412.5, 450, 520, 300, 487.5, 0, 330, 495, 500, 450, 450, 300, 550\n        ]\n    },\n    \"dtype\": \"dict\"\n}\n```\n\nNow, we can calculate the average hours worked for each group:\n\n```python\n# Calculate the average hours worked for each group\naverage_hours_remote = sum(answer[\"Remote\"]) / len(answer[\"Remote\"])\naverage_hours_onsite = sum(answer[\"Onsite\"]) / len(answer[\"Onsite\"])\n\n# Update the answer\nanswer = {\n    \"answer\": {\n        \"average_hours_remote\": average_hours_remote,\n        \"average_hours_onsite\": average_hours_onsite\n    },\n    \"dtype\": \"dict\"\n}\n```\n\nThe final answer:\n\n```json\n{\n    \"answer\": {\n        \"average_hours_remote\": 455.1818181818182,\n        \"average_hours_onsite\": 325.0\n    },\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Remote": [
+              390,
+              390,
+              330,
+              330,
+              330,
+              390,
+              520,
+              487.5,
+              390,
+              330,
+              330,
+              495,
+              500,
+              450,
+              450,
+              390,
+              550,
+              330
+            ],
+            "Onsite": [
+              0,
+              0,
+              0,
+              0,
+              412.5,
+              450,
+              520,
+              300,
+              487.5,
+              0,
+              330,
+              495,
+              500,
+              450,
+              450,
+              300,
+              550
+            ]
+          },
+          "dtype": "dict"
+        },
+        "raw_response": " To find the average number of hours worked for employees working remotely and those onsite, we first need to filter the data based on the WorkLocation column. Then, we can calculate the average hours worked for each group.\n\n```json\n{\n    \"answer\": {\n        \"Remote\": [\n            390, 390, 330, 330, 330, 390, 520, 487.5, 390, 330, 330, 495, 500, 450, 450, 390, 550, 330\n        ],\n        \"Onsite\": [\n            0, 0, 0, 0, 412.5, 450, 520, 300, 487.5, 0, 330, 495, 500, 450, 450, 300, 550\n        ]\n    },\n    \"dtype\": \"dict\"\n}\n```\n\nNow, we can calculate the average hours worked for each group:\n\n```python\n# Calculate the average hours worked for each group\naverage_hours_remote = sum(answer[\"Remote\"]) / len(answer[\"Remote\"])\naverage_hours_onsite = sum(answer[\"Onsite\"]) / len(answer[\"Onsite\"])\n\n# Update the answer\nanswer = {\n    \"answer\": {\n        \"average_hours_remote\": average_hours_remote,\n        \"average_hours_onsite\": average_hours_onsite\n    },\n    \"dtype\": \"dict\"\n}\n```\n\nThe final answer:\n\n```json\n{\n    \"answer\": {\n        \"average_hours_remote\": 455.1818181818182,\n        \"average_hours_onsite\": 325.0\n    },\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_0",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5.2,
+          "dtype": "float"
+        },
+        "raw_response": " ```json\n{\n    \"answer\": 5.2,\n    \"dtype\": \"float\"\n}\n```\n\nTo calculate the average number of transit days for each carrier for the Standard priority level, we first need to filter the data based on the priority level and then calculate the average of the transit days for each carrier.\n\n```python\n# Filter the data based on priority level\ndata_standard = data[data['Priority'] == 'Standard']\n\n# Calculate the average transit days for each carrier\naverage_transit_days_standard = data_standard['TransitDays'].mean()\n```\n\nThe final answer is the average_transit_days_standard value, which is a float.",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 5.2,
+          "dtype": "float"
+        },
+        "raw_response": " ```json\n{\n    \"answer\": 5.2,\n    \"dtype\": \"float\"\n}\n```\n\nTo calculate the average number of transit days for each carrier for the Standard priority level, we first need to filter the data based on the priority level and then calculate the average of the transit days for each carrier.\n\n```python\n# Filter the data based on priority level\ndata_standard = data[data['Priority'] == 'Standard']\n\n# Calculate the average transit days for each carrier\naverage_transit_days_standard = data_standard['TransitDays'].mean()\n```\n\nThe final answer is the average_transit_days_standard value, which is a float.",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 5.2,
+          "dtype": "float"
+        },
+        "raw_response": " ```json\n{\n    \"answer\": 5.2,\n    \"dtype\": \"float\"\n}\n```\n\nTo calculate the average number of transit days for each carrier for the Standard priority level, we first need to filter the data based on the priority level and then calculate the average of the transit days for each carrier.\n\n```python\n# Filter the data based on priority level\ndata_standard = data[data['Priority'] == 'Standard']\n\n# Calculate the average transit days for each carrier\naverage_transit_days_standard = data_standard['TransitDays'].mean()\n```\n\nThe final answer is the average_transit_days_standard value, which is a float.",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  }
+]

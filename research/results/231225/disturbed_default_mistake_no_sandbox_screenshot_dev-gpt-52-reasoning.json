@@ -1,0 +1,893 @@
+[
+  {
+    "index": "Clinic_Visits_original_0__original__disturbed",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Hypertension": 136,
+            "Flu": 132.5,
+            "Allergy": 142,
+            "Back Pain": 146,
+            "Diabetes": 111
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 136,\\n    \\\"Flu\\\": 132.5,\\n    \\\"Allergy\\\": 142,\\n    \\\"Back Pain\\\": 146,\\n    \\\"Diabetes\\\": 111\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 136,\\n    \\\"Flu\\\": 132.5,\\n    \\\"Allergy\\\": 142,\\n    \\\"Back Pain\\\": 146,\\n    \\\"Diabetes\\\": 111\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Hypertension": 136,
+            "Flu": 132.5,
+            "Back Pain": 146,
+            "Allergy": 142,
+            "Diabetes": 111
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 136,\\n    \\\"Flu\\\": 132.5,\\n    \\\"Back Pain\\\": 146,\\n    \\\"Allergy\\\": 142,\\n    \\\"Diabetes\\\": 111\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 136,\\n    \\\"Flu\\\": 132.5,\\n    \\\"Back Pain\\\": 146,\\n    \\\"Allergy\\\": 142,\\n    \\\"Diabetes\\\": 111\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Hypertension": 82,
+            "Flu": 85.0,
+            "Back Pain": 97,
+            "Allergy": 79,
+            "Diabetes": 93
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 82,\\n    \\\"Flu\\\": 85.0,\\n    \\\"Back Pain\\\": 97,\\n    \\\"Allergy\\\": 79,\\n    \\\"Diabetes\\\": 93\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 82,\\n    \\\"Flu\\\": 85.0,\\n    \\\"Back Pain\\\": 97,\\n    \\\"Allergy\\\": 79,\\n    \\\"Diabetes\\\": 93\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": false
+      }
+    ]
+  },
+  {
+    "index": "Clinic_Visits_original_1__original__disturbed",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{\"Dr. Iyer\": 0.5, \"Dr. Rao\": 0.5, \"Dr. Singh\": 0.3333333333333333}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Rao": 0.6666666667,
+            "Dr. Singh": 0.3333333333,
+            "Dr. Iyer": 0.3333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Dr. Rao\\\": 0.6666666667,\\n    \\\"Dr. Singh\\\": 0.3333333333,\\n    \\\"Dr. Iyer\\\": 0.3333333333\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Dr. Rao\\\": 0.6666666667,\\n    \\\"Dr. Singh\\\": 0.3333333333,\\n    \\\"Dr. Iyer\\\": 0.3333333333\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": false
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Rao": 0.5,
+            "Dr. Singh": 0.3333333333333333,
+            "Dr. Iyer": 0.3333333333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Dr. Rao\\\": 0.5,\\n    \\\"Dr. Singh\\\": 0.3333333333333333,\\n    \\\"Dr. Iyer\\\": 0.3333333333333333\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Dr. Rao\\\": 0.5,\\n    \\\"Dr. Singh\\\": 0.3333333333333333,\\n    \\\"Dr. Iyer\\\": 0.3333333333333333\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": false
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Rao": 0.5,
+            "Dr. Singh": 0.3333333333,
+            "Dr. Iyer": 0.3333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Dr. Rao\\\": 0.5,\\n    \\\"Dr. Singh\\\": 0.3333333333,\\n    \\\"Dr. Iyer\\\": 0.3333333333\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Dr. Rao\\\": 0.5,\\n    \\\"Dr. Singh\\\": 0.3333333333,\\n    \\\"Dr. Iyer\\\": 0.3333333333\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": false
+      }
+    ]
+  },
+  {
+    "index": "Clinic_Visits_original_2__original__disturbed",
+    "query": "What is the average consultation fee for females grouped by condition?",
+    "answer": "{\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Hypertension": 466.6666666667,
+            "Flu": 625.0,
+            "Back Pain": 400.0,
+            "Allergy": 700.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 466.6666666667,\\n    \\\"Flu\\\": 625.0,\\n    \\\"Back Pain\\\": 400.0,\\n    \\\"Allergy\\\": 700.0\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 466.6666666667,\\n    \\\"Flu\\\": 625.0,\\n    \\\"Back Pain\\\": 400.0,\\n    \\\"Allergy\\\": 700.0\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Hypertension": 466.67,
+            "Flu": 625.0,
+            "Back Pain": 400.0,
+            "Allergy": 700.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 466.67,\\n    \\\"Flu\\\": 625.0,\\n    \\\"Back Pain\\\": 400.0,\\n    \\\"Allergy\\\": 700.0\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 466.67,\\n    \\\"Flu\\\": 625.0,\\n    \\\"Back Pain\\\": 400.0,\\n    \\\"Allergy\\\": 700.0\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Hypertension": 466.67,
+            "Flu": 625.0,
+            "Back Pain": 400.0,
+            "Allergy": 700.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 466.67,\\n    \\\"Flu\\\": 625.0,\\n    \\\"Back Pain\\\": 400.0,\\n    \\\"Allergy\\\": 700.0\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Hypertension\\\": 466.67,\\n    \\\"Flu\\\": 625.0,\\n    \\\"Back Pain\\\": 400.0,\\n    \\\"Allergy\\\": 700.0\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_0__original__disturbed",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 2370,
+            "Hermes": 2375,
+            "Zephyr": 450
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Apollo\\\": 2370,\\n    \\\"Hermes\\\": 2375,\\n    \\\"Zephyr\\\": 450\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Apollo\\\": 2370,\\n    \\\"Hermes\\\": 2375,\\n    \\\"Zephyr\\\": 450\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 2370,
+            "Hermes": 2375,
+            "Zephyr": 450
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Apollo\\\": 2370,\\n    \\\"Hermes\\\": 2375,\\n    \\\"Zephyr\\\": 450\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Apollo\\\": 2370,\\n    \\\"Hermes\\\": 2375,\\n    \\\"Zephyr\\\": 450\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 2370,
+            "Hermes": 2375,
+            "Zephyr": 450
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Apollo\\\": 2370,\\n    \\\"Hermes\\\": 2375,\\n    \\\"Zephyr\\\": 450\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Apollo\\\": 2370,\\n    \\\"Hermes\\\": 2375,\\n    \\\"Zephyr\\\": 450\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_1__original__disturbed",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "int",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 8,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 8,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 8,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 8,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 8,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 8,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 8,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 8,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 8,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_0__original__disturbed",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "UPS": 4.5,
+            "FedEx": 5.5,
+            "DHL": 5.6
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"UPS\\\": 4.5,\\n    \\\"FedEx\\\": 5.5,\\n    \\\"DHL\\\": 5.6\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"UPS\\\": 4.5,\\n    \\\"FedEx\\\": 5.5,\\n    \\\"DHL\\\": 5.6\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": false
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "UPS": 4.8333333333,
+            "DHL": 5.6,
+            "FedEx": 5.5
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"UPS\\\": 4.8333333333,\\n    \\\"DHL\\\": 5.6,\\n    \\\"FedEx\\\": 5.5\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"UPS\\\": 4.8333333333,\\n    \\\"DHL\\\": 5.6,\\n    \\\"FedEx\\\": 5.5\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "UPS": 4.8333333333,
+            "DHL": 5.6,
+            "FedEx": 5.5
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"UPS\\\": 4.8333333333,\\n    \\\"DHL\\\": 5.6,\\n    \\\"FedEx\\\": 5.5\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"UPS\\\": 4.8333333333,\\n    \\\"DHL\\\": 5.6,\\n    \\\"FedEx\\\": 5.5\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_1__original__disturbed",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "['SIN', 'SYD', 'LHR']",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "list",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "SIN",
+            "SYD",
+            "LHR"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": [\\\"SIN\\\", \\\"SYD\\\", \\\"LHR\\\"],\\n  \\\"dtype\\\": \\\"list\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": [\\\"SIN\\\", \\\"SYD\\\", \\\"LHR\\\"],\\n  \\\"dtype\\\": \\\"list\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "SIN": 183.1,
+            "SYD": 123.7,
+            "LHR": 69.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"SIN\\\": 183.1,\\n    \\\"SYD\\\": 123.7,\\n    \\\"LHR\\\": 69.0\\n  },\\n  \\\"dtype\\\": \\\"pd.Series\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"SIN\\\": 183.1,\\n    \\\"SYD\\\": 123.7,\\n    \\\"LHR\\\": 69.0\\n  },\\n  \\\"dtype\\\": \\\"pd.Series\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "SIN": 183.1,
+            "SYD": 123.7,
+            "LHR": 69.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"SIN\\\": 183.1,\\n    \\\"SYD\\\": 123.7,\\n    \\\"LHR\\\": 69.0\\n  },\\n  \\\"dtype\\\": \\\"pd.Series\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"SIN\\\": 183.1,\\n    \\\"SYD\\\": 123.7,\\n    \\\"LHR\\\": 69.0\\n  },\\n  \\\"dtype\\\": \\\"pd.Series\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_2__original__disturbed",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days), rounded to nearest integer?",
+    "answer": "80",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "int",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 80,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 80,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 80,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 80,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 80,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 80,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_0__original__disturbed",
+    "query": "What is the total spending for each category in the month of June?",
+    "answer": "{\"Dining\": 4047.98, \"Entertainment\": 5579.33, \"Groceries\": 4395.02, \"Health\": 5803.54, \"Rent\": 2397.77, \"Transport\": 6838.02, \"Utilities\": 3106.98}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Transport": 6838.02,
+            "Groceries": 4395.02,
+            "Entertainment": 5579.33,
+            "Rent": 2397.77,
+            "Utilities": 3106.98,
+            "Health": 9782.3,
+            "Dining": 4047.98
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Transport\\\": 6838.02,\\n    \\\"Groceries\\\": 4395.02,\\n    \\\"Entertainment\\\": 5579.33,\\n    \\\"Rent\\\": 2397.77,\\n    \\\"Utilities\\\": 3106.98,\\n    \\\"Health\\\": 9782.3,\\n    \\\"Dining\\\": 4047.98\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Transport\\\": 6838.02,\\n    \\\"Groceries\\\": 4395.02,\\n    \\\"Entertainment\\\": 5579.33,\\n    \\\"Rent\\\": 2397.77,\\n    \\\"Utilities\\\": 3106.98,\\n    \\\"Health\\\": 9782.3,\\n    \\\"Dining\\\": 4047.98\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": false
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Transport": 6838.02,
+            "Groceries": 4395.02,
+            "Entertainment": 5579.33,
+            "Rent": 2397.77,
+            "Utilities": 3106.98,
+            "Health": 9782.3,
+            "Dining": 4047.98
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Transport\\\": 6838.02,\\n    \\\"Groceries\\\": 4395.02,\\n    \\\"Entertainment\\\": 5579.33,\\n    \\\"Rent\\\": 2397.77,\\n    \\\"Utilities\\\": 3106.98,\\n    \\\"Health\\\": 9782.3,\\n    \\\"Dining\\\": 4047.98\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Transport\\\": 6838.02,\\n    \\\"Groceries\\\": 4395.02,\\n    \\\"Entertainment\\\": 5579.33,\\n    \\\"Rent\\\": 2397.77,\\n    \\\"Utilities\\\": 3106.98,\\n    \\\"Health\\\": 9782.3,\\n    \\\"Dining\\\": 4047.98\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": false
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Transport": 6838.02,
+            "Groceries": 4395.02,
+            "Entertainment": 5579.33,
+            "Rent": 2397.77,
+            "Utilities": 3106.98,
+            "Dining": 4047.98,
+            "Health": 5803.54
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Transport\\\": 6838.02,\\n    \\\"Groceries\\\": 4395.02,\\n    \\\"Entertainment\\\": 5579.33,\\n    \\\"Rent\\\": 2397.77,\\n    \\\"Utilities\\\": 3106.98,\\n    \\\"Dining\\\": 4047.98,\\n    \\\"Health\\\": 5803.54\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Transport\\\": 6838.02,\\n    \\\"Groceries\\\": 4395.02,\\n    \\\"Entertainment\\\": 5579.33,\\n    \\\"Rent\\\": 2397.77,\\n    \\\"Utilities\\\": 3106.98,\\n    \\\"Dining\\\": 4047.98,\\n    \\\"Health\\\": 5803.54\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_1__original__disturbed",
+    "query": "Which payment method (mention only name) earned the highest total cashback?",
+    "answer": "UPI",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "str",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Credit Card",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": \\\"Credit Card\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": \\\"Credit Card\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\"}",
+        "eval": false
+      },
+      {
+        "agent_response": {
+          "answer": "Credit Card",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": \\\"Credit Card\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": \\\"Credit Card\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\"}",
+        "eval": false
+      },
+      {
+        "agent_response": {
+          "answer": "Credit Card",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": \\\"Credit Card\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": \\\"Credit Card\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\"}",
+        "eval": false
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_2__original__disturbed",
+    "query": "What percent of total spending was on recurring expenses?",
+    "answer": "36.30",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "float",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 36.3,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 36.3,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 36.3,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 36.3011,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 36.3011,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 36.3011,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 36.3,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 36.3,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 36.3,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_0__original__disturbed",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "pd.Series",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "West": 11625.25,
+            "East": 2617.5,
+            "South": 1209.0,
+            "North": 600.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"West\\\": 11625.25,\\n    \\\"East\\\": 2617.5,\\n    \\\"South\\\": 1209.0,\\n    \\\"North\\\": 600.0\\n  },\\n  \\\"dtype\\\": \\\"pd.Series\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"West\\\": 11625.25,\\n    \\\"East\\\": 2617.5,\\n    \\\"South\\\": 1209.0,\\n    \\\"North\\\": 600.0\\n  },\\n  \\\"dtype\\\": \\\"pd.Series\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "West": 11625.25,
+            "East": 2617.5,
+            "South": 1209.0,
+            "North": 600.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"West\\\": 11625.25,\\n    \\\"East\\\": 2617.5,\\n    \\\"South\\\": 1209.0,\\n    \\\"North\\\": 600.0\\n  },\\n  \\\"dtype\\\": \\\"pd.Series\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"West\\\": 11625.25,\\n    \\\"East\\\": 2617.5,\\n    \\\"South\\\": 1209.0,\\n    \\\"North\\\": 600.0\\n  },\\n  \\\"dtype\\\": \\\"pd.Series\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "West": 11625.25,
+            "East": 2617.5,
+            "South": 1209.0,
+            "North": 600.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"West\\\": 11625.25,\\n    \\\"East\\\": 2617.5,\\n    \\\"South\\\": 1209.0,\\n    \\\"North\\\": 600.0\\n  },\\n  \\\"dtype\\\": \\\"pd.Series\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"West\\\": 11625.25,\\n    \\\"East\\\": 2617.5,\\n    \\\"South\\\": 1209.0,\\n    \\\"North\\\": 600.0\\n  },\\n  \\\"dtype\\\": \\\"pd.Series\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_1__original__disturbed",
+    "query": "Which product sold the most units overall across all orders? (mention only the product name)",
+    "answer": "Coffee Beans",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "str",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Coffee Beans",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": \\\"Coffee Beans\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": \\\"Coffee Beans\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": "Coffee Beans",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": \\\"Coffee Beans\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": \\\"Coffee Beans\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": "Coffee Beans",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": \\\"Coffee Beans\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": \\\"Coffee Beans\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_2__original__disturbed",
+    "query": "What is the average discount rate (rounded to 3 decimals) applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "{'Express': 0.059, 'Standard': 0.058}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Express": 0.059,
+            "Standard": 0.058
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Express\\\": 0.059,\\n    \\\"Standard\\\": 0.058\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Express\\\": 0.059,\\n    \\\"Standard\\\": 0.058\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Express": 0.059,
+            "Standard": 0.058
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Express\\\": 0.059,\\n    \\\"Standard\\\": 0.058\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Express\\\": 0.059,\\n    \\\"Standard\\\": 0.058\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Express": 0.059,
+            "Standard": 0.058
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Express\\\": 0.059,\\n    \\\"Standard\\\": 0.058\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Express\\\": 0.059,\\n    \\\"Standard\\\": 0.058\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_3__original__disturbed",
+    "query": "What percentage of orders were delivered within two days of the order date?",
+    "answer": "62.5",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "float",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 62.5,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 62.5,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 62.5,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 62.5,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 62.5,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 62.5,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 62.5,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 62.5,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 62.5,\\n  \\\"dtype\\\": \\\"float\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_0__original__disturbed",
+    "query": "What is the average total score for each course with a 100% pass rate?",
+    "answer": "{\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "ML": 118.5,
+            "DBMS": 113.57,
+            "OS": 114.8,
+            "DSA": 106.25,
+            "CV": 113.0,
+            "NLP": 109.67
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"ML\\\": 118.5,\\n    \\\"DBMS\\\": 113.57,\\n    \\\"OS\\\": 114.8,\\n    \\\"DSA\\\": 106.25,\\n    \\\"CV\\\": 113.0,\\n    \\\"NLP\\\": 109.67\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"ML\\\": 118.5,\\n    \\\"DBMS\\\": 113.57,\\n    \\\"OS\\\": 114.8,\\n    \\\"DSA\\\": 106.25,\\n    \\\"CV\\\": 113.0,\\n    \\\"NLP\\\": 109.67\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "ML": 118.5,
+            "DBMS": 113.57,
+            "OS": 114.8,
+            "DSA": 106.25,
+            "CV": 113.0,
+            "NLP": 109.67
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"ML\\\": 118.5,\\n    \\\"DBMS\\\": 113.57,\\n    \\\"OS\\\": 114.8,\\n    \\\"DSA\\\": 106.25,\\n    \\\"CV\\\": 113.0,\\n    \\\"NLP\\\": 109.67\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"ML\\\": 118.5,\\n    \\\"DBMS\\\": 113.57,\\n    \\\"OS\\\": 114.8,\\n    \\\"DSA\\\": 106.25,\\n    \\\"CV\\\": 113.0,\\n    \\\"NLP\\\": 109.67\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "ML": 118.5,
+            "DBMS": 113.5714285714,
+            "OS": 114.8,
+            "DSA": 106.25,
+            "CV": 113.0,
+            "NLP": 109.6666666667
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"ML\\\": 118.5,\\n    \\\"DBMS\\\": 113.5714285714,\\n    \\\"OS\\\": 114.8,\\n    \\\"DSA\\\": 106.25,\\n    \\\"CV\\\": 113.0,\\n    \\\"NLP\\\": 109.6666666667\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"ML\\\": 118.5,\\n    \\\"DBMS\\\": 113.5714285714,\\n    \\\"OS\\\": 114.8,\\n    \\\"DSA\\\": 106.25,\\n    \\\"CV\\\": 113.0,\\n    \\\"NLP\\\": 109.6666666667\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_1__original__disturbed",
+    "query": "How many students received grade A?",
+    "answer": "22",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "int",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 22,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 22,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 22,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 22,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": 22,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": 22,\\n  \\\"dtype\\\": \\\"int\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_2__original__disturbed",
+    "query": "Which professor (only name) achieved the highest average project score?",
+    "answer": "Prof. Mehta",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "str",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Krishnan",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": \\\"Krishnan\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": \\\"Krishnan\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\"}",
+        "eval": false
+      },
+      {
+        "agent_response": {
+          "answer": "Krishnan",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": \\\"Krishnan\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": \\\"Krishnan\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\"}",
+        "eval": false
+      },
+      {
+        "agent_response": {
+          "answer": "Krishnan",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": \\\"Krishnan\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": \\\"Krishnan\\\",\\n  \\\"dtype\\\": \\\"str\\\"\\n}\\n```\"}",
+        "eval": false
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_3__original__disturbed",
+    "query": "Among all students, which student achieved the highest overall score, and what was their total marks along with the corresponding letter grade? Mention as a dictionary with keys 'StudentID', 'Marks', and 'Grade'.",
+    "answer": "{\"StudentID\": \"S117\", \"Marks\": 125.0, \"Grade\": \"A\"}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"StudentID\\\": \\\"S117\\\",\\n    \\\"Marks\\\": 125,\\n    \\\"Grade\\\": \\\"A\\\"\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"StudentID\\\": \\\"S117\\\",\\n    \\\"Marks\\\": 125,\\n    \\\"Grade\\\": \\\"A\\\"\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"StudentID\\\": \\\"S117\\\",\\n    \\\"Marks\\\": 125,\\n    \\\"Grade\\\": \\\"A\\\"\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"StudentID\\\": \\\"S117\\\",\\n    \\\"Marks\\\": 125,\\n    \\\"Grade\\\": \\\"A\\\"\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"StudentID\\\": \\\"S117\\\",\\n    \\\"Marks\\\": 125,\\n    \\\"Grade\\\": \\\"A\\\"\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"StudentID\\\": \\\"S117\\\",\\n    \\\"Marks\\\": 125,\\n    \\\"Grade\\\": \\\"A\\\"\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_2__original__disturbed",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Remote": 7.4230769231,
+            "Onsite": 8.0714285714
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Remote\\\": 7.4230769231,\\n    \\\"Onsite\\\": 8.0714285714\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Remote\\\": 7.4230769231,\\n    \\\"Onsite\\\": 8.0714285714\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Remote": 7.42,
+            "Onsite": 8.07
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Remote\\\": 7.42,\\n    \\\"Onsite\\\": 8.07\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"```json\\n{\\n  \\\"answer\\\": {\\n    \\\"Remote\\\": 7.42,\\n    \\\"Onsite\\\": 8.07\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\\n```\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Remote": 7.4230769231,
+            "Onsite": 8.0714285714
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"{\\n  \\\"answer\\\": {\\n    \\\"Remote\\\": 7.4230769231,\\n    \\\"Onsite\\\": 8.0714285714\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n  \\\"answer\\\": {\\n    \\\"Remote\\\": 7.4230769231,\\n    \\\"Onsite\\\": 8.0714285714\\n  },\\n  \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  }
+]

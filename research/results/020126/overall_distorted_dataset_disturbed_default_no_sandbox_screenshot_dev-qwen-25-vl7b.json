@@ -1,0 +1,2272 @@
+[
+  {
+    "index": "Clinic_Visits_original_0__original__disturbed",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 96,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 96,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 96,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 96,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 96,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 96,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Clinic_Visits_original_1__original__disturbed",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{\"Dr. Iyer\": 0.5, \"Dr. Rao\": 0.5, \"Dr. Singh\": 0.3333333333333333}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Rao": 0.5,
+            "Dr. Singh": 0.6666666666666666,
+            "Dr. Iyer": 0.5
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Dr. Rao\": 0.5, \"Dr. Singh\": 0.6666666666666666, \"Dr. Iyer\": 0.5},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Rao": 0.5,
+            "Dr. Singh": 0.6666666666666666,
+            "Dr. Iyer": 0.5
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Dr. Rao\": 0.5, \"Dr. Singh\": 0.6666666666666666, \"Dr. Iyer\": 0.5},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Rao": 0.5,
+            "Dr. Singh": 0.6,
+            "Dr. Iyer": 0.5
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Dr. Rao\": 0.5, \"Dr. Singh\": 0.6, \"Dr. Iyer\": 0.5},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Clinic_Visits_original_2__original__disturbed",
+    "query": "What is the average consultation fee for females grouped by condition?",
+    "answer": "{\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 500,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 500,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 500,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 500,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 500,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 500,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_0__original__disturbed",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 1600,
+            "Hermes": 1897.5,
+            "Zephyr": 1440
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Apollo\": 1600, \"Hermes\": 1897.5, \"Zephyr\": 1440},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 1600,
+            "Hermes": 1897.5,
+            "Zephyr": 1440
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Apollo\": 1600, \"Hermes\": 1897.5, \"Zephyr\": 1440},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 1650,
+            "Hermes": 1897.5,
+            "Zephyr": 1440
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Apollo\": 1650, \"Hermes\": 1897.5, \"Zephyr\": 1440},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_1__original__disturbed",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 6,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 6,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 6,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 6,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 6,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 6,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_2__original__disturbed",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7.5,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 7.5,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 7.5,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 7.5,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 7.5,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 7.5,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_0__original__disturbed",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "UPS": 5.0,
+            "FedEx": 3.6666666666666665,
+            "DHL": 4.8
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"UPS\": 5.0, \"FedEx\": 3.6666666666666665, \"DHL\": 4.8},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "UPS": 5.0,
+            "DHL": 4.666666666666667,
+            "FedEx": 3.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"UPS\": 5.0, \"DHL\": 4.666666666666667, \"FedEx\": 3.0},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "UPS": 5.0,
+            "DHL": 4.666666666666667,
+            "FedEx": 3.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"UPS\": 5.0, \"DHL\": 4.666666666666667, \"FedEx\": 3.0},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_1__original__disturbed",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "['SIN', 'SYD', 'LHR']",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "SIN",
+            "LHR",
+            "NYC"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"SIN\", \"LHR\", \"NYC\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "SIN",
+            "LHR",
+            "NYC"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"SIN\", \"LHR\", \"NYC\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "SIN",
+            "LHR",
+            "NYC"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"SIN\", \"LHR\", \"NYC\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_2__original__disturbed",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days), rounded to nearest integer?",
+    "answer": "80",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 80,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 80,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 80,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_0__original__disturbed",
+    "query": "What is the total spending for each category in the month of June?",
+    "answer": "{\"Dining\": 4047.98, \"Entertainment\": 5579.33, \"Groceries\": 4395.02, \"Health\": 5803.54, \"Rent\": 2397.77, \"Transport\": 6838.02, \"Utilities\": 3106.98}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Transport": 7659.08,
+            "Groceries": 4204.16,
+            "Entertainment": 7850.2,
+            "Rent": 2523.97,
+            "Utilities": 1281.25,
+            "Health": 5067.94,
+            "Dining": 2592.51
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Transport\": 7659.08, \"Groceries\": 4204.16, \"Entertainment\": 7850.2, \"Rent\": 2523.97, \"Utilities\": 1281.25, \"Health\": 5067.94, \"Dining\": 2592.51},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Transport": 6958.07,
+            "Groceries": 4204.16,
+            "Entertainment": 7850.2,
+            "Rent": 2523.97,
+            "Utilities": 1281.25,
+            "Health": 5067.41,
+            "Dining": 2403.51
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Transport\": 6958.07, \"Groceries\": 4204.16, \"Entertainment\": 7850.2, \"Rent\": 2523.97, \"Utilities\": 1281.25, \"Health\": 5067.41, \"Dining\": 2403.51},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Transport": 8659.07,
+            "Groceries": 4204.56,
+            "Entertainment": 7850.2,
+            "Rent": 2523.97,
+            "Utilities": 1281.25,
+            "Health": 5067.94,
+            "Dining": 3421.51
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Transport\": 8659.07, \"Groceries\": 4204.56, \"Entertainment\": 7850.2, \"Rent\": 2523.97, \"Utilities\": 1281.25, \"Health\": 5067.94, \"Dining\": 3421.51},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_1__original__disturbed",
+    "query": "Which payment method (mention only name) earned the highest total cashback?",
+    "answer": "UPI",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Credit Card",
+          "dtype": "str"
+        },
+        "raw_response": "{\n    \"answer\": \"Credit Card\",\n    \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Credit Card",
+          "dtype": "str"
+        },
+        "raw_response": "{\n    \"answer\": \"Credit Card\",\n    \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Credit Card",
+          "dtype": "str"
+        },
+        "raw_response": "{\n    \"answer\": \"Credit Card\",\n    \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_2__original__disturbed",
+    "query": "What percent of total spending was on recurring expenses?",
+    "answer": "36.30",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 0.25,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 0.25,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 0.25,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 0.25,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 0.25,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 0.25,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_0__original__disturbed",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "pd.Series",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "North",
+            "South",
+            "West"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"North\", \"South\", \"West\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "North",
+            "South",
+            "West"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"North\", \"South\", \"West\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "North",
+            "South",
+            "West"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"North\", \"South\", \"West\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_1__original__disturbed",
+    "query": "Which product sold the most units overall across all orders? (mention only the product name)",
+    "answer": "Coffee Beans",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Coffee Beans",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Coffee Beans\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Coffee Beans",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Coffee Beans\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Coffee Beans",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Coffee Beans\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_2__original__disturbed",
+    "query": "What is the average discount rate (rounded to 3 decimals) applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "{'Express': 0.059, 'Standard': 0.058}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 0.1,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 0.1,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 0.1,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 0.1,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 0.1,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 0.1,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_3__original__disturbed",
+    "query": "What percentage of orders were delivered within two days of the order date?",
+    "answer": "62.5",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 0.6,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 0.6,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 0.5,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 0.5,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 0.5,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 0.5,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_0__original__disturbed",
+    "query": "What is the average total score for each course with a 100% pass rate?",
+    "answer": "{\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "ML": 118.5,
+            "DBMS": 116.75,
+            "OS": 117.5,
+            "DSA": 111.5,
+            "NLP": 110
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"ML\": 118.5, \"DBMS\": 116.75, \"OS\": 117.5, \"DSA\": 111.5, \"NLP\": 110},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "ML": 118.5,
+            "DBMS": 116.75,
+            "OS": 117.5,
+            "DSA": 115.5,
+            "NLP": 113
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"ML\": 118.5, \"DBMS\": 116.75, \"OS\": 117.5, \"DSA\": 115.5, \"NLP\": 113},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "ML": 118.5,
+            "DBMS": 116.75,
+            "OS": 117.5,
+            "DSA": 111.5,
+            "NLP": 108.5
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"ML\": 118.5, \"DBMS\": 116.75, \"OS\": 117.5, \"DSA\": 111.5, \"NLP\": 108.5},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_1__original__disturbed",
+    "query": "How many students received grade A?",
+    "answer": "22",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 15,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 15,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 15,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 15,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 15,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 15,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_2__original__disturbed",
+    "query": "Which professor (only name) achieved the highest average project score?",
+    "answer": "Prof. Mehta",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Prof. Mehta",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Prof. Mehta\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Prof. Mehta",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Prof. Mehta\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Prof. Mehta",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Prof. Mehta\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_3__original__disturbed",
+    "query": "Among all students, which student achieved the highest overall score, and what was their total marks along with the corresponding letter grade? Mention as a dictionary with keys 'StudentID', 'Marks', and 'Grade'.",
+    "answer": "{\"StudentID\": \"S117\", \"Marks\": 125.0, \"Grade\": \"A\"}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"StudentID\": \"S117\", \"Marks\": 125, \"Grade\": \"A\"},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"StudentID\": \"S117\", \"Marks\": 125, \"Grade\": \"A\"},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"StudentID\": \"S117\", \"Marks\": 125, \"Grade\": \"A\"},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "Automobile_2",
+    "query": "What's the heaviest car manufactured in USA?",
+    "answer": "hi 1200d",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/Automobile/disturbed/Automobile_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/Automobile/disturbed/Automobile_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 4732,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 4732,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 4732,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 4732,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 4732,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 4732,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "polling_data_1",
+    "query": "Mention the candidate who appeared in every poll.",
+    "answer": "Rahm Emanuel",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/polling_data/disturbed/polling_data_structural_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/polling_data/disturbed/polling_data_structural_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Ed Burke",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Ed Burke\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Ed Burke",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Ed Burke\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Ed Burke",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Ed Burke\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "ship_fate_1",
+    "query": "Which ships over 5000tons were sank?",
+    "answer": "['MV Tudor', 'SS British Monarch', 'MV Moerdrecht', 'SS La Brea', 'SS Empire Merlin', 'MV Athelcrest']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/disturbed/ship_fate_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/disturbed/ship_fate_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "SS Frances Massey",
+            "MV Tudor",
+            "MV Moerdrecht",
+            "SS Ville de Gand"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"SS Frances Massey\", \"MV Tudor\", \"MV Moerdrecht\", \"SS Ville de Gand\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "SS Frances Massey",
+            "MV Tudor",
+            "MV Moerdrecht",
+            "SS Ville de Gand"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"SS Frances Massey\", \"MV Tudor\", \"MV Moerdrecht\", \"SS Ville de Gand\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "SS Frances Massey",
+            "MV Tudor",
+            "MV Moerdrecht",
+            "SS Ville de Gand"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"SS Frances Massey\", \"MV Tudor\", \"MV Moerdrecht\", \"SS Ville de Gand\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "ship_fate_2",
+    "query": "How many ships that sank in the month of June belongs to United Kingdom?",
+    "answer": "4",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/disturbed/ship_fate_semantic_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/disturbed/ship_fate_semantic_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 5,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 5,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 5,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "military_bases_1",
+    "query": "What is the total number of shelters in each governorate?",
+    "answer": "{'Aleppo': 43, 'Homs': 116, 'Damascus': 162, 'Hama': 20, 'As-Suwayda': 46}",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/military_bases/disturbed/military_bases_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/military_bases/disturbed/military_bases_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            20678,
+            16825,
+            20695,
+            16765,
+            5267,
+            20679,
+            12,
+            30945,
+            113,
+            2454,
+            525,
+            22976,
+            0,
+            4697,
+            40675,
+            601
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [20678, 16825, 20695, 16765, 5267, 20679, 12, 30945, 113, 2454, 525, 22976, 0, 4697, 40675, 601],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            20678,
+            16825,
+            20695,
+            16765,
+            52674,
+            20679,
+            12,
+            30945,
+            113,
+            2454,
+            52526,
+            22976,
+            0,
+            4697,
+            40675,
+            601
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [20678, 16825, 20695, 16765, 52674, 20679, 12, 30945, 113, 2454, 52526, 22976, 0, 4697, 40675, 601],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            20678,
+            16825,
+            20695,
+            16765,
+            52674,
+            20679,
+            12,
+            30945,
+            113,
+            2454,
+            52526,
+            22976,
+            0,
+            4697,
+            40675,
+            601
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [20678, 16825, 20695, 16765, 52674, 20679, 12, 30945, 113, 2454, 52526, 22976, 0, 4697, 40675, 601],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "military_bases_2",
+    "query": "Which military base having more than 1 runway has the most helipads?",
+    "answer": "Khalkhalah Military Airbase",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/military_bases/disturbed/military_bases_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/military_bases/disturbed/military_bases_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Marj al-Sultan Military Heliport",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Marj al-Sultan Military Heliport\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Mezzeh Military Airport",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Mezzeh Military Airport\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Marj al-Sultan Military Heliport",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Marj al-Sultan Military Heliport\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "points_table_1",
+    "query": "Which country has the most number of medals?",
+    "answer": "Italy",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/points_table/disturbed/points_table_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/points_table/disturbed/points_table_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Netherlands",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Netherlands\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Netherlands",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Netherlands\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Netherlands",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Netherlands\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "points_table_2",
+    "query": "Which country won the most bronze medals without winning any gold medal?",
+    "answer": "Germany",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/points_table/disturbed/points_table_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/points_table/disturbed/points_table_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Belgium",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Belgium\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Belgium",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Belgium\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Belgium",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Belgium\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "accidents_1",
+    "query": "What is the average of the deaths per accidents per year in the decade 2000s (2000-2009), rounded to 3 decimals?",
+    "answer": "8.437",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/accidents/disturbed/accidents_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/accidents/disturbed/accidents_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 185.6,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 185.6,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 185.6,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 185.6,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 185.6,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 185.6,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "accidents_2",
+    "query": "Which year has the biggest drop in the number of accidents compared to the previous year?",
+    "answer": 2009,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/accidents/disturbed/accidents_semantic_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/accidents/disturbed/accidents_semantic_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2005,
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 2005,\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 2005,
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 2005,\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 2005,
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 2005,\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "awards_1",
+    "query": "Which nominee(s) received the most number of nominations+awards?",
+    "answer": "['Gene Hackman', 'Ernest Tidyman']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/awards/disturbed/awards_structural_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/awards/disturbed/awards_structural_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Gene Hackman",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Gene Hackman\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Gene Hackman",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Gene Hackman\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Gene Hackman",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Gene Hackman\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "awards_2",
+    "query": "Which award ceremonies did not result in a single win?",
+    "answer": "['American Cinema Editors, 1972', 'National Society of Film Critics, 1972', 'Writers Guild of America, 1972']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/awards/disturbed/awards_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/awards/disturbed/awards_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "BAFTA, 1972",
+            "Golden Globe Awards, 1972",
+            "Academy Awards, 1972"
+          ],
+          "dtype": "set"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Academy Awards, 1972\", \"BAFTA, 1972\", \"Golden Globe Awards, 1972\"},\n    \"dtype\": \"set\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "American Cinema Editors Awards, 1972"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"American Cinema Editors Awards, 1972\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "American Cinema Editors Awards, 1972",
+            "BAFTA Awards, 1972",
+            "Kansas City Film Critics Circle Awards, 1972"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"American Cinema Editors Awards, 1972\", \"BAFTA Awards, 1972\", \"Kansas City Film Critics Circle Awards, 1972\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "radio_1",
+    "query": "Which service had the highest total cost in the year 2011/12?",
+    "answer": "BBC Local Radio",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/radio/disturbed/radio_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/radio/disturbed/radio_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "BBC Radio 4",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"BBC Radio 4\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "BBC Radio 4",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"BBC Radio 4\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "BBC Radio 4",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"BBC Radio 4\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "radio_2",
+    "query": "List all the services where the yearly cost difference is more than 3 million.",
+    "answer": "['BBC Radio 1', 'BBC Radio 4', 'BBC Radio 5 Live', 'BBC Local Radio']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/radio/disturbed/radio_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/radio/disturbed/radio_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "BBC Radio 4 Extra",
+            "BBC Radio Ulster and BBC Radio Foyle"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"BBC Radio 4 Extra\", \"BBC Radio Ulster and BBC Radio Foyle\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "BBC Radio 4 Extra",
+            "BBC Radio Ulster and BBC Radio Foyle"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"BBC Radio 4 Extra\", \"BBC Radio Ulster and BBC Radio Foyle\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "BBC Radio 4 Extra",
+            "BBC Radio Ulster and BBC Radio Foyle"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"BBC Radio 4 Extra\", \"BBC Radio Ulster and BBC Radio Foyle\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "voters_1",
+    "query": "What percentage(%) of total voters are unaffiliated and active?",
+    "answer": "26.7576",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/voters/disturbed/voters_semantics_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/voters/disturbed/voters_semantics_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 36.15,
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 36.15,\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 36.15,
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 36.15,\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 36.15,
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 36.15,\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "voters_2",
+    "query": "Which party have the highest active to inactive voter ratio?",
+    "answer": "Democratic",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/voters/disturbed/voters_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/voters/disturbed/voters_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Democratic",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Democratic\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Democratic",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Democratic\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Democratic",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Democratic\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "horses_1",
+    "query": "Which winner's owner is not their breeder?",
+    "answer": "['Secretariat', 'Seattle Slew']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/horses/disturbed/horses_structural_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/horses/disturbed/horses_structural_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "J. K. L. Ross",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"J. K. L. Ross\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "J. K. L. Ross",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"J. K. L. Ross\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "J. K. L. Ross",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"J. K. L. Ross\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "horses_2",
+    "query": "List all the jockeys for the most successful owner(s). Answer as a dictionary with owner as key and list of jockeys as value.",
+    "answer": "{'Belair Stud': ['Earl Sande', 'Willie Saunders'], 'Calumet Farm': ['Eddie Arcaro']}",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/horses/disturbed/horses_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/horses/disturbed/horses_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Calumet Farm": [
+              "Eddie Arcaro",
+              "Ron Turcotte",
+              "Steve Cauthen"
+            ],
+            "Belair Stud": [
+              "Charley Kurtsinger",
+              "Johnny Longden"
+            ],
+            "King Ranch": [
+              "Jean Cruguet"
+            ],
+            "Meadow Stable": [
+              "Karen L. Taylor"
+            ]
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Calumet Farm\": [\"Eddie Arcaro\", \"Ron Turcotte\", \"Steve Cauthen\"], \"Belair Stud\": [\"Charley Kurtsinger\", \"Johnny Longden\"], \"King Ranch\": [\"Jean Cruguet\"], \"Meadow Stable\": [\"Karen L. Taylor\"]},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Calumet Farm": [
+              "Eddie Arcaro",
+              "Ron Turcotte",
+              "Steve Cauthen"
+            ],
+            "Belair Stud": [
+              "Charley Kurtsinger",
+              "Johnny Longden"
+            ],
+            "King Ranch": [
+              "Jean Cruguet"
+            ],
+            "Meadow Stable": [
+              "Karen L. Taylor"
+            ],
+            "Harbor View Farm": [
+              "Ben S. Castlemann"
+            ]
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Calumet Farm\": [\"Eddie Arcaro\", \"Ron Turcotte\", \"Steve Cauthen\"], \"Belair Stud\": [\"Charley Kurtsinger\", \"Johnny Longden\"], \"King Ranch\": [\"Jean Cruguet\"], \"Meadow Stable\": [\"Karen L. Taylor\"], \"Harbor View Farm\": [\"Ben S. Castlemann\"]},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Calumet Farm": [
+              "Eddie Arcaro",
+              "Ron Turcotte",
+              "Steve Cauthen"
+            ],
+            "Belair Stud": [
+              "Charley Kurtsinger",
+              "Johnny Longden"
+            ],
+            "King Ranch": [
+              "Jean Cruguet"
+            ],
+            "Meadow Stable": [
+              "Karen L. Taylor"
+            ],
+            "Harbor View Farm": [
+              "Ben S. Castleman"
+            ]
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Calumet Farm\": [\"Eddie Arcaro\", \"Ron Turcotte\", \"Steve Cauthen\"], \"Belair Stud\": [\"Charley Kurtsinger\", \"Johnny Longden\"], \"King Ranch\": [\"Jean Cruguet\"], \"Meadow Stable\": [\"Karen L. Taylor\"], \"Harbor View Farm\": [\"Ben S. Castleman\"]},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "climate_1",
+    "query": "What is the average of the Average High for the first 6 months of the year in \u00b0C?",
+    "answer": "23.63",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/climate/disturbed/climate_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/climate/disturbed/climate_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 25.0,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 25.0,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 25.0,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 25.0,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 25.0,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 25.0,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "climate_2",
+    "query": "Which month had the highest variation between high and low average?",
+    "answer": "Dec",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/climate/disturbed/climate_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/climate/disturbed/climate_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 7,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 7,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 7,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "tenure_1",
+    "query": "Who have the shortest tenure?",
+    "answer": "Antonio Bosio",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/tenure/disturbed/tenure_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/tenure/disturbed/tenure_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Pasquale Preziosa",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Pasquale Preziosa\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Pasquale Preziosa",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Pasquale Preziosa\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Pasquale Preziosa",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Pasquale Preziosa\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "tenure_2",
+    "query": "Who had the most number of tenures?",
+    "answer": "Giuseppe Valle",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/tenure/disturbed/tenure_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/tenure/disturbed/tenure_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Giuseppe Valle",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Giuseppe Valle\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Giuseppe Valle",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Giuseppe Valle\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Giuseppe Valle",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Giuseppe Valle\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "population_1",
+    "query": "Which region has the highest population density?",
+    "answer": "Danish Capital Region",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/population/disturbed/population_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/population/disturbed/population_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Danish Capital Region",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Danish Capital Region\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Danish Capital Region",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Danish Capital Region\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "Danish Capital Region",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"Danish Capital Region\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "population_2",
+    "query": "What percentage(%) of the Grand Total population does Danish Capital Region account for?",
+    "answer": "50.87",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/population/disturbed/population_semantic_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/population/disturbed/population_semantic_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 50.7,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 50.7,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 50.7,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 50.7,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 50.6,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 50.6,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "census_1",
+    "query": "What are the top 3 cities in terms of population growth, sort in ascending order?",
+    "answer": "['Beloit', 'Baraboo', 'Appleton']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_structural_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_structural_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Alma",
+            "Arcadia",
+            "Augusta"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"Alma\", \"Arcadia\", \"Augusta\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Alma",
+            "Arcadia",
+            "Augusta"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"Alma\", \"Arcadia\", \"Augusta\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Alma",
+            "Adams",
+            "Arcadia"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"Alma\", \"Adams\", \"Arcadia\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "census_2",
+    "query": "What is the 2010 population of the oldest incorporated city?",
+    "answer": "16243",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2902,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 2902,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 2902,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 2902,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": 2902,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 2902,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "census_3",
+    "query": "List all the cities not rated 4th class along with their 2010 population.",
+    "answer": "{'Appleton': 72623, 'Baraboo': 12048, 'Beloit': 36966}",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_semantic_3.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_semantic_3.png",
+    "diversification_type": "disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Alma",
+            "Arcadia",
+            "Ashland",
+            "Augusta",
+            "Baraboo",
+            "Barron",
+            "Bayfield",
+            "Beaver Dam",
+            "Berlin",
+            "Black River Falls",
+            "Blair"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"Alma\", \"Arcadia\", \"Ashland\", \"Augusta\", \"Baraboo\", \"Barron\", \"Bayfield\", \"Beaver Dam\", \"Berlin\", \"Black River Falls\", \"Blair\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Alma",
+            "Arcadia",
+            "Ashland",
+            "Augusta",
+            "Baraboo",
+            "Barron",
+            "Bayfield",
+            "Beaver Dam",
+            "Berlin",
+            "Black River Falls",
+            "Blair"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"Alma\", \"Arcadia\", \"Ashland\", \"Augusta\", \"Baraboo\", \"Barron\", \"Bayfield\", \"Beaver Dam\", \"Berlin\", \"Black River Falls\", \"Blair\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Alma",
+            "Arcadia",
+            "Ashland",
+            "Augusta",
+            "Baraboo",
+            "Barron",
+            "Bayfield",
+            "Beaver Dam",
+            "Berlin",
+            "Black River Falls",
+            "Blair"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "```json\n{\n    \"answer\": [\"Alma\", \"Arcadia\", \"Ashland\", \"Augusta\", \"Baraboo\", \"Barron\", \"Bayfield\", \"Beaver Dam\", \"Berlin\", \"Black River Falls\", \"Blair\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "structures_1",
+    "query": "Name the tallest structure and it's height in meters. Mention as a dictionary with keys: 'Name, and 'height'.",
+    "answer": "{'Name': 'High Roller', 'height': 168}",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/structures/disturbed/structures_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/structures/disturbed/structures_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Name": "High Roller",
+            "height": 551
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Name\": \"High Roller\", \"height\": 551},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Name": "High Roller",
+            "height": 551
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Name\": \"High Roller\", \"height\": 551},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Name": "High Roller",
+            "height": 551
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Name\": \"High Roller\", \"height\": 551},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "structures_2",
+    "query": "Which country have the most number of structures taller than 390 feet?",
+    "answer": "China",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/structures/disturbed/structures_semantic_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/structures/disturbed/structures_semantic_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "China",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"China\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "China",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"China\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      },
+      {
+        "agent_response": {
+          "answer": "China",
+          "dtype": "str"
+        },
+        "raw_response": "```json\n{\n    \"answer\": \"China\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 0
+      }
+    ]
+  }
+]

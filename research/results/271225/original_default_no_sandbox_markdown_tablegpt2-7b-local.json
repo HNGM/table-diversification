@@ -1,0 +1,28 @@
+[
+  {
+    "index": "Clinic_Visits_original_0",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "dtype": "dict",
+    "type": null,
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png",
+    "diversification_type": "original",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Hypertension": 136.0,
+            "Flu": 145.0,
+            "Back Pain": 146.0,
+            "Allergy": 114.0,
+            "Diabetes": 111.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\n        \"Hypertension\": 136.0,\n        \"Flu\": 145.0,\n        \"Back Pain\": 146.0,\n        \"Allergy\": 114.0,\n        \"Diabetes\": 111.0\n    },\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false
+      }
+    ]
+  }
+]

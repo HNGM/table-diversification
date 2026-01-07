@@ -1,0 +1,893 @@
+[
+  {
+    "index": "Clinic_Visits_original_0",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 142.0,
+            "Back Pain": 146.0,
+            "Diabetes": 111.0,
+            "Flu": 132.5,
+            "Hypertension": 136.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_EFdBQQKTxZwvkx7Dx3woFUWx\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Clinic_Visits_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure column names are correct and consistent\\\\n# Strip whitespace from column names in case\\\\ndf.columns = df.columns.str.strip()\\\\n\\\\n# Compute median systolic BP grouped by Condition\\\\nmedian_bp = df.groupby('Condition')['BP_Systolic'].median().to_dict()\\\\n\\\\nprint(median_bp)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_EFdBQQKTxZwvkx7Dx3woFUWx\", \"content\": \"{'Allergy': 142.0, 'Back Pain': 146.0, 'Diabetes': 111.0, 'Flu': 132.5, 'Hypertension': 136.0}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 142.0,\\n        \\\"Back Pain\\\": 146.0,\\n        \\\"Diabetes\\\": 111.0,\\n        \\\"Flu\\\": 132.5,\\n        \\\"Hypertension\\\": 136.0\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 142.0,\\n        \\\"Back Pain\\\": 146.0,\\n        \\\"Diabetes\\\": 111.0,\\n        \\\"Flu\\\": 132.5,\\n        \\\"Hypertension\\\": 136.0\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 142.0,
+            "Back Pain": 146.0,
+            "Diabetes": 111.0,
+            "Flu": 132.5,
+            "Hypertension": 136.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_1yTDoGAUwzDJDVPatcCaamIS\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Clinic_Visits_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Some environments require engine specified\\\\n    df = pd.read_excel(file_path, engine='openpyxl')\\\\n\\\\n# Ensure BP_Systolic is numeric\\\\ndf['BP_Systolic'] = pd.to_numeric(df['BP_Systolic'], errors='coerce')\\\\n\\\\n# Group by Condition and compute median systolic BP\\\\nmedian_by_condition = df.groupby('Condition')['BP_Systolic'].median().sort_index()\\\\n\\\\n# Print the result in a way the tool returns\\\\nprint(median_by_condition)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_1yTDoGAUwzDJDVPatcCaamIS\", \"content\": \"Condition\\nAllergy         142.0\\nBack Pain       146.0\\nDiabetes        111.0\\nFlu             132.5\\nHypertension    136.0\\nName: BP_Systolic, dtype: float64\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 142.0,\\n        \\\"Back Pain\\\": 146.0,\\n        \\\"Diabetes\\\": 111.0,\\n        \\\"Flu\\\": 132.5,\\n        \\\"Hypertension\\\": 136.0\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 142.0,\\n        \\\"Back Pain\\\": 146.0,\\n        \\\"Diabetes\\\": 111.0,\\n        \\\"Flu\\\": 132.5,\\n        \\\"Hypertension\\\": 136.0\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 142.0,
+            "Back Pain": 146.0,
+            "Diabetes": 111.0,
+            "Flu": 132.5,
+            "Hypertension": 136.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_FUyH6P5774D2GlhgRbDtd2SR\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\nimport json\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Clinic_Visits_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure the BP_Systolic column is numeric\\\\ndf['BP_Systolic'] = pd.to_numeric(df['BP_Systolic'], errors='coerce')\\\\n\\\\n# Group by Condition and compute median systolic BP\\\\nmedian_bp = df.groupby('Condition')['BP_Systolic'].median().sort_index()\\\\n\\\\n# Prepare result as an ordered dict (preserving index order)\\\\nresult = {cond: float(val) for cond, val in median_bp.items()}\\\\n\\\\nprint(json.dumps(result, ensure_ascii=False))\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_FUyH6P5774D2GlhgRbDtd2SR\", \"content\": \"{\\\"Allergy\\\": 142.0, \\\"Back Pain\\\": 146.0, \\\"Diabetes\\\": 111.0, \\\"Flu\\\": 132.5, \\\"Hypertension\\\": 136.0}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 142.0,\\n        \\\"Back Pain\\\": 146.0,\\n        \\\"Diabetes\\\": 111.0,\\n        \\\"Flu\\\": 132.5,\\n        \\\"Hypertension\\\": 136.0\\n    },\\n    \\\"dtype\\\": \\\"pd.Series\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 142.0,\\n        \\\"Back Pain\\\": 146.0,\\n        \\\"Diabetes\\\": 111.0,\\n        \\\"Flu\\\": 132.5,\\n        \\\"Hypertension\\\": 136.0\\n    },\\n    \\\"dtype\\\": \\\"pd.Series\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Clinic_Visits_original_1",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{\"Dr. Iyer\": 0.5, \"Dr. Rao\": 0.5, \"Dr. Singh\": 0.3333333333333333}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Iyer": 0.5,
+            "Dr. Rao": 0.5,
+            "Dr. Singh": 0.3333333333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_Mx9Gk2Tsrr9tlJJWsHt66hsV\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Clinic_Visits_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Standardize relevant columns\\\\ndf['Doctor'] = df['Doctor'].astype(str).str.strip()\\\\ndf['FollowUpRequired'] = df['FollowUpRequired'].astype(str).str.strip().str.lower()\\\\n\\\\n# Compute proportion of visits requiring follow-up per doctor\\\\nproportions = (\\\\n    df.groupby('Doctor')['FollowUpRequired']\\\\n      .apply(lambda s: (s == 'yes').mean())\\\\n)\\\\n\\\\n# Convert to dict for output\\\\nresult = proportions.to_dict()\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_Mx9Gk2Tsrr9tlJJWsHt66hsV\", \"content\": \"{'Dr. Iyer': 0.5, 'Dr. Rao': 0.5, 'Dr. Singh': 0.3333333333333333}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dr. Iyer\\\": 0.5,\\n        \\\"Dr. Rao\\\": 0.5,\\n        \\\"Dr. Singh\\\": 0.3333333333333333\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dr. Iyer\\\": 0.5,\\n        \\\"Dr. Rao\\\": 0.5,\\n        \\\"Dr. Singh\\\": 0.3333333333333333\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Iyer": 0.5,
+            "Dr. Rao": 0.5,
+            "Dr. Singh": 0.3333333333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_w4jfagIfVvUJRgWiFMLC6pbQ\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the dataset\\\\nfile_path = 'Clinic_Visits_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Normalize column names (strip spaces)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Ensure relevant columns exist\\\\nrequired_cols = ['Doctor', 'FollowUpRequired']\\\\nmissing = [c for c in required_cols if c not in df.columns]\\\\nif missing:\\\\n    print({'error': f'Missing columns: {missing}', 'columns': list(df.columns)})\\\\nelse:\\\\n    # Create indicator for follow-up\\\\n    followup_indicator = df['FollowUpRequired'].astype(str).str.strip().str.lower().eq('yes')\\\\n\\\\n    proportions = followup_indicator.groupby(df['Doctor']).mean().sort_index()\\\\n\\\\n    # Print the result as a simple dict\\\\n    result = {doc: float(prop) for doc, prop in proportions.items()}\\\\n    print(result)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_w4jfagIfVvUJRgWiFMLC6pbQ\", \"content\": \"{'Dr. Iyer': 0.5, 'Dr. Rao': 0.5, 'Dr. Singh': 0.3333333333333333}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dr. Iyer\\\": 0.5,\\n        \\\"Dr. Rao\\\": 0.5,\\n        \\\"Dr. Singh\\\": 0.3333333333333333\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dr. Iyer\\\": 0.5,\\n        \\\"Dr. Rao\\\": 0.5,\\n        \\\"Dr. Singh\\\": 0.3333333333333333\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Iyer": 0.5,
+            "Dr. Rao": 0.5,
+            "Dr. Singh": 0.3333333333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_cXHjjkwzKIU9x9k3yk0EhJl9\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Clinic_Visits_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Clean column names just in case\\\\ndf.columns = [c.strip() for c in df.columns]\\\\n\\\\n# Normalize FollowUpRequired values to Yes/No strings\\\\ndf['FollowUpRequired'] = df['FollowUpRequired'].astype(str).str.strip().str.capitalize()\\\\n\\\\n# Compute proportion of visits requiring follow-up per doctor\\\\nprop = (\\\\n    df.groupby('Doctor')['FollowUpRequired']\\\\n      .apply(lambda s: (s == 'Yes').mean())\\\\n)\\\\n\\\\n# Convert to dict\\\\nresult = prop.to_dict()\\\\n\\\\nprint(result)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_cXHjjkwzKIU9x9k3yk0EhJl9\", \"content\": \"{'Dr. Iyer': 0.5, 'Dr. Rao': 0.5, 'Dr. Singh': 0.3333333333333333}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dr. Iyer\\\": 0.5,\\n        \\\"Dr. Rao\\\": 0.5,\\n        \\\"Dr. Singh\\\": 0.3333333333333333\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dr. Iyer\\\": 0.5,\\n        \\\"Dr. Rao\\\": 0.5,\\n        \\\"Dr. Singh\\\": 0.3333333333333333\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Clinic_Visits_original_2",
+    "query": "What is the average consultation fee for females grouped by condition?",
+    "answer": "{\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Clinic_Visits/Clinic_Visits_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 700.0,
+            "Back Pain": 400.0,
+            "Flu": 625.0,
+            "Hypertension": 466.67
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_QkRktfoQt6w8Bb5LgpZi9cMT\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Clinic_Visits_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Try engine openpyxl\\\\n    df = pd.read_excel(file_path, engine='openpyxl')\\\\n\\\\n# Inspect columns\\\\n# Normalize column names if needed\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Identify relevant columns\\\\n# Some spreadsheets may have column named 'ConsultationFeeINR' or similar\\\\nfee_col = None\\\\nfor c in df.columns:\\\\n    if 'Consultation' in c and 'Fee' in c:\\\\n        fee_col = c\\\\n        break\\\\nif fee_col is None:\\\\n    # Try common name\\\\n    fee_col = 'ConsultationFeeINR'\\\\n\\\\n# Filter females\\\\nfemale_df = df[df['Gender'].str.strip().str.upper()=='F']\\\\n\\\\n# Group by Condition and compute average consultation fee\\\\nresult = female_df.groupby('Condition')[fee_col].mean().round(2)\\\\n\\\\nprint(result.to_string())\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_QkRktfoQt6w8Bb5LgpZi9cMT\", \"content\": \"Condition\\nAllergy         700.00\\nBack Pain       400.00\\nFlu             625.00\\nHypertension    466.67\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 700.0,\\n        \\\"Back Pain\\\": 400.0,\\n        \\\"Flu\\\": 625.0,\\n        \\\"Hypertension\\\": 466.67\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 700.0,\\n        \\\"Back Pain\\\": 400.0,\\n        \\\"Flu\\\": 625.0,\\n        \\\"Hypertension\\\": 466.67\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 700.0,
+            "Back Pain": 400.0,
+            "Flu": 625.0,
+            "Hypertension": 466.6666666667
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_PjdKzYN4JFt8hb0HSqSscHiv\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Clinic_Visits_original.xlsx'\\\\n# Try reading the first sheet by default\\\\nxl = pd.ExcelFile(file_path)\\\\n# Assume relevant data is in the first sheet\\\\ndf = xl.parse(xl.sheet_names[0])\\\\n\\\\n# Normalize column names (strip spaces)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Inspect basic columns\\\\n# Filter for females\\\\nfemale_df = df[df['Gender'].str.strip().str.upper() == 'F']\\\\n\\\\n# Ensure consultation fee column exists\\\\nfee_col_candidates = [c for c in df.columns if 'ConsultationFee' in c or 'Consultation Fee' in c or 'ConsultationFeeINR' in c]\\\\nif fee_col_candidates:\\\\n    fee_col = fee_col_candidates[0]\\\\nelse:\\\\n    # try case-insensitive match\\\\n    fee_col = [c for c in df.columns if 'fee' in c.lower()][0]\\\\n\\\\n# Group by condition and compute mean\\\\nresult = female_df.groupby('Condition')[fee_col].mean().sort_index()\\\\n\\\\n# Print result in a structured way\\\\nprint(result.to_json())\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_PjdKzYN4JFt8hb0HSqSscHiv\", \"content\": \"{\\\"Allergy\\\":700.0,\\\"Back Pain\\\":400.0,\\\"Flu\\\":625.0,\\\"Hypertension\\\":466.6666666667}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 700.0,\\n        \\\"Back Pain\\\": 400.0,\\n        \\\"Flu\\\": 625.0,\\n        \\\"Hypertension\\\": 466.6666666667\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 700.0,\\n        \\\"Back Pain\\\": 400.0,\\n        \\\"Flu\\\": 625.0,\\n        \\\"Hypertension\\\": 466.6666666667\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 700.0,
+            "Back Pain": 400.0,
+            "Flu": 625.0,
+            "Hypertension": 466.67
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_K3PC1a1TQ8M3OOmAWAvQ9sfa\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Clinic_Visits_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Some environments require engine specification\\\\n    df = pd.read_excel(file_path, engine='openpyxl')\\\\n\\\\n# Normalize column names (strip spaces, handle case)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Inspect relevant columns\\\\n# Select females\\\\nfemale_df = df[df['Gender'].astype(str).str.strip().str.upper() == 'F'].copy()\\\\n\\\\n# Ensure consultation fee column is numeric\\\\nfee_col_candidates = [c for c in df.columns if 'Consultation' in c and 'Fee' in c]\\\\nif fee_col_candidates:\\\\n    fee_col = fee_col_candidates[0]\\\\nelse:\\\\n    # fall back to explicit name from screenshot\\\\n    fee_col = 'ConsultationFeeINR'\\\\n\\\\nfemale_df[fee_col] = pd.to_numeric(female_df[fee_col], errors='coerce')\\\\n\\\\n# Group by Condition and compute average fee\\\\ncond_col = 'Condition'\\\\nif cond_col not in female_df.columns:\\\\n    # Try case-insensitive match\\\\n    for c in female_df.columns:\\\\n        if c.lower() == 'condition':\\\\n            cond_col = c\\\\n            break\\\\n\\\\navg_fee = female_df.groupby(cond_col)[fee_col].mean().dropna()\\\\n\\\\n# Convert to dict for output\\\\nresult = {k: float(round(v, 2)) for k, v in avg_fee.items()}\\\\n\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_K3PC1a1TQ8M3OOmAWAvQ9sfa\", \"content\": \"{'Allergy': 700.0, 'Back Pain': 400.0, 'Flu': 625.0, 'Hypertension': 466.67}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 700.0,\\n        \\\"Back Pain\\\": 400.0,\\n        \\\"Flu\\\": 625.0,\\n        \\\"Hypertension\\\": 466.67\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Allergy\\\": 700.0,\\n        \\\"Back Pain\\\": 400.0,\\n        \\\"Flu\\\": 625.0,\\n        \\\"Hypertension\\\": 466.67\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_0",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Hermes": 2375.0,
+            "Apollo": 2370.0,
+            "Zephyr": 450.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_cMRzc5gfGvBoC5GmcgYsLiB9\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'HR_Timesheets_original.xlsx'\\\\n\\\\n# Read the data (assume first sheet)\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Normalize column names (strip spaces)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Inspect unique values and datatypes\\\\n# print(df.dtypes)\\\\n\\\\n# Filter billable entries (TRUE) - Billable column might be boolean or string\\\\nbillable_mask = df['Billable'].astype(str).str.upper().isin(['TRUE', '1', 'YES'])\\\\n\\\\nbillable_df = df.loc[billable_mask]\\\\n\\\\n# Ensure BillableAmount numeric\\\\nbillable_df['BillableAmount'] = pd.to_numeric(billable_df['BillableAmount'], errors='coerce')\\\\n\\\\n# Group by Project and sum revenue\\\\nrevenue_by_project = billable_df.groupby('Project')['BillableAmount'].sum().sort_values(ascending=False)\\\\n\\\\nprint(revenue_by_project)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_cMRzc5gfGvBoC5GmcgYsLiB9\", \"content\": \"/workspace/exec_code_db41e63d29a66fb9091027a294097342071da7c4d7c455a208bee124c34f40b9.py:21: SettingWithCopyWarning: \\nA value is trying to be set on a copy of a slice from a DataFrame.\\nTry using .loc[row_indexer,col_indexer] = value instead\\n\\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\\n  billable_df['BillableAmount'] = pd.to_numeric(billable_df['BillableAmount'], errors='coerce')\\nProject\\nHermes    2375.0\\nApollo    2370.0\\nZephyr     450.0\\nName: BillableAmount, dtype: float64\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Hermes\\\": 2375.0,\\n        \\\"Apollo\\\": 2370.0,\\n        \\\"Zephyr\\\": 450.0\\n    },\\n    \\\"dtype\\\": \\\"pd.Series\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Hermes\\\": 2375.0,\\n        \\\"Apollo\\\": 2370.0,\\n        \\\"Zephyr\\\": 450.0\\n    },\\n    \\\"dtype\\\": \\\"pd.Series\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 2370.0,
+            "Hermes": 2375.0,
+            "Zephyr": 450.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_Jin3xkOLVARXlL2VZItJy24t\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\nimport json\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'HR_Timesheets_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # try reading first sheet if multiple or engine issues\\\\n    df = pd.read_excel(file_path, sheet_name=0)\\\\n\\\\n# Normalize Billable column to boolean\\\\nif 'Billable' in df.columns:\\\\n    # Convert possible string representations to boolean\\\\n    df['Billable_norm'] = df['Billable'].astype(str).str.strip().str.lower().map({'true': True, 'false': False})\\\\nelse:\\\\n    raise ValueError('Billable column not found')\\\\n\\\\n# Ensure BillableAmount exists and is numeric\\\\nif 'BillableAmount' in df.columns:\\\\n    df['BillableAmount'] = pd.to_numeric(df['BillableAmount'], errors='coerce')\\\\nelse:\\\\n    # If not present, compute as HoursWorked * BillRateUSD maybe\\\\n    if {'HoursWorked','BillRateUSD'}.issubset(df.columns):\\\\n        df['BillableAmount'] = pd.to_numeric(df['HoursWorked'], errors='coerce') * pd.to_numeric(df['BillRateUSD'], errors='coerce')\\\\n    else:\\\\n        raise ValueError('BillableAmount not found and cannot compute')\\\\n\\\\n# Filter billable entries\\\\nbillable_df = df[df['Billable_norm'] == True]\\\\n\\\\n# Group by Project and sum revenue\\\\nif 'Project' not in df.columns:\\\\n    raise ValueError('Project column not found')\\\\n\\\\nrevenue_by_project = billable_df.groupby('Project', dropna=False)['BillableAmount'].sum().to_dict()\\\\n\\\\n# Prepare JSON output\\\\noutput = {\\\\n    \\\\\\\"answer\\\\\\\": revenue_by_project,\\\\n    \\\\\\\"dtype\\\\\\\": \\\\\\\"dict\\\\\\\"\\\\n}\\\\nprint(json.dumps(output, ensure_ascii=False))\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_Jin3xkOLVARXlL2VZItJy24t\", \"content\": \"{\\\"answer\\\": {\\\"Apollo\\\": 2370.0, \\\"Hermes\\\": 2375.0, \\\"Zephyr\\\": 450.0}, \\\"dtype\\\": \\\"dict\\\"}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Apollo\\\": 2370.0,\\n        \\\"Hermes\\\": 2375.0,\\n        \\\"Zephyr\\\": 450.0\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Apollo\\\": 2370.0,\\n        \\\"Hermes\\\": 2375.0,\\n        \\\"Zephyr\\\": 450.0\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 2370.0,
+            "Hermes": 2375.0,
+            "Zephyr": 450.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_7EF0E4zTHr45gXr86CO1Ace9\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'HR_Timesheets_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Normalize Billable indicator to boolean/strings\\\\n# Some files may have TRUE/FALSE as strings; ensure we handle both\\\\nbillable_col = df['Billable']\\\\n# Convert to string type for consistent comparison\\\\nbillable_str = billable_col.astype(str).str.strip().str.upper()\\\\n\\\\n# Filter billable entries\\\\nbillable_df = df[billable_str == 'TRUE']\\\\n\\\\n# Sum BillableAmount by Project\\\\n# Ensure BillableAmount is numeric\\\\nbillable_df['BillableAmount'] = pd.to_numeric(billable_df['BillableAmount'], errors='coerce')\\\\nrevenue_by_project = billable_df.groupby('Project')['BillableAmount'].sum().to_dict()\\\\n\\\\n# Print the result as plain dict\\\\nprint(revenue_by_project)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_7EF0E4zTHr45gXr86CO1Ace9\", \"content\": \"/workspace/exec_code_4a124339958ec425b57ef31370634bb861e903e2888458d932acf5838bf64f58.py:18: SettingWithCopyWarning: \\nA value is trying to be set on a copy of a slice from a DataFrame.\\nTry using .loc[row_indexer,col_indexer] = value instead\\n\\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\\n  billable_df['BillableAmount'] = pd.to_numeric(billable_df['BillableAmount'], errors='coerce')\\n{'Apollo': 2370.0, 'Hermes': 2375.0, 'Zephyr': 450.0}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Apollo\\\": 2370.0,\\n        \\\"Hermes\\\": 2375.0,\\n        \\\"Zephyr\\\": 450.0\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Apollo\\\": 2370.0,\\n        \\\"Hermes\\\": 2375.0,\\n        \\\"Zephyr\\\": 450.0\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_1",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 8,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_sqDfHa1Ha9F26EaMLDka4HnU\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'HR_Timesheets_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure OvertimeHours is numeric\\\\n# Some sheets might store TRUE/FALSE etc; handle non-numeric gracefully\\\\n# Convert to numeric coercing errors to NaN, then fill NaN with 0 for counting\\\\not = pd.to_numeric(df['OvertimeHours'], errors='coerce').fillna(0)\\\\n\\\\n# Count distinct employees who have any overtime > 0\\\\nemployees_with_ot = df.loc[ot > 0, 'EmployeeID'].nunique()\\\\nprint(employees_with_ot)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_sqDfHa1Ha9F26EaMLDka4HnU\", \"content\": \"8\"}, {\"content\": \"{\\n    \\\"answer\\\": 8,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 8,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 8,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_8VFYm5gtDl2g3erZK4kJsqVN\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'HR_Timesheets_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Normalize column names (strip and consistent)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Determine employees with overtime (>0 hours)\\\\novertime_employees = df.loc[df['OvertimeHours'] > 0, 'EmployeeID'].dropna().unique()\\\\ncount_unique_overtime = len(overtime_employees)\\\\n\\\\nprint(count_unique_overtime)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_8VFYm5gtDl2g3erZK4kJsqVN\", \"content\": \"8\"}, {\"content\": \"{\\n    \\\"answer\\\": 8,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 8,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 8,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_ikBmsOeZgDDW3q1KQsRL47DQ\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'HR_Timesheets_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Normalize column names (strip spaces etc.)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Ensure OvertimeHours column numeric\\\\nif 'OvertimeHours' in df.columns:\\\\n    df['OvertimeHours'] = pd.to_numeric(df['OvertimeHours'], errors='coerce').fillna(0)\\\\nelse:\\\\n    raise ValueError('OvertimeHours column not found')\\\\n\\\\n# Count unique employees who did any overtime (>0)\\\\novertime_employees = df.loc[df['OvertimeHours'] > 0, 'EmployeeID'].nunique()\\\\nprint(overtime_employees)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_ikBmsOeZgDDW3q1KQsRL47DQ\", \"content\": \"8\"}, {\"content\": \"{\\n    \\\"answer\\\": 8,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 8,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_2",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/HR_Timesheets/HR_Timesheets_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Remote": 7.42,
+            "Onsite": 8.07
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_WRj4NXOEFaJCCIqcgOIvlv0e\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'HR_Timesheets_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Try reading first sheet explicitly if needed\\\\n    xl = pd.ExcelFile(file_path)\\\\n    df = xl.parse(xl.sheet_names[0])\\\\n\\\\n# Inspect columns to ensure correct names\\\\n# print(df.columns)\\\\n\\\\n# Normalize WorkLocation text (strip, case)\\\\ndf['WorkLocation'] = df['WorkLocation'].astype(str).str.strip().str.title()\\\\n\\\\n# Compute average HoursWorked by WorkLocation\\\\navg_hours = df.groupby('WorkLocation', as_index=False)['HoursWorked'].mean()\\\\n\\\\n# Prepare output dict for Remote and Onsite specifically\\\\nresult = {}\\\\nfor _, row in avg_hours.iterrows():\\\\n    loc = row['WorkLocation']\\\\n    if loc in ['Remote', 'Onsite']:\\\\n        result[loc] = round(float(row['HoursWorked']), 2)\\\\n\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_WRj4NXOEFaJCCIqcgOIvlv0e\", \"content\": \"{'Onsite': 8.07, 'Remote': 7.42}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Remote\\\": 7.42,\\n        \\\"Onsite\\\": 8.07\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Remote\\\": 7.42,\\n        \\\"Onsite\\\": 8.07\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Remote": 7.423076923076923,
+            "Onsite": 8.071428571428571
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_aMi5ZUImkKVAI3XJ2uSuRDFJ\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'HR_Timesheets_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure columns are as expected\\\\n# Compute average HoursWorked grouped by WorkLocation\\\\navg_hours = df.groupby('WorkLocation')['HoursWorked'].mean().to_dict()\\\\n\\\\nprint(avg_hours)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_aMi5ZUImkKVAI3XJ2uSuRDFJ\", \"content\": \"{'Onsite': 8.071428571428571, 'Remote': 7.423076923076923}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Remote\\\": 7.423076923076923,\\n        \\\"Onsite\\\": 8.071428571428571\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Remote\\\": 7.423076923076923,\\n        \\\"Onsite\\\": 8.071428571428571\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Remote": 7.42,
+            "Onsite": 8.07
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_XDnZSvvgfrSD1m2Jf83EULpe\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'HR_Timesheets_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Try reading as CSV if Excel fails\\\\n    df = pd.read_csv(file_path)\\\\n\\\\n# Normalize column names\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Ensure HoursWorked is numeric\\\\ndf['HoursWorked'] = pd.to_numeric(df['HoursWorked'], errors='coerce')\\\\n\\\\n# Compute average hours by WorkLocation\\\\navg_hours = df.groupby('WorkLocation')['HoursWorked'].mean()\\\\n\\\\n# Prepare result as dict\\\\nresult = {loc: float(round(val, 2)) for loc, val in avg_hours.items()}\\\\n\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_XDnZSvvgfrSD1m2Jf83EULpe\", \"content\": \"{'Onsite': 8.07, 'Remote': 7.42}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Remote\\\": 7.42,\\n        \\\"Onsite\\\": 8.07\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Remote\\\": 7.42,\\n        \\\"Onsite\\\": 8.07\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_0",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "DHL": 5.6,
+            "FedEx": 5.5,
+            "UPS": 4.833333333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_5ChYOlCO9a2REH9Va3uCBYe6\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Logistics_Shipments_original.xlsx'\\\\n# Try default first sheet\\\\nxl = pd.ExcelFile(file_path)\\\\n# Inspect sheet names\\\\n# print(xl.sheet_names)\\\\ndf = xl.parse(xl.sheet_names[0])\\\\n\\\\n# Standardize column names (strip spaces)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Filter for Standard priority\\\\nstd_df = df[df['Priority'].str.strip().str.lower() == 'standard']\\\\n\\\\n# Compute average TransitDays per Carrier\\\\navg_transit = std_df.groupby('Carrier')['TransitDays'].mean().to_dict()\\\\n\\\\n# Print the result\\\\nprint(avg_transit)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_5ChYOlCO9a2REH9Va3uCBYe6\", \"content\": \"{'DHL': 5.6, 'FedEx': 5.5, 'UPS': 4.833333333333333}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"DHL\\\": 5.6,\\n        \\\"FedEx\\\": 5.5,\\n        \\\"UPS\\\": 4.833333333333333\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"DHL\\\": 5.6,\\n        \\\"FedEx\\\": 5.5,\\n        \\\"UPS\\\": 4.833333333333333\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "DHL": 5.6,
+            "FedEx": 5.5,
+            "UPS": 4.83
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_7F5wlRWVIfMPRofo9mBQSDub\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Logistics_Shipments_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Try alternative engine\\\\n    df = pd.read_excel(file_path, engine='openpyxl')\\\\n\\\\n# Ensure column names are standardized (strip whitespace)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Filter for Standard priority\\\\nstd_df = df[df['Priority'].str.strip().str.lower() == 'standard']\\\\n\\\\n# Group by Carrier and compute average TransitDays\\\\navg_transit = std_df.groupby('Carrier', as_index=False)['TransitDays'].mean()\\\\n\\\\n# Round to 2 decimals for readability\\\\navg_transit['TransitDays'] = avg_transit['TransitDays'].round(2)\\\\n\\\\n# Convert to dict\\\\nresult = dict(zip(avg_transit['Carrier'], avg_transit['TransitDays']))\\\\n\\\\nprint(result)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_7F5wlRWVIfMPRofo9mBQSDub\", \"content\": \"{'DHL': 5.6, 'FedEx': 5.5, 'UPS': 4.83}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"DHL\\\": 5.6,\\n        \\\"FedEx\\\": 5.5,\\n        \\\"UPS\\\": 4.83\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"DHL\\\": 5.6,\\n        \\\"FedEx\\\": 5.5,\\n        \\\"UPS\\\": 4.83\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "DHL": 5.6,
+            "FedEx": 5.5,
+            "UPS": 4.83
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_1aOq00st8gqnrs7SyUxHtMea\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Logistics_Shipments_original.xlsx'\\\\n\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure column names are standardized (strip whitespace)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Filter for Standard priority\\\\nstandard_df = df[df['Priority'].str.strip().str.lower() == 'standard']\\\\n\\\\n# Compute average transit days per carrier\\\\navg_transit = standard_df.groupby('Carrier')['TransitDays'].mean().round(2)\\\\n\\\\n# Convert to dict for output\\\\nresult = avg_transit.to_dict()\\\\n\\\\nprint(result)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_1aOq00st8gqnrs7SyUxHtMea\", \"content\": \"{'DHL': 5.6, 'FedEx': 5.5, 'UPS': 4.83}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"DHL\\\": 5.6,\\n        \\\"FedEx\\\": 5.5,\\n        \\\"UPS\\\": 4.83\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"DHL\\\": 5.6,\\n        \\\"FedEx\\\": 5.5,\\n        \\\"UPS\\\": 4.83\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_1",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "['SIN', 'SYD', 'LHR']",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.png",
+    "diversification_type": "original",
+    "dtype": "list",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "SIN",
+            "SYD",
+            "LHR"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_qPs3FDKRPciFper2kW7ATVea\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Logistics_Shipments_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    print('Error reading file:', e)\\\\n    import sys\\\\n    sys.exit(0)\\\\n\\\\n# Ensure columns are as expected\\\\n# Sum WeightKg by Destination\\\\nif 'Destination' not in df.columns or 'WeightKg' not in df.columns:\\\\n    print('Required columns not found. Columns present:', df.columns.tolist())\\\\n    import sys\\\\n    sys.exit(0)\\\\n\\\\n# Handle any non-numeric weight values\\\\ndf['WeightKg'] = pd.to_numeric(df['WeightKg'], errors='coerce')\\\\n\\\\n# Group and sum\\\\nsum_by_dest = df.groupby('Destination', as_index=False)['WeightKg'].sum()\\\\n\\\\n# Sort descending by total weight\\\\nsum_by_dest_sorted = sum_by_dest.sort_values('WeightKg', ascending=False)\\\\n\\\\n# Get top 3 destinations\\\\ntop3 = sum_by_dest_sorted.head(3)\\\\n\\\\nprint(top3.to_string(index=False))\\\\n\\\\n# Also print just the destinations list\\\\nprint('\\\\\\\\nTop3 Destinations:', top3['Destination'].tolist())\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_qPs3FDKRPciFper2kW7ATVea\", \"content\": \"Destination  WeightKg\\n        SIN     183.1\\n        SYD     123.7\\n        LHR      69.0\\n\\nTop3 Destinations: ['SIN', 'SYD', 'LHR']\"}, {\"content\": \"{\\n    \\\"answer\\\": [\\\"SIN\\\", \\\"SYD\\\", \\\"LHR\\\"],\\n    \\\"dtype\\\": \\\"list\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": [\\\"SIN\\\", \\\"SYD\\\", \\\"LHR\\\"],\\n    \\\"dtype\\\": \\\"list\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "SIN",
+            "SYD",
+            "LHR"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_gxQJ05Aufq5inu0b4ZgnQ5tE\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Logistics_Shipments_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Try engine openpyxl explicitly\\\\n    df = pd.read_excel(file_path, engine='openpyxl')\\\\n\\\\n# Inspect columns\\\\n# print(df.columns)\\\\n\\\\n# Ensure consistent column names\\\\n# Assuming columns include 'Destination' and 'WeightKg'\\\\n\\\\n# Aggregate total weight per destination\\\\ntotals = df.groupby('Destination', as_index=False)['WeightKg'].sum()\\\\n\\\\n# Sort descending by total weight\\\\ntop3 = totals.sort_values('WeightKg', ascending=False).head(3)\\\\n\\\\n# Prepare just the destination names in order\\\\nanswer_list = top3['Destination'].tolist()\\\\n\\\\n# Print the result in required JSON format\\\\nimport json\\\\nprint(json.dumps({\\\\n    \\\\\\\"answer\\\\\\\": answer_list,\\\\n    \\\\\\\"dtype\\\\\\\": \\\\\\\"list\\\\\\\"\\\\n}))\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_gxQJ05Aufq5inu0b4ZgnQ5tE\", \"content\": \"  File \\\"/workspace/exec_code_4b9bcece3e6e066c9ba9d835e705a5edbcdfb9c4010d3d1d3255ba9c828daea6.py\\\", line 31\\n    print(})))\\n    ^\\nSyntaxError: invalid syntax\"}, {\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_Eah9kFgtykBNxJRyvFAmWXGc\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd, json\\\\n\\\\nfile_path = 'Logistics_Shipments_original.xlsx'\\\\n# Load Excel\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception:\\\\n    df = pd.read_excel(file_path, engine='openpyxl')\\\\n\\\\n# Aggregate total shipment weight by destination\\\\ntop3 = (\\\\n    df.groupby('Destination', as_index=False)['WeightKg']\\\\n      .sum()\\\\n      .sort_values('WeightKg', ascending=False)\\\\n      .head(3)\\\\n)\\\\n\\\\nanswer_list = top3['Destination'].tolist()\\\\n\\\\nprint(json.dumps({\\\\\\\"answer\\\\\\\": answer_list, \\\\\\\"dtype\\\\\\\": \\\\\\\"list\\\\\\\"}))\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_Eah9kFgtykBNxJRyvFAmWXGc\", \"content\": \"{\\\"answer\\\": [\\\"SIN\\\", \\\"SYD\\\", \\\"LHR\\\"], \\\"dtype\\\": \\\"list\\\"}\"}, {\"content\": \"{\\n    \\\"answer\\\": [\\\"SIN\\\", \\\"SYD\\\", \\\"LHR\\\"],\\n    \\\"dtype\\\": \\\"list\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": [\\\"SIN\\\", \\\"SYD\\\", \\\"LHR\\\"],\\n    \\\"dtype\\\": \\\"list\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "SIN",
+            "SYD",
+            "LHR"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_AV5tizVOxXYOwgHVJnbJCtOR\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Logistics_Shipments_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Inspect columns (for debugging)\\\\n# print(df.columns)\\\\n\\\\n# Ensure correct column name for weight and destination\\\\nweight_col = None\\\\nfor col in df.columns:\\\\n    if str(col).strip().lower() in ['weightkg', 'weight_kg', 'weight']:\\\\n        weight_col = col\\\\n        break\\\\n\\\\ndestination_col = None\\\\nfor col in df.columns:\\\\n    if str(col).strip().lower() in ['destination', 'dest']:\\\\n        destination_col = col\\\\n        break\\\\n\\\\nif weight_col is None or destination_col is None:\\\\n    raise ValueError(f\\\\\\\"Required columns not found. Columns present: {list(df.columns)}\\\\\\\")\\\\n\\\\n# Group by destination and sum the weights\\\\nagg = df.groupby(destination_col, as_index=False)[weight_col].sum()\\\\n\\\\n# Sort descending by total weight and get top 3 destinations\\\\ntop3 = agg.sort_values(by=weight_col, ascending=False).head(3)\\\\n\\\\n# Prepare output\\\\nresult = top3[destination_col].tolist()\\\\nprint(result)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_AV5tizVOxXYOwgHVJnbJCtOR\", \"content\": \"['SIN', 'SYD', 'LHR']\"}, {\"content\": \"{\\n    \\\"answer\\\": [\\\"SIN\\\", \\\"SYD\\\", \\\"LHR\\\"],\\n    \\\"dtype\\\": \\\"list\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": [\\\"SIN\\\", \\\"SYD\\\", \\\"LHR\\\"],\\n    \\\"dtype\\\": \\\"list\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_2",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days), rounded to nearest integer?",
+    "answer": "80",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Logistics_Shipments/Logistics_Shipments_original.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_8u3dLdskbqExpoRaKbhlB1lb\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Logistics_Shipments_original.xlsx'\\\\n# Try reading first sheet\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # If sheet name needs specification, read all and take first\\\\n    xl = pd.ExcelFile(file_path)\\\\n    df = xl.parse(xl.sheet_names[0])\\\\n\\\\n# Normalize column names (strip spaces)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Inspect unique priorities\\\\n# Compute on-time per rule: Priority shipments (Priority == 'Priority') transit <=4; Standard transit <=6\\\\n# Some rows may have NaNs; handle safely\\\\npriority_mask = df['Priority'].str.strip().str.lower() == 'priority'\\\\nstandard_mask = df['Priority'].str.strip().str.lower() == 'standard'\\\\n\\\\ntransit = pd.to_numeric(df['TransitDays'], errors='coerce')\\\\n\\\\non_time = (priority_mask & (transit <= 4)) | (standard_mask & (transit <= 6))\\\\n\\\\n# Only consider rows where TransitDays is not null and Priority is either Priority or Standard\\\\nvalid = (priority_mask | standard_mask) & transit.notna()\\\\n\\\\nnum_on_time = int(on_time[valid].sum())\\\\nnum_total = int(valid.sum())\\\\n\\\\npercentage = round((num_on_time / num_total) * 100) if num_total > 0 else None\\\\n\\\\nprint({'on_time_shipments': num_on_time, 'total_valid_shipments': num_total, 'percentage': percentage})\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_8u3dLdskbqExpoRaKbhlB1lb\", \"content\": \"{'on_time_shipments': 20, 'total_valid_shipments': 25, 'percentage': 80}\"}, {\"content\": \"{\\n    \\\"answer\\\": 80,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 80,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_80e3vlSs6prWbMk4pnpTDSuw\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Logistics_Shipments_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Normalize Priority values: assume only 'Priority' and 'Standard'\\\\n# Create a boolean column indicating on-time per rule\\\\non_time = (\\\\n    ((df['Priority'].str.strip().str.lower() == 'priority') & (df['TransitDays'] <= 4)) |\\\\n    ((df['Priority'].str.strip().str.lower() == 'standard') & (df['TransitDays'] <= 6))\\\\n)\\\\n\\\\n# Calculate percentage\\\\ntotal = len(df)\\\\non_time_count = int(on_time.sum())\\\\npercentage = round((on_time_count / total) * 100)\\\\n\\\\nprint({'total': total, 'on_time_count': on_time_count, 'percentage': int(percentage)})\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_80e3vlSs6prWbMk4pnpTDSuw\", \"content\": \"{'total': 25, 'on_time_count': 20, 'percentage': 80}\"}, {\"content\": \"{\\n    \\\"answer\\\": 80,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 80,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_CP3JAqvWaGSZR04eAJEdie7B\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Logistics_Shipments_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Normalize column names (strip spaces)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Inspect columns (for debug)\\\\n# print(df.columns)\\\\n\\\\n# Determine if each shipment met the on-time rule\\\\n# Priority shipments: TransitDays <= 4\\\\n# Standard shipments: TransitDays <= 6\\\\n\\\\n# Create boolean conditions\\\\nis_priority = df['Priority'].str.strip().str.lower() == 'priority'\\\\nis_standard = df['Priority'].str.strip().str.lower() == 'standard'\\\\n\\\\nmet_rule = (is_priority & (df['TransitDays'] <= 4)) | (is_standard & (df['TransitDays'] <= 6))\\\\n\\\\n# Compute percentage\\\\ntotal = len(df)\\\\nmet = met_rule.sum()\\\\npercentage = (met / total) * 100\\\\n\\\\n# Round to nearest integer\\\\nrounded = int(round(percentage))\\\\n\\\\nprint(rounded)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_CP3JAqvWaGSZR04eAJEdie7B\", \"content\": \"80\"}, {\"content\": \"{\\n    \\\"answer\\\": 80,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 80,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_0",
+    "query": "What is the total spending for each category in the month of June?",
+    "answer": "{\"Dining\": 4047.98, \"Entertainment\": 5579.33, \"Groceries\": 4395.02, \"Health\": 5803.54, \"Rent\": 2397.77, \"Transport\": 6838.02, \"Utilities\": 3106.98}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Dining": 4047.98,
+            "Entertainment": 5579.33,
+            "Groceries": 4395.02,
+            "Health": 5803.54,
+            "Rent": 2397.77,
+            "Transport": 6838.02,
+            "Utilities": 3106.98
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_RXjRst8zMR2nkcA0K7WhA6UE\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Personal_Finance_Transactions_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure Date is datetime\\\\ndf['Date'] = pd.to_datetime(df['Date'])\\\\n\\\\n# Filter for June (month == 6)\\\\njune_df = df[df['Date'].dt.month == 6]\\\\n\\\\n# Use NetAmountINR as total spending after cashback\\\\nspend_by_category = june_df.groupby('Category')['NetAmountINR'].sum().round(2)\\\\n\\\\n# Convert to dict for output\\\\nresult = spend_by_category.to_dict()\\\\n\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_RXjRst8zMR2nkcA0K7WhA6UE\", \"content\": \"{'Dining': 4047.98, 'Entertainment': 5579.33, 'Groceries': 4395.02, 'Health': 5803.54, 'Rent': 2397.77, 'Transport': 6838.02, 'Utilities': 3106.98}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dining\\\": 4047.98,\\n        \\\"Entertainment\\\": 5579.33,\\n        \\\"Groceries\\\": 4395.02,\\n        \\\"Health\\\": 5803.54,\\n        \\\"Rent\\\": 2397.77,\\n        \\\"Transport\\\": 6838.02,\\n        \\\"Utilities\\\": 3106.98\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dining\\\": 4047.98,\\n        \\\"Entertainment\\\": 5579.33,\\n        \\\"Groceries\\\": 4395.02,\\n        \\\"Health\\\": 5803.54,\\n        \\\"Rent\\\": 2397.77,\\n        \\\"Transport\\\": 6838.02,\\n        \\\"Utilities\\\": 3106.98\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dining": 4047.98,
+            "Entertainment": 5579.33,
+            "Groceries": 4395.02,
+            "Health": 5803.54,
+            "Rent": 2397.77,
+            "Transport": 6838.02,
+            "Utilities": 3106.98
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_hGgJgshkmIQECVHoeByzxSbq\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Personal_Finance_Transactions_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure Date is datetime\\\\ndf['Date'] = pd.to_datetime(df['Date'])\\\\n\\\\n# Filter for June (any year)\\\\njune_df = df[df['Date'].dt.month == 6]\\\\n\\\\n# Compute total net spending per category in June\\\\n# Using NetAmountINR to reflect actual spending after cashback\\\\ncategory_spend = june_df.groupby('Category', as_index=False)['NetAmountINR'].sum()\\\\n\\\\n# Convert to dict\\\\nresult = {row['Category']: round(row['NetAmountINR'], 2) for _, row in category_spend.iterrows()}\\\\n\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_hGgJgshkmIQECVHoeByzxSbq\", \"content\": \"{'Dining': 4047.98, 'Entertainment': 5579.33, 'Groceries': 4395.02, 'Health': 5803.54, 'Rent': 2397.77, 'Transport': 6838.02, 'Utilities': 3106.98}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dining\\\": 4047.98,\\n        \\\"Entertainment\\\": 5579.33,\\n        \\\"Groceries\\\": 4395.02,\\n        \\\"Health\\\": 5803.54,\\n        \\\"Rent\\\": 2397.77,\\n        \\\"Transport\\\": 6838.02,\\n        \\\"Utilities\\\": 3106.98\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dining\\\": 4047.98,\\n        \\\"Entertainment\\\": 5579.33,\\n        \\\"Groceries\\\": 4395.02,\\n        \\\"Health\\\": 5803.54,\\n        \\\"Rent\\\": 2397.77,\\n        \\\"Transport\\\": 6838.02,\\n        \\\"Utilities\\\": 3106.98\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dining": 4047.98,
+            "Entertainment": 5579.33,
+            "Groceries": 4395.02,
+            "Health": 5803.54,
+            "Rent": 2397.77,
+            "Transport": 6838.02,
+            "Utilities": 3106.98
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_Ose38Xdp9BH0FJodsfgso8DW\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Personal_Finance_Transactions_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure Date is datetime\\\\ndf['Date'] = pd.to_datetime(df['Date'])\\\\n\\\\n# Filter for June 2025\\\\njune_df = df[(df['Date'].dt.month == 6) & (df['Date'].dt.year == 2025)]\\\\n\\\\n# Use NetAmountINR as spending\\\\nspending_by_category = june_df.groupby('Category')['NetAmountINR'].sum().round(2)\\\\n\\\\n# Print as dictionary\\\\nprint(spending_by_category.to_dict())\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_Ose38Xdp9BH0FJodsfgso8DW\", \"content\": \"{'Dining': 4047.98, 'Entertainment': 5579.33, 'Groceries': 4395.02, 'Health': 5803.54, 'Rent': 2397.77, 'Transport': 6838.02, 'Utilities': 3106.98}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dining\\\": 4047.98,\\n        \\\"Entertainment\\\": 5579.33,\\n        \\\"Groceries\\\": 4395.02,\\n        \\\"Health\\\": 5803.54,\\n        \\\"Rent\\\": 2397.77,\\n        \\\"Transport\\\": 6838.02,\\n        \\\"Utilities\\\": 3106.98\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Dining\\\": 4047.98,\\n        \\\"Entertainment\\\": 5579.33,\\n        \\\"Groceries\\\": 4395.02,\\n        \\\"Health\\\": 5803.54,\\n        \\\"Rent\\\": 2397.77,\\n        \\\"Transport\\\": 6838.02,\\n        \\\"Utilities\\\": 3106.98\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_1",
+    "query": "Which payment method (mention only name) earned the highest total cashback?",
+    "answer": "UPI",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.png",
+    "diversification_type": "original",
+    "dtype": "str",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "UPI",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_JS33CbcYQRMroCzXakncRCiV\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Personal_Finance_Transactions_original.xlsx'\\\\n\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure column names are as expected\\\\n# print(df.columns)\\\\n\\\\n# Group by PaymentMethod and sum CashbackINR\\\\ncashback_by_method = df.groupby('PaymentMethod')['CashbackINR'].sum()\\\\n\\\\n# Find the payment method with the highest total cashback\\\\nmax_method = cashback_by_method.idxmax()\\\\n\\\\n# Print the result in the required JSON format\\\\nresult = {\\\\n    \\\\\\\"answer\\\\\\\": str(max_method),\\\\n    \\\\\\\"dtype\\\\\\\": \\\\\\\"str\\\\\\\"\\\\n}\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_JS33CbcYQRMroCzXakncRCiV\", \"content\": \"{'answer': 'UPI', 'dtype': 'str'}\"}, {\"content\": \"{\\n    \\\"answer\\\": \\\"UPI\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": \\\"UPI\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": "UPI",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_jE1sMcxwZUXxVc4WthpV8NWx\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Personal_Finance_Transactions_original.xlsx'\\\\n\\\\n# Read the first sheet (assuming the relevant data is in the first sheet)\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Inspect columns to ensure correct names\\\\nprint('Columns:', list(df.columns))\\\\n\\\\n# Handle potential whitespace or different column names by normalizing\\\\ndf.columns = [c.strip() for c in df.columns]\\\\n\\\\n# Ensure CashbackINR and PaymentMethod exist\\\\nif 'CashbackINR' not in df.columns or 'PaymentMethod' not in df.columns:\\\\n    # Try alternate names\\\\n    alt_cash_cols = [c for c in df.columns if 'cashback' in c.lower()]\\\\n    alt_pay_cols = [c for c in df.columns if 'payment' in c.lower() and 'method' in c.lower()]\\\\n    print('Alternate cashback cols:', alt_cash_cols)\\\\n    print('Alternate payment method cols:', alt_pay_cols)\\\\n\\\\n# Convert CashbackINR to numeric (coerce errors)\\\\ndf['CashbackINR'] = pd.to_numeric(df['CashbackINR'], errors='coerce').fillna(0)\\\\n\\\\n# Group by PaymentMethod and sum cashback\\\\ncashback_by_method = df.groupby('PaymentMethod')['CashbackINR'].sum().sort_values(ascending=False)\\\\n\\\\nprint('Cashback by method (sorted):')\\\\nprint(cashback_by_method)\\\\n\\\\n# Get the payment method with highest total cashback\\\\nbest_method = cashback_by_method.idxmax()\\\\n\\\\nprint('Best payment method:', best_method)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_jE1sMcxwZUXxVc4WthpV8NWx\", \"content\": \"Columns: ['TxnID', 'Date', 'Merchant', 'Category', 'PaymentMethod', 'AmountINR', 'CashbackINR', 'NetAmountINR', 'Recurring', 'City', 'Notes']\\nCashback by method (sorted):\\nPaymentMethod\\nUPI            365.21\\nDebit Card     278.30\\nCredit Card    274.83\\nName: CashbackINR, dtype: float64\\nBest payment method: UPI\"}, {\"content\": \"{\\n    \\\"answer\\\": \\\"UPI\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": \\\"UPI\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": "UPI",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_bR6kNFibZMJ0C0XbmLHPaExc\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Personal_Finance_Transactions_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure CashbackINR is numeric\\\\ndf['CashbackINR'] = pd.to_numeric(df['CashbackINR'], errors='coerce').fillna(0)\\\\n\\\\n# Group by PaymentMethod and sum cashback\\\\ncashback_by_method = df.groupby('PaymentMethod')['CashbackINR'].sum()\\\\n\\\\n# Identify the payment method with highest total cashback\\\\nmax_method = cashback_by_method.idxmax()\\\\nmax_value = cashback_by_method.max()\\\\n\\\\nprint(max_method)\\\\nprint(cashback_by_method)\\\\nprint(max_value)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_bR6kNFibZMJ0C0XbmLHPaExc\", \"content\": \"UPI\\nPaymentMethod\\nCredit Card    274.83\\nDebit Card     278.30\\nUPI            365.21\\nName: CashbackINR, dtype: float64\\n365.21\"}, {\"content\": \"{\\n    \\\"answer\\\": \\\"UPI\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": \\\"UPI\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_2",
+    "query": "What percent of total spending was on recurring expenses?",
+    "answer": "36.30",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original.png",
+    "diversification_type": "original",
+    "dtype": "float",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 36.30111067908081,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_QWrPuV9h3BUGyiwFa7w5D6nh\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Personal_Finance_Transactions_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Inspect columns\\\\nprint(df.columns.tolist())\\\\nprint(df.head(3))\\\\n\\\\n# Ensure correct column names and types\\\\n# Calculate total spending using NetAmountINR\\\\nif 'NetAmountINR' in df.columns and 'Recurring' in df.columns:\\\\n    total_spend = df['NetAmountINR'].sum()\\\\n    recurring_spend = df.loc[df['Recurring'].astype(str).str.strip().str.lower()=='yes', 'NetAmountINR'].sum()\\\\n    percent = (recurring_spend / total_spend * 100) if total_spend else 0\\\\n    print(f\\\\\\\"Total spend: {total_spend}\\\\\\\")\\\\n    print(f\\\\\\\"Recurring spend: {recurring_spend}\\\\\\\")\\\\n    print(f\\\\\\\"Percent recurring: {percent}\\\\\\\")\\\\nelse:\\\\n    # Fallback using AmountINR if NetAmountINR not present\\\\n    total_spend = df['AmountINR'].sum()\\\\n    recurring_spend = df.loc[df['Recurring'].astype(str).str.strip().str.lower()=='yes', 'AmountINR'].sum()\\\\n    percent = (recurring_spend / total_spend * 100) if total_spend else 0\\\\n    print(f\\\\\\\"Total spend (AmountINR): {total_spend}\\\\\\\")\\\\n    print(f\\\\\\\"Recurring spend (AmountINR): {recurring_spend}\\\\\\\")\\\\n    print(f\\\\\\\"Percent recurring: {percent}\\\\\\\")\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_QWrPuV9h3BUGyiwFa7w5D6nh\", \"content\": \"['TxnID', 'Date', 'Merchant', 'Category', 'PaymentMethod', 'AmountINR', 'CashbackINR', 'NetAmountINR', 'Recurring', 'City', 'Notes']\\n    TxnID        Date         Merchant  ... Recurring       City         Notes\\n0  T-5000  2025-06-06           Zomato  ...        No  Bengaluru  Monthly bill\\n1  T-5001  2025-06-09  Apollo Pharmacy  ...        No     Mumbai  Monthly bill\\n2  T-5002  2025-06-24             Uber  ...        No  Bengaluru           NaN\\n\\n[3 rows x 11 columns]\\nTotal spend: 47990.46\\nRecurring spend: 17421.070000000003\\nPercent recurring: 36.30111067908081\"}, {\"content\": \"{\\n    \\\"answer\\\": 36.30111067908081,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 36.30111067908081,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 36.30111067908081,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_rNKGHhU6QzKWrnDyaarxf1FV\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Personal_Finance_Transactions_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Normalize column names if necessary\\\\ncols = [c.strip() for c in df.columns]\\\\ndf.columns = cols\\\\n\\\\n# Determine the spending metric: use NetAmountINR if available; else AmountINR\\\\namount_col = 'NetAmountINR' if 'NetAmountINR' in df.columns else 'AmountINR'\\\\n\\\\n# Clean Recurring values to consistent Yes/No strings\\\\nrec_col = 'Recurring' if 'Recurring' in df.columns else None\\\\nif rec_col is None:\\\\n    raise SystemExit('Recurring column not found')\\\\n\\\\n# Convert Recurring to lowercase yes/no\\\\ndf[rec_col] = df[rec_col].astype(str).str.strip().str.lower()\\\\n\\\\n# Sum totals\\\\ntotal_spend = df[amount_col].sum()\\\\nrecurring_spend = df.loc[df[rec_col] == 'yes', amount_col].sum()\\\\n\\\\npercent = (recurring_spend / total_spend) * 100 if total_spend != 0 else 0\\\\n\\\\n# Print result\\\\nprint(f\\\\\\\"{percent}\\\\\\\")\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_rNKGHhU6QzKWrnDyaarxf1FV\", \"content\": \"36.30111067908081\"}, {\"content\": \"{\\n    \\\"answer\\\": 36.30111067908081,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 36.30111067908081,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 36.3,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_Q5hRIMLq0VJYcp4YLRXqrQna\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Personal_Finance_Transactions_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    print('Error reading file:', e)\\\\n    raise\\\\n\\\\n# Inspect columns\\\\nprint(df.columns.tolist())\\\\nprint(df.head(3))\\\\n\\\\n# Use NetAmountINR for spending (Amount minus Cashback)\\\\nif 'NetAmountINR' in df.columns and 'Recurring' in df.columns:\\\\n    total_spend = df['NetAmountINR'].sum()\\\\n    recurring_spend = df.loc[df['Recurring'].str.strip().str.lower()=='yes', 'NetAmountINR'].sum()\\\\n    percent = (recurring_spend / total_spend) * 100 if total_spend != 0 else 0\\\\n    print(round(percent, 2))\\\\nelse:\\\\n    print('Required columns missing')\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_Q5hRIMLq0VJYcp4YLRXqrQna\", \"content\": \"['TxnID', 'Date', 'Merchant', 'Category', 'PaymentMethod', 'AmountINR', 'CashbackINR', 'NetAmountINR', 'Recurring', 'City', 'Notes']\\n    TxnID        Date         Merchant  ... Recurring       City         Notes\\n0  T-5000  2025-06-06           Zomato  ...        No  Bengaluru  Monthly bill\\n1  T-5001  2025-06-09  Apollo Pharmacy  ...        No     Mumbai  Monthly bill\\n2  T-5002  2025-06-24             Uber  ...        No  Bengaluru           NaN\\n\\n[3 rows x 11 columns]\\n36.3\"}, {\"content\": \"{\\n    \\\"answer\\\": 36.3,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 36.3,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_0",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png",
+    "diversification_type": "original",
+    "dtype": "pd.Series",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "West": 11625.25,
+            "East": 2617.5,
+            "South": 1209.0,
+            "North": 600.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_cG9M7jRFPUNi4L111CPQfWBn\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\n\\\\n# Read the data (assume the main sheet is the first one)\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure correct column names (strip spaces if any)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Group by Region and sum NetAmount\\\\nregion_rev = df.groupby('Region', as_index=False)['NetAmount'].sum()\\\\n\\\\n# Sort in descending order of revenue\\\\nregion_rev_sorted = region_rev.sort_values('NetAmount', ascending=False)\\\\n\\\\n# Convert to ordered dict (preserve order)\\\\nanswer_dict = {row['Region']: float(row['NetAmount']) for _, row in region_rev_sorted.iterrows()}\\\\n\\\\nprint(answer_dict)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_cG9M7jRFPUNi4L111CPQfWBn\", \"content\": \"{'West': 11625.25, 'East': 2617.5, 'South': 1209.0, 'North': 600.0}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"West\\\": 11625.25,\\n        \\\"East\\\": 2617.5,\\n        \\\"South\\\": 1209.0,\\n        \\\"North\\\": 600.0\\n    },\\n    \\\"dtype\\\": \\\"pd.Series\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"West\\\": 11625.25,\\n        \\\"East\\\": 2617.5,\\n        \\\"South\\\": 1209.0,\\n        \\\"North\\\": 600.0\\n    },\\n    \\\"dtype\\\": \\\"pd.Series\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "West": 11625.25,
+            "East": 2617.5,
+            "South": 1209.0,
+            "North": 600.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_wUX7xnHSEkPJMyCuZEIxZ73z\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\n\\\\n# Read the data (assuming the relevant sheet is the first one)\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure correct column names and types\\\\n# Preview columns\\\\n# print(df.columns)\\\\n\\\\n# Compute total NetAmount by Region\\\\nregion_revenue = df.groupby('Region', as_index=False)['NetAmount'].sum()\\\\n\\\\n# Sort in descending order of revenue\\\\nregion_revenue_sorted = region_revenue.sort_values(by='NetAmount', ascending=False)\\\\n\\\\n# Prepare output as ordered dictionary\\\\nordered_dict = {row['Region']: float(row['NetAmount']) for _, row in region_revenue_sorted.iterrows()}\\\\n\\\\n# Print the ordered dict\\\\nprint(ordered_dict)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_wUX7xnHSEkPJMyCuZEIxZ73z\", \"content\": \"{'West': 11625.25, 'East': 2617.5, 'South': 1209.0, 'North': 600.0}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"West\\\": 11625.25,\\n        \\\"East\\\": 2617.5,\\n        \\\"South\\\": 1209.0,\\n        \\\"North\\\": 600.0\\n    },\\n    \\\"dtype\\\": \\\"pd.Series\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"West\\\": 11625.25,\\n        \\\"East\\\": 2617.5,\\n        \\\"South\\\": 1209.0,\\n        \\\"North\\\": 600.0\\n    },\\n    \\\"dtype\\\": \\\"pd.Series\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "West": 11625.25,
+            "East": 2617.5,
+            "South": 1209.0,
+            "North": 600.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_gCLJBdnc7ncp6QlMz2SmAW0Q\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\nimport json\\\\nimport os\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\nassert os.path.exists(file_path), f\\\\\\\"File not found: {file_path}\\\\\\\"\\\\n\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure expected columns exist\\\\nexpected_cols = ['Region', 'NetAmount']\\\\nmissing = [c for c in expected_cols if c not in df.columns]\\\\nif missing:\\\\n    raise ValueError(f\\\\\\\"Missing columns in dataset: {missing}\\\\\\\")\\\\n\\\\n# Group by Region and sum NetAmount\\\\nregion_revenue = df.groupby('Region', as_index=False)['NetAmount'].sum()\\\\n\\\\n# Sort descending by revenue\\\\nregion_revenue = region_revenue.sort_values('NetAmount', ascending=False)\\\\n\\\\n# Convert to ordered dict for output\\\\nordered_dict = {row['Region']: float(row['NetAmount']) for _, row in region_revenue.iterrows()}\\\\n\\\\nprint(json.dumps(ordered_dict, ensure_ascii=False))\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_gCLJBdnc7ncp6QlMz2SmAW0Q\", \"content\": \"{\\\"West\\\": 11625.25, \\\"East\\\": 2617.5, \\\"South\\\": 1209.0, \\\"North\\\": 600.0}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"West\\\": 11625.25,\\n        \\\"East\\\": 2617.5,\\n        \\\"South\\\": 1209.0,\\n        \\\"North\\\": 600.0\\n    },\\n    \\\"dtype\\\": \\\"pd.Series\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"West\\\": 11625.25,\\n        \\\"East\\\": 2617.5,\\n        \\\"South\\\": 1209.0,\\n        \\\"North\\\": 600.0\\n    },\\n    \\\"dtype\\\": \\\"pd.Series\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_1",
+    "query": "Which product sold the most units overall across all orders? (mention only the product name)",
+    "answer": "Coffee Beans",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png",
+    "diversification_type": "original",
+    "dtype": "str",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Coffee Beans",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_7jRaahkagFZBe4z9MR9z1pOl\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\nimport sys\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    print('ERROR', e)\\\\n    sys.exit(0)\\\\n\\\\n# Inspect columns\\\\n# print(df.columns)\\\\n\\\\n# Aggregate total quantity by ProductName\\\\nqty_by_product = df.groupby('ProductName', as_index=False)['Quantity'].sum()\\\\n\\\\n# Find product with max quantity\\\\nmax_row = qty_by_product.loc[qty_by_product['Quantity'].idxmax()]\\\\nprint(max_row['ProductName'])\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_7jRaahkagFZBe4z9MR9z1pOl\", \"content\": \"Coffee Beans\"}, {\"content\": \"{\\n    \\\"answer\\\": \\\"Coffee Beans\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": \\\"Coffee Beans\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": "Coffee Beans",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_amCtWhBfDam1cR3stLIYxx7V\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure column names are clean\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Aggregate quantities by ProductName\\\\nqty_by_product = df.groupby('ProductName', as_index=False)['Quantity'].sum()\\\\n\\\\n# Find the product with maximum quantity sold\\\\nmax_row = qty_by_product.loc[qty_by_product['Quantity'].idxmax()]\\\\n\\\\nprint(max_row['ProductName'])\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_amCtWhBfDam1cR3stLIYxx7V\", \"content\": \"Coffee Beans\"}, {\"content\": \"{\\n    \\\"answer\\\": \\\"Coffee Beans\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": \\\"Coffee Beans\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": "Coffee Beans",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_662ZcRAJAPS0EiSn6kbxWX8l\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the dataset\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure correct column names (strip spaces if any)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Aggregate total quantity by ProductName\\\\nqty_by_product = df.groupby('ProductName', as_index=False)['Quantity'].sum()\\\\n\\\\n# Find the product with the maximum total units sold\\\\nmax_row = qty_by_product.loc[qty_by_product['Quantity'].idxmax()]\\\\nproduct_name = max_row['ProductName']\\\\n\\\\nprint(product_name)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_662ZcRAJAPS0EiSn6kbxWX8l\", \"content\": \"Coffee Beans\"}, {\"content\": \"{\\n    \\\"answer\\\": \\\"Coffee Beans\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": \\\"Coffee Beans\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_2",
+    "query": "What is the average discount rate (rounded to 3 decimals) applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "{'Express': 0.059, 'Standard': 0.058}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Express": 0.059,
+            "Standard": 0.058
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_rRTdA5J09YQnpyuOgqfvZHGA\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the dataset\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure proper column names (strip spaces if any)\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Filter for Express and Standard shipping methods\\\\nmethods = ['Express', 'Standard']\\\\nfiltered = df[df['ShippingMethod'].isin(methods)]\\\\n\\\\n# Compute average discount rate per method\\\\navg_rates = filtered.groupby('ShippingMethod')['DiscountRate'].mean()\\\\n\\\\n# Round to 3 decimals and convert to dict\\\\nresult = {method: round(float(avg_rates.get(method, float('nan'))), 3) for method in methods}\\\\n\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_rRTdA5J09YQnpyuOgqfvZHGA\", \"content\": \"{'Express': 0.059, 'Standard': 0.058}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Express\\\": 0.059,\\n        \\\"Standard\\\": 0.058\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Express\\\": 0.059,\\n        \\\"Standard\\\": 0.058\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Express": 0.059,
+            "Standard": 0.058
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_KIy5AQP2DhNqxLQ3VIRw9HMQ\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\nimport json\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Try reading first sheet explicitly\\\\n    df = pd.read_excel(file_path, sheet_name=0)\\\\n\\\\n# Ensure correct column names\\\\n# Compute average discount rate per ShippingMethod\\\\navg_discount = df.groupby('ShippingMethod')['DiscountRate'].mean().round(3)\\\\n\\\\n# Extract Express and Standard if present\\\\nresult = {}\\\\nfor method in ['Express', 'Standard']:\\\\n    if method in avg_discount.index:\\\\n        # Convert to float for JSON serialization\\\\n        result[method] = float(avg_discount.loc[method])\\\\n\\\\nprint(json.dumps(result))\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_KIy5AQP2DhNqxLQ3VIRw9HMQ\", \"content\": \"{\\\"Express\\\": 0.059, \\\"Standard\\\": 0.058}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Express\\\": 0.059,\\n        \\\"Standard\\\": 0.058\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Express\\\": 0.059,\\n        \\\"Standard\\\": 0.058\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Express": 0.059,
+            "Standard": 0.058
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_gweVPWtWYpFn59eSfskbv0ol\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Sometimes the first sheet needs specification\\\\n    xls = pd.ExcelFile(file_path)\\\\n    df = pd.read_excel(xls, xls.sheet_names[0])\\\\n\\\\n# Inspect columns\\\\nprint(df.columns.tolist())\\\\nprint(df.head(3))\\\\n\\\\n# Ensure DiscountRate and ShippingMethod columns exist and are numeric\\\\n# Compute average discount rate by ShippingMethod for Express and Standard\\\\nif 'DiscountRate' in df.columns and 'ShippingMethod' in df.columns:\\\\n    # Convert DiscountRate to numeric\\\\n    df['DiscountRate'] = pd.to_numeric(df['DiscountRate'], errors='coerce')\\\\n    avg_rates = df.groupby('ShippingMethod')['DiscountRate'].mean()\\\\n    express_avg = avg_rates.get('Express', float('nan'))\\\\n    standard_avg = avg_rates.get('Standard', float('nan'))\\\\n    print('Express average:', express_avg)\\\\n    print('Standard average:', standard_avg)\\\\n    # Round to 3 decimals\\\\n    print('Express (rounded 3):', round(express_avg, 3) if pd.notnull(express_avg) else None)\\\\n    print('Standard (rounded 3):', round(standard_avg, 3) if pd.notnull(standard_avg) else None)\\\\nelse:\\\\n    print('Required columns not found. Columns:', df.columns.tolist())\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_gweVPWtWYpFn59eSfskbv0ol\", \"content\": \"['OrderID', 'OrderDate', 'CustomerID', 'Region', 'ProductID', 'ProductName', 'Category', 'Quantity', 'UnitPrice', 'DiscountRate', 'GrossAmount', 'NetAmount', 'ShippingMethod', 'ShipDate']\\n      OrderID   OrderDate CustomerID  ... NetAmount ShippingMethod    ShipDate\\n0  SO-2025001  2025-07-02      C1001  ...      67.5        Express  2025-07-03\\n1  SO-2025002  2025-07-03      C1002  ...      27.0       Standard  2025-07-07\\n2  SO-2025003  2025-07-04      C1003  ...     306.0        Express  2025-07-05\\n\\n[3 rows x 14 columns]\\nExpress average: 0.05909090909090909\\nStandard average: 0.057692307692307696\\nExpress (rounded 3): 0.059\\nStandard (rounded 3): 0.058\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"Express\\\": 0.059,\\n        \\\"Standard\\\": 0.058\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"Express\\\": 0.059,\\n        \\\"Standard\\\": 0.058\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_3",
+    "query": "What percentage of orders were delivered within two days of the order date?",
+    "answer": "62.5",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original.png",
+    "diversification_type": "original",
+    "dtype": "float",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 62.5,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_h2JPlqZF6KrsyO9vLe1HmcG2\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\ntry:\\\\n    xls = pd.ExcelFile(file_path)\\\\n    # Use the first sheet by default\\\\n    sheet_name = xls.sheet_names[0]\\\\n    df = pd.read_excel(xls, sheet_name=sheet_name)\\\\nexcept Exception as e:\\\\n    print('Error loading Excel file:', e)\\\\n    raise\\\\n\\\\n# Inspect columns relevant to dates\\\\n# Ensure columns are datetime\\\\nfor col in ['OrderDate', 'ShipDate']:\\\\n    if col in df.columns:\\\\n        df[col] = pd.to_datetime(df[col])\\\\n\\\\n# Calculate days between order and ship\\\\nif 'OrderDate' in df.columns and 'ShipDate' in df.columns:\\\\n    df['DaysToShip'] = (df['ShipDate'] - df['OrderDate']).dt.days\\\\nelse:\\\\n    raise ValueError('Required columns OrderDate or ShipDate not found.')\\\\n\\\\n# Define within two days: <= 2 days\\\\nwithin_two_days = df['DaysToShip'] <= 2\\\\n\\\\n# Compute percentage\\\\ntotal_orders = len(df)\\\\nwithin_count = within_two_days.sum()\\\\npercentage = (within_count / total_orders) * 100 if total_orders > 0 else 0\\\\n\\\\n# Print results for verification\\\\nprint('Total orders:', total_orders)\\\\nprint('Orders within two days:', within_count)\\\\nprint('Percentage:', percentage)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_h2JPlqZF6KrsyO9vLe1HmcG2\", \"content\": \"Total orders: 24\\nOrders within two days: 15\\nPercentage: 62.5\"}, {\"content\": \"{\\n    \\\"answer\\\": 62.5,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 62.5,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 62.5,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_DbCRVsDJO1qNsV37OQLKlMPm\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    print('Error loading file:', e)\\\\n    raise\\\\n\\\\n# Display columns to verify\\\\nprint('Columns:', list(df.columns))\\\\nprint('Shape:', df.shape)\\\\nprint(df.head(10))\\\\n\\\\n# Ensure date columns parsed\\\\nfor col in ['OrderDate','ShipDate','DeliveryDate']:\\\\n    if col in df.columns:\\\\n        df[col] = pd.to_datetime(df[col])\\\\n\\\\n# Determine delivered within two days: prefer DeliveryDate if exists, else ShipDate\\\\ndate_col = 'DeliveryDate' if 'DeliveryDate' in df.columns else 'ShipDate'\\\\n\\\\n# Compute difference in days\\\\ndiff_days = (df[date_col] - df['OrderDate']).dt.days\\\\n\\\\n# Count orders within two days (<=2)\\\\nwithin_two = (diff_days <= 2).sum()\\\\n\\\\n# Percentage\\\\npercentage = (within_two / len(df)) * 100\\\\nprint('Delivered within two days:', within_two, 'out of', len(df), '=>', percentage)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_DbCRVsDJO1qNsV37OQLKlMPm\", \"content\": \"Columns: ['OrderID', 'OrderDate', 'CustomerID', 'Region', 'ProductID', 'ProductName', 'Category', 'Quantity', 'UnitPrice', 'DiscountRate', 'GrossAmount', 'NetAmount', 'ShippingMethod', 'ShipDate']\\nShape: (24, 14)\\n      OrderID   OrderDate CustomerID  ... NetAmount ShippingMethod    ShipDate\\n0  SO-2025001  2025-07-02      C1001  ...      67.5        Express  2025-07-03\\n1  SO-2025002  2025-07-03      C1002  ...      27.0       Standard  2025-07-07\\n2  SO-2025003  2025-07-04      C1003  ...     306.0        Express  2025-07-05\\n3  SO-2025004  2025-07-05      C1004  ...     720.0        Express  2025-07-06\\n4  SO-2025005  2025-07-06      C1005  ...      85.5        Express  2025-07-07\\n5  SO-2025006  2025-07-07      C1006  ...      75.0        Express  2025-07-08\\n6  SO-2025007  2025-07-08      C1007  ...      24.0       Standard  2025-07-12\\n7  SO-2025008  2025-07-09      C1008  ...     204.0       Standard  2025-07-12\\n8  SO-2025009  2025-07-10      C1009  ...     432.0        Express  2025-07-11\\n9  SO-2025010  2025-07-11      C1010  ...    2550.0       Standard  2025-07-13\\n\\n[10 rows x 14 columns]\\nDelivered within two days: 15 out of 24 => 62.5\"}, {\"content\": \"{\\n    \\\"answer\\\": 62.5,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 62.5,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 62.5,
+          "dtype": "float"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_3aWHk1rsYTpmvuVj3Y9QGgiS\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\nfrom datetime import timedelta\\\\n\\\\n# Load the dataset\\\\nfile_path = 'Retail_Sales_Orders_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure date columns are datetime\\\\ndf['OrderDate'] = pd.to_datetime(df['OrderDate'])\\\\ndf['ShipDate'] = pd.to_datetime(df['ShipDate'])\\\\n\\\\n# Calculate whether shipped within 2 days (including same day and up to 2 days after)\\\\nwithin_2_days = (df['ShipDate'] - df['OrderDate']).dt.days <= 2\\\\n\\\\n# Compute percentage\\\\npercentage = within_2_days.mean() * 100\\\\n\\\\n# Print the numeric percentage value\\\\nprint(f\\\\\\\"{percentage}\\\\\\\")\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_3aWHk1rsYTpmvuVj3Y9QGgiS\", \"content\": \"62.5\"}, {\"content\": \"{\\n    \\\"answer\\\": 62.5,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 62.5,\\n    \\\"dtype\\\": \\\"float\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_0",
+    "query": "What is the average total score for each course with a 100% pass rate?",
+    "answer": "{\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "CV": 113.0,
+            "DBMS": 113.57,
+            "DSA": 106.25,
+            "ML": 118.5,
+            "NLP": 109.67,
+            "OS": 114.8
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_UZyej4RjCVeb7RDS1hEYdk8k\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\nimport json\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Normalize column names to remove any hidden spaces or special characters\\\\ndf.columns = [str(c).strip() for c in df.columns]\\\\n\\\\n# Identify columns\\\\n# Expect columns like 'Course', 'Pass', 'Total(140)'\\\\ncourse_col = None\\\\npass_col = None\\\\ntotal_col = None\\\\nfor c in df.columns:\\\\n    lc = c.lower()\\\\n    if lc.startswith('course'):\\\\n        course_col = c\\\\n    elif 'pass' in lc:\\\\n        pass_col = c\\\\n    elif 'total' in lc:\\\\n        total_col = c\\\\n\\\\nif course_col is None or pass_col is None or total_col is None:\\\\n    raise ValueError({'columns': df.columns.tolist(), 'msg': 'Required columns not found'})\\\\n\\\\n# Ensure Pass is boolean\\\\n# Some files may store TRUE/FALSE as strings\\\\npass_series = df[pass_col]\\\\nif pass_series.dtype == object:\\\\n    df[pass_col] = pass_series.astype(str).str.strip().str.lower().isin(['true', '1', 'yes'])\\\\n\\\\n# Compute pass rate per course\\\\npass_rate = df.groupby(course_col)[pass_col].mean()  # mean of booleans gives rate\\\\n\\\\n# Filter courses with 100% pass rate\\\\ncourses_100 = pass_rate[pass_rate == 1.0].index\\\\n\\\\n# Compute average total score for those courses\\\\navg_totals = df[df[course_col].isin(courses_100)].groupby(course_col)[total_col].mean().round(2)\\\\n\\\\n# Convert to dict for output\\\\nresult = avg_totals.to_dict()\\\\n\\\\nprint(json.dumps({'answer': result, 'dtype': 'dict'}))\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_UZyej4RjCVeb7RDS1hEYdk8k\", \"content\": \"{\\\"answer\\\": {\\\"CV\\\": 113.0, \\\"DBMS\\\": 113.57, \\\"DSA\\\": 106.25, \\\"ML\\\": 118.5, \\\"NLP\\\": 109.67, \\\"OS\\\": 114.8}, \\\"dtype\\\": \\\"dict\\\"}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"CV\\\": 113.0,\\n        \\\"DBMS\\\": 113.57,\\n        \\\"DSA\\\": 106.25,\\n        \\\"ML\\\": 118.5,\\n        \\\"NLP\\\": 109.67,\\n        \\\"OS\\\": 114.8\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"CV\\\": 113.0,\\n        \\\"DBMS\\\": 113.57,\\n        \\\"DSA\\\": 106.25,\\n        \\\"ML\\\": 118.5,\\n        \\\"NLP\\\": 109.67,\\n        \\\"OS\\\": 114.8\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "CV": 113.0,
+            "DBMS": 113.57,
+            "DSA": 106.25,
+            "ML": 118.5,
+            "NLP": 109.67,
+            "OS": 114.8
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_7lvja4QtlmnHsbtL7ySQb1qs\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Ensure the Pass column is boolean-like (TRUE/FALSE strings -> bool)\\\\nif df['Pass'].dtype == object:\\\\n    df['Pass'] = df['Pass'].astype(str).str.strip().str.upper().map({'TRUE': True, 'FALSE': False})\\\\n\\\\n# Compute pass rate per course\\\\npass_rate = df.groupby('Course')['Pass'].mean()  # mean of booleans gives proportion True\\\\n\\\\n# Filter courses with 100% pass rate\\\\ncourses_100 = pass_rate[pass_rate == 1.0].index\\\\n\\\\n# Compute average total score for these courses\\\\navg_total_by_course = df[df['Course'].isin(courses_100)].groupby('Course')['Total(140)'].mean().round(2)\\\\n\\\\n# Convert to dictionary for output\\\\nresult = avg_total_by_course.to_dict()\\\\n\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_7lvja4QtlmnHsbtL7ySQb1qs\", \"content\": \"{'CV': 113.0, 'DBMS': 113.57, 'DSA': 106.25, 'ML': 118.5, 'NLP': 109.67, 'OS': 114.8}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"CV\\\": 113.0,\\n        \\\"DBMS\\\": 113.57,\\n        \\\"DSA\\\": 106.25,\\n        \\\"ML\\\": 118.5,\\n        \\\"NLP\\\": 109.67,\\n        \\\"OS\\\": 114.8\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"CV\\\": 113.0,\\n        \\\"DBMS\\\": 113.57,\\n        \\\"DSA\\\": 106.25,\\n        \\\"ML\\\": 118.5,\\n        \\\"NLP\\\": 109.67,\\n        \\\"OS\\\": 114.8\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "CV": 113.0,
+            "DBMS": 113.57142857142857,
+            "DSA": 106.25,
+            "ML": 118.5,
+            "NLP": 109.66666666666667,
+            "OS": 114.8
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_rimyZvrIUpMWH72V3sWci5vx\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Inspect columns (for debugging)\\\\nprint(df.columns.tolist())\\\\nprint(df.head(3))\\\\n\\\\n# Normalize column names for easier use\\\\ncols = {c: c for c in df.columns}\\\\n# Identify likely column names\\\\n# Pass column could be 'Pass' (boolean/str), Total column might be 'Total(140)' or 'Total'\\\\npass_col = None\\\\ntotal_col = None\\\\ncourse_col = None\\\\nfor c in df.columns:\\\\n    lc = str(c).lower()\\\\n    if 'pass' in lc:\\\\n        pass_col = c\\\\n    if 'total' in lc:\\\\n        total_col = c\\\\n    if 'course' in lc:\\\\n        course_col = c\\\\n\\\\n# Ensure detected columns\\\\nif pass_col is None or total_col is None or course_col is None:\\\\n    raise ValueError(f\\\\\\\"Could not detect necessary columns: pass={pass_col}, total={total_col}, course={course_col}\\\\\\\")\\\\n\\\\n# Standardize pass values to boolean\\\\npass_series = df[pass_col]\\\\n# Convert to boolean: treat TRUE/True/1/'Yes' as True; FALSE/False/0/'No' as False\\\\nif pass_series.dtype == bool:\\\\n    pass_bool = pass_series\\\\nelse:\\\\n    pass_bool = pass_series.astype(str).str.strip().str.lower().isin(['true','1','yes','y'])\\\\n\\\\n# Compute pass rate per course\\\\ncourse_group = df.groupby(course_col)\\\\npass_rate = course_group.apply(lambda g: (pass_bool.loc[g.index].mean()) )\\\\n\\\\n# Select courses with 100% pass rate\\\\ncourses_100 = pass_rate[pass_rate == 1.0].index.tolist()\\\\n\\\\n# Compute average total score for those courses\\\\navg_totals = df[df[course_col].isin(courses_100)].groupby(course_col)[total_col].mean().to_dict()\\\\n\\\\nprint('Courses with 100% pass rate:', courses_100)\\\\nprint('Average total scores:', avg_totals)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_rimyZvrIUpMWH72V3sWci5vx\", \"content\": \"/workspace/exec_code_ce811a3116db469e8e6c27df015f2319e863151098f5309e800673c8fa54258b.py:41: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.\\n  pass_rate = course_group.apply(lambda g: (pass_bool.loc[g.index].mean()) )\\n['RecordID', 'StudentID', 'Semester', 'Course', 'Professor', 'Midterm(50)', 'Final(50)', 'Project(25)', 'Quizzes(15)', 'Total(140)', 'LetterGrade', 'Pass']\\n  RecordID StudentID     Semester  ... Total(140) LetterGrade  Pass\\n0    G-001      S100  Spring-2025  ...        113           A  True\\n1    G-002      S101  Spring-2025  ...        116           A  True\\n2    G-003      S102  Spring-2025  ...        122           A  True\\n\\n[3 rows x 12 columns]\\nCourses with 100% pass rate: ['CV', 'DBMS', 'DSA', 'ML', 'NLP', 'OS']\\nAverage total scores: {'CV': 113.0, 'DBMS': 113.57142857142857, 'DSA': 106.25, 'ML': 118.5, 'NLP': 109.66666666666667, 'OS': 114.8}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"CV\\\": 113.0,\\n        \\\"DBMS\\\": 113.57142857142857,\\n        \\\"DSA\\\": 106.25,\\n        \\\"ML\\\": 118.5,\\n        \\\"NLP\\\": 109.66666666666667,\\n        \\\"OS\\\": 114.8\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"CV\\\": 113.0,\\n        \\\"DBMS\\\": 113.57142857142857,\\n        \\\"DSA\\\": 106.25,\\n        \\\"ML\\\": 118.5,\\n        \\\"NLP\\\": 109.66666666666667,\\n        \\\"OS\\\": 114.8\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_1",
+    "query": "How many students received grade A?",
+    "answer": "22",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_IASWHyG9OfCfyJnfqVwwiHl8\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Inspect column names to ensure correct reference\\\\n# print(df.columns)\\\\n\\\\n# Count students with LetterGrade 'A'\\\\ncount_a = (df['LetterGrade'] == 'A').sum()\\\\n\\\\nprint(count_a)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_IASWHyG9OfCfyJnfqVwwiHl8\", \"content\": \"22\"}, {\"content\": \"{\\n    \\\"answer\\\": 22,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 22,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_EyFZWrhJbhy67JlwEsNE05k3\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\nimport re\\\\n\\\\n# Load the Excel file\\\\npath = 'University_Grades_original.xlsx'\\\\ndf = pd.read_excel(path)\\\\n\\\\n# Helper to find column robustly\\\\ndef normalize(s: str) -> str:\\\\n    return re.sub(r'[^a-z0-9]+', '', s.lower())\\\\n\\\\ndef find_col(df, target: str):\\\\n    tgt = normalize(target)\\\\n    for col in df.columns:\\\\n        if normalize(str(col)) == tgt:\\\\n            return col\\\\n    # fallback: try contains\\\\n    for col in df.columns:\\\\n        if tgt in normalize(str(col)):\\\\n            return col\\\\n    raise KeyError(f\\\\\\\"Column '{target}' not found. Available: {list(df.columns)}\\\\\\\")\\\\n\\\\ncol = find_col(df, 'LetterGrade')\\\\ncount_A = df[col].astype(str).str.strip().str.upper().eq('A').sum()\\\\nprint(count_A)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_EyFZWrhJbhy67JlwEsNE05k3\", \"content\": \"22\"}, {\"content\": \"{\\n    \\\"answer\\\": 22,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 22,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_Bexa4si3wLjvBM8BIBRtxZYf\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Try reading with openpyxl engine explicitly\\\\n    df = pd.read_excel(file_path, engine='openpyxl')\\\\n\\\\n# Inspect columns to ensure correct column name for letter grade\\\\n# print(df.columns)\\\\n\\\\n# Normalize column names to handle any subtle differences\\\\ncols = {c: c.strip() for c in df.columns}\\\\ndf.rename(columns=cols, inplace=True)\\\\n\\\\n# Determine possible letter grade column variations\\\\npossible_cols = [c for c in df.columns if 'Letter' in c and 'Grade' in c or c.lower()=='lettergrade']\\\\n\\\\nif possible_cols:\\\\n    lg_col = possible_cols[0]\\\\nelse:\\\\n    lg_col = 'LetterGrade'\\\\n\\\\n# Count students with grade 'A'\\\\ncount_A = int((df[lg_col].astype(str).str.strip() == 'A').sum())\\\\n\\\\nprint(count_A)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_Bexa4si3wLjvBM8BIBRtxZYf\", \"content\": \"22\"}, {\"content\": \"{\\n    \\\"answer\\\": 22,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": 22,\\n    \\\"dtype\\\": \\\"int\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_2",
+    "query": "Which professor (only name) achieved the highest average project score?",
+    "answer": "Prof. Mehta",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.png",
+    "diversification_type": "original",
+    "dtype": "str",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Prof. Mehta",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_soC74ZZOttoHc0svL2zjJEN1\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Inspect columns\\\\n# print(df.columns)\\\\n\\\\n# Compute average project score by professor\\\\nproject_col = [c for c in df.columns if 'Project' in c][0]\\\\nprof_col = [c for c in df.columns if 'Professor' in c][0]\\\\n\\\\navg_by_prof = df.groupby(prof_col)[project_col].mean().sort_values(ascending=False)\\\\n\\\\n# Get the professor with highest average project score\\\\ntop_professor = avg_by_prof.idxmax()\\\\n\\\\nprint(top_professor)\\\\nprint(avg_by_prof)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_soC74ZZOttoHc0svL2zjJEN1\", \"content\": \"Prof. Mehta\\nProfessor\\nProf. Mehta       21.300000\\nProf. Krishnan    20.333333\\nProf. Banerjee    19.000000\\nName: Project(25), dtype: float64\"}, {\"content\": \"{\\n    \\\"answer\\\": \\\"Prof. Mehta\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": \\\"Prof. Mehta\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": "Mehta",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_o7eUmnuPkPjLVxA57KyDLVTk\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ntry:\\\\n    df = pd.read_excel(file_path)\\\\nexcept Exception as e:\\\\n    # Sometimes sheet names or engine might cause issues; try openpyxl explicitly\\\\n    df = pd.read_excel(file_path, engine='openpyxl')\\\\n\\\\n# Inspect columns to find the project column name\\\\ncols = list(df.columns)\\\\n# Try to locate column that contains 'Project'\\\\nproj_col = None\\\\nfor c in cols:\\\\n    if 'Project' in str(c):\\\\n        proj_col = c\\\\n        break\\\\n\\\\nif proj_col is None:\\\\n    raise ValueError(f\\\\\\\"Project column not found in columns: {cols}\\\\\\\")\\\\n\\\\n# Clean Professor names: remove prefixes like 'Prof. ' to get only name\\\\nprof_col = None\\\\nfor c in cols:\\\\n    if 'Professor' in str(c):\\\\n        prof_col = c\\\\n        break\\\\nif prof_col is None:\\\\n    raise ValueError('Professor column not found')\\\\n\\\\n# Extract only the name part after 'Prof. '\\\\nprof_names = df[prof_col].astype(str).str.replace(r'^Prof\\\\\\\\.\\\\\\\\s*', '', regex=True)\\\\n\\\\n# Compute the average project score by professor\\\\navg_by_prof = df.groupby(prof_names)[proj_col].mean().sort_values(ascending=False)\\\\n\\\\n# Get the top professor name\\\\ntop_professor = avg_by_prof.index[0]\\\\nprint(top_professor)\\\\nprint(avg_by_prof.to_string())\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_o7eUmnuPkPjLVxA57KyDLVTk\", \"content\": \"Mehta\\nProfessor\\nMehta       21.300000\\nKrishnan    20.333333\\nBanerjee    19.000000\"}, {\"content\": \"{\\n    \\\"answer\\\": \\\"Mehta\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": \\\"Mehta\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\"}",
+        "eval": false
+      },
+      {
+        "agent_response": {
+          "answer": "Prof. Mehta",
+          "dtype": "str"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_T5Hvn51qsy4o0hW7Y5wHsfGV\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Inspect columns to ensure correct names\\\\n# print(df.columns)\\\\n\\\\n# Compute average project score by professor\\\\nproject_col = [c for c in df.columns if 'Project' in c][0]\\\\nprof_col = [c for c in df.columns if 'Professor' in c][0]\\\\n\\\\navg_by_prof = df.groupby(prof_col)[project_col].mean().sort_values(ascending=False)\\\\n\\\\n# Get professor with highest average project score\\\\ntop_professor = avg_by_prof.index[0]\\\\nprint(top_professor)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_T5Hvn51qsy4o0hW7Y5wHsfGV\", \"content\": \"Prof. Mehta\"}, {\"content\": \"{\\n    \\\"answer\\\": \\\"Prof. Mehta\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": \\\"Prof. Mehta\\\",\\n    \\\"dtype\\\": \\\"str\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_3",
+    "query": "Among all students, which student achieved the highest overall score, and what was their total marks along with the corresponding letter grade? Mention as a dictionary with keys 'StudentID', 'Marks', and 'Grade'.",
+    "answer": "{\"StudentID\": \"S117\", \"Marks\": 125.0, \"Grade\": \"A\"}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Normal Diversifications/University_Grades/University_Grades_original.png",
+    "diversification_type": "original",
+    "dtype": "dict",
+    "type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_vnIsxzuL0mrmPBLm5I5KJYio\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Inspect columns to ensure correct names\\\\ncols = list(df.columns)\\\\n\\\\n# Find the column names that match Total and LetterGrade\\\\n# The screenshot suggests columns like 'Total(140)' and 'LetterGrade'\\\\n# We'll try to access them directly; if not present, attempt fallback by searching\\\\n\\\\ndef find_col(name_candidates):\\\\n    for c in name_candidates:\\\\n        if c in df.columns:\\\\n            return c\\\\n    # fallback: case-insensitive contains\\\\n    for c in df.columns:\\\\n        if 'total' in c.lower():\\\\n            return c\\\\n    return None\\\\n\\\\ncol_total = find_col(['Total(140)', 'Total'])\\\\ncol_grade = find_col(['LetterGrade', 'Grade'])\\\\ncol_student = find_col(['StudentID','Student Id','Student ID'])\\\\n\\\\n# Compute highest total row\\\\nmax_idx = df[col_total].idxmax()\\\\nrow = df.loc[max_idx, [col_student, col_total, col_grade]]\\\\n\\\\nresult = {\\\\n    'StudentID': str(row[col_student]),\\\\n    'Marks': int(row[col_total]),\\\\n    'Grade': str(row[col_grade])\\\\n}\\\\n\\\\nprint(result)\\\\n\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_vnIsxzuL0mrmPBLm5I5KJYio\", \"content\": \"{'StudentID': 'S117', 'Marks': 125, 'Grade': 'A'}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"StudentID\\\": \\\"S117\\\",\\n        \\\"Marks\\\": 125,\\n        \\\"Grade\\\": \\\"A\\\"\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"StudentID\\\": \\\"S117\\\",\\n        \\\"Marks\\\": 125,\\n        \\\"Grade\\\": \\\"A\\\"\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_ufqFqf7iFX9dcrst4aN60VqD\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Inspect columns (for safety)\\\\n# print(df.columns.tolist())\\\\n\\\\n# Identify the column names for total and other required fields\\\\n# Try common variants for the total column\\\\npossible_total_cols = [\\\\n    'Total(140)', 'Total', 'Total Score', 'TotalMarks', 'Total Marks'\\\\n]\\\\n\\\\ntotal_col = None\\\\nfor col in possible_total_cols:\\\\n    if col in df.columns:\\\\n        total_col = col\\\\n        break\\\\n\\\\nif total_col is None:\\\\n    # Try to find a column that contains 'Total' in its name\\\\n    for col in df.columns:\\\\n        if 'Total' in str(col):\\\\n            total_col = col\\\\n            break\\\\n\\\\nif total_col is None:\\\\n    raise ValueError('Total column not found.')\\\\n\\\\n# Find the row with the maximum total\\\\nidx_max = df[total_col].idxmax()\\\\nrow = df.loc[idx_max]\\\\n\\\\nstudent_id = row['StudentID'] if 'StudentID' in df.columns else row.get('Student ID', None)\\\\nmarks = int(row[total_col])\\\\ngrade = row['LetterGrade'] if 'LetterGrade' in df.columns else row.get('Grade', None)\\\\n\\\\nresult = {\\\\n    'StudentID': student_id,\\\\n    'Marks': marks,\\\\n    'Grade': grade\\\\n}\\\\n\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_ufqFqf7iFX9dcrst4aN60VqD\", \"content\": \"{'StudentID': 'S117', 'Marks': 125, 'Grade': 'A'}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"StudentID\\\": \\\"S117\\\",\\n        \\\"Marks\\\": 125,\\n        \\\"Grade\\\": \\\"A\\\"\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"StudentID\\\": \\\"S117\\\",\\n        \\\"Marks\\\": 125,\\n        \\\"Grade\\\": \\\"A\\\"\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "{\"monologue\": [{\"content\": \"\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": [{\"id\": \"call_ZaNtIaRC6dTT0SepZ3RDKJi4\", \"function\": {\"arguments\": \"{\\\"code_str\\\":\\\"import pandas as pd\\\\n\\\\n# Load the Excel file\\\\nfile_path = 'University_Grades_original.xlsx'\\\\ndf = pd.read_excel(file_path)\\\\n\\\\n# Inspect columns (for debugging in case of unexpected names)\\\\n# print(df.columns.tolist())\\\\n\\\\n# Find the row with the maximum total marks\\\\n# The total column is expected to be named 'Total(140)'\\\\nif 'Total(140)' in df.columns:\\\\n    total_col = 'Total(140)'\\\\nelse:\\\\n    # Try alternative naming if needed\\\\n    # Find a column that contains 'Total' in the name\\\\n    candidates = [c for c in df.columns if 'Total' in str(c)]\\\\n    if candidates:\\\\n        total_col = candidates[0]\\\\n    else:\\\\n        raise ValueError('Total column not found')\\\\n\\\\nidx = df[total_col].idxmax()\\\\nrow = df.loc[idx]\\\\n\\\\nresult = {\\\\n    'StudentID': str(row['StudentID']),\\\\n    'Marks': int(row[total_col]),\\\\n    'Grade': str(row['LetterGrade'])\\\\n}\\\\n\\\\nprint(result)\\\"}\", \"name\": \"CodeTool\"}, \"type\": \"function\"}]}, {\"role\": \"tool\", \"tool_call_id\": \"call_ZaNtIaRC6dTT0SepZ3RDKJi4\", \"content\": \"{'StudentID': 'S117', 'Marks': 125, 'Grade': 'A'}\"}, {\"content\": \"{\\n    \\\"answer\\\": {\\n        \\\"StudentID\\\": \\\"S117\\\",\\n        \\\"Marks\\\": 125,\\n        \\\"Grade\\\": \\\"A\\\"\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\", \"role\": \"assistant\", \"attachments\": [], \"tool_calls\": null}], \"response\": \"{\\n    \\\"answer\\\": {\\n        \\\"StudentID\\\": \\\"S117\\\",\\n        \\\"Marks\\\": 125,\\n        \\\"Grade\\\": \\\"A\\\"\\n    },\\n    \\\"dtype\\\": \\\"dict\\\"\\n}\"}",
+        "eval": true
+      }
+    ]
+  }
+]
