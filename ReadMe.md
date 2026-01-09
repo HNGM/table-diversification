@@ -167,11 +167,14 @@ Format: `{dataset}_{datamode}_{promptmode}_{ingestmode}_{model}.json`
 If you use this dataset or code in your research, please cite:
 
 ```bibtex
-@article{table-diversification2026,
-  title={Table Diversification: Evaluating LLM Robustness to Tabular Data Distortions},
-  author={[Your Name]},
-  journal={[Conference/Journal]},
-  year={2026}
+@misc{dutta2026empiricalinvestigationrobustnesslarge,
+      title={An Empirical Investigation of Robustness in Large Language Models under Tabular Distortions}, 
+      author={Avik Dutta and Harshit Nigam and Hosein Hasanbeig and Arjun Radhakrishna and Sumit Gulwani},
+      year={2026},
+      eprint={2601.05009},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2601.05009}, 
 }
 ```
 
