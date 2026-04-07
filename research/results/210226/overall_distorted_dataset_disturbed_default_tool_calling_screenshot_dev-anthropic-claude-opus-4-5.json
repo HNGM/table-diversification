@@ -1,0 +1,2325 @@
+[
+  {
+    "index": "Clinic_Visits_original_0__original__disturbed",
+    "query": "What is the median systolic blood pressure recorded for patients grouped by their medical condition?",
+    "answer": "{\"Allergy\": 142.0, \"Back Pain\": 146.0, \"Diabetes\": 111.0, \"Flu\": 132.5, \"Hypertension\": 136.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 79.0,
+            "Back Pain": 97.0,
+            "Diabetes": 93.0,
+            "Flu": 85.0,
+            "Hypertension": 82.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I have calculated the median systolic blood pressure for patients grouped by their medical condition.\n\n```json\n{\n    \"answer\": {\"Allergy\": 79.0, \"Back Pain\": 97.0, \"Diabetes\": 93.0, \"Flu\": 85.0, \"Hypertension\": 82.0},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 79.0,
+            "Back Pain": 97.0,
+            "Diabetes": 93.0,
+            "Flu": 85.0,
+            "Hypertension": 82.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "I have successfully analyzed the data and computed the median systolic blood pressure for patients grouped by their medical condition.\n\n```json\n{\n    \"answer\": {\"Allergy\": 79.0, \"Back Pain\": 97.0, \"Diabetes\": 93.0, \"Flu\": 85.0, \"Hypertension\": 82.0},\n    \"dtype\": \"pd.Series\"\n}\n```",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 79.0,
+            "Back Pain": 97.0,
+            "Diabetes": 93.0,
+            "Flu": 85.0,
+            "Hypertension": 82.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I've calculated the median systolic blood pressure for patients grouped by their medical condition.\n\n```json\n{\n    \"answer\": {\"Allergy\": 79.0, \"Back Pain\": 97.0, \"Diabetes\": 93.0, \"Flu\": 85.0, \"Hypertension\": 82.0},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "Clinic_Visits_original_1__original__disturbed",
+    "query": "For each doctor, what proportion of their visits required a follow-up?",
+    "answer": "{\"Dr. Iyer\": 0.5, \"Dr. Rao\": 0.5, \"Dr. Singh\": 0.3333333333333333}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Iyer": 0.33,
+            "Dr. Rao": 0.6,
+            "Dr. Singh": 0.33
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the clinic visits data, I calculated the proportion of visits requiring follow-up for each doctor by counting the \"Yes\" responses divided by the total valid visits (Yes or No) for each doctor.\n\n```json\n{\n    \"answer\": {\"Dr. Iyer\": 0.33, \"Dr. Rao\": 0.6, \"Dr. Singh\": 0.33},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Iyer": 0.3333333333333333,
+            "Dr. Rao": 0.5,
+            "Dr. Singh": 0.3333333333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the proportion of visits requiring a follow-up for each doctor by counting visits where `FollowUpRequired` was \"Yes\" divided by the total visits for that doctor.\n\n```json\n{\n    \"answer\": {\"Dr. Iyer\": 0.3333333333333333, \"Dr. Rao\": 0.5, \"Dr. Singh\": 0.3333333333333333},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dr. Iyer": 0.3333333333333333,
+            "Dr. Rao": 0.6,
+            "Dr. Singh": 0.3333333333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I've analyzed the data and calculated the proportion of visits requiring a follow-up for each doctor. Here's the breakdown:\n\n- **Dr. Rao**: 6 total visits, 3 required follow-up out of 5 valid responses = 0.6 (60%)\n- **Dr. Singh**: 6 total visits, 2 required follow-up out of 6 valid responses = 0.333 (33.3%)\n- **Dr. Iyer**: 6 total visits, 2 required follow-up out of 6 valid responses = 0.333 (33.3%)\n\n```json\n{\n    \"answer\": {\"Dr. Iyer\": 0.3333333333333333, \"Dr. Rao\": 0.6, \"Dr. Singh\": 0.3333333333333333},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "Clinic_Visits_original_2__original__disturbed",
+    "query": "What is the average consultation fee for females grouped by condition?",
+    "answer": "{\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Clinic_Visits/Clinic_Visits_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 700.0,
+            "Back Pain": 400.0,
+            "Flu": 625.0,
+            "Hypertension": 466.6666666666667
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "Based on my analysis, I've calculated the average consultation fee for females grouped by condition from the dataset.\n\n```json\n{\n    \"answer\": {\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667},\n    \"dtype\": \"pd.Series\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 700.0,
+            "Back Pain": 400.0,
+            "Flu": 625.0,
+            "Hypertension": 466.6666666666667
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I have analyzed the data and found the average consultation fee for females grouped by condition.\n\n```json\n{\n    \"answer\": {\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Allergy": 700.0,
+            "Back Pain": 400.0,
+            "Flu": 625.0,
+            "Hypertension": 466.6666666666667
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I have the answer. The average consultation fee for females grouped by condition is:\n\n```json\n{\n    \"answer\": {\"Allergy\": 700.0, \"Back Pain\": 400.0, \"Flu\": 625.0, \"Hypertension\": 466.6666666666667},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_0__original__disturbed",
+    "query": "For all billable entries, what is the total revenue generated grouped by project?",
+    "answer": "{\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 1850.0,
+            "Hermes": 2375.0,
+            "Zephyr": 450.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I have analyzed the HR Timesheets data and calculated the total revenue generated by billable entries grouped by project.\n\n```json\n{\n    \"answer\": {\"Apollo\": 1850.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 2370.0,
+            "Hermes": 2375.0,
+            "Zephyr": 450.0
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the HR timesheets data, I first cleaned the dataset by fixing some misaligned rows where data had shifted. Then I filtered for all billable entries (where Billable = 1) and calculated the total revenue (BillableAmount) grouped by project.\n\n```json\n{\n    \"answer\": {\"Apollo\": 2370.0, \"Hermes\": 2375.0, \"Zephyr\": 450.0},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 6
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Apollo": 1850,
+            "Hermes": 2375,
+            "Zephyr": 450
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I filtered for all billable entries (where Billable = 1) and calculated the total revenue (BillableAmount) grouped by project.\n\n```json\n{\n    \"answer\": {\"Apollo\": 1850, \"Hermes\": 2375, \"Zephyr\": 450},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_1__original__disturbed",
+    "query": "How many employees did overtime?",
+    "answer": "8",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 10,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis of the HR Timesheets data, I counted the number of unique employees who have recorded overtime hours (OvertimeHours > 0).\n\n```json\n{\n    \"answer\": 10,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 8,
+          "dtype": "int"
+        },
+        "raw_response": "The data has some misaligned rows where the columns are shifted. Looking at the data, rows 3 and 6 have issues. However, based on the analysis:\n\n- Valid employees (EmployeeID starting with 'E') who did overtime (OvertimeHours > 0): **8 employees**\n\nThe misaligned rows (3 and 6) also show overtime hours (7.5 and 8.0) but their EmployeeIDs appear as dates due to data shifting issues. If we count all rows with OvertimeHours > 0, it would be 10 unique \"EmployeeID\" values, but only 8 are valid employee IDs.\n\nGiven the question asks about employees, I'll count the valid employees with proper EmployeeIDs.\n\n```json\n{\n    \"answer\": 8,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 10,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis of the HR Timesheets data, I examined the `OvertimeHours` column and counted the unique employees who had overtime hours greater than 0.\n\n```json\n{\n    \"answer\": 10,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "HR_Timesheets_original_2__original__disturbed",
+    "query": "What is the average number of hours worked for employees working remotely compared to those onsite?",
+    "answer": "{\"Remote\": 7.423076923076923, \"Onsite\": 8.071428571428571}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/HR_Timesheets/HR_Timesheets_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Onsite": 8.071428571428571,
+            "Remote": 7.423076923076923
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the HR Timesheets data, I found that the work location information (Remote/Onsite) is stored in the 'EntryID' column. I calculated the average hours worked for each work location category.\n\nThe results show:\n- **Onsite employees**: Average of 8.07 hours worked\n- **Remote employees**: Average of 7.42 hours worked\n\n```json\n{\n    \"answer\": {\"Onsite\": 8.071428571428571, \"Remote\": 7.423076923076923},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Onsite": 8.071428571428571,
+            "Remote": 7.423076923076923
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the HR Timesheets data, I found that the 'EntryID' column contains the work location information (Remote/Onsite). I calculated the average hours worked for each category:\n\n- **Remote employees**: Average of 7.42 hours worked\n- **Onsite employees**: Average of 8.07 hours worked\n\n```json\n{\n    \"answer\": {\"Onsite\": 8.071428571428571, \"Remote\": 7.423076923076923},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Onsite": 8.071428571428571,
+            "Remote": 7.423076923076923
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis, I found that the 'EntryID' column in the dataset contains the work location information (Remote/Onsite). I calculated the average number of hours worked for each work location type.\n\n```json\n{\n    \"answer\": {\"Onsite\": 8.071428571428571, \"Remote\": 7.423076923076923},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_0__original__disturbed",
+    "query": "What is the average number of transit days for each carrier for Standard priority level?",
+    "answer": "{\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.83}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "DHL": 5.6,
+            "FedEx": 5.5,
+            "UPS": 4.833333333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I filtered the shipments with \"Standard\" priority level and calculated the average number of transit days for each carrier.\n\n```json\n{\n    \"answer\": {\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.833333333333333},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "DHL": 5.6,
+            "FedEx": 5.5,
+            "UPS": 4.833333333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I have the answer. The average number of transit days for each carrier for Standard priority level is:\n\n```json\n{\n    \"answer\": {\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.833333333333333},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "DHL": 5.6,
+            "FedEx": 5.5,
+            "UPS": 4.833333333333333
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"DHL\": 5.6, \"FedEx\": 5.5, \"UPS\": 4.833333333333333},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_1__original__disturbed",
+    "query": "Which three destinations received the highest total shipment weight?",
+    "answer": "['SIN', 'SYD', 'LHR']",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "SIN",
+            "SYD",
+            "LHR"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on the data analysis, I found the three destinations that received the highest total shipment weight by grouping the data by destination and summing the weight values (labeled as 'Volume (in Kg)' in the dataset).\n\nThe results show:\n1. SIN (Singapore) - 183.1 Kg\n2. SYD (Sydney) - 123.7 Kg\n3. LHR (London Heathrow) - 69.0 Kg\n\n```json\n{\n    \"answer\": [\"SIN\", \"SYD\", \"LHR\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "SIN",
+            "SYD",
+            "LHR"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis, I found that the data contains shipment records with destinations and their corresponding weights. Looking at the column \"Volume (in Kg)\" which represents the shipment weight, I grouped the data by destination and calculated the total shipment weight.\n\nThe top three destinations with the highest total shipment weight are:\n1. SIN (Singapore) - 183.1 Kg\n2. SYD (Sydney) - 123.7 Kg\n3. LHR (London Heathrow) - 69.0 Kg\n\n```json\n{\n    \"answer\": [\"SIN\", \"SYD\", \"LHR\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "SIN",
+            "SYD",
+            "LHR"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis, I grouped the shipment data by destination and calculated the total shipment weight for each. The three destinations with the highest total shipment weight are:\n\n1. SIN (Singapore) - 183.1 Kg\n2. SYD (Sydney) - 123.7 Kg\n3. LHR (London Heathrow) - 69.0 Kg\n\n```json\n{\n    \"answer\": [\"SIN\", \"SYD\", \"LHR\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "Logistics_Shipments_original_2__original__disturbed",
+    "query": "What percentage of shipments met the on-time delivery rule (Priority \u2264 4 days, Standard \u2264 6 days), rounded to nearest integer?",
+    "answer": "80",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Logistics_Shipments/Logistics_Shipments_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis of the logistics shipments data:\n\n1. First, I cleaned the data to handle some shifted rows in the dataset\n2. Applied the on-time delivery rule:\n   - Priority shipments: \u2264 4 days (all 12 Priority shipments met this rule)\n   - Standard shipments: \u2264 6 days (8 out of 13 Standard shipments met this rule)\n3. Out of 25 total shipments, 20 met the on-time delivery criteria\n4. Percentage = (20/25) \u00d7 100 = 80%\n\n```json\n{\n    \"answer\": 80,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis of the logistics shipments data, I calculated the percentage of shipments that met the on-time delivery rule:\n\n**On-time delivery criteria:**\n- Priority shipments: TransitDays \u2264 4 days\n- Standard shipments: TransitDays \u2264 6 days\n\n**Results:**\n- Total shipments: 25\n- On-time shipments: 20 (12 Priority + 8 Standard)\n- Percentage: 80%\n\n```json\n{\n    \"answer\": 80,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 80,
+          "dtype": "int"
+        },
+        "raw_response": "The analysis is complete. Let me verify the results:\n\n- Total shipments: 25\n- On-time shipments: 20 (where Priority shipments took \u22644 days and Standard shipments took \u22646 days)\n- Percentage: 80% (rounded to nearest integer)\n\n```json\n{\n    \"answer\": 80,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_0__original__disturbed",
+    "query": "What is the total spending for each category in the month of June?",
+    "answer": "{\"Dining\": 4047.98, \"Entertainment\": 5579.33, \"Groceries\": 4395.02, \"Health\": 5803.54, \"Rent\": 2397.77, \"Transport\": 6838.02, \"Utilities\": 3106.98}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Dining": 4065.66,
+            "Entertainment": 5623.33,
+            "Groceries": 4452.27,
+            "Health": 5879.88,
+            "Rent": 2523.97,
+            "Transport": 6987.78,
+            "Utilities": 3157.31
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis, I filtered the transactions for the month of June and calculated the total spending (AmountINR) for each category.\n\n```json\n{\n    \"answer\": {\"Dining\": 4065.66, \"Entertainment\": 5623.33, \"Groceries\": 4452.27, \"Health\": 5879.88, \"Rent\": 2523.97, \"Transport\": 6987.78, \"Utilities\": 3157.31},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dining": 4065.66,
+            "Entertainment": 5623.33,
+            "Groceries": 4452.27,
+            "Health": 5879.88,
+            "Rent": 2523.97,
+            "Transport": 6987.78,
+            "Utilities": 3157.31
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I've analyzed the data and found the total spending for each category in June. The data had the Date and TxnID columns swapped, but I identified the actual dates in the TxnID column and filtered for June 2025.\n\n```json\n{\n    \"answer\": {\"Dining\": 4065.66, \"Entertainment\": 5623.33, \"Groceries\": 4452.27, \"Health\": 5879.88, \"Rent\": 2523.97, \"Transport\": 6987.78, \"Utilities\": 3157.31},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Dining": 4065.66,
+            "Entertainment": 5623.33,
+            "Groceries": 4452.27,
+            "Health": 5879.88,
+            "Rent": 2523.97,
+            "Transport": 6987.78,
+            "Utilities": 3157.31
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I filtered the transactions for June 2025 and calculated the total spending (using AmountINR) for each category.\n\n```json\n{\n    \"answer\": {\"Dining\": 4065.66, \"Entertainment\": 5623.33, \"Groceries\": 4452.27, \"Health\": 5879.88, \"Rent\": 2523.97, \"Transport\": 6987.78, \"Utilities\": 3157.31},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_1__original__disturbed",
+    "query": "Which payment method (mention only name) earned the highest total cashback?",
+    "answer": "UPI",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Credit Card",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I grouped the transactions by payment method and calculated the total cashback for each:\n\n- Credit Card: \u20b9373.85\n- UPI: \u20b9252.94\n- Debit Card: \u20b9138.30\n\nThe payment method with the highest total cashback is **Credit Card**.\n\n```json\n{\n    \"answer\": \"Credit Card\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Credit Card",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis, I found that the \"Unnamed: 4\" column contains payment method information. After grouping by payment method and summing the cashback amounts, I determined that **Credit Card** earned the highest total cashback of 373.85 INR.\n\n```json\n{\n    \"answer\": \"Credit Card\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Credit Card",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis, I calculated the total cashback for each payment method in the dataset:\n\n- Credit Card: \u20b9373.85\n- UPI: \u20b9252.94\n- Debit Card: \u20b9138.30\n\nThe payment method with the highest total cashback is **Credit Card**.\n\n```json\n{\n    \"answer\": \"Credit Card\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "Personal_Finance_Transactions_original_2__original__disturbed",
+    "query": "What percent of total spending was on recurring expenses?",
+    "answer": "36.30",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Personal_Finance_Transactions/Personal_Finance_Transactions_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 36.3,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the percentage of total spending that was on recurring expenses.\n\nThe data had some misaligned rows (3 and 4) which I corrected by extracting the appropriate values from the shifted columns.\n\nAfter processing:\n- Total Spending: \u20b948,908.80\n- Recurring Expenses (where Recurring = 'Yes'): \u20b917,755.62\n- Percentage: 36.30%\n\n```json\n{\n    \"answer\": 36.3,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": 36.3,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data:\n\n1. The total spending across all transactions is 48,908.80 INR\n2. The total spending on recurring expenses (where Recurring = 'Yes') is 17,755.62 INR\n3. The percentage of total spending on recurring expenses is (17,755.62 / 48,908.80) \u00d7 100 = **36.30%**\n\n```json\n{\n    \"answer\": 36.3,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 6
+      },
+      {
+        "agent_response": {
+          "answer": 36.3,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data, I found that:\n- Total spending: \u20b948,908.80\n- Recurring expenses: \u20b917,755.62\n- Percentage of total spending on recurring expenses: 36.30%\n\n```json\n{\n    \"answer\": 36.3,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_0__original__disturbed",
+    "query": "Looking at all the sales orders, what is the total revenue (NetAmount) generated in each region, and can you list them in descending order of revenue?",
+    "answer": "{'West': 11625.25, 'East': 2617.50, 'South': 1209.00, 'North': 600.00}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "pd.Series",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "West": 8456.25,
+            "East": 2617.5,
+            "South": 1209.0,
+            "North": 576.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "I have the answer. The total revenue by region in descending order is:\n\n1. West: $8,456.25\n2. East: $2,617.50\n3. South: $1,209.00\n4. North: $576.00\n\n```json\n{\n    \"answer\": {\"West\": 8456.25, \"East\": 2617.5, \"South\": 1209.0, \"North\": 576.0},\n    \"dtype\": \"pd.Series\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "West": 8456.25,
+            "East": 2617.5,
+            "South": 1209.0,
+            "North": 576.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "Based on my analysis, I have calculated the total revenue (NetAmount) generated in each valid region and sorted them in descending order of revenue.\n\n```json\n{\n    \"answer\": {\"West\": 8456.25, \"East\": 2617.5, \"South\": 1209.0, \"North\": 576.0},\n    \"dtype\": \"pd.Series\"\n}\n```",
+        "eval": false,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "West": 8456.25,
+            "East": 2617.5,
+            "South": 1209.0,
+            "North": 576.0
+          },
+          "dtype": "pd.Series"
+        },
+        "raw_response": "Based on my analysis of the sales orders data, I've calculated the total revenue (NetAmount) generated in each region and listed them in descending order of revenue.\n\nThe data contained some invalid entries in the Region column (dates and customer IDs), which I filtered out to include only valid regions (East, South, North, West).\n\n```json\n{\n    \"answer\": {\"West\": 8456.25, \"East\": 2617.50, \"South\": 1209.00, \"North\": 576.00},\n    \"dtype\": \"pd.Series\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_1__original__disturbed",
+    "query": "Which product sold the most units overall across all orders? (mention only the product name)",
+    "answer": "Coffee Beans",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Office Chair",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I've found the product that sold the most units overall across all orders.\n\n```json\n{\n    \"answer\": \"Office Chair\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Coffee Beans",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the Excel data, I found that some rows had misaligned data which required proper handling. After correcting the data alignment and summing up the quantities for each product across all orders, **Coffee Beans** sold the most units overall with 29 units total.\n\n```json\n{\n    \"answer\": \"Coffee Beans\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": null,
+          "dtype": null
+        },
+        "raw_response": null,
+        "eval": false,
+        "tools": 8
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_2__original__disturbed",
+    "query": "What is the average discount rate (rounded to 3 decimals) applied to orders shipped via Express compared to those shipped via Standard?",
+    "answer": "{'Express': 0.059, 'Standard': 0.058}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Express": 0.065,
+            "Standard": 0.045
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the average discount rate for orders shipped via Express and Standard shipping methods:\n\n- **Express**: 0.065 (6.5%)\n- **Standard**: 0.045 (4.5%)\n\n```json\n{\n    \"answer\": {\"Express\": 0.065, \"Standard\": 0.045},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Express": 0.065,
+            "Standard": 0.045
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the average discount rate for orders shipped via Express and Standard shipping methods.\n\nThe results show:\n- **Express shipping**: Average discount rate of 0.065\n- **Standard shipping**: Average discount rate of 0.045\n\n```json\n{\n    \"answer\": {\"Express\": 0.065, \"Standard\": 0.045},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Express": 0.065,
+            "Standard": 0.045
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the average discount rate for orders shipped via Express and Standard shipping methods. \n\nThe results show:\n- **Express shipping**: Average discount rate of 0.065\n- **Standard shipping**: Average discount rate of 0.045\n\n```json\n{\n    \"answer\": {\"Express\": 0.065, \"Standard\": 0.045},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "Retail_Sales_Orders_original_3__original__disturbed",
+    "query": "What percentage of orders were delivered within two days of the order date?",
+    "answer": "62.5",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/Retail_Sales_Orders/Retail_Sales_Orders_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 65.0,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data, I found that:\n- There are 20 valid orders in the dataset (with proper OrderID starting with 'SO-')\n- Out of these 20 orders, 13 were delivered within two days of the order date (delivery days \u2264 2)\n- This gives a percentage of 65.0%\n\n```json\n{\n    \"answer\": 65.0,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 65.0,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data, I found that:\n- There are 20 valid orders with proper order and ship dates\n- 13 orders were delivered within 2 days of the order date (delivery days of 0, 1, or 2)\n- This represents 65% of all orders\n\n```json\n{\n    \"answer\": 65.0,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 6
+      },
+      {
+        "agent_response": {
+          "answer": null,
+          "dtype": null
+        },
+        "raw_response": null,
+        "eval": false,
+        "tools": 8
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_0__original__disturbed",
+    "query": "What is the average total score for each course with a 100% pass rate?",
+    "answer": "{\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "CV": 113.0,
+            "DBMS": 113.57,
+            "DSA": 106.25,
+            "ML": 118.5,
+            "NLP": 109.67,
+            "OS": 114.8
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the dataset, I found that all 6 courses have a 100% pass rate. The total score is stored in the 'LetterGrade' column (which appears to be mislabeled in the data). I calculated the average total score for each course.\n\n```json\n{\n    \"answer\": {\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 7
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "CV": 113.0,
+            "DBMS": 113.57,
+            "DSA": 106.25,
+            "ML": 118.5,
+            "NLP": 109.67,
+            "OS": 114.8
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, all 6 courses in the dataset have a 100% pass rate (all students passed in each course). The average total score for each course with a 100% pass rate is:\n\n```json\n{\n    \"answer\": {\"CV\": 113.0, \"DBMS\": 113.57, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.67, \"OS\": 114.8},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 7
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "CV": 113.0,
+            "DBMS": 113.57142857142857,
+            "DSA": 106.25,
+            "ML": 118.5,
+            "NLP": 109.66666666666667,
+            "OS": 114.8
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, all courses in the dataset have a 100% pass rate. I calculated the average total score for each course by summing the individual components (Midterm, Final, Project, and Quizzes).\n\n```json\n{\n    \"answer\": {\"CV\": 113.0, \"DBMS\": 113.57142857142857, \"DSA\": 106.25, \"ML\": 118.5, \"NLP\": 109.66666666666667, \"OS\": 114.8},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_1__original__disturbed",
+    "query": "How many students received grade A?",
+    "answer": "22",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_0.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis of the Excel file, I found that the 'Total(140)' column contains the letter grades, and all 22 students in the dataset received grade A.\n\n```json\n{\n    \"answer\": 22,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis of the data, all 22 students in the dataset received grade A.\n\n```json\n{\n    \"answer\": 22,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis, I found that the data file has the grade information stored in the 'Total(140)' column. All 22 students in this dataset received grade A.\n\n```json\n{\n    \"answer\": 22,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_2__original__disturbed",
+    "query": "Which professor (only name) achieved the highest average project score?",
+    "answer": "Prof. Mehta",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_1.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_1.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Krishnan",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the dataset, I calculated the average project score for each professor:\n- Prof. Banerjee: 20.0\n- Prof. Krishnan: 22.0\n- Prof. Mehta: 19.625\n\nThe professor with the highest average project score is Prof. Krishnan with an average of 22.0.\n\n```json\n{\n    \"answer\": \"Krishnan\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Krishnan",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that:\n\n1. The dataset contains project scores associated with three professors: Prof. Krishnan, Prof. Banerjee, and Prof. Mehta\n2. After calculating the average project scores for each professor:\n   - Prof. Krishnan: 22.0\n   - Prof. Banerjee: 20.0\n   - Prof. Mehta: 19.625\n\nThe professor with the highest average project score is **Krishnan**.\n\n```json\n{\n    \"answer\": \"Krishnan\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Krishnan",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that Professor Krishnan achieved the highest average project score of 22.0 out of 25.\n\n```json\n{\n    \"answer\": \"Krishnan\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "University_Grades_original_3__original__disturbed",
+    "query": "Among all students, which student achieved the highest overall score, and what was their total marks along with the corresponding letter grade? Mention as a dictionary with keys 'StudentID', 'Marks', and 'Grade'.",
+    "answer": "{\"StudentID\": \"S117\", \"Marks\": 125.0, \"Grade\": \"A\"}",
+    "data_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_2.xlsx",
+    "image_file": "dev_test/Diversification/Self Created Dataset/Manual Created Diversified Dataset/Disturbed Diversifications/University_Grades/University_Grades_original_2.png",
+    "diversification_type": "original_disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I found the student with the highest overall score by examining the 'Total(140)' column, which represents the total marks out of 140.\n\n```json\n{\n    \"answer\": {\"StudentID\": \"S117\", \"Marks\": 125, \"Grade\": \"A\"},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I found that student S117 achieved the highest overall score among all students with a total of 125 marks (out of 140), earning them a letter grade of 'A'.\n\n```json\n{\n    \"answer\": {\"StudentID\": \"S117\", \"Marks\": 125, \"Grade\": \"A\"},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "StudentID": "S117",
+            "Marks": 125,
+            "Grade": "A"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I found the student with the highest overall score by examining the 'Total(140)' column, which represents the total marks out of 140.\n\n```json\n{\n    \"answer\": {\"StudentID\": \"S117\", \"Marks\": 125, \"Grade\": \"A\"},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "Automobile_1",
+    "query": "Of all the cars manufactured in the 70's, list the car with the highest acceleration for each region of origin.",
+    "answer": "{'usa': 'ford maverick', 'japan': 'toyota corona mark ii', 'europe': 'volkswagen 1131 deluxe sedan'}",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/Automobile/disturbed/Automobile_structural_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/Automobile/disturbed/Automobile_structural_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "europe": "volkswagen 1131 deluxe sedan",
+            "japan": "toyota corona mark ii",
+            "usa": "ford maverick"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "The analysis is complete. I've verified the results by sorting all 70s cars by acceleration. The answer is confirmed:\n\n- **Europe**: volkswagen 1131 deluxe sedan (acceleration: 20.5)\n- **Japan**: toyota corona mark ii (acceleration: 15.0)  \n- **USA**: ford maverick (acceleration: 16.0)\n\n```json\n{\n    \"answer\": {\"europe\": \"volkswagen 1131 deluxe sedan\", \"japan\": \"toyota corona mark ii\", \"usa\": \"ford maverick\"},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "europe": "volkswagen 1131 deluxe sedan",
+            "japan": "toyota corona mark ii",
+            "usa": "ford maverick"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I have analyzed the data and found the car with the highest acceleration for each region of origin among cars manufactured in the 70's.\n\n```json\n{\n    \"answer\": {\"europe\": \"volkswagen 1131 deluxe sedan\", \"japan\": \"toyota corona mark ii\", \"usa\": \"ford maverick\"},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "europe": "volkswagen 1131 deluxe sedan",
+            "japan": "toyota corona mark ii",
+            "usa": "ford maverick"
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I've verified the results. For each region of origin among cars manufactured in the 70's, here are the cars with the highest acceleration:\n\n```json\n{\n    \"answer\": {\"europe\": \"volkswagen 1131 deluxe sedan\", \"japan\": \"toyota corona mark ii\", \"usa\": \"ford maverick\"},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "Automobile_2",
+    "query": "What's the heaviest car manufactured in USA?",
+    "answer": "hi 1200d",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/Automobile/disturbed/Automobile_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/Automobile/disturbed/Automobile_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "hi 1200d",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that the heaviest car manufactured in USA is \"hi 1200d\" with a weight of 4732.\n\n```json\n{\n    \"answer\": \"hi 1200d\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "hi 1200d",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that the 'Unnamed: 8' column contains the weight values for the cars. After filtering for cars manufactured in USA and finding the maximum weight, I determined that the heaviest car manufactured in USA is \"hi 1200d\" with a weight of 4732.\n\n```json\n{\n    \"answer\": \"hi 1200d\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "hi 1200d",
+          "dtype": "str"
+        },
+        "raw_response": "Based on the analysis of the automobile data, I found that the 'Unnamed: 8' column contains the weight values. After filtering for cars manufactured in the USA and identifying the one with the maximum weight, the heaviest car is \"hi 1200d\" with a weight of 4732.\n\n```json\n{\n    \"answer\": \"hi 1200d\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "polling_data_1",
+    "query": "Mention the candidate who appeared in every poll.",
+    "answer": "Rahm Emanuel",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/polling_data/disturbed/polling_data_structural_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/polling_data/disturbed/polling_data_structural_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Rahm Emanuel",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the polling data, I examined each candidate's appearances across all valid polls. After excluding the first row (which had a data alignment issue with NaN in the Poll source column), there are 12 valid polls in the dataset.\n\nThe candidate **Rahm Emanuel** appeared in all 12 polls, making him the only candidate who appeared in every poll.\n\n```json\n{\n    \"answer\": \"Rahm Emanuel\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 7
+      },
+      {
+        "agent_response": {
+          "answer": "Rahm Emanuel",
+          "dtype": "str"
+        },
+        "raw_response": "The analysis confirms that **Rahm Emanuel** is the only candidate who appeared in every poll (all 12 polls) with valid numeric polling data.\n\n```json\n{\n    \"answer\": \"Rahm Emanuel\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": null,
+          "dtype": null
+        },
+        "raw_response": null,
+        "eval": false,
+        "tools": 8
+      }
+    ]
+  },
+  {
+    "index": "ship_fate_1",
+    "query": "Which ships over 5000tons were sank?",
+    "answer": "['MV Tudor', 'SS British Monarch', 'MV Moerdrecht', 'SS La Brea', 'SS Empire Merlin', 'MV Athelcrest']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/disturbed/ship_fate_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/disturbed/ship_fate_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "MV Tudor",
+            "SS British Monarch",
+            "MV Moerdrecht",
+            "SS La Brea",
+            "SS Empire Merlin",
+            "MV Athelcrest"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis of the data, I found the ships over 5000 tons that were sunk.\n\n```json\n{\n    \"answer\": [\"MV Tudor\", \"SS British Monarch\", \"MV Moerdrecht\", \"SS La Brea\", \"SS Empire Merlin\", \"MV Athelcrest\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "MV Tudor",
+            "SS British Monarch",
+            "MV Moerdrecht",
+            "SS La Brea",
+            "SS Empire Merlin",
+            "MV Athelcrest"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis of the data, I found the ships over 5000 tons that were sunk.\n\n```json\n{\n    \"answer\": [\"MV Tudor\", \"SS British Monarch\", \"MV Moerdrecht\", \"SS La Brea\", \"SS Empire Merlin\", \"MV Athelcrest\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "MV Tudor",
+            "SS British Monarch",
+            "MV Moerdrecht",
+            "SS La Brea",
+            "SS Empire Merlin",
+            "MV Athelcrest"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "I've found the ships over 5000 tons that were sunk. Let me provide the answer in the required format.\n\n```json\n{\n    \"answer\": [\"MV Tudor\", \"SS British Monarch\", \"MV Moerdrecht\", \"SS La Brea\", \"SS Empire Merlin\", \"MV Athelcrest\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "ship_fate_2",
+    "query": "How many ships that sank in the month of June belongs to United Kingdom?",
+    "answer": "4",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/disturbed/ship_fate_semantic_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/ship_fate/disturbed/ship_fate_semantic_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis, I found that:\n1. The 'Fate' column contains dates (dates when events occurred)\n2. The 'Date' column contains fate information (Sunk/Damaged locations)\n3. I filtered for ships where:\n   - The fate contains 'Sunk' (not 'Damaged')\n   - The month is June (month = 6)\n   - The nationality is 'United Kingdom'\n\nThe result shows 4 ships that meet all criteria:\n- SS Stancor (1940-06-05)\n- SS Frances Massey (1940-06-07)\n- SS Baron Loudoun (1940-06-19)\n- SS British Monarch (1940-06-19)\n\n```json\n{\n    \"answer\": 4,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis of the data, I found that 4 ships that sank in the month of June belong to the United Kingdom. These ships are:\n1. SS Stancor (sunk on 1940-06-05)\n2. SS Frances Massey (sunk on 1940-06-07)\n3. SS Baron Loudoun (sunk on 1940-06-19)\n4. SS British Monarch (sunk on 1940-06-19)\n\n```json\n{\n    \"answer\": 4,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis of the data, I found that there are 4 ships from the United Kingdom that sank in the month of June.\n\nThe data had columns where 'Fate' actually contained the date information and 'Date' contained the fate description (Sunk/Damaged). I filtered for:\n1. Ships with \"Sunk\" in their fate description\n2. Ships that sank in June (month = 6)\n3. Ships belonging to United Kingdom\n\n```json\n{\n    \"answer\": 4,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "military_bases_1",
+    "query": "What is the total number of shelters in each governorate?",
+    "answer": "{'Aleppo': 43, 'Homs': 116, 'Damascus': 162, 'Hama': 20, 'As-Suwayda': 46}",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/military_bases/disturbed/military_bases_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/military_bases/disturbed/military_bases_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Abu al-Duhur Military Airbase": 20,
+            "Al-Dumayr Military Airport": 52,
+            "Al-Nasiriyah Military Airbase": 20,
+            "Al-Qusayr Military Airbase": 16,
+            "Hama Military Airport": 20,
+            "Jirah Military Airbase": 12,
+            "Khalkhalah Military Airbase": 30,
+            "Kowaires Military Airbase": 11,
+            "Marj Ruhayyil Military Airbase": 24,
+            "Marj al-Sultan Military Heliport": 0,
+            "Menagh Military Airbase": 0,
+            "Mezzeh Military Airport": 22,
+            "Sayqal Military Airbase": 44,
+            "Shayrat Air Base": 40,
+            "Tha'lah Military Airbase": 16,
+            "Tiyas Military Airbase": 60
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I can see that the 'Governorate' column actually contains military base names rather than traditional governorate names. The total number of shelters for each entry in the Governorate column has been calculated.\n\n```json\n{\n    \"answer\": {\"Abu al-Duhur Military Airbase\": 20, \"Al-Dumayr Military Airport\": 52, \"Al-Nasiriyah Military Airbase\": 20, \"Al-Qusayr Military Airbase\": 16, \"Hama Military Airport\": 20, \"Jirah Military Airbase\": 12, \"Khalkhalah Military Airbase\": 30, \"Kowaires Military Airbase\": 11, \"Marj Ruhayyil Military Airbase\": 24, \"Marj al-Sultan Military Heliport\": 0, \"Menagh Military Airbase\": 0, \"Mezzeh Military Airport\": 22, \"Sayqal Military Airbase\": 44, \"Shayrat Air Base\": 40, \"Tha'lah Military Airbase\": 16, \"Tiyas Military Airbase\": 60},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Aleppo": 43,
+            "As-Suwayda": 46,
+            "Damascus": 162,
+            "Hama": 20,
+            "Homs": 116
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis, the 'Military Base Name' column actually contains the governorate names. The total number of shelters in each governorate has been calculated.\n\n```json\n{\n    \"answer\": {\"Aleppo\": 43, \"As-Suwayda\": 46, \"Damascus\": 162, \"Hama\": 20, \"Homs\": 116},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Aleppo": 43,
+            "As-Suwayda": 46,
+            "Damascus": 162,
+            "Hama": 20,
+            "Homs": 116
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I have the answer. The total number of shelters in each governorate is:\n- Aleppo: 43\n- As-Suwayda: 46\n- Damascus: 162\n- Hama: 20\n- Homs: 116\n\n```json\n{\n    \"answer\": {\"Aleppo\": 43, \"As-Suwayda\": 46, \"Damascus\": 162, \"Hama\": 20, \"Homs\": 116},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "military_bases_2",
+    "query": "Which military base having more than 1 runway has the most helipads?",
+    "answer": "Khalkhalah Military Airbase",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/military_bases/disturbed/military_bases_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/military_bases/disturbed/military_bases_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Menagh Military Airbase",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I filtered military bases with more than 1 runway and then found the one with the most helipads.\n\nAmong the bases with more than 1 runway:\n- Khalkhalah Military Airbase: 2 runways, 0 helipads\n- Menagh Military Airbase: 2 runways, 12 helipads\n- Sayqal Military Airbase: 2 runways, 8 helipads\n- Shayrat Air Base: 2 runways, 0 helipads\n\nThe military base with more than 1 runway that has the most helipads is **Menagh Military Airbase** with 12 helipads.\n\n```json\n{\n    \"answer\": \"Menagh Military Airbase\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Menagh Military Airbase",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I filtered the military bases to find those with more than 1 runway and then identified the one with the most helipads.\n\nAmong the bases with more than 1 runway:\n- Khalkhalah Military Airbase: 2 runways, 0 helipads\n- Menagh Military Airbase: 2 runways, 12 helipads\n- Sayqal Military Airbase: 2 runways, 8 helipads\n- Shayrat Air Base: 2 runways, 0 helipads\n\n```json\n{\n    \"answer\": \"Menagh Military Airbase\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Menagh Military Airbase",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I filtered the military bases to find those with more than 1 runway, and then identified which one has the most helipads.\n\nThe bases with more than 1 runway are:\n- Khalkhalah Military Airbase (2 runways, 0 helipads)\n- Menagh Military Airbase (2 runways, 12 helipads)\n- Sayqal Military Airbase (2 runways, 8 helipads)\n- Shayrat Air Base (2 runways, 0 helipads)\n\nAmong these, **Menagh Military Airbase** has the most helipads with 12.\n\n```json\n{\n    \"answer\": \"Menagh Military Airbase\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "points_table_1",
+    "query": "Which country has the most number of medals?",
+    "answer": "Italy",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/points_table/disturbed/points_table_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/points_table/disturbed/points_table_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Italy",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that the 'Gold' column in the dataset actually contains the total number of medals for each country. Italy has the highest number of medals with 29 total medals.\n\n```json\n{\n    \"answer\": \"Italy\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Italy",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis, the 'Gold' column in this dataset actually represents the total number of medals (which equals Total + Silver + Bronze). Italy has the highest value in this column with 29 medals, making it the country with the most number of medals.\n\n```json\n{\n    \"answer\": \"Italy\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Italy",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis, I found that the 'Gold' column actually represents the total number of medals (as it equals the sum of the other medal columns). Italy has the highest total with 29 medals.\n\n```json\n{\n    \"answer\": \"Italy\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "points_table_2",
+    "query": "Which country won the most bronze medals without winning any gold medal?",
+    "answer": "Germany",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/points_table/disturbed/points_table_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/points_table/disturbed/points_table_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Greece",
+          "dtype": "str"
+        },
+        "raw_response": "I found the answer. Among the countries that won 0 gold medals (Germany, Greece, Russia, Sweden, and France), Greece won the most bronze medals with 7 bronze medals.\n\n```json\n{\n    \"answer\": \"Greece\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Greece",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that among countries with 0 gold medals, Greece has the most bronze medals with 7.\n\n```json\n{\n    \"answer\": \"Greece\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Greece",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data file 'points_table_structural_2.xlsx', I found that among countries with zero gold medals, Greece won the most bronze medals (7 bronze medals).\n\n```json\n{\n    \"answer\": \"Greece\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "accidents_1",
+    "query": "What is the average of the deaths per accidents per year in the decade 2000s (2000-2009), rounded to 3 decimals?",
+    "answer": "8.437",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/accidents/disturbed/accidents_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/accidents/disturbed/accidents_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 8.437,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the deaths per accidents for each year in the 2000s decade (2000-2009) by dividing the deaths by the number of accidents for each year, then computed the average of these ratios.\n\n```json\n{\n    \"answer\": 8.437,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 8.437,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the deaths per accidents for each year in the decade 2000-2009 by dividing the number of deaths by the number of accidents for each year. Then I computed the average of these values across all 10 years.\n\n```json\n{\n    \"answer\": 8.437,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 8.437,
+          "dtype": "float"
+        },
+        "raw_response": "I have analyzed the data and calculated the average deaths per accidents per year in the 2000s decade (2000-2009).\n\n```json\n{\n    \"answer\": 8.437,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "accidents_2",
+    "query": "Which year has the biggest drop in the number of accidents compared to the previous year?",
+    "answer": 2009,
+    "data_file": "dev_test/Diversification/External_Source/workbooks/accidents/disturbed/accidents_semantic_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/accidents/disturbed/accidents_semantic_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2009,
+          "dtype": "int"
+        },
+        "raw_response": "The analysis is complete. The year 2009 had the biggest drop in the number of accidents compared to the previous year, with a decrease of 34 accidents (from 156 in 2008 to 122 in 2009).\n\n```json\n{\n    \"answer\": 2009,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 2009,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis of the data:\n\n1. I first identified that the column labeled 'deaths' actually contains the year values (1999-2012), and '# of accidents' contains the actual accident counts.\n2. I sorted the data by year in ascending order.\n3. I calculated the change in accidents compared to the previous year for each year.\n4. The biggest drop (decrease) in accidents occurred in **2009**, when accidents dropped by 34 compared to 2008 (from 156 to 122).\n\n```json\n{\n    \"answer\": 2009,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 2009,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis, I found that:\n\n1. The data columns were mislabeled - the first column contains years (1999-2012), not deaths\n2. After sorting by year and calculating the year-over-year change in accidents\n3. The biggest drop occurred in **2009** with a decrease of 34 accidents compared to 2008 (from 156 to 122 accidents)\n\n```json\n{\n    \"answer\": 2009,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "awards_1",
+    "query": "Which nominee(s) received the most number of nominations+awards?",
+    "answer": "['Gene Hackman', 'Ernest Tidyman']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/awards/disturbed/awards_structural_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/awards/disturbed/awards_structural_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Ernest Tidyman",
+            "Gene Hackman"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis, I found that the data file has two different structures that needed to be combined. After processing all the nominations and splitting entries where multiple nominees were listed together (separated by newline characters), I counted the total nominations+awards for each nominee.\n\nThe analysis shows that **Gene Hackman** and **Ernest Tidyman** are tied with 6 nominations+awards each, which is the highest count among all nominees.\n\n```json\n{\n    \"answer\": [\"Ernest Tidyman\", \"Gene Hackman\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 6
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Gene Hackman",
+            "Ernest Tidyman"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis of the data, I found that the nominees who received the most number of nominations+awards are **Gene Hackman** and **Ernest Tidyman**, each with 6 nominations+awards.\n\n```json\n{\n    \"answer\": [\"Gene Hackman\", \"Ernest Tidyman\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Gene Hackman",
+            "Ernest Tidyman"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis of the data file, I found that the dataset contains award nomination and winner data with some structural inconsistencies. After parsing both the standard format rows and the Academy Awards rows (which had a shifted column structure), I counted all nominations and awards for each nominee.\n\nThe analysis shows that **Gene Hackman** and **Ernest Tidyman** are tied with the most nominations+awards, each having 6.\n\n```json\n{\n    \"answer\": [\"Gene Hackman\", \"Ernest Tidyman\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "awards_2",
+    "query": "Which award ceremonies did not result in a single win?",
+    "answer": "['American Cinema Editors, 1972', 'National Society of Film Critics, 1972', 'Writers Guild of America, 1972']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/awards/disturbed/awards_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/awards/disturbed/awards_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "American Cinema Editors, 1972",
+            "National Society of Film Critics, 1972",
+            "Writers Guild of America, 1972"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis of the awards data, I found that three award ceremonies did not result in a single win - all nominations at these ceremonies were unsuccessful.\n\n```json\n{\n    \"answer\": [\"American Cinema Editors, 1972\", \"National Society of Film Critics, 1972\", \"Writers Guild of America, 1972\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "American Cinema Editors, 1972",
+            "National Society of Film Critics, 1972",
+            "Writers Guild of America, 1972"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "I've analyzed the data and found the award ceremonies that did not result in a single win.\n\n```json\n{\n    \"answer\": [\"American Cinema Editors, 1972\", \"National Society of Film Critics, 1972\", \"Writers Guild of America, 1972\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "American Cinema Editors, 1972",
+            "National Society of Film Critics, 1972",
+            "Writers Guild of America, 1972"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "I've analyzed the data and found the award ceremonies that did not result in a single win.\n\n```json\n{\n    \"answer\": [\"American Cinema Editors, 1972\", \"National Society of Film Critics, 1972\", \"Writers Guild of America, 1972\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "radio_1",
+    "query": "Which service had the highest total cost in the year 2011/12?",
+    "answer": "BBC Local Radio",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/radio/disturbed/radio_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/radio/disturbed/radio_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "BBC Local Radio",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the 2011/12 total costs by subtracting the year-over-year change values from the 2012/13 total costs. The service with the highest total cost in 2011/12 was **BBC Local Radio** with \u00a3146.5 million.\n\n```json\n{\n    \"answer\": \"BBC Local Radio\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "BBC Local Radio",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis, I calculated the 2011/12 total cost by subtracting the year-over-year change from the 2012/13 total cost. The service with the highest total cost in 2011/12 was **BBC Local Radio** with \u00a3146.5 million.\n\n```json\n{\n    \"answer\": \"BBC Local Radio\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "BBC Local Radio",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the 2011/12 total cost for each service by taking the 2012/13 total cost and subtracting the year-over-year change shown in the \"2011/12 (\u00a3million)\" column.\n\nThe service with the highest total cost in 2011/12 was **BBC Local Radio** with \u00a3146.5 million.\n\n```json\n{\n    \"answer\": \"BBC Local Radio\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "radio_2",
+    "query": "List all the services where the yearly cost difference is more than 3 million.",
+    "answer": "['BBC Radio 1', 'BBC Radio 4', 'BBC Radio 5 Live', 'BBC Local Radio']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/radio/disturbed/radio_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/radio/disturbed/radio_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "BBC Radio 3",
+            "BBC Radio 4 Extra",
+            "BBC Asian Network",
+            "BBC Radio Ulster and BBC Radio Foyle"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "I've analyzed the data and found all services where the yearly cost difference is more than 3 million (in absolute terms, since the values are in \u00a3million).\n\n```json\n{\n    \"answer\": [\"BBC Radio 3\", \"BBC Radio 4 Extra\", \"BBC Asian Network\", \"BBC Radio Ulster and BBC Radio Foyle\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "BBC Radio 3",
+            "BBC Radio 4 Extra",
+            "BBC Asian Network",
+            "BBC Radio Ulster and BBC Radio Foyle"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "I've analyzed the data and found all services where the yearly cost difference is more than 3 million. The values in the dataset are already in millions (\u00a3million), so I filtered for services where the absolute value of the difference exceeds 3.\n\n```json\n{\n    \"answer\": [\"BBC Radio 3\", \"BBC Radio 4 Extra\", \"BBC Asian Network\", \"BBC Radio Ulster and BBC Radio Foyle\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "BBC Radio 3",
+            "BBC Radio 4 Extra",
+            "BBC Asian Network",
+            "BBC Radio Ulster and BBC Radio Foyle"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis of the data file, I found the services where the yearly cost difference (comparison with 2011/12) is more than 3 million pounds. After cleaning the cost difference values and filtering for absolute differences greater than 3 million, I identified 4 services.\n\n```json\n{\n    \"answer\": [\"BBC Radio 3\", \"BBC Radio 4 Extra\", \"BBC Asian Network\", \"BBC Radio Ulster and BBC Radio Foyle\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "voters_1",
+    "query": "What percentage(%) of total voters are unaffiliated and active?",
+    "answer": "26.7576",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/voters/disturbed/voters_semantics_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/voters/disturbed/voters_semantics_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 26.76,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data file:\n\nThe dataset contains voter information with columns: Party, Total voters, Inactive voters, Active voters, and Percentage.\n\nLooking at the data structure:\n- The \"Total voters\" column + \"Inactive voters\" column = \"Active voters\" column mathematically\n- This means \"Total voters\" represents active-status voters, \"Inactive voters\" represents inactive-status voters, and \"Active voters\" represents all voters in that party\n\nFor the question \"What percentage of total voters are unaffiliated and active?\":\n- Unaffiliated voters with active status = 20,118 (from \"Total voters\" column for Unaffiliated row)\n- Total voters (all parties) = 75,186 (from \"Active voters\" column in Total row)\n- Percentage = (20,118 / 75,186) \u00d7 100 = 26.76%\n\n```json\n{\n    \"answer\": 26.76,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 7
+      },
+      {
+        "agent_response": {
+          "answer": 26.76,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data:\n\n1. The file contains voter data with columns for Party, Total voters, Inactive voters, Active voters, and Percentage.\n\n2. Looking at the data structure:\n   - \"Total voters\" column appears to contain active voters (as Total voters + Inactive voters = Active voters column)\n   - The \"Active voters\" column actually represents the total (sum of all voter types) for each party\n\n3. For unaffiliated and active voters:\n   - Unaffiliated active voters: 20,118 (from \"Total voters\" column for Unaffiliated)\n   - Total all voters: 75,186 (from \"Active voters\" column for Total row)\n   - Percentage: (20,118 / 75,186) \u00d7 100 = 26.76%\n\n```json\n{\n    \"answer\": 26.76,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 36.15,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data:\n\n1. The 'Active voters' column in the 'Unaffiliated' row shows 27,180 unaffiliated and active voters\n2. The total of all active voters (from the 'Total' row) is 75,186\n3. The percentage of unaffiliated and active voters = (27,180 / 75,186) \u00d7 100 = 36.15%\n\nThis is also confirmed by the 'Percentage' column in the data which shows 0.3615 for Unaffiliated.\n\n```json\n{\n    \"answer\": 36.15,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "voters_2",
+    "query": "Which party have the highest active to inactive voter ratio?",
+    "answer": "Democratic",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/voters/disturbed/voters_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/voters/disturbed/voters_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Democratic",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis, I found that the party with the highest active to inactive voter ratio is **Democratic** with a ratio of approximately 3.02 (21,493 active voters / 7,115 inactive voters).\n\n```json\n{\n    \"answer\": \"Democratic\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Democratic",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the active to inactive voter ratio for each party:\n\n- Republican: 2.605 (13916/5342)\n- Democratic: 3.021 (21493/7115)\n- Unaffiliated: 2.849 (20118/7062)\n- Minor parties: 2.500 (100/40)\n\nThe Democratic party has the highest active to inactive voter ratio of approximately 3.02.\n\n```json\n{\n    \"answer\": \"Democratic\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Democratic",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis, I found that the data file had shifted columns. After fixing the column mapping and calculating the active to inactive voter ratio for each party:\n\n- Republican: 2.605\n- Democratic: 3.021\n- Unaffiliated: 2.849\n- Minor parties: 2.500\n\nThe Democratic party has the highest active to inactive voter ratio.\n\n```json\n{\n    \"answer\": \"Democratic\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "horses_1",
+    "query": "Which winner's owner is not their breeder?",
+    "answer": "['Secretariat', 'Seattle Slew']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/horses/disturbed/horses_structural_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/horses/disturbed/horses_structural_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Secretariat",
+            "Seattle Slew"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis of the data, I found that there are two winners whose owner is not their breeder:\n\n1. **Secretariat** - Owner: Meadow Stable, Breeder: Meadow Stud\n2. **Seattle Slew** - Owner: Karen L. Taylor, Breeder: Ben S. Castleman\n\n```json\n{\n    \"answer\": [\"Secretariat\", \"Seattle Slew\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": "Seattle Slew",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that there are two winners whose owner is not their breeder:\n\n1. **Secretariat**: Owner = \"Meadow Stable\" vs Breeder = \"Meadow Stud\"\n2. **Seattle Slew**: Owner = \"Karen L. Taylor\" vs Breeder = \"Ben S. Castleman\"\n\nSince the question uses singular \"winner,\" and Seattle Slew has the most clearly distinct owner and breeder (completely different names), the answer is **Seattle Slew**.\n\n```json\n{\n    \"answer\": \"Seattle Slew\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 6
+      },
+      {
+        "agent_response": {
+          "answer": null,
+          "dtype": null
+        },
+        "raw_response": null,
+        "eval": false,
+        "tools": 8
+      }
+    ]
+  },
+  {
+    "index": "horses_2",
+    "query": "List all the jockeys for the most successful owner(s). Answer as a dictionary with owner as key and list of jockeys as value.",
+    "answer": "{'Belair Stud': ['Earl Sande', 'Willie Saunders'], 'Calumet Farm': ['Eddie Arcaro']}",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/horses/disturbed/horses_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/horses/disturbed/horses_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": null,
+          "dtype": null
+        },
+        "raw_response": null,
+        "eval": false,
+        "tools": 8
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Belair Stud": [
+              "Earl Sande",
+              "Willie Saunders"
+            ],
+            "Calumet Farm": [
+              "Eddie Arcaro",
+              "Eddie Arcaro"
+            ]
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "I've analyzed the data and found the most successful owners (those with the most wins) and their associated jockeys.\n\nThe dataset had a structural issue where the Owner column was offset by 3 rows from the race data. After properly aligning the data, I found that:\n- **Belair Stud** and **Calumet Farm** are tied as the most successful owners with 2 wins each\n- Belair Stud's jockeys were Earl Sande and Willie Saunders\n- Calumet Farm's jockey was Eddie Arcaro (who won both races for them)\n\n```json\n{\n    \"answer\": {\"Belair Stud\": [\"Earl Sande\", \"Willie Saunders\"], \"Calumet Farm\": [\"Eddie Arcaro\", \"Eddie Arcaro\"]},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 7
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Belair Stud": [
+              "Eddie Arcaro",
+              "Johnny Longden"
+            ],
+            "Calumet Farm": [
+              "Eddie Arcaro",
+              "Steve Cauthen"
+            ]
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the horses_structural_2.xlsx file, I found that:\n\n1. The most successful owners are **Belair Stud** and **Calumet Farm**, each with 2 wins\n2. For Belair Stud, the jockeys were Eddie Arcaro and Johnny Longden\n3. For Calumet Farm, the jockeys were Eddie Arcaro and Steve Cauthen\n\n```json\n{\n    \"answer\": {\"Belair Stud\": [\"Eddie Arcaro\", \"Johnny Longden\"], \"Calumet Farm\": [\"Eddie Arcaro\", \"Steve Cauthen\"]},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "climate_1",
+    "query": "What is the average of the Average High for the first 6 months of the year in \u00b0C?",
+    "answer": "23.63",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/climate/disturbed/climate_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/climate/disturbed/climate_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 23.63,
+          "dtype": "float"
+        },
+        "raw_response": "I have verified that the first number in each cell represents the temperature in \u00b0C (e.g., 17.3\u00b0C converts to approximately 63.14\u00b0F, which matches the value in parentheses 63.1\u00b0F). The average of the Average High temperatures for the first 6 months (January through June) in \u00b0C is approximately 23.63.\n\n```json\n{\n    \"answer\": 23.63,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 23.63,
+          "dtype": "float"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 23.63,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 23.63,
+          "dtype": "float"
+        },
+        "raw_response": "The calculation confirms that the first value is indeed in \u00b0C (17.3\u00b0C converts to 63.14\u00b0F, which matches the parenthetical value of 63.1\u00b0F).\n\n```json\n{\n    \"answer\": 23.63,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "climate_2",
+    "query": "Which month had the highest variation between high and low average?",
+    "answer": "Dec",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/climate/disturbed/climate_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/climate/disturbed/climate_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Dec",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the climate data, I calculated the variation between high and low average temperatures for each month. December had the highest variation of 10.7\u00b0C between its high average (19.2\u00b0C) and low average (8.5\u00b0C).\n\n```json\n{\n    \"answer\": \"Dec\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Dec",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the climate data, I calculated the variation (difference between high and low average temperatures) for each month. \n\nThe results show:\n- December has the highest variation at 10.7\u00b0C (High: 19.2\u00b0C - Low: 8.5\u00b0C)\n- Followed by February and March tied at 10.1\u00b0C\n- November has the lowest variation at 7.6\u00b0C\n\n```json\n{\n    \"answer\": \"Dec\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": "Nov",
+          "dtype": "str"
+        },
+        "raw_response": "The analysis shows that **November** had the highest variation between high and low average temperature, with a variation of 13.2\u00b0C.\n\n```json\n{\n    \"answer\": \"Nov\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "tenure_1",
+    "query": "Who have the shortest tenure?",
+    "answer": "Antonio Bosio",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/tenure/disturbed/tenure_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/tenure/disturbed/tenure_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Antonio Bosio",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the tenure data, I calculated the tenure for each person by finding the difference between their term end and term start dates. The person with the shortest tenure is **Antonio Bosio** with a tenure of 119 days.\n\n```json\n{\n    \"answer\": \"Antonio Bosio\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Antonio Bosio",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I calculated the tenure for each person by finding the difference between their term start and term end dates. The person with the shortest tenure is **Antonio Bosio** with a tenure of 119 days.\n\n```json\n{\n    \"answer\": \"Antonio Bosio\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Antonio Bosio",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that **Antonio Bosio** has the shortest tenure with only 119 days (from November 23, 1933 to March 22, 1934).\n\n```json\n{\n    \"answer\": \"Antonio Bosio\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "tenure_2",
+    "query": "Who had the most number of tenures?",
+    "answer": "Giuseppe Valle",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/tenure/disturbed/tenure_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/tenure/disturbed/tenure_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Giuseppe Valle",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that **Giuseppe Valle** had the most number of tenures with 2 tenures (rows 2 and 4 in the dataset).\n\n```json\n{\n    \"answer\": \"Giuseppe Valle\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Giuseppe Valle",
+          "dtype": "str"
+        },
+        "raw_response": "The analysis shows that **Giuseppe Valle** had the most number of tenures with 2 tenures.\n\n```json\n{\n    \"answer\": \"Giuseppe Valle\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Giuseppe Valle",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that **Giuseppe Valle** had the most number of tenures with 2 tenures (appearing in the records for two separate terms: 1930-1933 and 1934-1939).\n\n```json\n{\n    \"answer\": \"Giuseppe Valle\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "population_1",
+    "query": "Which region has the highest population density?",
+    "answer": "Danish Capital Region",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/population/disturbed/population_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/population/disturbed/population_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Danish Capital Region",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I extracted the population density values and compared them across all regions (excluding total rows). The Danish Capital Region has the highest population density at 636.5/km\u00b2.\n\n```json\n{\n    \"answer\": \"Danish Capital Region\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Danish Capital Region",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis of the data, I found that the \"Area\" column actually contains population density values (with /km\u00b2 units), while the \"Density\" column contains area values (with km\u00b2 units). After extracting the numeric density values and excluding the total/summary rows, the region with the highest population density is **Danish Capital Region** with a density of 636.5/km\u00b2.\n\n```json\n{\n    \"answer\": \"Danish Capital Region\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Danish Capital Region",
+          "dtype": "str"
+        },
+        "raw_response": "The analysis is complete. The region with the highest population density is **Danish Capital Region** with a density of 636.5/km\u00b2.\n\n```json\n{\n    \"answer\": \"Danish Capital Region\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "population_2",
+    "query": "What percentage(%) of the Grand Total population does Danish Capital Region account for?",
+    "answer": "50.87",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/population/disturbed/population_semantic_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/population/disturbed/population_semantic_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "float",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 50.87,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data, I found that:\n- Danish Capital Region population: 1,823,109\n- Grand Total population: 3,583,842\n- Percentage = (1,823,109 / 3,583,842) \u00d7 100 = 50.87%\n\n```json\n{\n    \"answer\": 50.87,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 50.87,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data, I can see that the 'Area' column actually contains population values (the column names appear to be misaligned in the Excel file). The Danish Capital Region has a population of 1,823,109 and the Grand Total population is 3,583,842.\n\nThe percentage of Grand Total population that Danish Capital Region accounts for is:\n(1,823,109 / 3,583,842) \u00d7 100 = 50.87%\n\n```json\n{\n    \"answer\": 50.87,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 50.87,
+          "dtype": "float"
+        },
+        "raw_response": "Based on my analysis of the data, I found that:\n- Danish Capital Region population: 1,823,109\n- Grand Total population: 3,583,842\n- Percentage = (1,823,109 / 3,583,842) \u00d7 100 = 50.87%\n\n```json\n{\n    \"answer\": 50.87,\n    \"dtype\": \"float\"\n}\n```",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "census_2",
+    "query": "What is the 2010 population of the oldest incorporated city?",
+    "answer": "16243",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_structural_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_structural_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5524,
+          "dtype": "int"
+        },
+        "raw_response": "I found the answer. The oldest incorporated city is Beaver Dam, which was incorporated in 1856, and its 2010 population was 5,524.\n\n```json\n{\n    \"answer\": 5524,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": 5524,
+          "dtype": "int"
+        },
+        "raw_response": "```json\n{\n    \"answer\": 5524,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 5524,
+          "dtype": "int"
+        },
+        "raw_response": "Based on my analysis of the census data, I found that:\n\n1. The oldest incorporated city is **Beaver Dam**, which was incorporated in 1856\n2. Its 2010 Census population is **5524**\n\n```json\n{\n    \"answer\": 5524,\n    \"dtype\": \"int\"\n}\n```",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "census_3",
+    "query": "List all the cities not rated 4th class along with their 2010 population.",
+    "answer": "{'Appleton': 72623, 'Baraboo': 12048, 'Beloit': 36966}",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_semantic_3.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_semantic_3.png",
+    "diversification_type": "disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Appleton": 72623,
+            "Baraboo": 12048,
+            "Beloit": 36966
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis, I found that the dataset contains city classification information in the 'Incorporation Date' column. The cities that are NOT rated 4th class are Appleton (2nd class), Baraboo (3rd class), and Beloit (3rd class).\n\n```json\n{\n    \"answer\": {\"Appleton\": 72623, \"Baraboo\": 12048, \"Beloit\": 36966},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Appleton": 72623,
+            "Baraboo": 12048,
+            "Beloit": 36966
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on the analysis, I found that the cities not rated 4th class (Appleton is 2nd class, Baraboo and Beloit are 3rd class) along with their 2010 population.\n\n```json\n{\n    \"answer\": {\"Appleton\": 72623, \"Baraboo\": 12048, \"Beloit\": 36966},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Appleton": 72623,
+            "Baraboo": 12048,
+            "Beloit": 36966
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis, I found that the \"Incorporation Date\" column actually contains the city class information (e.g., \"4th\", \"2nd\", \"3rd\"). Filtering out cities rated \"4th class\" leaves us with 3 cities along with their 2010 population.\n\n```json\n{\n    \"answer\": {\"Appleton\": 72623, \"Baraboo\": 12048, \"Beloit\": 36966},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "structures_1",
+    "query": "Name the tallest structure and it's height in meters. Mention as a dictionary with keys: 'Name, and 'height'.",
+    "answer": "{'Name': 'High Roller', 'height': 168}",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/structures/disturbed/structures_semantic_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/structures/disturbed/structures_semantic_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "dict",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": {
+            "Name": "High Roller",
+            "height": 551
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on the analysis of the data, the tallest structure in the dataset is the \"High Roller\" with a height of 551 meters.\n\n```json\n{\n    \"answer\": {\"Name\": \"High Roller\", \"height\": 551},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Name": "High Roller",
+            "height": 551
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "Based on my analysis of the data, I found that the tallest structure is \"High Roller\" with a height of 551 meters.\n\n```json\n{\n    \"answer\": {\"Name\": \"High Roller\", \"height\": 551},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": {
+            "Name": "High Roller",
+            "height": 551
+          },
+          "dtype": "dict"
+        },
+        "raw_response": "```json\n{\n    \"answer\": {\"Name\": \"High Roller\", \"height\": 551},\n    \"dtype\": \"dict\"\n}\n```",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "structures_2",
+    "query": "Which country have the most number of structures taller than 390 feet?",
+    "answer": "China",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/structures/disturbed/structures_semantic_2.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/structures/disturbed/structures_semantic_2.png",
+    "diversification_type": "disturbed",
+    "dtype": "str",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "China",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis, I found that the data file has the country information in the 'Location' column. After extracting the height in feet from the 'Height m (ft)' column and filtering for structures taller than 390 feet, I counted the number of structures per country.\n\nThe results show that:\n- China has 5 structures taller than 390 feet\n- US, Singapore, UK, Australia, and Japan each have 1 structure\n\n```json\n{\n    \"answer\": \"China\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": "China",
+          "dtype": "str"
+        },
+        "raw_response": "Based on my analysis, I found that China has the most structures taller than 390 feet, with 5 structures in total.\n\n```json\n{\n    \"answer\": \"China\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "China",
+          "dtype": "str"
+        },
+        "raw_response": "Based on the analysis, China has the most number of structures taller than 390 feet, with 5 structures in total.\n\n```json\n{\n    \"answer\": \"China\",\n    \"dtype\": \"str\"\n}\n```",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "census_1",
+    "query": "What are the top 3 cities in terms of population growth, sort in ascending order?",
+    "answer": "['Beloit', 'Baraboo', 'Appleton']",
+    "data_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_structural_1.xlsx",
+    "image_file": "dev_test/Diversification/External_Source/workbooks/census/disturbed/census_structural_1.png",
+    "diversification_type": "disturbed",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Bayfield",
+            "Beaver Dam",
+            "Antigo"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "I have found the top 3 cities in terms of population growth, sorted in ascending order.\n\n```json\n{\n    \"answer\": [\"Bayfield\", \"Beaver Dam\", \"Antigo\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 6
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Bayfield",
+            "Beaver Dam",
+            "Antigo"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis of the census data, I calculated the population growth by subtracting the 2000 Census population from the 2010 Census population for each city. The top 3 cities with the highest population growth, sorted in ascending order, are:\n\n1. Bayfield (growth: 15,632)\n2. Beaver Dam (growth: 21,797)\n3. Antigo (growth: 64,063)\n\n```json\n{\n    \"answer\": [\"Bayfield\", \"Beaver Dam\", \"Antigo\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Bayfield",
+            "Beaver Dam",
+            "Antigo"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "Based on my analysis of the census data, I identified the top 3 cities with the highest population growth (calculated as Population 2010 - Population 2000), and then sorted them in ascending order by their growth values.\n\nThe top 3 cities in terms of population growth, sorted in ascending order are:\n1. Bayfield (15,632 growth)\n2. Beaver Dam (21,797 growth)\n3. Antigo (64,063 growth)\n\n```json\n{\n    \"answer\": [\"Bayfield\", \"Beaver Dam\", \"Antigo\"],\n    \"dtype\": \"list\"\n}\n```",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  }
+]
