@@ -15,7 +15,7 @@ class Info(BaseModel):
     answer: Any
     data_file: PosixPath
     image_file: Optional[PosixPath] = None
-    diversification_type: str
+    diversification_type: Optional[str] = None
     dtype: str
     type: Optional[str] = None
     distortion_type: Optional[str] = None
