@@ -5,10 +5,12 @@ import win32com.client
 import time
 from PIL import ImageGrab
 import argparse
+import json
 import win32gui
 import win32ui
 import win32con
 from ctypes import windll
+from tqdm import tqdm
 
 
 def take_excel_screenshot(excel_path: Path, output_path: Path):
@@ -175,41 +177,119 @@ def process_directory(data_dir: Path):
     
     print(f"Found {len(excel_files)} Excel file(s)")
     
-    # Process each Excel file
-    for idx, excel_file in enumerate(excel_files, 1):
-        print(f"\nProcessing {idx}/{len(excel_files)}: {excel_file.name}")
-        
-        # Create output path (same location, same name, .png extension)
+    # Report how many PNGs already exist vs need to be generated
+    existing_pngs = [f for f in excel_files if f.with_suffix('.png').exists()]
+    to_generate = [f for f in excel_files if not f.with_suffix('.png').exists()]
+    print(f"  - Already have PNG: {len(existing_pngs)}")
+    print(f"  - Need to generate: {len(to_generate)}")
+    
+    # Process each Excel file that needs a PNG, with a tqdm progress bar
+    progress = tqdm(to_generate, desc="Generating PNGs", unit="file")
+    for excel_file in progress:
         output_path = excel_file.with_suffix('.png')
-        
-        # Take screenshot (will overwrite if exists)
+        progress.set_postfix_str(excel_file.name)
+
+        # Take screenshot
         take_excel_screenshot(excel_file, output_path)
-        
+
         # Longer delay between files to ensure Excel fully closes
         time.sleep(1.0)
     
     print(f"\nCompleted processing {len(excel_files)} files")
 
 
-def main(data_dir: Path):
+def process_file_list(excel_files: list[Path]) -> None:
     """
-    Main function to process Excel files and create screenshots.
-    
-    Args:
-        data_dir: Directory containing Excel files
+    Process an explicit list of Excel files (instead of scanning a directory).
+    Skips files whose PNG already exists and shows a tqdm progress bar.
     """
-    print(f"Scanning directory: {data_dir}")
-    process_directory(data_dir)
+    if not excel_files:
+        print("No Excel files provided")
+        return
+
+    print(f"Received {len(excel_files)} Excel file(s)")
+
+    # Separate not-found / already-have / to-generate
+    not_found = [f for f in excel_files if not f.exists()]
+    present = [f for f in excel_files if f.exists()]
+    existing_pngs = [f for f in present if f.with_suffix('.png').exists()]
+    to_generate = [f for f in present if not f.with_suffix('.png').exists()]
+
+    print(f"  - Missing on disk : {len(not_found)}")
+    print(f"  - Already have PNG: {len(existing_pngs)}")
+    print(f"  - Need to generate: {len(to_generate)}")
+    if not_found:
+        print("  Sample missing files:")
+        for m in not_found[:5]:
+            print(f"    {m}")
+
+    progress = tqdm(to_generate, desc="Generating PNGs", unit="file")
+    for excel_file in progress:
+        output_path = excel_file.with_suffix('.png')
+        progress.set_postfix_str(excel_file.name)
+        take_excel_screenshot(excel_file, output_path)
+        time.sleep(1.0)
+
+    print(f"\nCompleted processing {len(to_generate)} files")
+
+
+def load_files_from_jsons(json_paths: list[Path], repo_root: Path) -> list[Path]:
+    """
+    Load unique `data_file` entries from one or more JSON files and resolve
+    them to absolute paths relative to `repo_root`. Only .xlsx files are kept.
+    """
+    files: set[str] = set()
+    for jp in json_paths:
+        data = json.loads(jp.read_text(encoding="utf-8"))
+        for item in data:
+            df = item.get("data_file")
+            if df and df.lower().endswith(".xlsx"):
+                files.add(df)
+    resolved: list[Path] = []
+    for df in sorted(files):
+        p = Path(df)
+        if not p.is_absolute():
+            p = (repo_root / p).resolve()
+        resolved.append(p)
+    return resolved
+
+def main(data_dir: Path | None = None, json_files: list[Path] | None = None,
+         repo_root: Path | None = None) -> None:
+    """
+    Main function to generate PNG screenshots for Excel files.
+
+    If `json_files` is provided, only the xlsx files listed in those JSONs
+    (via the `data_file` key) are processed. Otherwise, `data_dir` is
+    scanned recursively for xlsx files.
+    """
+    if json_files:
+        repo_root = repo_root or Path(__file__).resolve().parents[2]
+        print(f"Loading file list from {len(json_files)} JSON file(s)")
+        print(f"Resolving paths relative to: {repo_root}")
+        excel_files = load_files_from_jsons(json_files, repo_root)
+        process_file_list(excel_files)
+    else:
+        assert data_dir is not None, "Either data_dir or json_files must be provided"
+        print(f"Scanning directory: {data_dir}")
+        process_directory(data_dir)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Take screenshots of Excel files')
-    parser.add_argument('--data_dir', type=str, 
+    parser.add_argument('--data_dir', type=str,
                        default=r"C:\repo\table-diversification\dev_test\Diversification\External_Source\workbooks",
-                       help='Directory containing Excel files')
-    
+                       help='Directory containing Excel files (ignored if --json_files is given)')
+    parser.add_argument('--json_files', type=str, nargs='+', default=None,
+                       help='One or more JSON files whose `data_file` entries identify the xlsx files to screenshot')
+    parser.add_argument('--repo_root', type=str, default=None,
+                       help='Repo root for resolving relative data_file paths (defaults to the repo containing this script)')
+
     args = parser.parse_args()
-    main(Path(args.data_dir))
+    json_paths = [Path(p) for p in args.json_files] if args.json_files else None
+    repo_root = Path(args.repo_root) if args.repo_root else None
+    main(data_dir=Path(args.data_dir) if not json_paths else None,
+         json_files=json_paths,
+         repo_root=repo_root)
 
 
 

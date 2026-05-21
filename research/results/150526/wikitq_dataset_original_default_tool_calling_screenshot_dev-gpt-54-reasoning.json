@@ -1,0 +1,3264 @@
+[
+  {
+    "index": "nt-8",
+    "query": "after winning on four credits with a full house, what is your payout?",
+    "answer": "32",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/564.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/564.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 32,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 32,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 1
+      },
+      {
+        "agent_response": {
+          "answer": 32,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 32, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 32,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 32,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-9",
+    "query": "which players played the same position as ardo kreek?",
+    "answer": [
+      "Siim Ennemuist",
+      "Andri Aganits"
+    ],
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/116.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/116.png",
+    "diversification_type": "original",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Ardo Kreek",
+            "Siim Ennemuist"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\n    \"Ardo Kreek\",\n    \"Siim Ennemuist\"\n  ],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Ardo Kreek",
+            "Siim Ennemuist"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Ardo Kreek\", \"Siim Ennemuist\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Ardo Kreek",
+            "Siim Ennemuist"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\n    \"Ardo Kreek\",\n    \"Siim Ennemuist\"\n  ],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-14",
+    "query": "which athlete was from south korea after the year 2010?",
+    "answer": "Kim Yu-na",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/104.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/104.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Kim Yu-na"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\n    \"Kim Yu-na\"\n  ],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Kim Yu-na",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Kim Yu-na\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Kim Yu-na",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Kim Yu-na\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-15",
+    "query": "what was the venue when he placed first?",
+    "answer": "New Delhi, India",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/706.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/706.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "New Delhi, India",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"New Delhi, India\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "New Delhi, India",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"New Delhi, India\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "New Delhi, India",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"New Delhi, India\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-24",
+    "query": "who ranked right after turkey?",
+    "answer": "Sweden",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/812.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/812.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Sweden",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Sweden\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Sweden",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Sweden\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Sweden",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Sweden\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-29",
+    "query": "what is the total population in dzhebariki-khaya?",
+    "answer": "1694",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/6.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/6.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1694,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1694, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 1694,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1694,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 1694,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1694, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-40",
+    "query": "what was the number of silver medals won by ukraine?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/175.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/175.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 2, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 2,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 2,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-46",
+    "query": "what is the largest penalty?",
+    "answer": "10",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/664.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/664.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 10,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 10, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 10,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 10,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 10,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":10,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-53",
+    "query": "what is the total number of pylons listed?",
+    "answer": "17",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/375.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/375.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 25,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 25,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 17,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 17, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 25,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 25, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-64",
+    "query": "how many districts are there in virginia?",
+    "answer": "22",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/109.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/109.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 22,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 22,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 22,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-68",
+    "query": "amazon is at the top of the chart, but what is the name below it?",
+    "answer": "Antelope",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/568.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/568.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Antelope",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Antelope\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Antelope",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Antelope\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Antelope",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Antelope\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-69",
+    "query": "when was the last time kansas state lost with 0 points in manhattan?",
+    "answer": "1964",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/703.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/703.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1964,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1964, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 1964,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1964,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 1964,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1964,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-92",
+    "query": "who was the first to take office?",
+    "answer": "Jaafar Mohamed",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/668.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/668.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Jaafar Mohamed",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Jaafar Mohamed\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 1
+      },
+      {
+        "agent_response": {
+          "answer": "Jaafar Mohamed",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Jaafar Mohamed\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Jaafar Mohamed",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Jaafar Mohamed\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-104",
+    "query": "which composer produced his title after 2001?",
+    "answer": "Pete Doherty",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/969.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/969.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Pete Doherty"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[\"Pete Doherty\"],\"dtype\":\"list\"}",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Pete Doherty"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Pete Doherty\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Pete Doherty",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Pete Doherty\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-111",
+    "query": "how long after fairfield was no. 1 built?",
+    "answer": "33 years",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/476.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/476.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 33,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 33,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "33 years",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"33 years\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 33,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 33, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-116",
+    "query": "what is the difference in runners-up from coleraine academical institution and royal school dungannon?",
+    "answer": "20",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/362.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/362.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 20,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 20,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 20,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":20,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 20,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 20,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-124",
+    "query": "how many times has germany won bronze?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/554.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/554.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 2,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 2,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 2,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-125",
+    "query": "list two pylons that are at most, 80 m in height.",
+    "answer": [
+      "Mittersill goods aerial tramway",
+      "Singapore cable car"
+    ],
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/375.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/375.png",
+    "diversification_type": "original",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Mittersill goods aerial tramway",
+            "Singapore cable car"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Mittersill goods aerial tramway\", \"Singapore cable car\"],\n  \"dtype\": \"list\"\n}",
+        "eval": true,
+        "tools": 6
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Mittersill goods aerial tramway",
+            "Singapore cable car"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[\"Mittersill goods aerial tramway\",\"Singapore cable car\"],\"dtype\":\"list\"}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Mittersill goods aerial tramway",
+            "Singapore cable car"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[\"Mittersill goods aerial tramway\",\"Singapore cable car\"],\"dtype\":\"list\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-130",
+    "query": "why type of genre was peter maxwell davies' work that was the same as emil petrovics'",
+    "answer": "ballet",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/969.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/969.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "ballet",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"ballet\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "ballet",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"ballet\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "ballet",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"ballet\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-132",
+    "query": "what is the difference (in years) between when the royal blue began and the year the crusader began?",
+    "answer": "47",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/336.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/336.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 47,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 47, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 1
+      },
+      {
+        "agent_response": {
+          "answer": 47,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 47,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 47,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 47,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-148",
+    "query": "who received the least amount of votes?",
+    "answer": "Karen Olsson",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/786.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/786.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Karen Olsson",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Karen Olsson\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Karen Olsson",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Karen Olsson\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Karen Olsson",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Karen Olsson\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-158",
+    "query": "which mountain peak has a prominence more than 10,000 ft?",
+    "answer": "Mount Whitney",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/25.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/25.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Mount Whitney"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Mount Whitney\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Mount Whitney"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Mount Whitney\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Mount Whitney"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[\"Mount Whitney\"],\"dtype\":\"list\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-159",
+    "query": "how many mines were in temagami?",
+    "answer": "10",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/944.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/944.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 10,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 10, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 6
+      },
+      {
+        "agent_response": {
+          "answer": 10,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 10,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 10,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 10, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-169",
+    "query": "which schools have the largest number of shared titles?",
+    "answer": [
+      "Royal Belfast Academical Institution",
+      "Campbell College"
+    ],
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/362.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/362.png",
+    "diversification_type": "original",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Royal Belfast Academical Institution",
+            "Campbell College"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Royal Belfast Academical Institution\", \"Campbell College\"],\n  \"dtype\": \"list\"\n}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Royal Belfast Academical Institution",
+            "Campbell College"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Royal Belfast Academical Institution\", \"Campbell College\"],\n  \"dtype\": \"list\"\n}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Royal Belfast Academical Institution",
+            "Campbell College"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Royal Belfast Academical Institution\", \"Campbell College\"],\n  \"dtype\": \"list\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-170",
+    "query": "what name comes next fairfield?",
+    "answer": "Waverley",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/476.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/476.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Waverley",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Waverley\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Waverley",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Waverley\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Waverley",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Waverley\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-180",
+    "query": "how long did ian armstrong serve?",
+    "answer": "26 years",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/202-csv/76.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/202-csv/76.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 26,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 26,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 26,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 26, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 26,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 26,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-191",
+    "query": "how many airlines have a steady ranking?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/515.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/515.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 3,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 3, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 0,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 0, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-206",
+    "query": "what car achieved the highest qual?",
+    "answer": "40",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/339.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/339.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 40,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 40, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 40,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 40,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 40,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 40,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-208",
+    "query": "which secretary of state came after jack pkckersgill?",
+    "answer": "Roch Pinard",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/201-csv/27.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/201-csv/27.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Roch Pinard",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Roch Pinard\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": [
+            "Roch Pinard",
+            "Maurice Lamontagne"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Roch Pinard\", \"Maurice Lamontagne\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Roch Pinard",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Roch Pinard\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-227",
+    "query": "when was the last super chinese game released?",
+    "answer": "1999",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/55.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/55.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1999,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1999,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 1999,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1999,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 1999,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1999,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-239",
+    "query": "what year had a total of 2 titles released?",
+    "answer": "2010",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/836.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/836.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            2010,
+            2012
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[2010,2012],\"dtype\":\"list\"}",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": [
+            2010,
+            2012
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [2010, 2012],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": [
+            2010,
+            2012
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [2010, 2012],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-241",
+    "query": "what year has no place indicated?",
+    "answer": "1982/83",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/231.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/231.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "1982/83",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"1982/83\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "1982/83",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"1982/83\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "1982/83",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"1982/83\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-248",
+    "query": "what is the number of games played against vietnam?",
+    "answer": "1",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/913.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/913.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-255",
+    "query": "which year had the largest agricultural volume?",
+    "answer": "2010/11",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/666.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/666.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "2010/11",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"2010/11\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "2010/11",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"2010/11\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "2010/11",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"2010/11\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-260",
+    "query": "which illustrator was responsible for the last award winner?",
+    "answer": "Helen Oxenbury",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/788.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/788.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Helen Oxenbury",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Helen Oxenbury\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Helen Oxenbury",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Helen Oxenbury\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Helen Oxenbury",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Helen Oxenbury\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-264",
+    "query": "what is the number of buildings under 200 ft?",
+    "answer": "1",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/837.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/837.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-267",
+    "query": "total number of players whose home town was in north carolina (nc)",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/526.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/526.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 7, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 7, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-270",
+    "query": "is the united stated or scotland better?",
+    "answer": "United States",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/396.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/396.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "United States",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"United States\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "United States",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"United States\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "United States",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"United States\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-281",
+    "query": "how many ships were launched in the year 1944?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/313.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/313.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 9, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 9,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 9,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-292",
+    "query": "what is the total number of gold medals won by jamaica?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/595.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/595.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 4,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 4,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 4,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-300",
+    "query": "what number of mainlands have populations under 100,000?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/401.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/401.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 13,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 13,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 13,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":13,\"dtype\":\"int\"}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 13,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 13,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-305",
+    "query": "which was the first country to sell weapons to iraq?",
+    "answer": "Czechoslovakia",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/587.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/587.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Czechoslovakia",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Czechoslovakia\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Czechoslovakia",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Czechoslovakia\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Czechoslovakia",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Czechoslovakia\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-308",
+    "query": "how many historic sites are listed in coldwater?",
+    "answer": "15",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/423.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/423.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 15,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 15,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 15,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 15, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 15,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":15,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-312",
+    "query": "true or false. the television show \\\"the two ronnies\\\" featured more than 10 episodes in a season.",
+    "answer": "false",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/461.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/461.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "False",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"False\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "false",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"false\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "false",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"false\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-320",
+    "query": "which tournament has the largest total win record?",
+    "answer": "Wimbledon",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/153.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/153.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Wimbledon",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wimbledon\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Wimbledon",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wimbledon\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Wimbledon",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wimbledon\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-330",
+    "query": "which area has the least number of residents?",
+    "answer": "Ince Blundell",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/600.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/600.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Ince Blundell",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Ince Blundell\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Ince Blundell",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Ince Blundell\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Ince Blundell",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Ince Blundell\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-333",
+    "query": "what country won more gold medals than any other?",
+    "answer": "United States",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/595.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/595.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "United States",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"United States\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": "United States",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"United States\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 7
+      },
+      {
+        "agent_response": {
+          "answer": "United States",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"United States\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-336",
+    "query": "which site was listed earlier, the state public school or the edwin r. clarke library?",
+    "answer": "Edwin R. Clarke Library",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/423.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/423.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Edwin R. Clarke Library",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Edwin R. Clarke Library\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 1
+      },
+      {
+        "agent_response": {
+          "answer": "Edwin R. Clarke Library",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Edwin R. Clarke Library\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Edwin R. Clarke Library",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Edwin R. Clarke Library\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-344",
+    "query": "aside from 316, what was the other works number used in 1883?",
+    "answer": "317",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/30.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/30.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 317,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 317,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 317,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 317,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 317,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 317,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-348",
+    "query": "which team did lau nim yat play for after he was transferred?",
+    "answer": "Biu Chun Rangers",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/968.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/968.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Biu Chun Rangers",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Biu Chun Rangers\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Biu Chun Rangers",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Biu Chun Rangers\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Biu Chun Rangers",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Biu Chun Rangers\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-349",
+    "query": "which mountain peak is no higher than 13,149 ft?",
+    "answer": "Mount Ritter",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/25.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/25.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Mount Ritter",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Mount Ritter\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Mount Ritter",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Mount Ritter\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Mount Ritter",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Mount Ritter\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-350",
+    "query": "how many pylons are in austria?",
+    "answer": "3",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/375.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/375.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 4,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 3, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 3, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-364",
+    "query": "which winner won more tournaments, jeff maggert or tiger woods?",
+    "answer": "Tiger Woods",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/85.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/85.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Tiger Woods",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Tiger Woods\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Tiger Woods",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Tiger Woods\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Tiger Woods",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Tiger Woods\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-367",
+    "query": "how many total row entries are there?",
+    "answer": "21",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/364.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/364.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 21,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 21,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 21,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 21,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 1
+      },
+      {
+        "agent_response": {
+          "answer": 21,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 21,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-373",
+    "query": "tell me the number of shows that only have one host per day.",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/839.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/839.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 6,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 6,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 7, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-380",
+    "query": "do chipper adams and justin beyendeza have more than 3 wins?",
+    "answer": "no",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/667.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/667.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "No, neither Chipper Adams nor Justin Beyendeza has more than 3 wins.",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"No, neither Chipper Adams nor Justin Beyendeza has more than 3 wins.\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "No, neither Chipper Adams nor Justin Beyendeza has more than 3 wins; each has 2 wins.",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"No, neither Chipper Adams nor Justin Beyendeza has more than 3 wins; each has 2 wins.\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "No, Chipper Adams and Justin Beyendeza have 2 wins, which is not more than 3.",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"No, Chipper Adams and Justin Beyendeza have 2 wins, which is not more than 3.\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-395",
+    "query": "what is the pylon with the least height listed here?",
+    "answer": "Eibsee Aerial Tramway",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/375.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/375.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Eibsee Aerial Tramway",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Eibsee Aerial Tramway\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Eibsee Aerial Tramway",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Eibsee Aerial Tramway\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Eibsee Aerial Tramway",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Eibsee Aerial Tramway\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-397",
+    "query": "how many provinces have the same number of districts as kabul?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/704.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/704.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 5, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 5, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 4,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-414",
+    "query": "is tripoli still considered a municipality in arcadia since its 2011 reformation?",
+    "answer": "Yes",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/200-csv/38.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/200-csv/38.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Yes, Tripoli is still considered a municipality in Arcadia after the 2011 reformation.",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Yes, Tripoli is still considered a municipality in Arcadia after the 2011 reformation.\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Yes, Tripoli is still considered a municipality in Arcadia after the 2011 reformation.",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Yes, Tripoli is still considered a municipality in Arcadia after the 2011 reformation.\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Yes, Tripoli is still considered a municipality in Arcadia after the 2011 reformation.",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Yes, Tripoli is still considered a municipality in Arcadia after the 2011 reformation.\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-417",
+    "query": "what is the number of children sarah churchill had?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/626.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/626.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 7, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":7,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-428",
+    "query": "how many stations have a distance below 15km?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/273.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/273.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-432",
+    "query": "how many consecutive km were raced on july 8th?",
+    "answer": "203.0 km (126.1 mi)",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/475.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/475.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 203.0,
+          "dtype": "float"
+        },
+        "raw_response": "{\n  \"answer\": 203.0,\n  \"dtype\": \"float\"\n}",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 203.0,
+          "dtype": "float"
+        },
+        "raw_response": "{\"answer\":203.0,\"dtype\":\"float\"}",
+        "eval": false,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 203.0,
+          "dtype": "float"
+        },
+        "raw_response": "{\n  \"answer\": 203.0,\n  \"dtype\": \"float\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-447",
+    "query": "how many times was waterford the opposition?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/952.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/952.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 2,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 2,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 2, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-450",
+    "query": "how many more general acute care hospitals are there in california than rehabilitation hospitals?",
+    "answer": "33",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/216.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/216.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 33,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 33,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 33,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 33,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 6
+      },
+      {
+        "agent_response": {
+          "answer": 33,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 33,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-458",
+    "query": "how many were played on a hard surface?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/94.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/94.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-473",
+    "query": "was no.1 or veteran built in 1847?",
+    "answer": "Veteran",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/476.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/476.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Veteran",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Veteran\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Veteran",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Veteran\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 1
+      },
+      {
+        "agent_response": {
+          "answer": "Veteran",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Veteran\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-488",
+    "query": "how many denominations never dropped below 20%?",
+    "answer": "1",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/857.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/857.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-506",
+    "query": "which game had a higher total number of goals scored, 1 or 16?",
+    "answer": "16",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/267.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/267.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 16,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":16,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "16",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"16\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": 16,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 16,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-512",
+    "query": "what is the average number of times johan museeuw starred?",
+    "answer": "5",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/156.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/156.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 0.22727272727272727,
+          "dtype": "float"
+        },
+        "raw_response": "{\n  \"answer\": 0.22727272727272727,\n  \"dtype\": \"float\"\n}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 0.22727272727272727,
+          "dtype": "float"
+        },
+        "raw_response": "{\"answer\":0.22727272727272727,\"dtype\":\"float\"}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 5, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-514",
+    "query": "how many consecutive weeks did the the gators win until the had their first lost in the 2010 season?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/897.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/897.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 4,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 1
+      },
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 4,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 4, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-518",
+    "query": "how many of these missouri tv stations are actually licensed in a city in illinois (il)?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/601.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/601.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 7, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-532",
+    "query": "what is the name of the last ship that was scrapped?",
+    "answer": "Wave Ruler",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/313.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/313.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Wave Ruler",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wave Ruler\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Wave Ruler",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wave Ruler\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Wave Ruler",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Wave Ruler\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-534",
+    "query": "what province is the town of temagami?",
+    "answer": "Ontario",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/944.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/944.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Ontario",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Ontario\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Ontario",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Ontario\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Ontario",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Ontario\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-535",
+    "query": "what is the only train to reach a top speed of 500 or more?",
+    "answer": "Transrapid SMT",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/751.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/751.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Transrapid SMT",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Transrapid SMT\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": "Transrapid SMT",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Transrapid SMT\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Transrapid SMT",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Transrapid SMT\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-542",
+    "query": "were there more with inside or outside cylinders?",
+    "answer": "Inside",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/204-csv/476.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/204-csv/476.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Inside",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Inside\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Inside",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Inside\", \"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "Inside",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Inside\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-567",
+    "query": "name one of the top three women to earn gold at the 1970 world championship held in phoenix, az",
+    "answer": "Sally Carroll",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/554.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/554.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Sally Carroll",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Sally Carroll\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "Sally Carroll",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Sally Carroll\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Sally Carroll",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Sally Carroll\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-579",
+    "query": "how many aerial tramways are located in france?",
+    "answer": "3",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/457.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/457.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 3,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 3,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 3, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-593",
+    "query": "how long was james ii in power, including his second rule?",
+    "answer": "26 years",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/876.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/876.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 26,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 26, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 6
+      },
+      {
+        "agent_response": {
+          "answer": 26,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 26, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 5
+      },
+      {
+        "agent_response": {
+          "answer": 26,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 26,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-601",
+    "query": "which other ship was launched in the same year as the wave victor?",
+    "answer": "Wave Conqueror",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/313.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/313.png",
+    "diversification_type": "original",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Wave Conqueror"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[\"Wave Conqueror\"],\"dtype\":\"list\"}",
+        "eval": false,
+        "tools": 4
+      },
+      {
+        "agent_response": {
+          "answer": "No other ship; Wave Victor is the only ship in the dataset launched in the same year/date listed for it (30 September 1943).",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"No other ship; Wave Victor is the only ship in the dataset launched in the same year/date listed for it (30 September 1943).\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": "None",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"None\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-624",
+    "query": "how many players made an appearance that year?",
+    "answer": "20",
+    "data_file": "dev_test/Distortions/Inputs/Dataset/203-csv/456.xlsx",
+    "image_file": "dev_test/Distortions/Inputs/Dataset/203-csv/456.png",
+    "diversification_type": "original",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": null,
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 20,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 20, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 20,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 20, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      },
+      {
+        "agent_response": {
+          "answer": 20,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 20,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  }
+]

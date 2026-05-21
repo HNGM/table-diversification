@@ -1,0 +1,66 @@
+# QLoRA SFT config tuned for a single NVIDIA T4 16 GB (Turing, fp16 only).
+# Paths are resolved relative to THIS config file (so the finetuning folder is
+# fully self-contained / portable). Absolute paths also work.
+
+model:
+  name_or_path: Qwen/Qwen2.5-1.5B-Instruct  # use the chat-tuned variant: it already
+                                            # understands <|im_start|>/<|im_end|> and
+                                            # only needs to learn the content style.
+  trust_remote_code: true
+  attn_implementation: sdpa                 # T4 has no FlashAttention-2
+
+data:
+  train_file: ../data/splits/train.jsonl
+  val_file:   ../data/splits/val.jsonl
+  max_seq_len: 2048                         # prompt+completion truncation budget
+
+quantization:                               # QLoRA (4-bit NF4) — fits 1.5B base in ~1.2 GB
+  load_in_4bit: true
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_use_double_quant: true
+  bnb_4bit_compute_dtype: float16
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+training:
+  output_dir: ../outputs/qwen25-1p5b-disturbed
+  num_train_epochs: 3
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 16           # effective batch size = 16
+  learning_rate: 2.0e-4
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  weight_decay: 0.0
+  optim: paged_adamw_8bit                   # bitsandbytes paged optimizer (low VRAM)
+  fp16: true                                # T4 supports fp16 only (no bf16)
+  bf16: false
+  tf32: false
+  gradient_checkpointing: true
+  gradient_checkpointing_kwargs:
+    use_reentrant: false
+  logging_steps: 1                          # print loss/lr every optimizer step
+                                            # (heartbeat callback also prints per step)
+  # --- Checkpointing (crash-safe) ---
+  # Save every N optimizer steps so we never lose more than ~`save_steps` worth
+  # of progress if the machine crashes / loses power. `eval_strategy` must
+  # match `save_strategy` because `load_best_model_at_end=true` requires it.
+  save_strategy: steps
+  save_steps: 50
+  eval_strategy: steps
+  eval_steps: 50
+  save_total_limit: 3                       # keep last 3 step-checkpoints on disk
+  save_safetensors: true
+  load_best_model_at_end: true
+  metric_for_best_model: eval_loss
+  greater_is_better: false
+  resume_from_checkpoint: true              # auto-resume from latest checkpoint in output_dir
+  report_to: ["tensorboard"]                # event files written to <output_dir>/runs/<timestamp>/
+                                            # set to ["none"] to disable, or add "wandb"
+  seed: 42
+  dataloader_num_workers: 2
+  group_by_length: true

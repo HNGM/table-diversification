@@ -1,10 +1,13 @@
 import sys
+import os
 sys.path.append(".")
 import argparse
-from src.utils.utils import ROOT_DIR, read_json, write_json
+from src.utils.utils import ROOT_DIR, read_json, write_json, read_jsonl
 from pathlib import Path
 import datetime
 import re
+import signal
+import atexit
 from typing import List, Any
 from research.evaluation.info import Info
 from research.evaluation.evaluate import evaluate
@@ -24,12 +27,12 @@ import json
 from research.evaluation.utils import fix_json_serialization
 
 COMPLETION_MODELS = ["dev-mistral-7b-instruct-v02"]
-ARTIFACT_DIR_SOURCE = ROOT_DIR / "research" / "dataset" / "overall_distorted_dataset"
+ARTIFACT_DIR_SOURCE = ROOT_DIR / "research" / "dataset" / "wikitq_dataset_filtered"
 # ARTIFACT_DIR_SOURCE = ROOT_DIR / "research" / "dataset" / "27122025_distorted_dataset"
 DATA_MODE = "disturbed"
-MODEL = "dev-gpt-51-2025-11-13"
+MODEL = "dev-anthropic-claude-opus-4-6"
 PROMPT_MODE = "default_mistake_no_sandbox"
-INGEST_MODE = "markdown"
+INGEST_MODE = "screenshot"
 
 class CodeEnvironment(Environment):
     """Environment that holds a CodeTool instance for code execution."""
@@ -392,7 +395,7 @@ def get_config(args):
     parser.add_argument('--nproc', type=int, default=1, help='Number of parallel processes')
     parser.add_argument('--model', type=str, default=MODEL, help='model to run the process on')
     parser.add_argument('--resume', action="store_true", help='Resume from the last checkpoint')
-    parser.add_argument('--pass-rate', type=int, default=3, help='Set the pass@k rate for evaluation')
+    parser.add_argument('--pass-rate', type=int, default=1, help='Set the pass@k rate for evaluation')
     parser.add_argument('--ingest-mode', type=str, default=INGEST_MODE, help='Ingest mode for data processing')
     config = parser.parse_args(args)
 
@@ -461,42 +464,191 @@ class CodeSandboxTool(Tool[CodeEnvironment]):
         
         return compiled_result.strip()
 
+def _read_jsonl_lenient(jsonl_path: Path) -> list:
+    """Read a .jsonl file, skipping blank/corrupt trailing lines.
+
+    A crash between `write` and the next `flush` can leave a partial final
+    line. We tolerate that here so resume is robust.
+    """
+    results = []
+    if not jsonl_path.exists():
+        return results
+    with open(jsonl_path, "r", encoding="utf-8") as f:
+        for line_no, raw in enumerate(f, start=1):
+            line = raw.strip()
+            if not line:
+                continue
+            try:
+                results.append(json.loads(line))
+            except json.JSONDecodeError as e:
+                # Tolerate only a corrupt final line; warn and stop.
+                print(f"Warning: skipping malformed line {line_no} in {jsonl_path}: {e}")
+                continue
+    return results
+
+
+def _dedupe_by_index(results: list) -> list:
+    """Keep the last occurrence per `index` to avoid duplicates in the final .json."""
+    by_index = {}
+    order = []
+    for item in results:
+        idx = item.get("index")
+        if idx is None:
+            # Items without an index get appended uniquely.
+            order.append(id(item))
+            by_index[id(item)] = item
+            continue
+        if idx not in by_index:
+            order.append(idx)
+        by_index[idx] = item
+    return [by_index[k] for k in order]
+
+
+def _finalize_jsonl_to_json(jsonl_path: Path, json_path: Path):
+    """Consolidate the streaming .jsonl checkpoint into the .json output, then
+    delete the .jsonl. After termination the .json is the source of truth for
+    all runs completed so far.
+    """
+    if not jsonl_path.exists():
+        return
+    results = _read_jsonl_lenient(jsonl_path)
+    # Avoid clobbering a previously good .json with an empty result set.
+    if not results and json_path.exists():
+        print(f"No results in {jsonl_path}; leaving existing {json_path} untouched.")
+        try:
+            jsonl_path.unlink()
+        except OSError as e:
+            print(f"Warning: failed to delete {jsonl_path}: {e}")
+        return
+    results = _dedupe_by_index(results)
+    try:
+        write_json(results, json_path)
+        print(f"Finalized {len(results)} results to {json_path}")
+    except Exception as e:
+        print(f"Failed to finalize jsonl -> json: {e}")
+        # Keep the .jsonl as a safety net since we failed to write the .json.
+        return
+    # Successful write: the .json now represents all runs so far, so the
+    # .jsonl checkpoint is no longer needed.
+    try:
+        jsonl_path.unlink()
+    except OSError as e:
+        print(f"Warning: failed to delete {jsonl_path}: {e}")
+
+
 def main(args):
     config = get_config(args)
-    if config.output_file.exists() and config.resume:
-        print(f"Output file {config.output_file} already exists. Will resume from the last checkpoint.")
-        existing_results = read_json(config.output_file)
-        processed_indices = {item['index'] for item in existing_results}
+
+    # Streaming checkpoint file (one JSON record per line). The final .json is
+    # only (re)written when the script terminates (success, error, or signal).
+    jsonl_path = config.output_file.with_suffix(".jsonl")
+
+    existing_results: list = []
+    processed_indices: set = set()
+
+    if config.resume:
+        # The .json is the canonical store of completed runs between
+        # invocations. The .jsonl only exists mid-run, or as crash-recovery
+        # leftovers if a previous run failed to finalize. Merge both so we
+        # never lose progress.
+        if jsonl_path.exists():
+            print(f"Found leftover streaming checkpoint {jsonl_path} (likely a prior crash). Recovering it.")
+            existing_results = _read_jsonl_lenient(jsonl_path)
+            # If a finalized .json also exists and has indices not in the
+            # jsonl (e.g., the user manually finalized then deleted some
+            # streaming lines), merge them in.
+            if config.output_file.exists():
+                try:
+                    finalized = read_json(config.output_file)
+                    jsonl_indices = {it.get("index") for it in existing_results}
+                    extra = [it for it in finalized if it.get("index") not in jsonl_indices]
+                    if extra:
+                        print(f"Merging {len(extra)} extra items from {config.output_file}.")
+                        existing_results.extend(extra)
+                except Exception as e:
+                    print(f"Warning: could not merge {config.output_file}: {e}")
+        elif config.output_file.exists():
+            print(f"Output file {config.output_file} exists. Seeding jsonl checkpoint from it.")
+            existing_results = read_json(config.output_file)
+        else:
+            print("Resume requested but no prior checkpoint or output file found. Starting fresh.")
+
+        # Deduplicate (keeps the last occurrence per index) and rewrite the
+        # .jsonl from scratch so it cleanly contains *all* already-completed
+        # runs (and nothing else, e.g. no malformed leftover lines from a
+        # crash mid-write). Subsequent runs append to this clean file.
+        existing_results = _dedupe_by_index(existing_results)
+        if existing_results:
+            tmp_path = jsonl_path.with_suffix(jsonl_path.suffix + ".tmp")
+            with open(tmp_path, "w", encoding="utf-8") as f:
+                for item in existing_results:
+                    f.write(json.dumps(item, ensure_ascii=False) + "\n")
+            os.replace(tmp_path, jsonl_path)
+        elif jsonl_path.exists():
+            # Resume requested but nothing recovered: clear any stale file.
+            jsonl_path.unlink()
+
+        processed_indices = {item['index'] for item in existing_results if 'index' in item}
         print(f"Found {len(processed_indices)} already processed items.")
     else:
-        processed_indices = set()
-        existing_results = []
+        # Fresh run: clear any stale checkpoint.
+        if jsonl_path.exists():
+            print(f"Fresh run: removing stale checkpoint {jsonl_path}.")
+            jsonl_path.unlink()
+
     info_list = load_data(config)
     rem_info_list = [inf for inf in info_list if inf.index not in processed_indices]
     model_name = ModelSpecification(config.model, ModelSupports.Chat | ModelSupports.Completion)
     model = ChatModel(model_name, SubstrateClient(), suppress=True)
 
     print(f"Resuming evaluation. {len(rem_info_list)} out of {len(info_list)} remaining.")
-    
-    # Process each info with fresh environment and agent per run
-    for info in tqdm(rem_info_list):
+
+    # Ensure we always consolidate jsonl -> json on exit (normal, error, signal).
+    _finalized = {"done": False}
+
+    def _finalize_once():
+        if _finalized["done"]:
+            return
+        _finalized["done"] = True
+        _finalize_jsonl_to_json(jsonl_path, config.output_file)
+
+    atexit.register(_finalize_once)
+
+    def _signal_handler(signum, frame):
+        print(f"\nReceived signal {signum}. Finalizing results...")
+        _finalize_once()
+        sys.exit(128 + signum)
+
+    for sig in (signal.SIGINT, signal.SIGTERM):
         try:
-            result = without_tooling_workflow(model, info, config)
-        except Exception as e:
-            print(f"Error processing index {info.index}: {str(e)}")
-            print(traceback.format_exc())
-            continue
-        
-        # Validate result is JSON serializable before adding
-        try:
-            # Test serialization
-            json.dumps(result)
-            existing_results.append(result)
-            write_json(existing_results, config.output_file)
-        except (TypeError, ValueError) as e:
-            print(f"Error serializing result for index {info.index}: {str(e)}")
-            print(f"Skipping corrupted result for index {info.index}")
-            continue
+            signal.signal(sig, _signal_handler)
+        except (ValueError, OSError):
+            # Some platforms / threads disallow setting signal handlers.
+            pass
+
+    try:
+        # Open the jsonl checkpoint in append mode and stream one record per test.
+        with open(jsonl_path, "a", encoding="utf-8") as ckpt_f:
+            for info in tqdm(rem_info_list):
+                try:
+                    result = without_tooling_workflow(model, info, config)
+                except Exception as e:
+                    print(f"Error processing index {info.index}: {str(e)}")
+                    print(traceback.format_exc())
+                    continue
+
+                # Validate result is JSON serializable before persisting.
+                try:
+                    line = json.dumps(result, ensure_ascii=False)
+                except (TypeError, ValueError) as e:
+                    print(f"Error serializing result for index {info.index}: {str(e)}")
+                    print(f"Skipping corrupted result for index {info.index}")
+                    continue
+
+                ckpt_f.write(line + "\n")
+                ckpt_f.flush()
+    finally:
+        _finalize_once()
         
     
 

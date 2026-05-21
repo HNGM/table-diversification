@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------------------
+# PyTorch (T4-compatible CUDA build) -- INSTALL THIS FIRST, SEPARATELY.
+# ---------------------------------------------------------------------------
+# NVIDIA T4 = Turing, compute capability sm_75. Fully supported by the
+# official PyTorch CUDA wheels. Plain `pip install torch` may grab a CPU-only
+# wheel on some systems, so install torch explicitly from the PyTorch index
+# BEFORE running `pip install -r requirements.txt`:
+#
+#   # CUDA 12.1 (recommended; needs NVIDIA driver >= 525)
+#   pip install --index-url https://download.pytorch.org/whl/cu121 \
+#       torch==2.4.1 torchvision==0.19.1
+#
+#   # --- OR --- CUDA 11.8 (older drivers, >= 520)
+#   pip install --index-url https://download.pytorch.org/whl/cu118 \
+#       torch==2.4.1 torchvision==0.19.1
+#
+# Verify:  python -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_device_name(0))"
+# Expect:  True  Tesla T4
+# ---------------------------------------------------------------------------
+
+# Safety pin in case the user forgot the step above: this won't override an
+# already-installed CUDA wheel, but it prevents a fully-missing torch install.
+torch==2.4.1
+
+# Core training stack — versions known to work together on torch 2.4.1 / CUDA 12.1 / T4.
+transformers==4.45.2
+accelerate==0.34.2
+peft==0.13.2
+trl==0.11.4
+datasets==3.0.1
+
+# QLoRA / 8-bit optimizers. bitsandbytes 0.43.x ships sm_75 kernels (T4 OK).
+bitsandbytes==0.43.3
+
+# Tokenizer + misc
+sentencepiece>=0.2.0
+protobuf>=3.20,<5
+pyyaml>=6.0
+
+# Data preview helper (used by data_preview.py)
+pandas>=2.0
+openpyxl>=3.1
+tabulate>=0.9
+
+# Eval utilities
+scikit-learn>=1.3
+
+# Plotting / logging for `plot_training.py` and `report_to: ["tensorboard"]`.
+matplotlib>=3.7
+tensorboard>=2.16

@@ -8,8 +8,8 @@ import pandas as pd
 import argparse
 
 
-WIKITQ_ORIGINAL_PREFIX = "wikitq_dataset_original_"
-WIKITQ_DISTURBED_DATASET = ROOT_DIR / "research" / "dataset" / "wikitq_dataset" / "disturbed.json"
+WIKITQ_ORIGINAL_PREFIX = "wikitq_dataset_"
+WIKITQ_DISTURBED_DATASET = ROOT_DIR / "research" / "dataset" / "wikitq_dataset_filtered" / "disturbed.json"
 
 
 def _build_query_to_disturbed(disturbed_dataset_path=WIKITQ_DISTURBED_DATASET):
@@ -93,6 +93,72 @@ def get_distortion_type_score(dataset: List[dict], scale_map: Optional[dict] = N
         avg_tool_calls = scores['tool_calls'] / total if total > 0 else 0
         agg_score = success / total if total > 0 else 0
         print(f"- {dist_type.capitalize()}: {agg_score*100:.2f}% ({success}/{total}), Avg Tool Calls: {avg_tool_calls:.2f}")
+
+
+def get_diversification_breakup(dataset: List[dict], scale_map: Optional[dict] = None):
+    """Per-diversification-type accuracy, grouped by distortion_type.
+
+    Shows ``success/total`` as a fraction first, then the percentage.
+    """
+    # buckets[distortion_type][diversification_type] = {'total','success','tool_calls'}
+    buckets: dict = {}
+
+    def _ensure(dist_t, div_t):
+        return buckets.setdefault(dist_t, {}).setdefault(
+            div_t, {'total': 0, 'success': 0, 'tool_calls': 0.0}
+        )
+
+    if scale_map is not None:
+        for data in dataset:
+            is_success, avg_tools = _extract_eval(data)
+            for variant in scale_map.get(data.get('query'), []):
+                dist_t = variant.get('distortion_type', 'unknown')
+                div_t = variant.get('diversification_type', 'unknown')
+                b = _ensure(dist_t, div_t)
+                b['total'] += 1
+                if is_success:
+                    b['success'] += 1
+                b['tool_calls'] += avg_tools
+    else:
+        for data in dataset:
+            dist_t = data.get('distortion_type', 'unknown')
+            div_t = data.get('diversification_type', 'unknown')
+            is_success, avg_tools = _extract_eval(data)
+            b = _ensure(dist_t, div_t)
+            b['total'] += 1
+            if is_success:
+                b['success'] += 1
+            b['tool_calls'] += avg_tools
+
+    # Stable order: structural first, then semantic, then any others alphabetically.
+    preferred = ['structural', 'semantic']
+    ordered_dts = [d for d in preferred if d in buckets] + sorted(
+        [d for d in buckets if d not in preferred]
+    )
+
+    print("\nDiversification Type Breakup (grouped by distortion_type):")
+    for dist_t in ordered_dts:
+        divs = buckets[dist_t]
+        # Bucket totals across diversification types.
+        dt_total = sum(v['total'] for v in divs.values())
+        dt_success = sum(v['success'] for v in divs.values())
+        dt_tools = sum(v['tool_calls'] for v in divs.values())
+        dt_pct = (dt_success / dt_total * 100) if dt_total else 0.0
+        dt_avg_tools = (dt_tools / dt_total) if dt_total else 0.0
+        print(
+            f"\n[{dist_t.capitalize()}] overall: {dt_success}/{dt_total} "
+            f"= {dt_pct:.2f}%, Avg Tool Calls: {dt_avg_tools:.2f}"
+        )
+        # Sort diversification types by total desc, then name.
+        for div_t, sc in sorted(divs.items(), key=lambda kv: (-kv[1]['total'], kv[0])):
+            total = sc['total']
+            success = sc['success']
+            pct = (success / total * 100) if total else 0.0
+            avg_tools = (sc['tool_calls'] / total) if total else 0.0
+            print(
+                f"  - {div_t}: {success}/{total} = {pct:.2f}%, "
+                f"Avg Tool Calls: {avg_tools:.2f}"
+            )
 
 def get_result_matrix(original_results: List[dict], diversified_results: List[dict], disturbed_results: List[dict]):
     # Determine the maximum number of eval results (for creating sheets)
@@ -193,6 +259,7 @@ def get_result_matrix(original_results: List[dict], diversified_results: List[di
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Get Aggregated score from results')
     parser.add_argument('--file', type=str, default=r"research\results\231225\disturbed_default_mistake_no_sandbox_markdown_dev-gpt-52-reasoning.json", help='Path to the results JSON file')
+    parser.add_argument('--breakup', action='store_true', help='Also show accuracy broken down by diversification_type (grouped by distortion_type).')
     args = parser.parse_args()
 
     disturbed_results = read_json(args.file)
@@ -206,6 +273,8 @@ if __name__ == "__main__":
 
     get_agg_score(disturbed_results, scale_map=scale_map)
     get_distortion_type_score(disturbed_results, scale_map=scale_map)
+    if args.breakup:
+        get_diversification_breakup(disturbed_results, scale_map=scale_map)
 
     # get_result_matrix(original_results, diversified_results, disturbed_results)
 

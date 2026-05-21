@@ -1,0 +1,5276 @@
+[
+  {
+    "index": "nt-2_broken_rows_split",
+    "query": "which team won previous to crettyard?",
+    "answer": "Wolfe Tones",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/772/nt-2/772_nt-2_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/772/nt-2/772_nt-2_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Wolfe Tones",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wolfe Tones\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Wolfe Tones",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wolfe Tones\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      },
+      {
+        "agent_response": {
+          "answer": "Wolfe Tones",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wolfe Tones\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-2_column_misalignment",
+    "query": "which team won previous to crettyard?",
+    "answer": "Wolfe Tones",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/772/nt-2/772_nt-2_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/772/nt-2/772_nt-2_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Wolfe Tones",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wolfe Tones\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-2_broken_rows_merge",
+    "query": "which team won previous to crettyard?",
+    "answer": "Wolfe Tones",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/772/nt-2/772_nt-2_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/772/nt-2/772_nt-2_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Dundalk Gaels",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Dundalk Gaels\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-2_ocr_char_misinterpret",
+    "query": "which team won previous to crettyard?",
+    "answer": "Wolfe Tones",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/772/nt-2/772_nt-2_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/772/nt-2/772_nt-2_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Confey",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Confey\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-2_random_noise_chars",
+    "query": "which team won previous to crettyard?",
+    "answer": "Wolfe Tones",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/772/nt-2/772_nt-2_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/772/nt-2/772_nt-2_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Wolfe Tones",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wolfe Tones\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-3_column_misalignment",
+    "query": "how many more passengers flew to los angeles than to saskatoon from manzanillo airport in 2013?",
+    "answer": "12,467",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 12467,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 12467, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-3_broken_rows_split",
+    "query": "how many more passengers flew to los angeles than to saskatoon from manzanillo airport in 2013?",
+    "answer": "12,467",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 12467,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 12467, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-3_header_as_data_row",
+    "query": "how many more passengers flew to los angeles than to saskatoon from manzanillo airport in 2013?",
+    "answer": "12,467",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 12467,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 12467,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-3_random_noise_chars",
+    "query": "how many more passengers flew to los angeles than to saskatoon from manzanillo airport in 2013?",
+    "answer": "12,467",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 12467,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":12467,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-3_multi_column_collapse",
+    "query": "how many more passengers flew to los angeles than to saskatoon from manzanillo airport in 2013?",
+    "answer": "12,467",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 12467,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 12467,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-3_broken_rows_merge",
+    "query": "how many more passengers flew to los angeles than to saskatoon from manzanillo airport in 2013?",
+    "answer": "12,467",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 12467,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 12467,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-3_ocr_char_misinterpret",
+    "query": "how many more passengers flew to los angeles than to saskatoon from manzanillo airport in 2013?",
+    "answer": "12,467",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 12467,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 12467,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-3_numbers_as_text",
+    "query": "how many more passengers flew to los angeles than to saskatoon from manzanillo airport in 2013?",
+    "answer": "12,467",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_numbers_as_text.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_numbers_as_text.png",
+    "diversification_type": "numbers_as_text",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 12467,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 12467,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-3_merge_cells",
+    "query": "how many more passengers flew to los angeles than to saskatoon from manzanillo airport in 2013?",
+    "answer": "12,467",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-3/515_nt-3_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 12467,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 12467,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-8_header_as_data_row",
+    "query": "after winning on four credits with a full house, what is your payout?",
+    "answer": "32",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/564/nt-8/564_nt-8_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/564/nt-8/564_nt-8_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 32,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 32,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-8_column_misalignment",
+    "query": "after winning on four credits with a full house, what is your payout?",
+    "answer": "32",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/564/nt-8/564_nt-8_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/564/nt-8/564_nt-8_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 32,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 32,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-9_column_misalignment",
+    "query": "which players played the same position as ardo kreek?",
+    "answer": [
+      "Siim Ennemuist",
+      "Andri Aganits"
+    ],
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/116/nt-9/116_nt-9_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/116/nt-9/116_nt-9_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Ardo Kreek",
+            "Siim Ennemuist",
+            "Andri Aganits"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[\"Ardo Kreek\",\"Siim Ennemuist\",\"Andri Aganits\"],\"dtype\":\"list\"}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-9_ocr_char_misinterpret",
+    "query": "which players played the same position as ardo kreek?",
+    "answer": [
+      "Siim Ennemuist",
+      "Andri Aganits"
+    ],
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/116/nt-9/116_nt-9_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/116/nt-9/116_nt-9_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Ardo Kreek",
+            "Siim Ennemuist",
+            "Andri Aganits"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Ardo Kreek\", \"Siim Ennemuist\", \"Andri Aganits\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-14_ocr_char_misinterpret",
+    "query": "which athlete was from south korea after the year 2010?",
+    "answer": "Kim Yu-na",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-14/104_nt-14_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-14/104_nt-14_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Kim Yu-na",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Kim Yu-na\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-15_column_misalignment",
+    "query": "what was the venue when he placed first?",
+    "answer": "New Delhi, India",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/706/nt-15/706_nt-15_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/706/nt-15/706_nt-15_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "New Delhi, India",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"New Delhi, India\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-15_ocr_char_misinterpret",
+    "query": "what was the venue when he placed first?",
+    "answer": "New Delhi, India",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/706/nt-15/706_nt-15_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/706/nt-15/706_nt-15_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "New Delhi, 1ndia",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"New Delhi, 1ndia\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-24_header_as_data_row",
+    "query": "who ranked right after turkey?",
+    "answer": "Sweden",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/812/nt-24/812_nt-24_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/812/nt-24/812_nt-24_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Sweden",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Sweden\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-24_footnote_injection",
+    "query": "who ranked right after turkey?",
+    "answer": "Sweden",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/812/nt-24/812_nt-24_footnote_injection.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/812/nt-24/812_nt-24_footnote_injection.png",
+    "diversification_type": "footnote_injection",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Sweden",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Sweden\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-29_broken_rows_split",
+    "query": "what is the total population in dzhebariki-khaya?",
+    "answer": "1694",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/6/nt-29/6_nt-29_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/6/nt-29/6_nt-29_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1694,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1694,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-29_header_as_data_row",
+    "query": "what is the total population in dzhebariki-khaya?",
+    "answer": "1694",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/6/nt-29/6_nt-29_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/6/nt-29/6_nt-29_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1694,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1694, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-29_random_noise_chars",
+    "query": "what is the total population in dzhebariki-khaya?",
+    "answer": "1694",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/6/nt-29/6_nt-29_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/6/nt-29/6_nt-29_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1694,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1694, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-34_ocr_char_misinterpret",
+    "query": "who was the top ranked competitor in this race?",
+    "answer": "Iryna Shpylova",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/552/nt-34/552_nt-34_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/552/nt-34/552_nt-34_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Iryna 5hpylova",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Iryna 5hpylova\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-40_merge_cells",
+    "query": "what was the number of silver medals won by ukraine?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/175/nt-40/175_nt-40_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/175/nt-40/175_nt-40_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 2, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-46_broken_rows_merge",
+    "query": "what is the largest penalty?",
+    "answer": "10",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/664/nt-46/664_nt-46_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/664/nt-46/664_nt-46_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-53_broken_rows_split",
+    "query": "what is the total number of pylons listed?",
+    "answer": "17",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 25,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 25,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-53_column_misalignment",
+    "query": "what is the total number of pylons listed?",
+    "answer": "17",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 25,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 25,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-53_broken_rows_merge",
+    "query": "what is the total number of pylons listed?",
+    "answer": "17",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 25,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 25, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-53_header_as_data_row",
+    "query": "what is the total number of pylons listed?",
+    "answer": "17",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 17,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":17,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-53_ocr_char_misinterpret",
+    "query": "what is the total number of pylons listed?",
+    "answer": "17",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 17,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 17,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-53_merge_cells",
+    "query": "what is the total number of pylons listed?",
+    "answer": "17",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 17,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 17,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-53_footnote_injection",
+    "query": "what is the total number of pylons listed?",
+    "answer": "17",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_footnote_injection.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-53/375_nt-53_footnote_injection.png",
+    "diversification_type": "footnote_injection",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 25,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 25,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-64_ocr_char_misinterpret",
+    "query": "how many districts are there in virginia?",
+    "answer": "22",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/109/nt-64/109_nt-64_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/109/nt-64/109_nt-64_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":22,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-67_broken_rows_merge",
+    "query": "what is the number of tv shows that charmaine sheh has appeared on?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/631/nt-67/631_nt-67_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/631/nt-67/631_nt-67_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 4,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-67_broken_rows_split",
+    "query": "what is the number of tv shows that charmaine sheh has appeared on?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/631/nt-67/631_nt-67_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/631/nt-67/631_nt-67_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 6,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 6,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-67_column_misalignment",
+    "query": "what is the number of tv shows that charmaine sheh has appeared on?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/631/nt-67/631_nt-67_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/631/nt-67/631_nt-67_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 6,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 6,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-67_ocr_char_misinterpret",
+    "query": "what is the number of tv shows that charmaine sheh has appeared on?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/631/nt-67/631_nt-67_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/631/nt-67/631_nt-67_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 6,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 6, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-67_multi_column_collapse",
+    "query": "what is the number of tv shows that charmaine sheh has appeared on?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/631/nt-67/631_nt-67_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/631/nt-67/631_nt-67_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 6,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 6,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-68_broken_rows_merge",
+    "query": "amazon is at the top of the chart, but what is the name below it?",
+    "answer": "Antelope",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/568/nt-68/568_nt-68_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/568/nt-68/568_nt-68_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Ambuscade",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Ambuscade\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-68_column_misalignment",
+    "query": "amazon is at the top of the chart, but what is the name below it?",
+    "answer": "Antelope",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/568/nt-68/568_nt-68_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/568/nt-68/568_nt-68_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Antelope",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Antelope\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-69_column_misalignment",
+    "query": "when was the last time kansas state lost with 0 points in manhattan?",
+    "answer": "1964",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/703/nt-69/703_nt-69_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/703/nt-69/703_nt-69_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1964,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1964,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-69_multi_column_collapse",
+    "query": "when was the last time kansas state lost with 0 points in manhattan?",
+    "answer": "1964",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/703/nt-69/703_nt-69_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/703/nt-69/703_nt-69_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1964,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1964, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-69_ocr_char_misinterpret",
+    "query": "when was the last time kansas state lost with 0 points in manhattan?",
+    "answer": "1964",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/703/nt-69/703_nt-69_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/703/nt-69/703_nt-69_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1964,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1964,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 7
+      }
+    ]
+  },
+  {
+    "index": "nt-92_column_misalignment",
+    "query": "who was the first to take office?",
+    "answer": "Jaafar Mohamed",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/668/nt-92/668_nt-92_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/668/nt-92/668_nt-92_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Jaafar Mohamed",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Jaafar Mohamed\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-92_broken_rows_merge",
+    "query": "who was the first to take office?",
+    "answer": "Jaafar Mohamed",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/668/nt-92/668_nt-92_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/668/nt-92/668_nt-92_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Jaafar Mohamed",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Jaafar Mohamed\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-92_random_noise_chars",
+    "query": "who was the first to take office?",
+    "answer": "Jaafar Mohamed",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/668/nt-92/668_nt-92_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/668/nt-92/668_nt-92_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Jaafar Mohamed",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Jaafar Mohamed\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-92_merge_cells",
+    "query": "who was the first to take office?",
+    "answer": "Jaafar Mohamed",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/668/nt-92/668_nt-92_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/668/nt-92/668_nt-92_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Jaafar Mohamed",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Jaafar Mohamed\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-92_numbers_as_text",
+    "query": "who was the first to take office?",
+    "answer": "Jaafar Mohamed",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/668/nt-92/668_nt-92_numbers_as_text.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/668/nt-92/668_nt-92_numbers_as_text.png",
+    "diversification_type": "numbers_as_text",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Jaafar Mohamed",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Jaafar Mohamed\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-94_column_misalignment",
+    "query": "what is the next event after hardcore tv #15?",
+    "answer": "Hardcore TV #21",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/23/nt-94/23_nt-94_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/23/nt-94/23_nt-94_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Hardcore TV #21",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Hardcore TV #21\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-94_multi_column_collapse",
+    "query": "what is the next event after hardcore tv #15?",
+    "answer": "Hardcore TV #21",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/23/nt-94/23_nt-94_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/23/nt-94/23_nt-94_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Hardcore TV #21",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Hardcore TV #21\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-94_footnote_injection",
+    "query": "what is the next event after hardcore tv #15?",
+    "answer": "Hardcore TV #21",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/23/nt-94/23_nt-94_footnote_injection.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/23/nt-94/23_nt-94_footnote_injection.png",
+    "diversification_type": "footnote_injection",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Hardcore TV #21",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Hardcore TV #21\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-104_broken_rows_merge",
+    "query": "which composer produced his title after 2001?",
+    "answer": "Pete Doherty",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/969/nt-104/969_nt-104_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/969/nt-104/969_nt-104_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Pete Doherty",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Pete Doherty\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-107_column_misalignment",
+    "query": "which player ranked the most?",
+    "answer": "Nicky English",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/952/nt-107/952_nt-107_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/952/nt-107/952_nt-107_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Nicky English",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Nicky English\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-111_column_misalignment",
+    "query": "how long after fairfield was no. 1 built?",
+    "answer": "33 years",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-111/476_nt-111_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-111/476_nt-111_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 33,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 33, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-111_ocr_char_misinterpret",
+    "query": "how long after fairfield was no. 1 built?",
+    "answer": "33 years",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-111/476_nt-111_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-111/476_nt-111_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 33,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 33, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-116_header_as_data_row",
+    "query": "what is the difference in runners-up from coleraine academical institution and royal school dungannon?",
+    "answer": "20",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/362/nt-116/362_nt-116_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/362/nt-116/362_nt-116_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 20,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 20,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-116_broken_rows_merge",
+    "query": "what is the difference in runners-up from coleraine academical institution and royal school dungannon?",
+    "answer": "20",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/362/nt-116/362_nt-116_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/362/nt-116/362_nt-116_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 20,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 20,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-124_header_as_data_row",
+    "query": "how many times has germany won bronze?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/554/nt-124/554_nt-124_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/554/nt-124/554_nt-124_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-124_column_misalignment",
+    "query": "how many times has germany won bronze?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/554/nt-124/554_nt-124_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/554/nt-124/554_nt-124_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 2,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-124_broken_rows_split",
+    "query": "how many times has germany won bronze?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/554/nt-124/554_nt-124_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/554/nt-124/554_nt-124_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 2,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-124_random_noise_chars",
+    "query": "how many times has germany won bronze?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/554/nt-124/554_nt-124_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/554/nt-124/554_nt-124_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 2, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-124_merge_cells",
+    "query": "how many times has germany won bronze?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/554/nt-124/554_nt-124_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/554/nt-124/554_nt-124_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 2, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-125_column_misalignment",
+    "query": "list two pylons that are at most, 80 m in height.",
+    "answer": [
+      "Mittersill goods aerial tramway",
+      "Singapore cable car"
+    ],
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-125/375_nt-125_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-125/375_nt-125_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Mittersill goods aerial tramway",
+            "3S Aerial Tramway"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Mittersill goods aerial tramway\", \"3S Aerial Tramway\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-125_broken_rows_split",
+    "query": "list two pylons that are at most, 80 m in height.",
+    "answer": [
+      "Mittersill goods aerial tramway",
+      "Singapore cable car"
+    ],
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-125/375_nt-125_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-125/375_nt-125_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Mittersill goods aerial tramway",
+            "Singapore cable car"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Mittersill goods aerial tramway\", \"Singapore cable car\"],\n  \"dtype\": \"list\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-125_multi_column_collapse",
+    "query": "list two pylons that are at most, 80 m in height.",
+    "answer": [
+      "Mittersill goods aerial tramway",
+      "Singapore cable car"
+    ],
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-125/375_nt-125_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-125/375_nt-125_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Mittersill goods aerial tramway",
+            "Singapore cable car"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Mittersill goods aerial tramway\", \"Singapore cable car\"],\n  \"dtype\": \"list\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-125_ocr_char_misinterpret",
+    "query": "list two pylons that are at most, 80 m in height.",
+    "answer": [
+      "Mittersill goods aerial tramway",
+      "Singapore cable car"
+    ],
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-125/375_nt-125_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-125/375_nt-125_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Mittersill goods aeria1 tramway",
+            "Singapore cable car"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Mittersill goods aeria1 tramway\", \"Singapore cable car\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-125_broken_rows_merge",
+    "query": "list two pylons that are at most, 80 m in height.",
+    "answer": [
+      "Mittersill goods aerial tramway",
+      "Singapore cable car"
+    ],
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-125/375_nt-125_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-125/375_nt-125_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "3S Aerial Tramway",
+            "Torre Sant Sebastia"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"3S Aerial Tramway\", \"Torre Sant Sebastia\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-130_header_as_data_row",
+    "query": "why type of genre was peter maxwell davies' work that was the same as emil petrovics'",
+    "answer": "ballet",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/969/nt-130/969_nt-130_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/969/nt-130/969_nt-130_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "ballet",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"ballet\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-130_ocr_char_misinterpret",
+    "query": "why type of genre was peter maxwell davies' work that was the same as emil petrovics'",
+    "answer": "ballet",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/969/nt-130/969_nt-130_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/969/nt-130/969_nt-130_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "ballet",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"ballet\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-132_column_misalignment",
+    "query": "what is the difference (in years) between when the royal blue began and the year the crusader began?",
+    "answer": "47",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/336/nt-132/336_nt-132_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/336/nt-132/336_nt-132_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 47,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 47, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-132_ocr_char_misinterpret",
+    "query": "what is the difference (in years) between when the royal blue began and the year the crusader began?",
+    "answer": "47",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/336/nt-132/336_nt-132_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/336/nt-132/336_nt-132_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 47,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 47, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-148_column_misalignment",
+    "query": "who received the least amount of votes?",
+    "answer": "Karen Olsson",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/786/nt-148/786_nt-148_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/786/nt-148/786_nt-148_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "George Barron",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"George Barron\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-148_broken_rows_split",
+    "query": "who received the least amount of votes?",
+    "answer": "Karen Olsson",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/786/nt-148/786_nt-148_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/786/nt-148/786_nt-148_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Karen Olsson",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Karen Olsson\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-148_header_as_data_row",
+    "query": "who received the least amount of votes?",
+    "answer": "Karen Olsson",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/786/nt-148/786_nt-148_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/786/nt-148/786_nt-148_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Karen Olsson",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Karen Olsson\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-148_ocr_char_misinterpret",
+    "query": "who received the least amount of votes?",
+    "answer": "Karen Olsson",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/786/nt-148/786_nt-148_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/786/nt-148/786_nt-148_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Karen 0lsson",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Karen 0lsson\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-148_merge_cells",
+    "query": "who received the least amount of votes?",
+    "answer": "Karen Olsson",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/786/nt-148/786_nt-148_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/786/nt-148/786_nt-148_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Karen Olsson",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Karen Olsson\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-158_column_misalignment",
+    "query": "which mountain peak has a prominence more than 10,000 ft?",
+    "answer": "Mount Whitney",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/25/nt-158/25_nt-158_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/25/nt-158/25_nt-158_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Mount Whitney"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Mount Whitney\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-158_merge_cells",
+    "query": "which mountain peak has a prominence more than 10,000 ft?",
+    "answer": "Mount Whitney",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/25/nt-158/25_nt-158_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/25/nt-158/25_nt-158_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Mount Whitney"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Mount Whitney\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-159_column_misalignment",
+    "query": "how many mines were in temagami?",
+    "answer": "10",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/944/nt-159/944_nt-159_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/944/nt-159/944_nt-159_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 10,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 10, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-159_broken_rows_merge",
+    "query": "how many mines were in temagami?",
+    "answer": "10",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/944/nt-159/944_nt-159_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/944/nt-159/944_nt-159_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 9, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-169_header_as_data_row",
+    "query": "which schools have the largest number of shared titles?",
+    "answer": [
+      "Royal Belfast Academical Institution",
+      "Campbell College"
+    ],
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/362/nt-169/362_nt-169_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/362/nt-169/362_nt-169_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Royal Belfast Academical Institution",
+            "Campbell College"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Royal Belfast Academical Institution\", \"Campbell College\"],\n  \"dtype\": \"list\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-169_ocr_char_misinterpret",
+    "query": "which schools have the largest number of shared titles?",
+    "answer": [
+      "Royal Belfast Academical Institution",
+      "Campbell College"
+    ],
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/362/nt-169/362_nt-169_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/362/nt-169/362_nt-169_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "list",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Royal Belfast Academica1 Institution",
+            "Campbe11 Col1ege"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[\"Royal Belfast Academica1 Institution\",\"Campbe11 Col1ege\"],\"dtype\":\"list\"}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-170_broken_rows_merge",
+    "query": "what name comes next fairfield?",
+    "answer": "Waverley",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-170/476_nt-170_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-170/476_nt-170_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Waverley",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Waverley\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-170_column_misalignment",
+    "query": "what name comes next fairfield?",
+    "answer": "Waverley",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-170/476_nt-170_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-170/476_nt-170_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Waverley",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Waverley\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-170_footnote_injection",
+    "query": "what name comes next fairfield?",
+    "answer": "Waverley",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-170/476_nt-170_footnote_injection.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-170/476_nt-170_footnote_injection.png",
+    "diversification_type": "footnote_injection",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Waverley",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Waverley\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-170_ocr_char_misinterpret",
+    "query": "what name comes next fairfield?",
+    "answer": "Waverley",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-170/476_nt-170_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-170/476_nt-170_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Waver1ey",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Waver1ey\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-178_column_misalignment",
+    "query": "which province is the top consumer of wine?",
+    "answer": "Yukon",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/533/nt-178/533_nt-178_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/533/nt-178/533_nt-178_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Yukon",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Yukon\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-180_broken_rows_split",
+    "query": "how long did ian armstrong serve?",
+    "answer": "26 years",
+    "data_file": "dev_test/Distortions/Output/05082026/202-csv/76/nt-180/76_nt-180_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/202-csv/76/nt-180/76_nt-180_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 26,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 26,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-180_numbers_as_text",
+    "query": "how long did ian armstrong serve?",
+    "answer": "26 years",
+    "data_file": "dev_test/Distortions/Output/05082026/202-csv/76/nt-180/76_nt-180_numbers_as_text.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/202-csv/76/nt-180/76_nt-180_numbers_as_text.png",
+    "diversification_type": "numbers_as_text",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 26,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 26,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-191_broken_rows_split",
+    "query": "how many airlines have a steady ranking?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 3,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-191_header_as_data_row",
+    "query": "how many airlines have a steady ranking?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 4,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-191_multi_column_collapse",
+    "query": "how many airlines have a steady ranking?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 6,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 6, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-191_broken_rows_merge",
+    "query": "how many airlines have a steady ranking?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 5,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-191_merge_cells",
+    "query": "how many airlines have a steady ranking?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 3, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 7
+      }
+    ]
+  },
+  {
+    "index": "nt-191_random_noise_chars",
+    "query": "how many airlines have a steady ranking?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 3,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-191_ocr_char_misinterpret",
+    "query": "how many airlines have a steady ranking?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/515/nt-191/515_nt-191_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-206_column_misalignment",
+    "query": "what car achieved the highest qual?",
+    "answer": "40",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/339/nt-206/339_nt-206_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/339/nt-206/339_nt-206_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 40,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 40, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-206_header_as_data_row",
+    "query": "what car achieved the highest qual?",
+    "answer": "40",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/339/nt-206/339_nt-206_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/339/nt-206/339_nt-206_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "40",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"40\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-206_broken_rows_merge",
+    "query": "what car achieved the highest qual?",
+    "answer": "40",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/339/nt-206/339_nt-206_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/339/nt-206/339_nt-206_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "98",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"98\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-208_random_noise_chars",
+    "query": "which secretary of state came after jack pkckersgill?",
+    "answer": "Roch Pinard",
+    "data_file": "dev_test/Distortions/Output/05082026/201-csv/27/nt-208/27_nt-208_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/201-csv/27/nt-208/27_nt-208_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Roch Pinard",
+            "Maurice Lamontagne"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\"Roch Pinard\", \"Maurice Lamontagne\"],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-227_column_misalignment",
+    "query": "when was the last super chinese game released?",
+    "answer": "1999",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/55/nt-227/55_nt-227_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/55/nt-227/55_nt-227_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1999,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1999, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-227_header_as_data_row",
+    "query": "when was the last super chinese game released?",
+    "answer": "1999",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/55/nt-227/55_nt-227_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/55/nt-227/55_nt-227_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1999,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1999,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-239_column_misalignment",
+    "query": "what year had a total of 2 titles released?",
+    "answer": "2010",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/836/nt-239/836_nt-239_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/836/nt-239/836_nt-239_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            2010,
+            2012
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [2010, 2012],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-239_broken_rows_merge",
+    "query": "what year had a total of 2 titles released?",
+    "answer": "2010",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/836/nt-239/836_nt-239_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/836/nt-239/836_nt-239_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            2010,
+            2012
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[2010,2012],\"dtype\":\"list\"}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-239_ocr_char_misinterpret",
+    "query": "what year had a total of 2 titles released?",
+    "answer": "2010",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/836/nt-239/836_nt-239_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/836/nt-239/836_nt-239_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            2010,
+            2012
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\n  \"answer\": [\n    2010,\n    2012\n  ],\n  \"dtype\": \"list\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-241_column_misalignment",
+    "query": "what year has no place indicated?",
+    "answer": "1982/83",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/231/nt-241/231_nt-241_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/231/nt-241/231_nt-241_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "1982/83",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"1982/83\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-241_broken_rows_merge",
+    "query": "what year has no place indicated?",
+    "answer": "1982/83",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/231/nt-241/231_nt-241_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/231/nt-241/231_nt-241_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "1982/83",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"1982/83\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-248_header_as_data_row",
+    "query": "what is the number of games played against vietnam?",
+    "answer": "1",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/913/nt-248/913_nt-248_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/913/nt-248/913_nt-248_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-248_column_misalignment",
+    "query": "what is the number of games played against vietnam?",
+    "answer": "1",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/913/nt-248/913_nt-248_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/913/nt-248/913_nt-248_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-255_column_misalignment",
+    "query": "which year had the largest agricultural volume?",
+    "answer": "2010/11",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/666/nt-255/666_nt-255_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/666/nt-255/666_nt-255_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "2010/11",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"2010/11\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-255_merge_cells",
+    "query": "which year had the largest agricultural volume?",
+    "answer": "2010/11",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/666/nt-255/666_nt-255_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/666/nt-255/666_nt-255_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "2010/11",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"2010/11\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-255_date_format_corruption",
+    "query": "which year had the largest agricultural volume?",
+    "answer": "2010/11",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/666/nt-255/666_nt-255_date_format_corruption.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/666/nt-255/666_nt-255_date_format_corruption.png",
+    "diversification_type": "date_format_corruption",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "2010/11",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"2010/11\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-260_column_misalignment",
+    "query": "which illustrator was responsible for the last award winner?",
+    "answer": "Helen Oxenbury",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/788/nt-260/788_nt-260_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/788/nt-260/788_nt-260_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Helen Oxenbury",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Helen Oxenbury\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-260_broken_rows_split",
+    "query": "which illustrator was responsible for the last award winner?",
+    "answer": "Helen Oxenbury",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/788/nt-260/788_nt-260_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/788/nt-260/788_nt-260_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Helen Oxenbury",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Helen Oxenbury\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-260_ocr_char_misinterpret",
+    "query": "which illustrator was responsible for the last award winner?",
+    "answer": "Helen Oxenbury",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/788/nt-260/788_nt-260_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/788/nt-260/788_nt-260_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "He1en Oxenbury",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"He1en Oxenbury\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-262_merge_cells",
+    "query": "does december or january have more snow days?",
+    "answer": "January",
+    "data_file": "dev_test/Distortions/Output/05082026/201-csv/3/nt-262/3_nt-262_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/201-csv/3/nt-262/3_nt-262_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "January",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"January\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-264_header_as_data_row",
+    "query": "what is the number of buildings under 200 ft?",
+    "answer": "1",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/837/nt-264/837_nt-264_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/837/nt-264/837_nt-264_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-267_column_misalignment",
+    "query": "total number of players whose home town was in north carolina (nc)",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/526/nt-267/526_nt-267_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/526/nt-267/526_nt-267_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 3, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-270_column_misalignment",
+    "query": "is the united stated or scotland better?",
+    "answer": "United States",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/396/nt-270/396_nt-270_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/396/nt-270/396_nt-270_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "United States",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"United States\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-270_ocr_char_misinterpret",
+    "query": "is the united stated or scotland better?",
+    "answer": "United States",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/396/nt-270/396_nt-270_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/396/nt-270/396_nt-270_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "United States",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"United States\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-281_column_misalignment",
+    "query": "how many ships were launched in the year 1944?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/313/nt-281/313_nt-281_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/313/nt-281/313_nt-281_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 9, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-281_multi_column_collapse",
+    "query": "how many ships were launched in the year 1944?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/313/nt-281/313_nt-281_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/313/nt-281/313_nt-281_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 9, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-281_ocr_char_misinterpret",
+    "query": "how many ships were launched in the year 1944?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/313/nt-281/313_nt-281_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/313/nt-281/313_nt-281_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 9, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-283_column_misalignment",
+    "query": "how long has internacional de madrid cf been playing in the 3\u00aa division?",
+    "answer": "3",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/783/nt-283/783_nt-283_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/783/nt-283/783_nt-283_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 3,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-283_broken_rows_merge",
+    "query": "how long has internacional de madrid cf been playing in the 3\u00aa division?",
+    "answer": "3",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/783/nt-283/783_nt-283_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/783/nt-283/783_nt-283_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 4,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-283_merge_cells",
+    "query": "how long has internacional de madrid cf been playing in the 3\u00aa division?",
+    "answer": "3",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/783/nt-283/783_nt-283_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/783/nt-283/783_nt-283_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 3, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-283_ocr_char_misinterpret",
+    "query": "how long has internacional de madrid cf been playing in the 3\u00aa division?",
+    "answer": "3",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/783/nt-283/783_nt-283_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/783/nt-283/783_nt-283_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 3,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 3,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-284_column_misalignment",
+    "query": "how many total medals has the united states won in women's figure skating?",
+    "answer": "16",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 9,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-284_broken_rows_split",
+    "query": "how many total medals has the united states won in women's figure skating?",
+    "answer": "16",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 8,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 8,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-284_header_as_data_row",
+    "query": "how many total medals has the united states won in women's figure skating?",
+    "answer": "16",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 11,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 11,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-284_broken_rows_merge",
+    "query": "how many total medals has the united states won in women's figure skating?",
+    "answer": "16",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 11,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 11, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-284_random_noise_chars",
+    "query": "how many total medals has the united states won in women's figure skating?",
+    "answer": "16",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 8,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 8, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-284_ocr_char_misinterpret",
+    "query": "how many total medals has the united states won in women's figure skating?",
+    "answer": "16",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 11,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":11,\"dtype\":\"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-284_merge_cells",
+    "query": "how many total medals has the united states won in women's figure skating?",
+    "answer": "16",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 11,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":11,\"dtype\":\"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-284_numbers_as_text",
+    "query": "how many total medals has the united states won in women's figure skating?",
+    "answer": "16",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_numbers_as_text.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/104/nt-284/104_nt-284_numbers_as_text.png",
+    "diversification_type": "numbers_as_text",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 11,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 11,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-292_column_misalignment",
+    "query": "what is the total number of gold medals won by jamaica?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/595/nt-292/595_nt-292_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/595/nt-292/595_nt-292_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 4, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "nt-300_column_misalignment",
+    "query": "what number of mainlands have populations under 100,000?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/401/nt-300/401_nt-300_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/401/nt-300/401_nt-300_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 9,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-300_broken_rows_split",
+    "query": "what number of mainlands have populations under 100,000?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/401/nt-300/401_nt-300_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/401/nt-300/401_nt-300_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":9,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-300_broken_rows_merge",
+    "query": "what number of mainlands have populations under 100,000?",
+    "answer": "9",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/401/nt-300/401_nt-300_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/401/nt-300/401_nt-300_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":9,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-305_column_misalignment",
+    "query": "which was the first country to sell weapons to iraq?",
+    "answer": "Czechoslovakia",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/587/nt-305/587_nt-305_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/587/nt-305/587_nt-305_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Czechoslovakia",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Czechoslovakia\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-305_ocr_char_misinterpret",
+    "query": "which was the first country to sell weapons to iraq?",
+    "answer": "Czechoslovakia",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/587/nt-305/587_nt-305_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/587/nt-305/587_nt-305_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Czechoslovakia",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Czechoslovakia\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-305_broken_rows_merge",
+    "query": "which was the first country to sell weapons to iraq?",
+    "answer": "Czechoslovakia",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/587/nt-305/587_nt-305_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/587/nt-305/587_nt-305_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Czechoslovakia",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Czechoslovakia\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-308_column_misalignment",
+    "query": "how many historic sites are listed in coldwater?",
+    "answer": "15",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/423/nt-308/423_nt-308_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/423/nt-308/423_nt-308_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 15,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 15, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-308_ocr_char_misinterpret",
+    "query": "how many historic sites are listed in coldwater?",
+    "answer": "15",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/423/nt-308/423_nt-308_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/423/nt-308/423_nt-308_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 15,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 15,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-308_broken_rows_merge",
+    "query": "how many historic sites are listed in coldwater?",
+    "answer": "15",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/423/nt-308/423_nt-308_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/423/nt-308/423_nt-308_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 15,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 15,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-308_merge_cells",
+    "query": "how many historic sites are listed in coldwater?",
+    "answer": "15",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/423/nt-308/423_nt-308_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/423/nt-308/423_nt-308_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 15,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 15,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-312_header_as_data_row",
+    "query": "true or false. the television show \\\"the two ronnies\\\" featured more than 10 episodes in a season.",
+    "answer": "false",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "false",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"false\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-312_column_misalignment",
+    "query": "true or false. the television show \\\"the two ronnies\\\" featured more than 10 episodes in a season.",
+    "answer": "false",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "False",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"False\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-312_broken_rows_split",
+    "query": "true or false. the television show \\\"the two ronnies\\\" featured more than 10 episodes in a season.",
+    "answer": "false",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "False",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"False\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-312_multi_column_collapse",
+    "query": "true or false. the television show \\\"the two ronnies\\\" featured more than 10 episodes in a season.",
+    "answer": "false",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "false",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"false\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-312_broken_rows_merge",
+    "query": "true or false. the television show \\\"the two ronnies\\\" featured more than 10 episodes in a season.",
+    "answer": "false",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "False",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"False\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-312_ocr_char_misinterpret",
+    "query": "true or false. the television show \\\"the two ronnies\\\" featured more than 10 episodes in a season.",
+    "answer": "false",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "false",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"false\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-312_merge_cells",
+    "query": "true or false. the television show \\\"the two ronnies\\\" featured more than 10 episodes in a season.",
+    "answer": "false",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/461/nt-312/461_nt-312_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "False",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"False\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-315_ocr_char_misinterpret",
+    "query": "are there at least 2 nationalities on the chart?",
+    "answer": "yes",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "No",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"No\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-315_multi_column_collapse",
+    "query": "are there at least 2 nationalities on the chart?",
+    "answer": "yes",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "No",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"No\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-315_broken_rows_merge",
+    "query": "are there at least 2 nationalities on the chart?",
+    "answer": "yes",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Yes",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Yes\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-315_broken_rows_split",
+    "query": "are there at least 2 nationalities on the chart?",
+    "answer": "yes",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "No",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"No\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-315_column_misalignment",
+    "query": "are there at least 2 nationalities on the chart?",
+    "answer": "yes",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "No",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"No\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-315_header_as_data_row",
+    "query": "are there at least 2 nationalities on the chart?",
+    "answer": "yes",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/482/nt-315/482_nt-315_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "No",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"No\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-320_column_misalignment",
+    "query": "which tournament has the largest total win record?",
+    "answer": "Wimbledon",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/153/nt-320/153_nt-320_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/153/nt-320/153_nt-320_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Wimbledon",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wimbledon\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-320_broken_rows_split",
+    "query": "which tournament has the largest total win record?",
+    "answer": "Wimbledon",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/153/nt-320/153_nt-320_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/153/nt-320/153_nt-320_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Wimbledon",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Wimbledon\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-320_broken_rows_merge",
+    "query": "which tournament has the largest total win record?",
+    "answer": "Wimbledon",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/153/nt-320/153_nt-320_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/153/nt-320/153_nt-320_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Wimbledon",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Wimbledon\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-320_multi_column_collapse",
+    "query": "which tournament has the largest total win record?",
+    "answer": "Wimbledon",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/153/nt-320/153_nt-320_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/153/nt-320/153_nt-320_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Wimbledon",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Wimbledon\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-320_ocr_char_misinterpret",
+    "query": "which tournament has the largest total win record?",
+    "answer": "Wimbledon",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/153/nt-320/153_nt-320_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/153/nt-320/153_nt-320_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Wimb1edon",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Wimb1edon\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-330_broken_rows_merge",
+    "query": "which area has the least number of residents?",
+    "answer": "Ince Blundell",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/600/nt-330/600_nt-330_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/600/nt-330/600_nt-330_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Ince Blundell",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Ince Blundell\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-330_ocr_char_misinterpret",
+    "query": "which area has the least number of residents?",
+    "answer": "Ince Blundell",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/600/nt-330/600_nt-330_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/600/nt-330/600_nt-330_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "1nce B1unde1l",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"1nce B1unde1l\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-330_decimal_separator_swap",
+    "query": "which area has the least number of residents?",
+    "answer": "Ince Blundell",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/600/nt-330/600_nt-330_decimal_separator_swap.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/600/nt-330/600_nt-330_decimal_separator_swap.png",
+    "diversification_type": "decimal_separator_swap",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Ince Blundell",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Ince Blundell\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-332_column_misalignment",
+    "query": "how many stars have a magnitude greater than zero?",
+    "answer": "14",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/56/nt-332/56_nt-332_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/56/nt-332/56_nt-332_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 14,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 14,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-332_random_noise_chars",
+    "query": "how many stars have a magnitude greater than zero?",
+    "answer": "14",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/56/nt-332/56_nt-332_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/56/nt-332/56_nt-332_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 14,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 14, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-332_merge_cells",
+    "query": "how many stars have a magnitude greater than zero?",
+    "answer": "14",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/56/nt-332/56_nt-332_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/56/nt-332/56_nt-332_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 14,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 14, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-333_ocr_char_misinterpret",
+    "query": "what country won more gold medals than any other?",
+    "answer": "United States",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/595/nt-333/595_nt-333_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/595/nt-333/595_nt-333_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "United States",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"United States\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-344_column_misalignment",
+    "query": "aside from 316, what was the other works number used in 1883?",
+    "answer": "317",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/30/nt-344/30_nt-344_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/30/nt-344/30_nt-344_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 317,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":317,\"dtype\":\"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-348_column_misalignment",
+    "query": "which team did lau nim yat play for after he was transferred?",
+    "answer": "Biu Chun Rangers",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/968/nt-348/968_nt-348_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/968/nt-348/968_nt-348_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Biu Chun Rangers",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Biu Chun Rangers\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-349_column_misalignment",
+    "query": "which mountain peak is no higher than 13,149 ft?",
+    "answer": "Mount Ritter",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/25/nt-349/25_nt-349_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/25/nt-349/25_nt-349_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "Mount Ritter"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[\"Mount Ritter\"],\"dtype\":\"list\"}",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-349_merge_cells",
+    "query": "which mountain peak is no higher than 13,149 ft?",
+    "answer": "Mount Ritter",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/25/nt-349/25_nt-349_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/25/nt-349/25_nt-349_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Mount Ritter",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Mount Ritter\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-350_column_misalignment",
+    "query": "how many pylons are in austria?",
+    "answer": "3",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-350/375_nt-350_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-350/375_nt-350_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 4,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 4, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-353_merge_cells",
+    "query": "between bjorn ferry, simon elder and erik lesser - who had the most penalties?",
+    "answer": "Erik Lesser",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/664/nt-353/664_nt-353_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/664/nt-353/664_nt-353_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Erik Lesser",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Erik Lesser\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-364_header_as_data_row",
+    "query": "which winner won more tournaments, jeff maggert or tiger woods?",
+    "answer": "Tiger Woods",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/85/nt-364/85_nt-364_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/85/nt-364/85_nt-364_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Tiger Woods",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Tiger Woods\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-367_broken_rows_split",
+    "query": "how many total row entries are there?",
+    "answer": "21",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/364/nt-367/364_nt-367_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/364/nt-367/364_nt-367_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 42,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":42,\"dtype\":\"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-367_broken_rows_merge",
+    "query": "how many total row entries are there?",
+    "answer": "21",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/364/nt-367/364_nt-367_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/364/nt-367/364_nt-367_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 20,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 20,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-367_footnote_injection",
+    "query": "how many total row entries are there?",
+    "answer": "21",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/364/nt-367/364_nt-367_footnote_injection.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/364/nt-367/364_nt-367_footnote_injection.png",
+    "diversification_type": "footnote_injection",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 23,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 23,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-367_header_as_data_row",
+    "query": "how many total row entries are there?",
+    "answer": "21",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/364/nt-367/364_nt-367_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/364/nt-367/364_nt-367_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 22,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 22,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 0
+      }
+    ]
+  },
+  {
+    "index": "nt-373_broken_rows_merge",
+    "query": "tell me the number of shows that only have one host per day.",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/839/nt-373/839_nt-373_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/839/nt-373/839_nt-373_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 6,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 6, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-373_broken_rows_split",
+    "query": "tell me the number of shows that only have one host per day.",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/839/nt-373/839_nt-373_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/839/nt-373/839_nt-373_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-373_column_misalignment",
+    "query": "tell me the number of shows that only have one host per day.",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/839/nt-373/839_nt-373_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/839/nt-373/839_nt-373_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 8,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 8,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-373_header_as_data_row",
+    "query": "tell me the number of shows that only have one host per day.",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/839/nt-373/839_nt-373_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/839/nt-373/839_nt-373_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 7, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-380_header_as_data_row",
+    "query": "do chipper adams and justin beyendeza have more than 3 wins?",
+    "answer": "no",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/667/nt-380/667_nt-380_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/667/nt-380/667_nt-380_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "No",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"No\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-395_header_as_data_row",
+    "query": "what is the pylon with the least height listed here?",
+    "answer": "Eibsee Aerial Tramway",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-395/375_nt-395_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/375/nt-395/375_nt-395_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Eibsee Aerial Tramway",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Eibsee Aerial Tramway\",\n  \"dtype\": \"str\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-397_header_as_data_row",
+    "query": "how many provinces have the same number of districts as kabul?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 5,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-397_column_misalignment",
+    "query": "how many provinces have the same number of districts as kabul?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 5, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-397_broken_rows_split",
+    "query": "how many provinces have the same number of districts as kabul?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":5,\"dtype\":\"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-397_broken_rows_merge",
+    "query": "how many provinces have the same number of districts as kabul?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 5, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-397_multi_column_collapse",
+    "query": "how many provinces have the same number of districts as kabul?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 5, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-397_ocr_char_misinterpret",
+    "query": "how many provinces have the same number of districts as kabul?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 5, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-397_random_noise_chars",
+    "query": "how many provinces have the same number of districts as kabul?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 5,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-397_merge_cells",
+    "query": "how many provinces have the same number of districts as kabul?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":5,\"dtype\":\"int\"}",
+        "eval": false,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-397_footnote_injection",
+    "query": "how many provinces have the same number of districts as kabul?",
+    "answer": "4",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_footnote_injection.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/704/nt-397/704_nt-397_footnote_injection.png",
+    "diversification_type": "footnote_injection",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\":5,\"dtype\":\"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-414_merge_cells",
+    "query": "is tripoli still considered a municipality in arcadia since its 2011 reformation?",
+    "answer": "Yes",
+    "data_file": "dev_test/Distortions/Output/05082026/200-csv/38/nt-414/38_nt-414_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/200-csv/38/nt-414/38_nt-414_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Yes, Tripoli is still considered a municipality in Arcadia after the 2011 reformation.",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Yes, Tripoli is still considered a municipality in Arcadia after the 2011 reformation.\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-416_column_misalignment",
+    "query": "how much greater is the height of cable over ground measurement for the peak 2 peak gondola when compared with that of the vanoise express?",
+    "answer": "56 m",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/457/nt-416/457_nt-416_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/457/nt-416/457_nt-416_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 56,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 56, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-417_header_as_data_row",
+    "query": "what is the number of children sarah churchill had?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/626/nt-417/626_nt-417_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/626/nt-417/626_nt-417_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 7, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-428_broken_rows_merge",
+    "query": "how many stations have a distance below 15km?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/273/nt-428/273_nt-428_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/273/nt-428/273_nt-428_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 5,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 5,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-428_broken_rows_split",
+    "query": "how many stations have a distance below 15km?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/273/nt-428/273_nt-428_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/273/nt-428/273_nt-428_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 7,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-428_random_noise_chars",
+    "query": "how many stations have a distance below 15km?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/273/nt-428/273_nt-428_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/273/nt-428/273_nt-428_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 9,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 9, \"dtype\": \"int\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-428_ocr_char_misinterpret",
+    "query": "how many stations have a distance below 15km?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/273/nt-428/273_nt-428_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/273/nt-428/273_nt-428_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 7, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-432_column_misalignment",
+    "query": "how many consecutive km were raced on july 8th?",
+    "answer": "203.0 km (126.1 mi)",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/475/nt-432/475_nt-432_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/475/nt-432/475_nt-432_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 203.0,
+          "dtype": "float"
+        },
+        "raw_response": "{\n  \"answer\": 203.0,\n  \"dtype\": \"float\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-432_broken_rows_split",
+    "query": "how many consecutive km were raced on july 8th?",
+    "answer": "203.0 km (126.1 mi)",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/475/nt-432/475_nt-432_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/475/nt-432/475_nt-432_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 203.0,
+          "dtype": "float"
+        },
+        "raw_response": "{\n  \"answer\": 203.0,\n  \"dtype\": \"float\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-432_merge_cells",
+    "query": "how many consecutive km were raced on july 8th?",
+    "answer": "203.0 km (126.1 mi)",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/475/nt-432/475_nt-432_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/475/nt-432/475_nt-432_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 203.0,
+          "dtype": "float"
+        },
+        "raw_response": "{\"answer\": 203.0, \"dtype\": \"float\"}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-439_ocr_char_misinterpret",
+    "query": "how many total events will occur in all?",
+    "answer": "46",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/206/nt-439/206_nt-439_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/206/nt-439/206_nt-439_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 16,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 16,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-447_header_as_data_row",
+    "query": "how many times was waterford the opposition?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/952/nt-447/952_nt-447_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/952/nt-447/952_nt-447_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 2, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-447_column_misalignment",
+    "query": "how many times was waterford the opposition?",
+    "answer": "2",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/952/nt-447/952_nt-447_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/952/nt-447/952_nt-447_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 2,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 2,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-450_column_misalignment",
+    "query": "how many more general acute care hospitals are there in california than rehabilitation hospitals?",
+    "answer": "33",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/216/nt-450/216_nt-450_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/216/nt-450/216_nt-450_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 33,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 33,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-457_header_as_data_row",
+    "query": "what is the difference in child population between koraput and puri?",
+    "answer": "51,130",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 51130,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 51130, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-457_column_misalignment",
+    "query": "what is the difference in child population between koraput and puri?",
+    "answer": "51,130",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 51130,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 51130,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-457_broken_rows_split",
+    "query": "what is the difference in child population between koraput and puri?",
+    "answer": "51,130",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_broken_rows_split.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_broken_rows_split.png",
+    "diversification_type": "broken_rows_split",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 51130,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 51130, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-457_multi_column_collapse",
+    "query": "what is the difference in child population between koraput and puri?",
+    "answer": "51,130",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 51130,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 51130,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-457_merge_cells",
+    "query": "what is the difference in child population between koraput and puri?",
+    "answer": "51,130",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_merge_cells.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_merge_cells.png",
+    "diversification_type": "merge_cells",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 51130,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 51130,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-457_random_noise_chars",
+    "query": "what is the difference in child population between koraput and puri?",
+    "answer": "51,130",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 51130,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 51130,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-457_ocr_char_misinterpret",
+    "query": "what is the difference in child population between koraput and puri?",
+    "answer": "51,130",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 51130,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 51130, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 5
+      }
+    ]
+  },
+  {
+    "index": "nt-457_decimal_separator_swap",
+    "query": "what is the difference in child population between koraput and puri?",
+    "answer": "51,130",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_decimal_separator_swap.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_decimal_separator_swap.png",
+    "diversification_type": "decimal_separator_swap",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 51,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 51,\n  \"dtype\": \"int\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-457_broken_rows_merge",
+    "query": "what is the difference in child population between koraput and puri?",
+    "answer": "51,130",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/942/nt-457/942_nt-457_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 51130,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 51130,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-458_header_as_data_row",
+    "query": "how many were played on a hard surface?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/94/nt-458/94_nt-458_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/94/nt-458/94_nt-458_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 7, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 6
+      }
+    ]
+  },
+  {
+    "index": "nt-458_broken_rows_merge",
+    "query": "how many were played on a hard surface?",
+    "answer": "7",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/94/nt-458/94_nt-458_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/94/nt-458/94_nt-458_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 7,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 7, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 3
+      }
+    ]
+  },
+  {
+    "index": "nt-473_ocr_char_misinterpret",
+    "query": "was no.1 or veteran built in 1847?",
+    "answer": "Veteran",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-473/476_nt-473_ocr_char_misinterpret.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/476/nt-473/476_nt-473_ocr_char_misinterpret.png",
+    "diversification_type": "ocr_char_misinterpret",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Veteran",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Veteran\",\"dtype\":\"str\"}",
+        "eval": true,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-488_header_as_data_row",
+    "query": "how many denominations never dropped below 20%?",
+    "answer": "1",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/857/nt-488/857_nt-488_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/857/nt-488/857_nt-488_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\n  \"answer\": 1,\n  \"dtype\": \"int\"\n}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-488_multi_column_collapse",
+    "query": "how many denominations never dropped below 20%?",
+    "answer": "1",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/857/nt-488/857_nt-488_multi_column_collapse.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/857/nt-488/857_nt-488_multi_column_collapse.png",
+    "diversification_type": "multi_column_collapse",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-488_random_noise_chars",
+    "query": "how many denominations never dropped below 20%?",
+    "answer": "1",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/857/nt-488/857_nt-488_random_noise_chars.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/857/nt-488/857_nt-488_random_noise_chars.png",
+    "diversification_type": "random_noise_chars",
+    "dtype": "int",
+    "type": null,
+    "distortion_type": "semantic",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": 1,
+          "dtype": "int"
+        },
+        "raw_response": "{\"answer\": 1, \"dtype\": \"int\"}",
+        "eval": true,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-491_column_misalignment",
+    "query": "which opponent is listed after cleveland freeze in the table?",
+    "answer": "Detroit Waza",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/151/nt-491/151_nt-491_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/151/nt-491/151_nt-491_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Cincinnati Saints",
+          "dtype": "str"
+        },
+        "raw_response": "{\"answer\":\"Cincinnati Saints\",\"dtype\":\"str\"}",
+        "eval": false,
+        "tools": 4
+      }
+    ]
+  },
+  {
+    "index": "nt-491_header_as_data_row",
+    "query": "which opponent is listed after cleveland freeze in the table?",
+    "answer": "Detroit Waza",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/151/nt-491/151_nt-491_header_as_data_row.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/151/nt-491/151_nt-491_header_as_data_row.png",
+    "diversification_type": "header_as_data_row",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Cincinnati Saints",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Cincinnati Saints\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-491_footnote_injection",
+    "query": "which opponent is listed after cleveland freeze in the table?",
+    "answer": "Detroit Waza",
+    "data_file": "dev_test/Distortions/Output/05082026/204-csv/151/nt-491/151_nt-491_footnote_injection.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/204-csv/151/nt-491/151_nt-491_footnote_injection.png",
+    "diversification_type": "footnote_injection",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": "Cincinnati Saints",
+          "dtype": "str"
+        },
+        "raw_response": "{\n  \"answer\": \"Cincinnati Saints\",\n  \"dtype\": \"str\"\n}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  },
+  {
+    "index": "nt-500_column_misalignment",
+    "query": "which country is represented for both men and women at the top of the list?",
+    "answer": "Ireland",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/787/nt-500/787_nt-500_column_misalignment.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/787/nt-500/787_nt-500_column_misalignment.png",
+    "diversification_type": "column_misalignment",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "GBR",
+            "IRL",
+            "KEN",
+            "RUS",
+            "UKR"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[\"GBR\",\"IRL\",\"KEN\",\"RUS\",\"UKR\"],\"dtype\":\"list\"}",
+        "eval": false,
+        "tools": 1
+      }
+    ]
+  },
+  {
+    "index": "nt-500_broken_rows_merge",
+    "query": "which country is represented for both men and women at the top of the list?",
+    "answer": "Ireland",
+    "data_file": "dev_test/Distortions/Output/05082026/203-csv/787/nt-500/787_nt-500_broken_rows_merge.xlsx",
+    "image_file": "dev_test/Distortions/Output/05082026/203-csv/787/nt-500/787_nt-500_broken_rows_merge.png",
+    "diversification_type": "broken_rows_merge",
+    "dtype": "string",
+    "type": null,
+    "distortion_type": "structural",
+    "eval": [
+      {
+        "agent_response": {
+          "answer": [
+            "GBR",
+            "IRL",
+            "KEN",
+            "RUS",
+            "UKR"
+          ],
+          "dtype": "list"
+        },
+        "raw_response": "{\"answer\":[\"GBR\",\"IRL\",\"KEN\",\"RUS\",\"UKR\"],\"dtype\":\"list\"}",
+        "eval": false,
+        "tools": 2
+      }
+    ]
+  }
+]
