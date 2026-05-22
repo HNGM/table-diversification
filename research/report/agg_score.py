@@ -266,7 +266,14 @@ if __name__ == "__main__":
 
     base_name = os.path.basename(args.file)
     scale_map = None
-    if base_name.startswith(WIKITQ_ORIGINAL_PREFIX):
+    # Only scale for genuine "original" wikitq result files. Disturbed/diversified
+    # runs (e.g. ``wikitq_dataset_..._disturbed_...json``) also share the prefix
+    # but must NOT be scaled, otherwise their per-variant rows get duplicated.
+    is_wikitq = base_name.startswith(WIKITQ_ORIGINAL_PREFIX)
+    is_disturbed_or_diversified = any(
+        tag in base_name for tag in ("disturbed", "diversified")
+    )
+    if is_wikitq and not is_disturbed_or_diversified:
         print(f"Detected wikitq original results file '{base_name}'. "
               f"Scaling scores by disturbed.json variant counts.")
         scale_map = _build_query_to_disturbed()
