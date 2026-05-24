@@ -30,9 +30,9 @@ COMPLETION_MODELS = ["dev-mistral-7b-instruct-v02"]
 ARTIFACT_DIR_SOURCE = ROOT_DIR / "research" / "dataset" / "wikitq_dataset_filtered"
 # ARTIFACT_DIR_SOURCE = ROOT_DIR / "research" / "dataset" / "27122025_distorted_dataset"
 DATA_MODE = "disturbed"
-MODEL = "dev-anthropic-claude-opus-4-6"
-PROMPT_MODE = "default_mistake_no_sandbox"
-INGEST_MODE = "screenshot"
+MODEL = "dev-gpt-54-reasoning"
+PROMPT_MODE = "default_no_sandbox"
+INGEST_MODE = "markdown"
 
 class CodeEnvironment(Environment):
     """Environment that holds a CodeTool instance for code execution."""

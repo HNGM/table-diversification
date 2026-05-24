@@ -7,6 +7,11 @@ from collections import defaultdict
 import pandas as pd
 import argparse
 
+from research.report.diversification_taxonomy import (
+    map_diversification,
+    ordered_groups,
+)
+
 
 WIKITQ_ORIGINAL_PREFIX = "wikitq_dataset_"
 WIKITQ_DISTURBED_DATASET = ROOT_DIR / "research" / "dataset" / "wikitq_dataset_filtered" / "disturbed.json"
@@ -113,7 +118,7 @@ def get_diversification_breakup(dataset: List[dict], scale_map: Optional[dict] =
             is_success, avg_tools = _extract_eval(data)
             for variant in scale_map.get(data.get('query'), []):
                 dist_t = variant.get('distortion_type', 'unknown')
-                div_t = variant.get('diversification_type', 'unknown')
+                div_t = map_diversification(variant.get('diversification_type'))
                 b = _ensure(dist_t, div_t)
                 b['total'] += 1
                 if is_success:
@@ -122,7 +127,7 @@ def get_diversification_breakup(dataset: List[dict], scale_map: Optional[dict] =
     else:
         for data in dataset:
             dist_t = data.get('distortion_type', 'unknown')
-            div_t = data.get('diversification_type', 'unknown')
+            div_t = map_diversification(data.get('diversification_type'))
             is_success, avg_tools = _extract_eval(data)
             b = _ensure(dist_t, div_t)
             b['total'] += 1
@@ -149,8 +154,10 @@ def get_diversification_breakup(dataset: List[dict], scale_map: Optional[dict] =
             f"\n[{dist_t.capitalize()}] overall: {dt_success}/{dt_total} "
             f"= {dt_pct:.2f}%, Avg Tool Calls: {dt_avg_tools:.2f}"
         )
-        # Sort diversification types by total desc, then name.
-        for div_t, sc in sorted(divs.items(), key=lambda kv: (-kv[1]['total'], kv[0])):
+        # Stable order: follow the canonical taxonomy where possible.
+        ordered_div = ordered_groups(divs.keys())
+        for div_t in ordered_div:
+            sc = divs[div_t]
             total = sc['total']
             success = sc['success']
             pct = (success / total * 100) if total else 0.0

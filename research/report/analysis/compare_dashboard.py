@@ -27,6 +27,14 @@ from flask import Flask, abort, jsonify, render_template_string, request, send_f
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 
+# Make repo root importable so we can use the shared taxonomy utility.
+import sys as _sys
+_sys.path.append(str(REPO_ROOT))
+from research.report.diversification_taxonomy import (  # noqa: E402
+    map_diversification,
+    ordered_groups,
+)
+
 
 def load_json(path: str) -> list[dict[str, Any]]:
     with open(path, "r", encoding="utf-8") as f:
@@ -85,6 +93,7 @@ def build_app(original_path: str, distorted_path: str) -> Flask:
                 "distorted_index": d.get("index"),
                 "original_index": (orig or {}).get("index"),
                 "diversification_type": d.get("diversification_type"),
+                "diversification_group": map_diversification(d.get("diversification_type")),
                 "distortion_type": d.get("distortion_type"),
                 "type": d.get("type"),
                 "dtype": d.get("dtype"),
@@ -113,27 +122,26 @@ def build_app(original_path: str, distorted_path: str) -> Flask:
     )
     missing_original = sum(1 for r in records if r["_orig_entry"] is None)
 
-    # Per-diversification breakdown
+    # Per-diversification breakdown (using the canonical grouped taxonomy).
     per_div: dict[str, dict[str, int]] = defaultdict(lambda: {"total": 0, "correct": 0})
     for r in records:
-        k = r["diversification_type"] or "unknown"
+        k = r["diversification_group"] or "unknown"
         per_div[k]["total"] += 1
         if r["distorted_eval"]:
             per_div[k]["correct"] += 1
-    per_div_list = sorted(
-        [
-            {
-                "name": k,
-                "total": v["total"],
-                "correct": v["correct"],
-                "acc": (v["correct"] / v["total"]) if v["total"] else 0.0,
-            }
-            for k, v in per_div.items()
-        ],
-        key=lambda x: x["name"],
-    )
+    per_div_list = [
+        {
+            "name": k,
+            "total": per_div[k]["total"],
+            "correct": per_div[k]["correct"],
+            "acc": (per_div[k]["correct"] / per_div[k]["total"])
+            if per_div[k]["total"]
+            else 0.0,
+        }
+        for k in ordered_groups(per_div.keys())
+    ]
 
-    diversification_options = sorted({r["diversification_type"] or "" for r in records})
+    diversification_options = ordered_groups({r["diversification_group"] or "" for r in records})
     distortion_options = sorted({r["distortion_type"] or "" for r in records})
 
     app = Flask(__name__)
@@ -173,7 +181,7 @@ def build_app(original_path: str, distorted_path: str) -> Flask:
                 r["original_eval"] is True and r["distorted_eval"] is False
             ):
                 continue
-            if div and (r["diversification_type"] or "") != div:
+            if div and (r["diversification_group"] or "") != div:
                 continue
             if dist and (r["distortion_type"] or "") != dist:
                 continue

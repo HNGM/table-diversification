@@ -43,6 +43,18 @@ except ImportError:
         "    pip install matplotlib"
     )
 
+# Double matplotlib's default font sizes across the board so plots are
+# legible when dropped into a paper / slide.
+plt.rcParams.update({
+    "font.size":         16,  # default 10
+    "axes.titlesize":    19,  # default 12
+    "axes.labelsize":    16,  # default 10
+    "xtick.labelsize":   16,  # default 10
+    "ytick.labelsize":   16,  # default 10
+    "legend.fontsize":   14,  # default 10
+    "figure.titlesize":  19,
+})
+
 try:
     import numpy as np
 except ImportError:
@@ -165,7 +177,7 @@ def plot_metric(
     if log_y:
         ax.set_yscale("log")
     ax.grid(True, linestyle="--", alpha=0.4)
-    ax.legend(loc="best", fontsize=8)
+    ax.legend(loc="best", fontsize=13)
     _save(fig, outdir, metric, also_pdf)
 
 
